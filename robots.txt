@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /page/
+Allow: /posts/
+Allow: /about/
+
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /lib/
+Disallow: /categories/笔记/
+
+Sitemap: https://wincerchan.github.io/sitemap.xml
+

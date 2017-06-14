@@ -98,7 +98,7 @@ tag_generator:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:WincerChan/WincerChan.github.io.git.bak
+  repo: git@github.com:WincerChan/WincerChan.github.io.git
   branch: master
   message: '站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}'
 
