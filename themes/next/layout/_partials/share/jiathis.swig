@@ -1,5 +1,5 @@
 <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
+<div class="jiathis_style_24x24">
   <a class="jiathis_button_tsina"></a>
   <a class="jiathis_button_tqq"></a>
   <a class="jiathis_button_weixin"></a>

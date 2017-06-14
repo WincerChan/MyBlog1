@@ -5,7 +5,7 @@ categories: 笔记
 tags:
   - Hexo
   - 教程
-encrypt: true
+encrypt: false
 enc_pwd: zyi
 copyright: true
 abbrlink: 7efd2818
