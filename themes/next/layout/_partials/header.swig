@@ -32,7 +32,7 @@
   </div>
 </div>
 
-<nav class="site-nav">
+<nav class="site-nav" id="site-nav">
   {% set hasSearch = theme.swiftype_key || theme.algolia_search.enable || theme.tinysou_Key || theme.local_search.enable %}
 
   {% if theme.menu %}
