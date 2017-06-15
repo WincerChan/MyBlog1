@@ -349,7 +349,7 @@ baidushare: false
 ##type: button
 
 # Share
-jiathis: true
+jiathis: false
 # Warning: JiaThis does not support https.
 #add_this_id: ra-591319220ec78018
 
