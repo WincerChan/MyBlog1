@@ -49,6 +49,7 @@ menu:
   about: /about
   archives: /archives
   tags: /tags
+  photos: /pictures
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -63,6 +64,7 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
+  photos: photo
   categories: th
   schedule: calendar
   tags: tags
