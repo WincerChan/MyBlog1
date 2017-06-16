@@ -49,7 +49,7 @@ menu:
   about: /about
   archives: /archives
   tags: /tags
-  photos: /pictures
+  life: /life
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -64,7 +64,7 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
-  photos: life-ring
+  life: life-ring
   categories: th
   schedule: calendar
   tags: tags
