@@ -1,6 +1,6 @@
 ---
 comments: false
-type: photos
+type: life
 date: 2017-06-15 10:56:58
 ---
 
