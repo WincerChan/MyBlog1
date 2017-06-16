@@ -14,6 +14,7 @@ gulp.task('fancybox:js', function() {
         .pipe(uglify())
         .pipe(gulp.dest('././public/fancybox/'));
 });
+
 //public-fancybox-css压缩
 gulp.task('fancybox:css', function() {
     return gulp.src('././public/fancybox/jquery.fancybox.css')
