@@ -4,31 +4,10 @@ type: photos
 date: 2017-06-15 10:56:58
 ---
 
-{% raw %}
-<style>
-.photo img{
-  border: 1px solid #999;
-  width: 250px;
-}
-.photo li{
-    margin: 10px;
-    float: left;
-    list-style: none;
-}
-</style>
-<div class="photo">
-{% endraw %}
-* ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffinblvcs7j22b043kqvc.jpg)
+<h2 style="text-align:center">我看过的书籍和电影</h2>
 
-* ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffina10tg9j22b043k7wm.jpg)
+ <script type="text/javascript" src="http://www.douban.com/service/badge/93562087/?selection=latest&amp;picsize=medium&amp;hideself=on&amp;show=collection&amp;n=13&amp;hidelogo=on&amp;cat=drama%7Cmovie%7Cbook%7Cmusic&amp;columns=5"></script>
 
-* ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffio42pzk1j243k2b0e8a.jpg)
+<h2 style="text-align:center">我想看的书籍和电影</h2>
 
-* ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffinh6wqg2j243k2b01l6.jpg)
-
-* ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffinb15kuxj22b043khe0.jpg)
-* ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffin7ofacaj243k2b0x6u.jpg)
-
-{% raw %}
-</div>
-{% endraw %}
+<script type="text/javascript" src="http://www.douban.com/service/badge/93562087/?selection=latest&amp;picsize=medium&amp;show=wishlist&amp;n=20&amp;hidelogo=on&amp;cat=drama%7Cmovie%7Cbook%7Cmusic&amp;columns=5"></script>
