@@ -10,7 +10,7 @@ updated: 2017-06-12 16:32:18
 abbrlink: 39613bbd
 ---
 
-Shadowsocks是我们最常用的代理工具，它使用socks协议，而我们目前使用的终端只支持http、https协议，所以我们需要用软件来将socks协议转化为http等协议，我采用的是Proxychains软件（SS的安装和配置本文不再赘述）
+Shadowsocks是我们最常用的代理工具，它使用socks协议，而我们目前使用的终端只支持http、https协议，所以我们需要用软件来将socks协议转化为http等协议，我采用的是Proxychains软件（SS的安装和配置自行谷歌）
 
 #### Proxychains安装
 
