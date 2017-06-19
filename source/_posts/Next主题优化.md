@@ -19,14 +19,14 @@ date: 2017-05-31 18:04:00
 
 加上下面内容：
 
-<!-- more -->
-
 ```javascript
 <script type="text/javascript" src="js/src/particle.js><script>
 <script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"></script>
 ```
 
 目前的NexT主题已经自带canvas_nest等四个特效，可以在主题配置文件搜索并将对应的值改为`true` ，这里不用自带是因为想添加彩色的线条，自带的只有黑色。
+
+<!-- more -->
 
 然后在`thmems/next/source/js/src/`目录新建`particle.js` ，文件写入以下代码：
 
