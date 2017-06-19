@@ -23,13 +23,13 @@ cp ./src/proxychains.conf /etc/proxychains.conf
 cd .. && rm -rf proxychains-ng
 ```
 
-<!-- more  -->
-
 #### 编辑Proxychains配置
 
 ```bash
 vim /etc/proxychains.conf
 ```
+
+<!-- more  -->
 
 将最后一行
 
