@@ -19,7 +19,6 @@ date: 2017-05-22 14:32:00
 
 - Axel支持HTTP，HTTPS，FTP和FTPS协议。
 
-<!-- more -->
 ### Axel安装
 
 - Ubuntu:
@@ -32,6 +31,8 @@ date: 2017-05-22 14:32:00
   ```
   sudo yum install axel
   ```
+
+<!-- more -->
 
 ### Axel使用
 
