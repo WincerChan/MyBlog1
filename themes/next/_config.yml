@@ -417,7 +417,7 @@ vkontakte_api:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: MBkBz5t1VlxN1ovrSzYoi6Rf-gzGzoHsz
   app_key: uEwxnhCemEJTftbtVobKKwDQ
 
@@ -435,7 +435,7 @@ busuanzi_count:
   site_pv_header: <i class="fa fa-eye"></i>本站总访问量
   site_pv_footer: 次
   # custom pv span for one page only
-  page_pv: false
+  page_pv: true
   page_pv_header: <i class="fa fa-file-o"></i>本文总阅读量
   page_pv_footer: 次
 
