@@ -12,7 +12,7 @@ abbrlink: 444a2b9d
 
 > 从2017年1月份正式发布的Chrome 56开始，Google将把某些包含敏感内容的HTTP页面标记为“不安全”，比如含有密码或支付表单信息。
 
-GitHub Pages不支持用户自定义证书，所以当你用自定义域名的时候是不能用自己购买的SSL证书的，会和GitHub的起冲突，这里采用的是Cloudflare免费提供的SSL方案。
+GitHub Pages不支持用户自定义证书，所以当你用自定义域名的时候是不能用自己购买的SSL证书的，会和GitHub的起冲突，这里采用的是[CloudFlare](https://www.cloudflare.com/)自主研发的[Keyless SSL](https://www.cloudflare.com/ssl/keyless-ssl/)服务。简单来说就是你把网站放在CloudFlare的cdn上，不用提供自己的私钥，也能使用SSL加密链接。
 
 ## 创建CloudFlare账户
 
