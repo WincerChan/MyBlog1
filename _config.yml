@@ -102,6 +102,7 @@ deploy:
   branch: master
   message: '站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}'
 
+google_analytics: UA-101362832-1
 encrypt:
   password: wincer
   template: ' <div style="text-align:center"><input type="text" style=" border-radius: 10px; border-style: groove; height: 30px; width: 50%; cursor: auto; font-size: 102%; color: currentColor; outline: none; text-overflow: initial; padding-left: 5px;">  
