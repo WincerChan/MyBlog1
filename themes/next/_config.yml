@@ -122,13 +122,13 @@ font:
   # The `size` option use `px` as unit
   logo:
     external: true
-    family: ITC Officina Bold
-    size:
+    family: Lobster Two
+    size: 26
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: PT Mono
     size:
 
 
