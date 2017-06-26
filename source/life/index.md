@@ -4,10 +4,17 @@ type: life
 date: 2017-06-15 10:56:58
 ---
 
-<h2 style="text-align:center">我看过的书籍和电影</h2>
+## <center>我看过的书籍和电影</center>
 
- <script type="text/javascript" src="https://www.douban.com/service/badge/93562087/?selection=latest&amp;picsize=medium&amp;hideself=on&amp;show=collection&amp;n=13&amp;hidelogo=on&amp;cat=drama%7Cmovie%7Cbook%7Cmusic&amp;columns=5"></script>
+| ![](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2264377763.webp)[夏洛特烦恼](https://movie.douban.com/subject/25964071/) | ![alt text](https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p500548437.webp) [人在囧途](https://movie.douban.com/subject/4237879/) | ![alt text](https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2292976849.webp) [老炮儿](https://movie.douban.com/subject/24751756/) | ![alt text](https://img3.doubanio.com/lpic/s27142913.jpg)[雪中悍刀行](https://book.douban.com/subject/25714176/) | [![alt text](https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2388697339.webp)[陈二狗的妖孽人生](https://movie.douban.com/subject/26740585/) |
+| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| [![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2367257940.webp )[余罪](https://movie.douban.com/subject/26802975/) | ![alt text](https://upload.wikimedia.org/wikipedia/zh/thumb/5/55/%E7%91%AF%E7%90%8A%E6%A6%9C.jpg/250px-%E7%91%AF%E7%90%8A%E6%A6%9C.jpg) [瑯琊榜](https://movie.douban.com/subject/25754848/) | ![alt text](https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p1832875827.webp) [禁闭岛](https://movie.douban.com/subject/2334904/) | ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p1729944511.webp) [寂静岭2](https://movie.douban.com/subject/2117898/) | ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p462470694.webp) [恐怖游轮](https://movie.douban.com/subject/3011051/) |
 
-<h2 style="text-align:center">我想看的书籍和电影</h2>
+## <center>我想看的书籍和电影</center>
 
-<script type="text/javascript" src="https://www.douban.com/service/badge/93562087/?selection=latest&amp;picsize=medium&amp;show=wishlist&amp;n=20&amp;hidelogo=on&amp;cat=drama%7Cmovie%7Cbook%7Cmusic&amp;columns=5"></script>
+
+
+| ![alt text](https://img3.doubanio.com/lpic/s4669554.jpg )[黑客与画家](https://book.douban.com/subject/6021440/) | ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2388018826.webp )[鹬](https://movie.douban.com/subject/26766869/) | ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2403347953.webp) [西部世界](https://movie.douban.com/subject/2338055/) | ![alt text](https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p698531629.webp) [嫌疑人X的献身](https://movie.douban.com/subject/2369845/) | ![alt text](https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2180426257.webp)[普尔小姐探案](http://movie.douban.com/subject/5342776/) |
+| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2378016113.webp) [波洛的失败](https://movie.douban.com/subject/5122138/) | ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2405316571.webp) [控方证人](https://movie.douban.com/subject/26700633/) | ![alt text](https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p1505392928.webp) [控方证人](https://movie.douban.com/subject/1296141/) | ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2170906035.webp) [东方快车谋杀案](https://movie.douban.com/subject/4179012/) | ![alt text](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2170094410.webp) [殊途同归](https://movie.douban.com/subject/5313428/) |
+
