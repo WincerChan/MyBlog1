@@ -4,6 +4,10 @@ date: 2017-05-10 22:46:00
 comments: false
 ---
 
+{% cq %} 若无缘，六道之间，三千大千世界，百万菩提众生，为何与我笑颜独展，惟独与汝相见？{% endcq %}
+
+能在众多博客中与你相遇，想必是一种缘分。
+
 > 关于我
 
 - 伪文青、悲观主义者；
@@ -14,13 +18,14 @@ comments: false
 - 喜欢玩耳机、键盘、鼠标等；
 - 喜欢玩FPS游戏，可惜枪法不好；
 - ~~最大愿望是“每逢佳节胖三斤”~~； 
+- 没有[Typora](https://typora.io/)就不会写博客，没有Emacs就不会写代码；
 
 > 联系我
 
 - 电子邮件（推荐）：[WincerChan@gmail.com](mailto:WincerChan@gmail.com) 
 - 社交网络：Twitter：[@wincer_chan](https://twitter.com/wincer_chan)
 - 即使通讯：鹅厂 QQ：（你猜号码是多少）
-- 网站留言
+- 网站评论
 
 本人比较注重在网上的个人隐私，所以私密的信息不会暴露，有需要可以通过以上几种方式同我取得联系。
 
