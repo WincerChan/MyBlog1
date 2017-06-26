@@ -1,17 +1,42 @@
 ---
-title: 关于我
+title: 关于
 date: 2017-05-10 22:46:00
 comments: false
 ---
 
-<blockquote class="blockquote-center">你现在的气质里，藏着你走过的路，读过的书和爱过的人</blockquote>
+> 关于我
 
-### 评论
-本站评论系统采用[来必力](https://livere.com/)
+- 伪文青、悲观主义者；
+- 在互联网上有时会充当键盘侠；
+- 热爱自由，性格有些随遇而安；
+- 轻微强迫症，喜欢简单、美好的事物；
+- 喜欢看小说，有一部Kindle；
+- 喜欢玩耳机、键盘、鼠标等；
+- 喜欢玩FPS游戏，可惜枪法不好；
+- ~~最大愿望是“每逢佳节胖三斤”~~； 
 
-### 文章加密
+> 联系我
 
-本站部分文章采用[hexo-encrypt](https://github.com/edolphin-ydf/hexo-encrypt)插件加密
+- 电子邮件（推荐）：[WincerChan@gmail.com](mailto:WincerChan@gmail.com) 
+- 社交网络：Twitter：[@wincer_chan](https://twitter.com/wincer_chan)
+- 即使通讯：鹅厂 QQ：（你猜号码是多少）
+- 网站留言
 
-### 联系方式
-Mail ：[WincerChan@gmail.com](mailto:WincerChan@gmail.com)
+本人比较注重在网上的个人隐私，所以私密的信息不会暴露，有需要可以通过以上几种方式同我取得联系。
+
+> 关于博客
+
+本博客名称为`Wincer's Blog`，建站于公元2017年5月5日。托管于GitHub，基于Hexo构建。
+
+博客经历过几次大的改变：
+
+|     时间     |            事件            |
+| :--------: | :----------------------: |
+| 2017/05/05 | 用GitHub Pages建站，使用Hexo框架 |
+| 2017/05/07 |    阿里云购买域名wincer.top     |
+| 2017/06/16 |       全站启用HTTPS加密        |
+| 2017/06/29 |    启用新域名itswincer.com    |
+
+博客部分文章加密（详情见这篇博文），由于域名和服务器都在国外，基本啥都会写（技术、日常吐槽等等），也不用担心会出什么事。
+
+欢迎诸君订阅RSS。
