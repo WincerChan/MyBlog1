@@ -1,8 +1,11 @@
 ---
+title: 生活
 comments: false
-type: life
+type: "life"
 date: 2017-06-15 10:56:58
 ---
+
+<div class="pr"></div>
 
 ## <center>我看过的书籍和电影</center>
 
