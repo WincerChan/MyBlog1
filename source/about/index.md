@@ -18,7 +18,7 @@ comments: false
 - 喜欢玩耳机、键盘、鼠标等；
 - 喜欢玩FPS游戏，可惜枪法不好；
 - ~~最大愿望是“每逢佳节胖三斤”~~； 
-- 没有[Typora](https://typora.io/)就不会写博客，没有Emacs就不会写代码；
+- 没有[Typora](https://typora.io/)就不会写博客，没有[Emacs](https://www.gnu.org/software/emacs/)就不会写代码；
 
 > 联系我
 
@@ -38,9 +38,9 @@ comments: false
 |     时间     |            事件            |
 | :--------: | :----------------------: |
 | 2017/05/05 | 用GitHub Pages建站，使用Hexo框架 |
-| 2017/05/07 |    阿里云购买域名wincer.top     |
+| 2017/05/07 |   阿里云购买域名`wincer.top`    |
 | 2017/06/16 |       全站启用HTTPS加密        |
-| 2017/06/29 |    启用新域名itswincer.com    |
+| 2017/06/29 |   启用新域名`itswincer.com`   |
 
 博客部分文章加密（详情见这篇博文），由于域名和服务器都在国外，基本啥都会写（技术、日常吐槽等等），也不用担心会出什么事。
 
