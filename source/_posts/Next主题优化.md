@@ -4,6 +4,7 @@ type: categories
 categories: 笔记
 tags:
   - NexT
+	- 博客
 copyright: true
 abbrlink: a40f8cd0
 date: 2017-05-31 18:04:00

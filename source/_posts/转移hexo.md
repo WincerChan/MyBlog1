@@ -5,6 +5,7 @@ categories: 笔记
 tags:
   - Hexo
   - 教程
+	- 博客
 encrypt: false
 enc_pwd: zyi
 copyright: true
