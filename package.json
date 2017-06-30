@@ -11,6 +11,7 @@
     "gulp-clean-css": "^3.4.2",
     "gulp-htmlclean": "^2.7.14",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.0",
@@ -35,6 +36,7 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.2.0",
     "hexo-wordcount": "^2.0.1",
+    "run-sequence": "^1.2.2",
     "social-share.js": "^1.0.16"
   }
 }

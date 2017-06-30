@@ -79,12 +79,12 @@ search:
   limit: 10000
 # add post views
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: 'lzilVt3lOOHq96uz0t3Mw0UP-gzGzoHsz'
   app_key: 'JcJ8GfmOF9VH8Xgv9w74yTzh'
 
 index_generator:
-  per_page: 6
+  per_page: 5
 
 archive_generator:
   per_page: 20
