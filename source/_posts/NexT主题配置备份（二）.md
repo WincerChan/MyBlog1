@@ -33,6 +33,8 @@ abbrlink: 654861fb
 </script>
 ```
 
+<!-- more -->
+
 这里的`page`变量就是文章的首部：需要在首部自行添加`password`字段，再设置一个密码值：
 
 ```markdown
