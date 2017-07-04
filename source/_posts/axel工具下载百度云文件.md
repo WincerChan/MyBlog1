@@ -51,7 +51,6 @@ date: 2017-05-22 14:32:00
 --alternate		-a	文本式进度指示器
 --help			-h	帮助信息
 --version		-V	版本信息
-
 ```
 
 
@@ -70,7 +69,7 @@ date: 2017-05-22 14:32:00
 
    ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffu4ikixrqj20ht04omx9.jpg)
 
-2. 打开终端输入`acel -n 64 'URLs' -o 4-2.mp4` ，把url替换成刚刚文件的直链，`-n 64`指定使用64线程下载，`-o 4-2.mp4`指定保存路径为当前目录，文件名为`4-2.mp4`![](https://ws1.sinaimg.cn/large/ba22af52gy1ffu4jbf6dbj20mq0dlq6i.jpg)
+2. 打开终端输入`axel -n 64 'URLs' -o 4-2.mp4` ，把url替换成刚刚文件的直链，`-n 64`指定使用64线程下载，`-o 4-2.mp4`指定保存路径为当前目录，文件名为`4-2.mp4`![](https://ws1.sinaimg.cn/large/ba22af52gy1ffu4jbf6dbj20mq0dlq6i.jpg)
 
 3. 当输入以上命令时可能会提示`不能处理长度超过 1024 的URLs`，此时需要将百度云需要下载的文件名更改为较短的，再重新执行步骤1，即可
 
