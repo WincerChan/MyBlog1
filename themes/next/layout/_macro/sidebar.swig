@@ -154,16 +154,9 @@
           {% endif %}
         </div>
       {% endif %}
-      
+      <div class = "cost"></div>
+      <script type="text/javascript" src="https://work.prinzeugen.net/hitokoto/hitokoto.php?encode=javascript"></script>
+      <div class="cost-inner"><script>hitokoto();</script></div>
     </div>
-    
-    
-    
-    
-    <div class = "cost">
-        </div>
-    <script type="text/javascript" src="https://work.prinzeugen.net/hitokoto/hitokoto.php?encode=javascript"></script>
-    <div class="cost-inner"><script>hitokoto();</script></div>
-    
   </aside>
 {% endmacro %}

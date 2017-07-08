@@ -3,10 +3,16 @@
 .site-meta {
     background :#333333;
 }
+
+//背景
 body { background:url(/images/bj.png);}
+
+//字体阴影
 body{
     text-shadow: 0px 0px 1px rgba(0,0,0,0.22);
 }
+
+//分隔符
 .pr{
    height: 25px;
    margin: 20px auto;
@@ -14,4 +20,33 @@ body{
    background: url(/images/pr.png);
    background-repeat: no-repeat;
    background-position:center;
+}
+
+//一言
+.cost {
+  margin-top: 10px;
+  padding: 15px 0 0;
+  border-bottom: 1px dashed $grey-light;
+}
+
+.cost-inner {
+  box-sizing: border-box;
+  /*width: 240px;*/
+  margin-top: 18px;
+  padding: 20px auto;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+//边框阴影
+.header-inner {
+    box-shadow: 0 2px 7px rgba(0,0,0,0.07);
+}
+
+.sidebar-inner {
+    box-shadow: 0 2px 7px rgba(0,0,0,0.07);
+}
+
+.content-wrap {
+    box-shadow: 0 2px 7px rgba(0,0,0,0.07);
 }
