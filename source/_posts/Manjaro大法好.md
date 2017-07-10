@@ -1,7 +1,7 @@
 ---
 title: Manjaro大法好
 type: categories
-categories: Linux
+categories: 笔记
 tags:
   - KDE
 copyright: true
