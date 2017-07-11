@@ -318,7 +318,7 @@ baidu_analytics: false
 disqus:
   enable: false
   shortname: wincerchan
-  count: true
+  count: flase
 
 # Hypercomments
 #hypercomments_id:
