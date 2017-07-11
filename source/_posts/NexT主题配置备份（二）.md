@@ -279,7 +279,7 @@ abbrlink: 654861fb
 
 在第14行左右，将`for post in page.post`中的内容修改成以上
 
-#### 归档（不建议在归档中隐藏）
+#### 归档
 
 修改`next/layout/index.swig`：
 
@@ -289,6 +289,6 @@ abbrlink: 654861fb
 {% endif %}
 ```
 
-在第42行左右，将原本的`{{ post_template.render(post) }}`改成以上。
+在第42行左右，将原本的` post_template.render(post) `改成以上。
 
 不建议在归档中隐藏是因为归档提供的是一个统计的功能，隐藏后统计的文章篇数没变，但却显示不出来，有点别扭，不想要别人看就直接加密就好了。至于`type`和`tags`，删除文章的相应字段就行了。
