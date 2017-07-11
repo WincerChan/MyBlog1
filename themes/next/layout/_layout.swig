@@ -10,9 +10,6 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
 </head>
-<!-- 小红心 -->
-<script type="text/javascript" src="/js/src/love.js"></script>
-
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
 
   {% include '_third-party/analytics/index.swig' %}
@@ -85,4 +82,3 @@
 
 <!--动态背景 -->
 <script type="text/javascript" src="/js/src/particle.js"></script>
-<script type="text/javascript" src="/js/src/particle.js" count="100" zindex="-2" opacity="1" color="0,104,183"></script>
