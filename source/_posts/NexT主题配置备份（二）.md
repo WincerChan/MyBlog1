@@ -292,3 +292,28 @@ abbrlink: 654861fb
 在第42行左右，将原本的` post_template.render(post) `改成以上。
 
 不建议在归档中隐藏是因为归档提供的是一个统计的功能，隐藏后统计的文章篇数没变，但却显示不出来，有点别扭，不想要别人看就直接加密就好了。至于`type`和`tags`，删除文章的相应字段就行了。
+
+### 分享页面
+
+Next主题自带的是[JiaThis](http://www.jiathis.com/)，可是太丑了，还不支持`https`，找了好久终于到了「[Share.js](http://overtrue.me/share.js/)」，简直把JiaThis秒成渣：
+
+新增文件：`next/layout/_partials/share/sharejs.swig`
+
+```javascript
+<div class="share-component" data-mobile-sites="weibo,qq,qzone,tencent"></div>
+<!-- share.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+
+<!-- share.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+```
+
+随后修改`next\layout\post.swig`：
+
+```javascript
+<div class="post-spread">			//在这一行后面添加：
+  {% include '_partials/share/sharejs.swig' %}
+...
+```
+
+效果见下方
