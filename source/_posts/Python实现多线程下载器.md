@@ -4,9 +4,10 @@ type: categories
 categories: 技术
 copyright: true
 tags:
-	- Python
-	- 多线程
-date: 2017/07/19 14:53:24
+  - Python
+  - 多线程
+date: '2017/07/19 14:53:24'
+abbrlink: 80689c8d
 ---
 
 ## 前言
@@ -20,6 +21,8 @@ date: 2017/07/19 14:53:24
 - Python的线程池
 - Python的requests库
 - HTTP报文的首部信息
+
+<!-- more -->
 
 ## 下载
 
