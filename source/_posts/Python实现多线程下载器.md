@@ -117,7 +117,7 @@ class Downloader():
         f.truncate(self.size)
         f.close()
         
-        tutures = []
+        futures = []
         part = self.size // self.num 
         pool = ThreadPoolExecutor(max_workers = self.num)
         for i in range(self.num):
