@@ -126,9 +126,8 @@ function log() {if (developmentMode()) {console.log("SW:", ...arguments);
 function shouldAlwaysFetch(request) {
   return __DEVELOPMENT__ ||
     request.method !== 'GET' ||
-    ignoreFetch.some(regex => request.url.match(regex));
-    //!matchFetch.some(regex => request.url.match(regex))
-    //|| ignoreFetch.some(regex => request.url.match(regex));
+    !matchFetch.some(regex => request.url.match(regex))
+    || ignoreFetch.some(regex => request.url.match(regex));
 }
 
 function shouldFetchAndCache(request) {return ~request.headers.get('Accept').indexOf('text/html');

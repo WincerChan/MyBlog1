@@ -97,7 +97,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host:
+  host: https://fonts.lug.ustc.edu.cn
 
   # Global font settings used on <body> element.
   global:
@@ -299,7 +299,7 @@ highlight_theme: normal
 # MathJax Support
 mathjax:
   enable: true
-  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
 # Han Support docs: https://hanzi.pro/
