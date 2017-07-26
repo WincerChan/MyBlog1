@@ -97,7 +97,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host: https://fonts.lug.ustc.edu.cn
+  # host: https://fonts.lug.ustc.edu.cn
 
   # Global font settings used on <body> element.
   global:
