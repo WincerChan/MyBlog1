@@ -12,9 +12,4 @@
       })(document, 'script');
     </script>
   {% endif %}
-<script>
-if ('serviceWorker' in navigator) {
- navigator.serviceWorker.register('/sw.js');
-}
-</script>
 {% endif %}
