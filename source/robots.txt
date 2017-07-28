@@ -12,6 +12,8 @@ Disallow: /js/
 Disallow: /images/
 Disallow: /lib/
 Disallow: /categories/笔记/
+Disallow: /offline.html
+Disallow: /sw.js
 
 Sitemap: https://wincerchan.github.io/sitemap.xml
 
