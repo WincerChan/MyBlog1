@@ -80,5 +80,3 @@
 </html>
 
 
-<!--动态背景 -->
-<script type="text/javascript" src="/js/src/particle.js"></script>
