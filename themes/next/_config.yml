@@ -115,7 +115,7 @@ font:
   # Fallback to `global` font settings.
   posts:
     external: true
-    family: PT Serif
+    family: Raleway
 
   # Font settings for Logo
   # Fallback to `global` font settings.
