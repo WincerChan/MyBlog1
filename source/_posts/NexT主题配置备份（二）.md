@@ -65,9 +65,10 @@ password: ffffff
 
 ```html
 <div class = "cost"></div>
-<script type="text/javascript" src="https://work.prinzeugen.net/hitokoto/hitokoto.php?encode=javascript"></script>
-<div class="cost-inner"><script>hitokoto();</script></div>
+<div class="cost-inner"><script language="Javascript" src="https://rawgit.com/WincerChan/d314ff3a0ddc197134ad56efaeb34da0/raw/f4c3e73cdb08235fb01cd8849457c81d52236a1d/hitokoto.js"></script></div>
 ```
+
+这里的Js文件是我自己写的，托管在「[Gist](https://gist.github.com/d314ff3a0ddc197134ad56efaeb34da0.git)」，当然你可以自由修改这其中的每一句。我以后也会添加的越来越多
 
 然后修改`themes->next->source->css->_schemes->Pisces`，添加：
 
