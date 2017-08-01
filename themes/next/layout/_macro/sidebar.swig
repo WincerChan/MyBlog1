@@ -155,7 +155,7 @@
         </div>
       {% endif %}
       <div class = "cost"></div>
-      <div class="cost-inner"><script language="Javascript" src="https://rawgit.com/WincerChan/d314ff3a0ddc197134ad56efaeb34da0/raw/f4c3e73cdb08235fb01cd8849457c81d52236a1d/hitokoto.js"></script></div>
+      <div class="cost-inner"><script language="Javascript" src="https://cdn.rawgit.com/WincerChan/d314ff3a0ddc197134ad56efaeb34da0/raw/f4c3e73cdb08235fb01cd8849457c81d52236a1d/hitokoto.js"></script></div>
     </div>
   </aside>
 {% endmacro %}
