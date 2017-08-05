@@ -7,10 +7,8 @@ Allow: /page/
 Allow: /posts/
 Allow: /about/
 
-Disallow: /css/
-Disallow: /js/
+
 Disallow: /images/
-Disallow: /lib/
 Disallow: /categories/笔记/
 Disallow: /sw.js
 
