@@ -4,6 +4,7 @@ type: categories
 categories: 笔记
 tags:
   - KDE
+	- Linux
 copyright: true
 date: 2017-06-08 21:18:32
 updated: 2017-06-10 20:17:29
