@@ -24,7 +24,7 @@ comments: false
 
 - 电子邮件（推荐）：[WincerChan@gmail.com](mailto:WincerChan@gmail.com) 
 - 社交网络：Twitter（不怎么发推）：[@wincer_chan](https://twitter.com/wincer_chan)
-- 即使通讯：鹅厂 QQ：（你猜号码是多少）Telegram（https://t.me/Wincer）
+- 即使通讯：鹅厂 QQ：（你猜号码是多少）Telegram：https://t.me/Wincer
 - 网站评论
 
 本人比较注重在网上的个人隐私，所以私密的信息不会暴露，有需要可以通过以上几种方式同我取得联系。
