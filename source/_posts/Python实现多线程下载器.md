@@ -7,6 +7,7 @@ tags:
   - Python
   - 多线程
 date: '2017/07/19 14:53:24'
+update: 2017/08/30 17:46:40
 abbrlink: 80689c8d
 ---
 
@@ -133,9 +134,7 @@ class Downloader():
 
 至此，核心功能都完成了，剩下的就是实际体验的优化了。
 
-这几天会把命令行参数、以及一些报错信息给加上。
-
-完整的代码会在功能都完善之后再贴出。
+完整的代码已托管至GitHub，地址见[这里](https://github.com/WincerChan/Py-Downloader) 。
 
 ## 结语
 
