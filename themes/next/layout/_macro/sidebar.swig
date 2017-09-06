@@ -157,7 +157,7 @@
       <div class = "cost"></div>
       
       <div class="cost-inner">
-        <script type="text/javascript" src="/json/hitokoto.jso"></script>
+        <script type="text/javascript" src="/json/hitodb.js"></script>
         <script language="Javascript" src="/js/src/hitokoto.js"></script>
       </div>
     </div>
