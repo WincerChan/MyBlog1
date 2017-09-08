@@ -8135,14 +8135,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "936",
-        "hitokoto": "你的电脑，我的权限；你的命运，由我做主。",
-        "type": "e",
-        "from": "原创",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "123",
         "hitokoto": "世界は恋に落ちている。",
         "type": "a",
