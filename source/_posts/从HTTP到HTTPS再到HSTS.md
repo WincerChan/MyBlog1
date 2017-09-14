@@ -2,11 +2,12 @@
 title: 从HTTP到HTTPS再到HSTS
 type: categories
 categories: 网络
-tags: 
-	- 安全
-	- HSTS
-date: 2017/09/13 10:05:33
+tags:
+  - 安全
+  - HSTS
+date: '2017/09/13 10:05:33'
 copyright: true
+abbrlink: dfc84766
 ---
 
 ## 前言
@@ -54,4 +55,4 @@ copyright: true
 
 在用户第一次访问时，如果输入网址没有 `HTTPS` 字段，无法避免的会进行一次 301 跳转，有可能还是会被攻击。
 
-这个时候就需要用到 HSTS Preload ，这是由Google维护的一个域名列表，只要加入这个列表的域名，当使用主流浏览器，如：Chrome, Firefox, Opera, Safari, IE 11 和 Edge时，即使第一次也会强制转换成 `HTTPS` 再访问。从而使访问更加安全。
+这个时候就需要用到 [HSTS Preload](https://hstspreload.org/) ，这是由Google维护的一个域名列表，只要加入这个列表的域名，当使用主流浏览器，如：Chrome, Firefox, Opera, Safari, IE 11 和 Edge时，即使第一次也会强制转换成 `HTTPS` 再访问。从而使访问更加安全。
