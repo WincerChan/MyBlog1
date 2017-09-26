@@ -3,10 +3,11 @@ title: Spacemacs生存指北
 type: categories
 categories: 笔记
 tags:
-	- Spacemacs
-	- 编辑器
-date: 2017/09/15 13:01:33
+  - Spacemacs
+  - 编辑器
+date: '2017/09/15 13:01:33'
 copyright: true
+abbrlink: 2aa541e6
 ---
 
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1fjkm647hn2j20ht095aar.jpg)
@@ -247,3 +248,7 @@ Python用的 Spacemacs 自带的 python layer，添加了一些参数：
 - `, s e` 计算最后一个表达式
 - `, s f` 计算当前定义的函数
 - `, s r` 计算当前选中的内容
+
+## 结语
+
+我的 Spacemacs 配置放在了 GitHub 上，[这是地址](https://github.com/WincerChan/Spacemacs-Config)。
