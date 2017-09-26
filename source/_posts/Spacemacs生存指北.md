@@ -16,6 +16,8 @@ abbrlink: 2aa541e6
 
 [Spacemacs](http://spacemacs.org/) 是一份 [Emacs](https://www.gnu.org/s/emacs/) 的配置文件，将 [Vim](https://github.com/vim/vim) 的快捷键移植到了 Emacs 上，可以提供 Vimer 至 Emacs 的无缝衔接。有了 Spacemacs ，你不需要花那么多时间去学习 Emacs 就可以真正用 Spacemacs 开始做一些事情。
 
+<!-- more -->
+
 ## 安装
 
 ```bash
