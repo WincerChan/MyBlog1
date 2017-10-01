@@ -63,14 +63,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "967",
-        "hitokoto": "生活就像海洋，只有意志坚强的人，才能到达彼岸。",
-        "type": "g",
-        "from": "马克思",
-        "creator": "Eric",
-        "cearted_at": null
-    },
-    {
         "id": "167",
         "hitokoto": "不相信自己的人，连努力的价值都没有。",
         "type": "a",
@@ -303,14 +295,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "669",
-        "hitokoto": "为了能再什么时候让9人配音而继续画下去是我应该做的。 非常非常非常棒的final live真的谢谢了!!!",
-        "type": "g",
-        "from": "室田雄平",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
         "id": "527",
         "hitokoto": "努力可是要默默藏起来的。",
         "type": "a",
@@ -324,14 +308,6 @@ arr = [{
         "type": "e",
         "from": "原创",
         "creator": "yc",
-        "cearted_at": null
-    },
-    {
-        "id": "681",
-        "hitokoto": "关门，放狗！",
-        "type": "c",
-        "from": "训犬者洛克希",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -527,14 +503,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "746",
-        "hitokoto": "小胖子溜边走~",
-        "type": "f",
-        "from": "囧的呼唤",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "1",
         "hitokoto": "与众不同的生活方式很累人呢，因为找不到借口。",
         "type": "a",
@@ -615,14 +583,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "830",
-        "hitokoto": "每一个人都应该明确自己的方向和位置。",
-        "type": "e",
-        "from": "原创",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "564",
         "hitokoto": "只要是活着的东西，就算是神我也会杀给你看。",
         "type": "a",
@@ -635,22 +595,6 @@ arr = [{
         "hitokoto": "我不渴望什么在别的城市迎来的春天，只要和你在一起的春天就好，只要和你在一起就好…",
         "type": "a",
         "from": "CLANNAD",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "615",
-        "hitokoto": "喂？FFF团团长须川亮吗？这有一个要入团的！",
-        "type": "a",
-        "from": "五更琉璃",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
-        "id": "731",
-        "hitokoto": "不能逃避，不能逃避，不能逃避，不能逃避…",
-        "type": "a",
-        "from": "EVA",
         "creator": "hitokoto",
         "cearted_at": null
     },
@@ -1024,7 +968,7 @@ arr = [{
     },
     {
         "id": "530",
-        "hitokoto": "绚烂如繁樱，瞬息绽放后凋落。 花以香为证，曾美至惊心动魄。\n",
+        "hitokoto": "绚烂如繁樱，瞬息绽放后凋落。 花以香为证，曾美至惊心动魄。",
         "type": "c",
         "from": "薄樱鬼",
         "creator": "没了",
