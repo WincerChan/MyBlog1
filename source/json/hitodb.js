@@ -55,14 +55,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "191",
-        "hitokoto": "代表月亮消灭你！",
-        "type": "a",
-        "from": "美少女战士",
-        "creator": "edvda",
-        "cearted_at": null
-    },
-    {
         "id": "253",
         "hitokoto": "无法逃避的是自我，而无法挽回的是过去。",
         "type": "a",
@@ -10223,14 +10215,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "545",
-        "hitokoto": "JOJO，我不想再做人了！！",
-        "type": "a",
-        "from": "JOJO的奇妙冒险",
-        "creator": "没了",
-        "cearted_at": null
-    },
-    {
         "id": "209",
         "hitokoto": "我不渴望什么在别的城市迎来的春天，只要和你在一起的春天就好，只要和你在一起就好",
         "type": "a",
@@ -10247,43 +10231,11 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "731",
-        "hitokoto": "不能逃避，不能逃避，不能逃避，不能逃避…",
-        "type": "a",
-        "from": "EVA",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "1116",
         "hitokoto": "我在时光斑驳深处，聆听到花开的声音。",
         "type": "a",
         "from": "未闻花名",
         "creator": "863885806",
-        "cearted_at": null
-    },
-    {
-        "id": "1187",
-        "hitokoto": "人总是害怕死亡，却殊不知有出生之时必有死亡之日。",
-        "type": "e",
-        "from": "不善",
-        "creator": "不善",
-        "cearted_at": null
-    },
-    {
-        "id": "377",
-        "hitokoto": "问君能有几多愁？恰似一部新番没看头。",
-        "type": "e",
-        "from": "竹田花落",
-        "creator": "yudezhuixun",
-        "cearted_at": null
-    },
-    {
-        "id": "746",
-        "hitokoto": "小胖子溜边走~",
-        "type": "f",
-        "from": "囧的呼唤",
-        "creator": "hitokoto",
         "cearted_at": null
     },
     {
@@ -11097,5 +11049,10 @@ arr = [{
         "id": null,
         "hitokoto": "故事的开头总是这样，适逢其会，猝不及防。故事的结局总是这样，花开两朵，天各一方。",
         "from": "从你的全世界路过"
+    },
+    {
+        "id": null,
+        "hitokoto": "逍遥江湖的神仙眷侣，小地方的才子佳人，穷乡僻壤的白头偕老，爱情或许各有壮阔平缓之分，但相互之间的感情其实并无多寡之别。",
+        "from": "雪中悍刀行"
     }
 ]
