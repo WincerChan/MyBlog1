@@ -2023,22 +2023,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "926",
-        "hitokoto": "街上照明光华璀璨 乙醚麻醉的冰冷 无法成眠的凌晨两点 一切事物快速地转变",
-        "type": "g",
-        "from": "炉心融解",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "860",
-        "hitokoto": "有一些情感，没办法辜负它。",
-        "type": "e",
-        "from": "原创",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "722",
         "hitokoto": "生生生生暗生始，死死死死冥死终。",
         "type": "c",
@@ -2084,14 +2068,6 @@ arr = [{
         "type": "d",
         "from": "冰与火之歌",
         "creator": "yeye",
-        "cearted_at": null
-    },
-    {
-        "id": "716",
-        "hitokoto": "多一分心力去注意别人，就少一分心力反省自己，你懂吗？",
-        "type": "g",
-        "from": "佛教禅语",
-        "creator": "hitokoto",
         "cearted_at": null
     },
     {
@@ -2239,16 +2215,8 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "371",
-        "hitokoto": "为毛我的眼里常含泪水，因为我老是中枪。",
-        "type": "e",
-        "from": "不管外表怎样强悍我都是受",
-        "creator": "不管外表怎样强悍我都是受",
-        "cearted_at": null
-    },
-    {
         "id": "528",
-        "hitokoto": "拥有和舍弃都很痛苦，既然无论怎样都会痛苦的话，我宁可选择守护它而痛苦。\r\n",
+        "hitokoto": "拥有和舍弃都很痛苦，既然无论怎样都会痛苦的话，我宁可选择守护它而痛苦。",
         "type": "a",
         "from": "银魂",
         "creator": "没了",
@@ -2463,16 +2431,8 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "1078",
-        "hitokoto": "把自己当傻瓜，不懂就问，你会学的更多",
-        "type": "e",
-        "from": "原创",
-        "creator": "2021823134",
-        "cearted_at": null
-    },
-    {
         "id": "672",
-        "hitokoto": "使会场合而为一的歌曲。大家一起飞起来吧!\t",
+        "hitokoto": "使会场合而为一的歌曲。大家一起飞起来吧!",
         "type": "g",
         "from": "南条爱乃",
         "creator": "树形图设计者",
@@ -2799,14 +2759,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "809",
-        "hitokoto": "大力出奇迹，穹妹即正义。",
-        "type": "e",
-        "from": "原创",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "61",
         "hitokoto": "忘记本身就是一件不可能的事。",
         "type": "a",
@@ -2927,14 +2879,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "170",
-        "hitokoto": "我除了投三分，就什么都没有了……",
-        "type": "a",
-        "from": "灌篮高手",
-        "creator": "Sai",
-        "cearted_at": null
-    },
-    {
         "id": "562",
         "hitokoto": "奇迹不是免费的，如果你祈求了希望，也会散播出同等的绝望。",
         "type": "a",
@@ -2948,14 +2892,6 @@ arr = [{
         "type": "d",
         "from": "秋之回忆Memories Off",
         "creator": "青熊兽真烦人",
-        "cearted_at": null
-    },
-    {
-        "id": "939",
-        "hitokoto": "坐亦禅，行亦禅，一花一世界，一叶一如来，春来花自青，秋至叶飘零，无穷般若心自在，语默动静体自然。",
-        "type": "g",
-        "from": "佛教禅语",
-        "creator": "hitokoto",
         "cearted_at": null
     },
     {
@@ -2984,7 +2920,7 @@ arr = [{
     },
     {
         "id": "540",
-        "hitokoto": "在灾难面前，如果连英雄都逃跑了，那还有谁能站出来？\r\n",
+        "hitokoto": "在灾难面前，如果连英雄都逃跑了，那还有谁能站出来？",
         "type": "a",
         "from": "一拳超人",
         "creator": "没了",
@@ -3127,14 +3063,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "255",
-        "hitokoto": "有些事情我不看透，不是我笨，只是我太善良。",
-        "type": "a",
-        "from": "樱桃小丸子",
-        "creator": "岛音。",
-        "cearted_at": null
-    },
-    {
         "id": "977",
         "hitokoto": "今后无论发生什么事也好，这个左手上的⋯⋯都是同伴的记号！",
         "type": "b",
@@ -3176,7 +3104,7 @@ arr = [{
     },
     {
         "id": "760",
-        "hitokoto": "衣带渐宽终不悔,为伊消得人憔悴.",
+        "hitokoto": "衣带渐宽终不悔，为伊消得人憔悴。",
         "type": "g",
         "from": "蝶恋花",
         "creator": "hitokoto",
@@ -3295,14 +3223,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "153",
-        "hitokoto": "All for one，one for all.",
-        "type": "a",
-        "from": "海贼王",
-        "creator": "青熊兽真烦人",
-        "cearted_at": null
-    },
-    {
         "id": "605",
         "hitokoto": "君の名を 今追いかけるよ",
         "type": "a",
@@ -3391,14 +3311,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "900",
-        "hitokoto": "前不见古人,后不见来者.念天地之悠悠,独怆然而涕下.",
-        "type": "g",
-        "from": "登幽州台歌",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "914",
         "hitokoto": "若挥袖作别，流云万千，可有人千万流连。 若今昔一别，一别永年，苍山负雪，浮生尽歇。",
         "type": "e",
@@ -3423,14 +3335,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "648",
-        "hitokoto": "世界上没有鸟黑，只有鸟厨和丧心病狂的鸟厨！",
-        "type": "e",
-        "from": "树形图设计者",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
         "id": "205",
         "hitokoto": "我知道的，面码……自己已经死掉这点事，还是知道的……",
         "type": "a",
@@ -3452,14 +3356,6 @@ arr = [{
         "type": "a",
         "from": "秒速5厘米",
         "creator": "西泽空",
-        "cearted_at": null
-    },
-    {
-        "id": "1203",
-        "hitokoto": "贫积德，富积善。",
-        "type": "e",
-        "from": "原创",
-        "creator": "梦语",
         "cearted_at": null
     },
     {
@@ -3876,14 +3772,6 @@ arr = [{
         "type": "a",
         "from": "蜂蜜与四叶草",
         "creator": "funkyholic",
-        "cearted_at": null
-    },
-    {
-        "id": "969",
-        "hitokoto": "不稼不穑，耕怠者无获；不了不当，事辍者无功。",
-        "type": "g",
-        "from": "其他",
-        "creator": "Eric",
         "cearted_at": null
     },
     {
