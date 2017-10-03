@@ -1015,14 +1015,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "850",
-        "hitokoto": "爱,其实很简单，困难的是去接受它。",
-        "type": "b",
-        "from": "通灵王",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "795",
         "hitokoto": "人的一生会遭遇各种各样的事，其中有令人难以置信的事，也有不讲道理的事，但这就是生活。",
         "type": "a",
@@ -1391,14 +1383,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "730",
-        "hitokoto": "万法缘生，皆系缘分！",
-        "type": "g",
-        "from": "佛教禅语",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "577",
         "hitokoto": "星星只有在夜里才璀璨夺目啊。",
         "type": "a",
@@ -1687,14 +1671,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "1148",
-        "hitokoto": "你说最开心的是你，我说最难过的是你……",
-        "type": "e",
-        "from": "原创",
-        "creator": "Mystery0",
-        "cearted_at": null
-    },
-    {
         "id": "592",
         "hitokoto": "如果命运是一条孤独的河流，谁会是你灵魂的摆渡人？",
         "type": "d",
@@ -1764,14 +1740,6 @@ arr = [{
         "type": "d",
         "from": "冰与火之歌",
         "creator": "yeye",
-        "cearted_at": null
-    },
-    {
-        "id": "670",
-        "hitokoto": "一进，一跳！",
-        "type": "g",
-        "from": "绚濑绘里",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -1988,14 +1956,6 @@ arr = [{
         "type": "a",
         "from": "火影忍者",
         "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "702",
-        "hitokoto": "陪着你做前端",
-        "type": "g",
-        "from": "萌芽",
-        "creator": "萌芽",
         "cearted_at": null
     },
     {
