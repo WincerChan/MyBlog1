@@ -6879,14 +6879,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "424",
-        "hitokoto": "有一种无奈叫做，你明明是只候鸟，却喜欢上只能给你冬天的人。",
-        "type": "f",
-        "from": "九ちのセカィ",
-        "creator": "Sai",
-        "cearted_at": null
-    },
-    {
         "id": "508",
         "hitokoto": "言者无罪，闻者足戒。",
         "type": "g",
@@ -6919,14 +6911,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "900",
-        "hitokoto": "前不见古人,后不见来者.念天地之悠悠,独怆然而涕下.",
-        "type": "g",
-        "from": "登幽州台歌",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "1012",
         "hitokoto": "起风了,唯有努力生存。",
         "type": "a",
@@ -6944,7 +6928,7 @@ arr = [{
     },
     {
         "id": "590",
-        "hitokoto": "於此漆黑世界之中，直至光明遍地之时！\r\nAll Hail Lelouch！",
+        "hitokoto": "於此漆黑世界之中，直至光明遍地之时！All Hail Lelouch！",
         "type": "a",
         "from": "反叛的鲁路修",
         "creator": "yeye",
@@ -6988,14 +6972,6 @@ arr = [{
         "type": "g",
         "from": "平凡之路",
         "creator": "freejishu",
-        "cearted_at": null
-    },
-    {
-        "id": "31",
-        "hitokoto": "就是因为你不好，才要留在你身边，给你幸福。",
-        "type": "a",
-        "from": "哈尔的移动城堡",
-        "creator": "空城”旧梦",
         "cearted_at": null
     },
     {
@@ -7143,14 +7119,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "251",
-        "hitokoto": "鲁鲁修，你知道雪花为什么是白色的吗？因为已经忘记自己本来是什么颜色啊。",
-        "type": "a",
-        "from": "叛逆的鲁鲁修",
-        "creator": "酷儿",
-        "cearted_at": null
-    },
-    {
         "id": "415",
         "hitokoto": "一定是红线下得太乱，才不小心把我和你绑在一起了……却没系稳。",
         "type": "f",
@@ -7164,14 +7132,6 @@ arr = [{
         "type": "a",
         "from": "地狱少女",
         "creator": "游啊游の猪",
-        "cearted_at": null
-    },
-    {
-        "id": "479",
-        "hitokoto": "透过孩子的眼神，让我相信这个世界上还有着纯真。",
-        "type": "g",
-        "from": "宫崎骏",
-        "creator": "anythink",
         "cearted_at": null
     },
     {
@@ -7207,14 +7167,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "383",
-        "hitokoto": "我敬你是条汉子！",
-        "type": "f",
-        "from": "论如何回答女友问题“你为什么对我这么好”",
-        "creator": "Sai",
-        "cearted_at": null
-    },
-    {
         "id": "762",
         "hitokoto": "为了你,如果是为了你,即使我被困在永远的迷宫中,也没关系.",
         "type": "a",
@@ -7236,30 +7188,6 @@ arr = [{
         "type": "a",
         "from": "灌篮高手",
         "creator": "贝贝",
-        "cearted_at": null
-    },
-    {
-        "id": "791",
-        "hitokoto": "茕茕白兔，东走西顾。衣不如新，人不如故。",
-        "type": "g",
-        "from": "古艳歌",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "1157",
-        "hitokoto": "孤独不是病，习惯了自然会好。",
-        "type": "e",
-        "from": "根号菌SAMA",
-        "creator": "根号菌のSAMA",
-        "cearted_at": null
-    },
-    {
-        "id": "678",
-        "hitokoto": "凛：450拿来 海：自由女神Shoot！ 希：其实有点像邪神果",
-        "type": "a",
-        "from": "乙姬心恋宫殿",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -7295,14 +7223,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "246",
-        "hitokoto": "时间可以治愈？如果时间也病了怎么办？",
-        "type": "a",
-        "from": "寒蝉鸣泣之时",
-        "creator": "“萌”字~好~",
-        "cearted_at": null
-    },
-    {
         "id": "147",
         "hitokoto": "人能够在心里郁积那么多的事情，而他们又会忘记那么多的事情，真是不可思议……",
         "type": "a",
@@ -7316,22 +7236,6 @@ arr = [{
         "type": "a",
         "from": "红猪",
         "creator": "anythink",
-        "cearted_at": null
-    },
-    {
-        "id": "646",
-        "hitokoto": "哦~",
-        "type": "a",
-        "from": "袴田日向",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
-        "id": "343",
-        "hitokoto": "就算你已经不在，就算你身边的人已经不再是我，我也会坚强的活下去，为了你。",
-        "type": "e",
-        "from": "十六夜暁",
-        "creator": "十六夜暁",
         "cearted_at": null
     },
     {
@@ -7407,14 +7311,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "1121",
-        "hitokoto": "夫君子之行，静以修身，俭以养德，非淡泊无以明志，非宁静无以致远",
-        "type": "e",
-        "from": "诫子书",
-        "creator": "505622287",
-        "cearted_at": null
-    },
-    {
         "id": "458",
         "hitokoto": "你最无暇的时光是哪段，你又把它奉献给了谁？",
         "type": "f",
@@ -7428,14 +7324,6 @@ arr = [{
         "type": "a",
         "from": "青之驱魔师",
         "creator": "..控、",
-        "cearted_at": null
-    },
-    {
-        "id": "38",
-        "hitokoto": "勇气，就是即便害怕也会去做。",
-        "type": "a",
-        "from": "原创",
-        "creator": "岛音。",
         "cearted_at": null
     },
     {
@@ -7460,14 +7348,6 @@ arr = [{
         "type": "a",
         "from": "吸血鬼骑士",
         "creator": "942903628",
-        "cearted_at": null
-    },
-    {
-        "id": "609",
-        "hitokoto": "吵死了吵死了!",
-        "type": "a",
-        "from": "逢坂大河",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -7575,14 +7455,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "949",
-        "hitokoto": "整个物理学就像是一个大谜，走到它的尽头，连整个世界是否存在都成了问题。",
-        "type": "d",
-        "from": "球状闪电",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "101",
         "hitokoto": "求你，保护那孩子，消除灾厄，抹除祸事。哪怕⋯⋯那是我自己……",
         "type": "a",
@@ -7596,22 +7468,6 @@ arr = [{
         "type": "a",
         "from": "夏目友人帐",
         "creator": "863885806",
-        "cearted_at": null
-    },
-    {
-        "id": "231",
-        "hitokoto": "真正的危机不是机器人像人一样思考，而是人像机器一样思考。",
-        "type": "a",
-        "from": "凉宫春日的忧郁",
-        "creator": "Sai",
-        "cearted_at": null
-    },
-    {
-        "id": "36",
-        "hitokoto": "魔装少女就是本少爷！",
-        "type": "a",
-        "from": "这是僵尸吗？",
-        "creator": "零之幻想",
         "cearted_at": null
     },
     {
@@ -7735,26 +7591,10 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "695",
-        "hitokoto": "退后，你们这些无知的家伙！你不会就这样死的，我的国王！",
-        "type": "c",
-        "from": "克尔苏加德",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
         "id": "682",
         "hitokoto": "我战斗到了最后一刻！",
         "type": "c",
         "from": "战争守卫沙尔图拉",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
-        "id": "649",
-        "hitokoto": "中国教育的优秀在于，小时候要求老实听话，抄袭模仿；而长大后要求独立自主，开拓创新",
-        "type": "e",
-        "from": "树形图设计者",
         "creator": "树形图设计者",
         "cearted_at": null
     },
@@ -7772,14 +7612,6 @@ arr = [{
         "type": "a",
         "from": "只有神知道的世界",
         "creator": "魅影陌客",
-        "cearted_at": null
-    },
-    {
-        "id": "1081",
-        "hitokoto": "眼睛一闭一睁，这一天就过去了；这眼睛一闭不睁，这辈子就过去了。",
-        "type": "g",
-        "from": "小沈阳",
-        "creator": "Eric",
         "cearted_at": null
     },
     {
@@ -7804,22 +7636,6 @@ arr = [{
         "type": "a",
         "from": "EVA",
         "creator": "kigoo",
-        "cearted_at": null
-    },
-    {
-        "id": "440",
-        "hitokoto": "孙大圣，快收了神通吧！",
-        "type": "f",
-        "from": "西游记",
-        "creator": "王大囍",
-        "cearted_at": null
-    },
-    {
-        "id": "368",
-        "hitokoto": "万书皆下品，唯有萌最高！",
-        "type": "e",
-        "from": "wy6510166",
-        "creator": "wy6510166",
         "cearted_at": null
     },
     {
@@ -8071,14 +7887,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "628",
-        "hitokoto": "最后，士郎……你要去打的話……必须給我贏！你要是死了话……我饶不了你……",
-        "type": "a",
-        "from": "遠坂凜",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
         "id": "889",
         "hitokoto": "休息对于生存而言，也是紧要问题",
         "type": "a",
@@ -8143,14 +7951,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "470",
-        "hitokoto": "文能提笔控萝莉，武能床上定人妻。进可欺身压正太，退能提臀迎众基。",
-        "type": "g",
-        "from": "其他",
-        "creator": "Wesion",
-        "cearted_at": null
-    },
-    {
         "id": "629",
         "hitokoto": "最后好想有个拥抱....，可是...那种事情怎么能说得出口.....",
         "type": "a",
@@ -8207,27 +8007,11 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "271",
-        "hitokoto": "“像你这样的白痴是怎么活过来的？”“因为我很自信。",
-        "type": "a",
-        "from": "海贼王",
-        "creator": "陈亚",
-        "cearted_at": null
-    },
-    {
         "id": "134",
         "hitokoto": "就算鼻血流尽，也不能放弃妄想。",
         "type": "a",
         "from": "摇曳百合",
         "creator": "守护那份情",
-        "cearted_at": null
-    },
-    {
-        "id": "904",
-        "hitokoto": "一念愚即般若绝，一念智即般若生。",
-        "type": "g",
-        "from": "佛教禅语",
-        "creator": "hitokoto",
         "cearted_at": null
     },
     {
@@ -8399,14 +8183,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "356",
-        "hitokoto": "我愿意给你自己所有的快乐，你愿意分担我一半的难过吗？",
-        "type": "e",
-        "from": "getweb",
-        "creator": "getweb",
-        "cearted_at": null
-    },
-    {
         "id": "224",
         "hitokoto": "如果我是那雨滴的话，那么，我能够像把不曾交汇的天空与大地连接起来那样，把某人的心串联起来吗？",
         "type": "a",
@@ -8423,14 +8199,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "1149",
-        "hitokoto": "这只手，暂时不洗了",
-        "type": "a",
-        "from": "小林家的龙女仆",
-        "creator": "Alxtit",
-        "cearted_at": null
-    },
-    {
         "id": "1176",
         "hitokoto": "其实我对混合咖啡还是很有自信的",
         "type": "a",
@@ -8444,22 +8212,6 @@ arr = [{
         "type": "a",
         "from": "我的恋爱物语果然有问题",
         "creator": "863885806",
-        "cearted_at": null
-    },
-    {
-        "id": "469",
-        "hitokoto": "握不住的沙，不如扬了它。",
-        "type": "g",
-        "from": "其他",
-        "creator": "枫丶牙",
-        "cearted_at": null
-    },
-    {
-        "id": "761",
-        "hitokoto": "明明只是活着，哀伤却无处不在…",
-        "type": "a",
-        "from": "秒速五厘米",
-        "creator": "hitokoto",
         "cearted_at": null
     },
     {
@@ -8567,14 +8319,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "498",
-        "hitokoto": "合抱之木，生于毫末；九层之台，起于累土；千里之行，始于足下。",
-        "type": "g",
-        "from": "老子",
-        "creator": "小强",
-        "cearted_at": null
-    },
-    {
         "id": "86",
         "hitokoto": "如果我拥有如同小狗一样的尾巴的话，肯定会高兴得遮掩不住地摇来摇去吧。",
         "type": "a",
@@ -8636,14 +8380,6 @@ arr = [{
         "type": "e",
         "from": "シ舀シ舀",
         "creator": "シ舀シ舀",
-        "cearted_at": null
-    },
-    {
-        "id": "696",
-        "hitokoto": "最后，我终于解放了我自己……",
-        "type": "c",
-        "from": "格罗姆.地狱咆哮",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -8848,7 +8584,7 @@ arr = [{
     },
     {
         "id": "540",
-        "hitokoto": "在灾难面前，如果连英雄都逃跑了，那还有谁能站出来？\r\n",
+        "hitokoto": "在灾难面前，如果连英雄都逃跑了，那还有谁能站出来？",
         "type": "a",
         "from": "一拳超人",
         "creator": "没了",
@@ -8895,35 +8631,11 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "718",
-        "hitokoto": "喜欢你，因为我喜欢你，比地球上任何人都，喜欢你...",
-        "type": "a",
-        "from": "名侦探柯南",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "1043",
-        "hitokoto": "身为冒险者，如果安静的老死在床上，那简直就是耻辱！",
-        "type": "b",
-        "from": "恶魔法则",
-        "creator": "942903628",
-        "cearted_at": null
-    },
-    {
         "id": "1135",
         "hitokoto": "温柔解救不了这个世界",
         "type": "a",
         "from": "罪恶王冠",
         "creator": "灬花丶葬灬",
-        "cearted_at": null
-    },
-    {
-        "id": "939",
-        "hitokoto": "坐亦禅，行亦禅，一花一世界，一叶一如来，春来花自青，秋至叶飘零，无穷般若心自在，语默动静体自然。",
-        "type": "g",
-        "from": "佛教禅语",
-        "creator": "hitokoto",
         "cearted_at": null
     },
     {
@@ -8980,14 +8692,6 @@ arr = [{
         "type": "a",
         "from": "吹响！上低音号",
         "creator": "darudayu",
-        "cearted_at": null
-    },
-    {
-        "id": "623",
-        "hitokoto": "风子参上！",
-        "type": "a",
-        "from": "伊吹风子",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -9127,14 +8831,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "149",
-        "hitokoto": "人一生会遇到约2920万人，两个人相爱的概率是0.000049。所以你不爱我，我不怪你。",
-        "type": "a",
-        "from": "秒速五厘米",
-        "creator": "青熊兽真烦人",
-        "cearted_at": null
-    },
-    {
         "id": "901",
         "hitokoto": "观察的实质是：“不赞美，不责难，甚至也不惋惜，但求了解认识而已。”",
         "type": "d",
@@ -9180,14 +8876,6 @@ arr = [{
         "type": "a",
         "from": "犬夜叉",
         "creator": "863885806",
-        "cearted_at": null
-    },
-    {
-        "id": "672",
-        "hitokoto": "使会场合而为一的歌曲。大家一起飞起来吧!\t",
-        "type": "g",
-        "from": "南条爱乃",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -9263,14 +8951,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "157",
-        "hitokoto": "你知道雪为什么是白色的吗？因为她忘记了本来的颜色。",
-        "type": "a",
-        "from": "反叛的鲁路修",
-        "creator": "掌中tiger",
-        "cearted_at": null
-    },
-    {
         "id": "958",
         "hitokoto": "这个房间里只有一个人和一个人，而非两个人，不是吗？",
         "type": "d",
@@ -9284,14 +8964,6 @@ arr = [{
         "type": "e",
         "from": "LastFairy",
         "creator": "LastFairy",
-        "cearted_at": null
-    },
-    {
-        "id": "372",
-        "hitokoto": "在回忆里留下微笑是为了不让你哭泣...",
-        "type": "e",
-        "from": "原创",
-        "creator": "萌萌“萌乃兮",
         "cearted_at": null
     },
     {
@@ -9327,35 +8999,11 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "689",
-        "hitokoto": "要邃晓你的处境，凡人！",
-        "type": "c",
-        "from": "奥妮克希亚",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
-        "id": "438",
-        "hitokoto": "空山新雨后，兵长一米六。",
-        "type": "f",
-        "from": "百度贴吧",
-        "creator": "无名的丝塔芙",
-        "cearted_at": null
-    },
-    {
         "id": "474",
         "hitokoto": "不要因为结束而哭泣，微笑吧，为你的曾经拥有。",
         "type": "g",
         "from": "其他",
         "creator": "han",
-        "cearted_at": null
-    },
-    {
-        "id": "1148",
-        "hitokoto": "你说最开心的是你，我说最难过的是你……",
-        "type": "e",
-        "from": "原创",
-        "creator": "Mystery0",
         "cearted_at": null
     },
     {
@@ -9404,14 +9052,6 @@ arr = [{
         "type": "a",
         "from": "创圣的大天使EVOL",
         "creator": "19920214",
-        "cearted_at": null
-    },
-    {
-        "id": "730",
-        "hitokoto": "万法缘生，皆系缘分！",
-        "type": "g",
-        "from": "佛教禅语",
-        "creator": "hitokoto",
         "cearted_at": null
     },
     {
@@ -9511,14 +9151,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "352",
-        "hitokoto": "也许我们都没有长大，只是世界变小了。",
-        "type": "e",
-        "from": "cukecora",
-        "creator": "cukecora",
-        "cearted_at": null
-    },
-    {
         "id": "1026",
         "hitokoto": "当一个胖纸没有什么不好，最起码可以温暖其他的人。",
         "type": "a",
@@ -9527,27 +9159,11 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "494",
-        "hitokoto": "君子坦荡荡，小人长戚戚。",
-        "type": "g",
-        "from": "论语",
-        "creator": "小强",
-        "cearted_at": null
-    },
-    {
         "id": "421",
         "hitokoto": "记性太好，有时候是一种负担。容易忘记往事的人，是幸福的。",
         "type": "f",
         "from": "九ちのセカィ",
         "creator": "Sai",
-        "cearted_at": null
-    },
-    {
-        "id": "359",
-        "hitokoto": "小孩子看了根本把持不住！",
-        "type": "e",
-        "from": "李狗蛋儿",
-        "creator": "李狗蛋儿",
         "cearted_at": null
     },
     {
@@ -9567,35 +9183,11 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "620",
-        "hitokoto": "龙儿是我的！谁都不准碰！",
-        "type": "a",
-        "from": "逢坂大河",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
         "id": "1048",
         "hitokoto": "或许人和人之间的缘分，都是注定的。",
         "type": "c",
         "from": "仙剑奇侠传四",
         "creator": "942903628",
-        "cearted_at": null
-    },
-    {
-        "id": "759",
-        "hitokoto": "那双紧握不放的手…抓住的是希望…亦或是绝望…",
-        "type": "e",
-        "from": "原创",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "612",
-        "hitokoto": "告白当天就要H什么的，真是没办法的男人呢。",
-        "type": "a",
-        "from": "高坂桐乃",
-        "creator": "树形图设计者",
         "cearted_at": null
     },
     {
@@ -9620,14 +9212,6 @@ arr = [{
         "type": "a",
         "from": "琴浦小姐",
         "creator": "红叶乘风我愿",
-        "cearted_at": null
-    },
-    {
-        "id": "563",
-        "hitokoto": "此生无悔入东方，来世愿生幻想乡！",
-        "type": "a",
-        "from": "东方project",
-        "creator": "贝贝",
         "cearted_at": null
     },
     {
@@ -9716,14 +9300,6 @@ arr = [{
         "type": "e",
         "from": "hsk",
         "creator": "hsk",
-        "cearted_at": null
-    },
-    {
-        "id": "1180",
-        "hitokoto": "如果真的失败了，请总结自己\"为什么会失败？\"",
-        "type": "e",
-        "from": "原创",
-        "creator": "Lonely",
         "cearted_at": null
     },
     {
@@ -9839,14 +9415,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "674",
-        "hitokoto": "大家所做的，最棒的 LIVE ！",
-        "type": "g",
-        "from": "SUNNY DAY SONG",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
         "id": "213",
         "hitokoto": "隐约雷鸣，阴霾天空，但盼风雨来，能留你在此。",
         "type": "a",
@@ -9919,14 +9487,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "965",
-        "hitokoto": "如果这个世界不喜欢你，那它就是我的敌人了。",
-        "type": "d",
-        "from": "龙族",
-        "creator": "kuro999",
-        "cearted_at": null
-    },
-    {
         "id": "585",
         "hitokoto": "凡人皆有一死，凡人皆需供奉。",
         "type": "d",
@@ -9940,14 +9500,6 @@ arr = [{
         "type": "a",
         "from": "君の名は。",
         "creator": "papi",
-        "cearted_at": null
-    },
-    {
-        "id": "175",
-        "hitokoto": "龙儿是我的，谁都不准碰！",
-        "type": "a",
-        "from": "龙虎斗",
-        "creator": "游啊游の猪",
         "cearted_at": null
     },
     {
@@ -9999,35 +9551,11 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "731",
-        "hitokoto": "不能逃避，不能逃避，不能逃避，不能逃避…",
-        "type": "a",
-        "from": "EVA",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "1030",
         "hitokoto": "总在不停寻觅你的踪影，无论十字路口抑或梦境之中，明知你不在，却依然不停地找寻。",
         "type": "a",
         "from": "秒速五厘米",
         "creator": "863885806",
-        "cearted_at": null
-    },
-    {
-        "id": "623",
-        "hitokoto": "风子参上！",
-        "type": "a",
-        "from": "伊吹风子",
-        "creator": "树形图设计者",
-        "cearted_at": null
-    },
-    {
-        "id": "492",
-        "hitokoto": "学而不思则罔，思而不学则殆。",
-        "type": "g",
-        "from": "论语",
-        "creator": "小强",
         "cearted_at": null
     },
     {
@@ -10119,22 +9647,6 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "759",
-        "hitokoto": "那双紧握不放的手…抓住的是希望…亦或是绝望…",
-        "type": "e",
-        "from": "原创",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "741",
-        "hitokoto": "命运的红线一旦断了，就再也不会接上。",
-        "type": "a",
-        "from": "犬夜叉",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
         "id": "537",
         "hitokoto": "不是别人，是我，承认了你的价值。",
         "type": "a",
@@ -10159,42 +9671,10 @@ arr = [{
         "cearted_at": null
     },
     {
-        "id": "352",
-        "hitokoto": "也许我们都没有长大，只是世界变小了。",
-        "type": "e",
-        "from": "cukecora",
-        "creator": "cukecora",
-        "cearted_at": null
-    },
-    {
-        "id": "1192",
-        "hitokoto": "机会永远都有 就看你能不能抓得住",
-        "type": "e",
-        "from": "原创",
-        "creator": "Ghost_chu",
-        "cearted_at": null
-    },
-    {
         "id": "749",
         "hitokoto": "男人的爱情是另存为，女人的爱情是覆盖。",
         "type": "a",
         "from": "红",
-        "creator": "hitokoto",
-        "cearted_at": null
-    },
-    {
-        "id": "1075",
-        "hitokoto": "有时候解释是不必要的，敌人不信你的解释，朋友无需你的解释",
-        "type": "g",
-        "from": "其他",
-        "creator": "863885806",
-        "cearted_at": null
-    },
-    {
-        "id": "776",
-        "hitokoto": "斜晖脉脉水悠悠,肠断白频洲.",
-        "type": "g",
-        "from": "望江南",
         "creator": "hitokoto",
         "cearted_at": null
     },
@@ -10212,22 +9692,6 @@ arr = [{
         "type": "a",
         "from": "AIR",
         "creator": "掌中tiger",
-        "cearted_at": null
-    },
-    {
-        "id": "504",
-        "hitokoto": "多行不义必自毙。",
-        "type": "g",
-        "from": "左传",
-        "creator": "小强",
-        "cearted_at": null
-    },
-    {
-        "id": "1121",
-        "hitokoto": "夫君子之行，静以修身，俭以养德，非淡泊无以明志，非宁静无以致远",
-        "type": "e",
-        "from": "诫子书",
-        "creator": "505622287",
         "cearted_at": null
     },
     {
