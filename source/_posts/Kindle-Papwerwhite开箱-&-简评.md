@@ -1,19 +1,20 @@
 ---
-title: Kindle Papwerwhite开箱 & 简评 & 闲扯
+title: Kindle Papwerwhite 开箱 & 简评
 type: categories
 categories: 日常
 tags:
-	- 开箱
-	- Kindle
-	- 简评
-	- 电子书
-date: 2017/10/05 12:33:46
+  - 开箱
+  - Kindle
+  - 简评
+  - 电子书
+date: '2017/10/05 12:33:46'
 copyright: true
+abbrlink: 6619f85a
 ---
 
 {% cq %} If you don't let go old things, new ones wouldn't come.   
 
-—— Nicolas Wincer {% endcq %}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—— Nicolas Wincer {% endcq %}
 
 ## 前言
 
