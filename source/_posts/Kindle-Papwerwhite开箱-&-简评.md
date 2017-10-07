@@ -8,13 +8,14 @@ tags:
   - 简评
   - 电子书
 date: '2017/10/05 12:33:46'
+update: 2017/20/07 11:39:47
 copyright: true
 abbrlink: 6619f85a
 ---
 
 {% cq %} If you don't let go old things, new ones wouldn't come.   
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—— Nicolas Wincer {% endcq %}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—— Nicolas Wincer {% endcq %}
 
 ## 前言
 
@@ -32,12 +33,6 @@ abbrlink: 6619f85a
 
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1fk79ezf45nj243k2aokjl.jpg)
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk79fnfmhsj22ao43khdt.jpg)
-
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk79g5k0n8j22ao43kb29.jpg)
-
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk79gez33cj22ao43k4qp.jpg)
-
 | 参数   | 描述                 |
 | ---- | :----------------- |
 | 阅读灯  | 4 颗                |
@@ -49,13 +44,38 @@ abbrlink: 6619f85a
 | 连接   | Wi-Fi              |
 | 运存   | 512 mb             |
 
+
+
+
 ## 简评
 
 开完箱经过简单的设置之后，迫不及待的从电脑传了几本书（谁都阻止不了我想读书的心情！）。
 
-看了半个多小时，简单说一下感受：
+![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9im0k3boj20ts148wkb.jpg)
 
-1. 300 ppi 看起来真的是太™爽了
+吐槽一下，这里是无法像多看一样做成文件浏览的形式，也就是说，即使你把一些书放进新建的文件夹里（便于归类管理），它也是直接在首页显示。
+
+这就是阅读界面的选项了，选项少的可怜，而且页边距太大！我这已经设置页边距最小了。
+
+![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9iomwwanj20ts148myo.jpg)
+
+既然这块屏幕都300 ppi 了，那就试试看漫画的效果怎么样，清晰度是够了，要是屏幕再大一些就好了：
+
+![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9ini80jaj20ts148abd.jpg)
+
+如果想要购买正版书，就在上方的搜索按钮输入书名：
+
+![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9inv9codj20ts148jue.jpg)
+
+设置界面确实寒酸，不过想想要的只是纯粹的阅读体验，也就释然了：
+
+![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9iod1ccgj20ts148aan.jpg)
+
+![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9imyqm95j20ts148q3j.jpg)
+
+使用了~~半个多小时~~两天多了，简单总结一下感受：
+
+1. 300 ppi 看起书来真的是太™爽了
 2. 在翻页的速度上，相比前几代快了不少，当然和手机还是没法比
 3. 阅读灯对我来说没啥用，我晚上看书也会开台灯
 4. 页边距实在太大，我都已经调整成了最小边距了，可还是留白太多
