@@ -59,7 +59,7 @@ abbrlink: 6619f85a
 
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9iomwwanj20ts148myo.jpg)
 
-既然这块屏幕都300 ppi 了，那就试试看漫画的效果怎么样，清晰度是够了，要是屏幕再大一些就好了：
+得益于Kindle这块4：3的屏幕，看漫画可以说是比手机更具优势。清晰度是够了，要是屏幕再大一些就好了：
 
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9ini80jaj20ts148abd.jpg)
 
