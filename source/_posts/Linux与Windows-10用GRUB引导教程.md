@@ -65,11 +65,22 @@ menuentry "Microsoft Windows 10" {
 
 **注意**：
 
-这里的`$hints_string`，代表的是终端执行命令：`sudo grub-probe --target=hints_string /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi `后的输出；
+这里的`$hints_string`，代表的是终端执行命令：
 
-`$fs_uuid`代表的是：`sudo grub-probe --target=fs_uuid /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`的输出
+```bash
+sudo grub-probe --target=hints_string /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi
+```
+后的输出；
 
-然后保持，终端执行命令：`sudo grub-mkconfig -o /boot/grub/grub.cfg`，就OK了。
+而`$fs_uuid`代表的是：
+
+```bash
+sudo grub-probe --target=fs_uuid /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi
+```
+
+的输出。
+
+然后保存。在终端执行命令：`sudo grub-mkconfig -o /boot/grub/grub.cfg`，就OK了。
 
 到此， Arch Linux和Windows 10双系统也配置完毕了。
 
