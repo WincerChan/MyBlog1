@@ -1,6 +1,6 @@
 ---
 title: 构建一言API踩坑记录
-date: 2017/10/30 10:44:41
+date: '2017/10/30 10:44:41'
 type: categories
 categories: 技术
 tags:
@@ -8,6 +8,7 @@ tags:
   - Flask
   - API
 copyright: true
+abbrlink: f6e1eb2a
 ---
 
 ## 前言
@@ -184,13 +185,13 @@ $ heroku maintenance:off
 数据获取：
 
 
-- 请求地址：https://https://wincer-hito.herokuapp.com/api/
+- 请求地址：https://wincer-hito.herokuapp.com/api/
 
 - 请求方式：GET
 
 - 返回函数名hitokoto的js脚本，本质为document.write的脚本
 
-- 如果需要json格式的数据：https://https://wincer-hito.herokuapp.com/api/json/
+- 如果需要json格式的数据：https://wincer-hito.herokuapp.com/api/json/
 
 
 在你想使用「一言」的地方插入以下代码：
