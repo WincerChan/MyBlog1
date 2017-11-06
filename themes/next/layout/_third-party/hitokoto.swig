@@ -2,7 +2,7 @@
       </script>
       <script>
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', './HITODB.db', true);
+    xhr.open('GET', '/HITODB.db', true);
     xhr.responseType = 'arraybuffer';
 
     xhr.onload = function(e) {
