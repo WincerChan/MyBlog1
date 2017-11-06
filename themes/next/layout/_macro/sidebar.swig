@@ -156,10 +156,7 @@
       {% endif %}
       <div class = "cost"></div>
     
-      <div class="cost-inner">
-        <script type="text/javascript" src="https://wincer-hito.herokuapp.com/api/">
-      </script>
-      <script>hitokoto();</script>
+      <div id="cost-inner">
       </div>
     </div>
   </aside>
