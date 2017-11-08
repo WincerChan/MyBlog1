@@ -1,7 +1,6 @@
 ---
 title: 关于
 date: 2017-05-10 22:46:00
-comments: false
 ---
 
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1flavmdeyt8j215o0o5e7c.jpg "My Dragon")
