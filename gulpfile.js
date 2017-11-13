@@ -79,7 +79,6 @@ gulp.task('minify-img-aggressive', function() {
         {'verbose': true}))
         .pipe(gulp.dest('./public/images'))
 })
-
 // 用run-sequence并发执行，同时处理html，css，js，img
 gulp.task('compress', function(cb) {
     runSequence(['minify-html', 'cssmin', 'uglify', 'fancybox:js', 'fancybox:css', 'minify-img-aggressive'], cb);
