@@ -15,6 +15,7 @@ after_script:
   - git config user.email "WincerChan@gmail.com"
   - git add .
   - git commit -m "Travis CI Auto Builder"
+  - git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master:master
   
 branches:
   only:
