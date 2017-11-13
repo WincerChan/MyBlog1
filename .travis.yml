@@ -2,6 +2,10 @@ language: node_js       # 设置语言
 
 node_js: stable         # 设置版本
 
+before_install:
+  - git config --global user.name "WincerChan"
+  - git config --global user.email "WincerChan@gmail.com"
+
 install:
   - npm install         # 安装package
   
@@ -11,8 +15,6 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "WincerChan"
-  - git config user.email "WincerChan@gmail.com"
   - git add .
   - git commit -m "Travis CI Auto Builder"
   - git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master:master
