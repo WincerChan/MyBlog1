@@ -22,7 +22,7 @@ abbrlink: e5d13eb
 
 但是美中不足的是：
 
-1. 不支持游客评论（其实这点到无关紧要）
+1. 不支持游客评论（其实这点倒无关紧要）
 2. 不支持导出评论
 3. 在我博客的加载速度问题
 
@@ -34,7 +34,7 @@ abbrlink: e5d13eb
 
 那么说到Disqus，之前为什么会不用Disqus呢，主要还是担心国内不会翻墙用户无法评论的问题，后来想想其实这点不重要，因为：
 
-1. 我的博客只是在[Google Search Console](https://www.google.com/webmasters/tools/home#utm_source=zh-CN-wmxmsg&utm_medium=wmxmsg&utm_campaign=bm&authuser=0)添加了信息，没有在百度站长平台添加，所以百度是搜索不到我的网站；既然是从谷歌搜索进入的话，那自然也就不存在不会翻墙的问题了；
+1. 我的博客只是在[Google Search Console](https://www.google.com/webmasters/tools/home#utm_source=zh-CN-wmxmsg&utm_medium=wmxmsg&utm_campaign=bm&authuser=0)添加了信息，没有在百度站长平台添加，~~所以百度是搜索不到我的网站~~现在貌似已经可以搜到了；既然是从谷歌搜索进入的话，那自然也就不存在不会翻墙的问题了；
 2. 不是所有的用户都需要看评论，于是我就把评论功能隐藏了起来，需要的话点击下方按钮加载评论；
 
 这样优化过后，对比上一张图，国内部分地区速度果然提升了不少：
