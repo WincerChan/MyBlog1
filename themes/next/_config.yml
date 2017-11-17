@@ -144,10 +144,11 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   #LinkLabel: Link
+  Telegram: https://t.me/Wincer
   GitHub: https://github.com/WincerChan
 #  Twitter: https://twitter.com/your-user-name
 #  微博: http://weibo.com/your-user-name
-  Google+: https://plus.google.com/104607796970885960615
+
 
 
 # Social Links Icons
@@ -164,6 +165,7 @@ social_icons:
   Weibo: weibo
   网易云: music
   知乎: quora
+  Telegram: telegram
   Google: google-plus-circle
 # Pay
 #reward_comment: false
@@ -541,7 +543,7 @@ vendors:
 
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
-  lazyload: 
+  lazyload: https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
