@@ -4,8 +4,8 @@
 
 # Site
 title: Wincer's Blog
-subtitle: 个人独立博客
-description: 言念君子，温其如玉。
+subtitle: 言念君子，温其如玉。
+description: 这里是@Wincer，喜欢折腾新技术，却没多大耐心。个人博客会写得比较杂，包括日常吐槽、技术踩坑，偶尔会写正经一点的。欢迎订阅RSS(•̀ᴗ•́)。
 author: WincerChan
 language: zh-Hans
 timezone:
@@ -103,6 +103,7 @@ deploy:
   message: '站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}'
 
 google_analytics: UA-101362832-1
+## encrypt plugins
 encrypt:
   password: wincer
   template: ' <div style="text-align:center"><input type="text" style=" border-radius: 10px; border-style: groove; height: 30px; width: 50%; cursor: auto; font-size: 102%; color: currentColor; outline: none; text-overflow: initial; padding-left: 5px;">  
