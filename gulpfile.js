@@ -103,7 +103,7 @@ gulp.task('minify-img-cover', function() {
             ], {
                 'verbose': true
             }))
-        .pipe(gulp.dest('./public/life/cover'))
+        .pipe(gulp.dest('./public/life/cover'));
 })
 // 用run-sequence并发执行，同时处理html，css，js，img
 gulp.task('compress', function(cb) {
