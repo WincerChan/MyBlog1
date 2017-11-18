@@ -2,7 +2,7 @@
   {% if theme.disqus.enable %}
 
     {% if page.comments %}
-       <script type="text/javascript">
+           <script type="text/javascript">
         var disqus = {
             load : function disqus(){
                 if(typeof DISQUS !== 'object') {
@@ -18,8 +18,8 @@
         }
       </script>
     {% endif %}
-    <script>
-      if ('serviceWorker' in navigator) {
+      <script>
+          if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('/sw.js');
         }
     </script>
