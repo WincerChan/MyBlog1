@@ -1,0 +1,20 @@
+{
+    "name": "Wincer's Blog",
+    "short_name": "Wincer",
+    "icons": [
+        {
+            "src": "/img/icons/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "theme_color": "#2874f0"
+} 
