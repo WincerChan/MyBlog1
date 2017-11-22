@@ -167,3 +167,7 @@ service_worker:
       handler: cacheFirst
       options:
         origin: ajax.cloudflare.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: api.leancloud.cn
