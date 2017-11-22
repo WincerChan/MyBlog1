@@ -163,4 +163,7 @@ service_worker:
       handler: cacheFirst
       options:
         origin: cdn1.lncld.net
-    
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: ajax.cloudflare.com
