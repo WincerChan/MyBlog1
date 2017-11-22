@@ -155,4 +155,12 @@ service_worker:
       handler: cacheFirst
       options:
         origin: www.google-analytics.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: fonts.googleapis.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn1.lncld.net
     
