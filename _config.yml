@@ -122,3 +122,37 @@ encrypt:
                     doDecrypt(passwd, onError); 
                 } 
               </script> </div>'
+
+# service worker
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.bootcss.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: wincer.disqus.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: fonts.gstatic.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: ws1.sinaimg.cn
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: dn-lbstatics.qbox.me
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: www.google-analytics.com
+    

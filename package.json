@@ -36,6 +36,7 @@
     "hexo-renderer-marked": "^0.2.11",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.2.0",
+    "hexo-service-worker": "^1.0.1",
     "hexo-wordcount": "^2.0.1",
     "keyword-extractor": "0.0.13",
     "run-sequence": "^1.2.2",
