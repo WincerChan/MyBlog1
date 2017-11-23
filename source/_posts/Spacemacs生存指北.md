@@ -10,7 +10,7 @@ copyright: true
 abbrlink: 2aa541e6
 ---
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fjkm647hn2j20ht095aar.jpg)
+![spacemacs](https://i.loli.net/2017/11/23/5a16dc087c01e.jpeg)
 
 ## 简介
 
