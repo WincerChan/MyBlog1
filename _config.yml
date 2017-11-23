@@ -109,19 +109,23 @@ google_analytics: UA-101362832-1
 ## encrypt plugins
 encrypt:
   password: wincer
-  template: ' <div style="text-align:center"><input type="text" style=" border-radius: 10px; border-style: groove; height: 30px; width: 50%; cursor: auto; font-size: 102%; color: currentColor; outline: none; text-overflow: initial; padding-left: 5px;">  
-              <input type="submit" value="解密" onclick="decrypt()" style=" width: 58px; height: 34px; border-radius: 10px; background-color: white; border-style: solid; color: currentColor; "> 
-			  <div id="enc_error" style=" display: inline-block; color: #d84527; font: large; "></div>
-              <script> 
-				var onError = function(error) { 
-					$("#enc_error")[0].innerHTML = "密码错误！"; 
-				}; 
-                function decrypt() { 
-                    var passwd = $("#enc_passwd input")[0].value; 
-                    console.log(passwd); 
-                    doDecrypt(passwd, onError); 
-                } 
-              </script> </div>'
+  template: '
+    <div style="text-align:center">
+        <script>
+            var onError = function(error) { $("#enc_error")[0].innerHTML = "密码错误！"; }; function decrypt() { var passwd = $("#enc_passwd input")[0].value; console.log(passwd); doDecrypt(passwd, onError); }
+            function EnterPress(){
+                var e = window.event;
+                if (e.keyCode == 13){
+                    decrypt();
+                }
+            }
+        </script>
+        <input type="text" onkeydown="EnterPress()" style=" border-radius: 10px; border-style: groove; height: 30px; width: 50%; cursor: auto; font-size: 102%; color: currentColor; outline: none; text-overflow: initial; padding-left: 5px;">
+        <div id="enc_error" style=" display: inline-block; color: #d84527; font: large; ">
+        </div>
+    </div>
+
+'
 
 # service worker
 service_worker:
@@ -166,3 +170,4 @@ generator_amp:
     height: 800
   warningLog: false   # To display warning, please set true.
   validateAMP: true   # To AMP HTML validate automatically, please set true.
+
