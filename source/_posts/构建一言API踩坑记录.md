@@ -54,8 +54,6 @@ conn.close()
 
 截至至本文发布，该「一言」数据库共收录了 880 条记录，以后我还会陆续添加。
 
-
-
 ## 生成 API
 
 有了数据库，自然要构建一个 API，这里选用的是 Flask 框架提供的接口。
@@ -109,7 +107,7 @@ if __name__ == '__main__':
 
 一开始担心是没有主机，后来才知道有「[Heroku](https://dashboard.heroku.com/)」这个造福大众的云平台服务。
 
-首先你需要安装[Heroku客户端工具](https://toolbelt.heroku.com/)，安装完成后，输入以下命令来验证按住uang是否成功：
+首先你需要安装 [Heroku 客户端工具](https://toolbelt.heroku.com/)，安装完成后，输入以下命令来验证按住uang是否成功：
 
 ```bash
 $ heroku --version
