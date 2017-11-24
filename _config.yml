@@ -105,7 +105,6 @@ deploy:
   branch: master
   message: '站点更新:{{now("YYYY-MM-DD HH/mm/ss")}}'
 
-google_analytics: UA-101362832-1
 ## encrypt plugins
 encrypt:
   password: wincer
