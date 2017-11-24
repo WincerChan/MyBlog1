@@ -1,5 +1,5 @@
 ---
-title: Python实现多线程下载器
+title: Python 实现多线程下载器
 type: categories
 categories: 技术
 copyright: true
@@ -13,21 +13,21 @@ abbrlink: 80689c8d
 
 ## 前言
 
-我为什么会想到要写一个下载器呢，实在是被百度云给逼的没招了，之前用Axel配合直链在百度云下载视频能达到满速，结果最近Axel两天忽然不能用了，于是我就想着要不干脆自己写一个吧，就开始四处查询资料，这就有了这篇博客。
+我为什么会想到要写一个下载器呢，实在是被百度云给逼的没招了，之前用 Axel 配合直链在百度云下载视频能达到满速，结果最近两天 Axel 忽然不能用了，于是我就想着要不干脆自己写一个吧，就开始四处查询资料，这就有了这篇博客。
 
 我假设阅读这篇博客的你已经对以下知识有所了解：
 
-- Python的文件操作
-- Python的多线程
-- Python的线程池
-- Python的requests库
-- HTTP报文的首部信息
+- Python 的文件操作
+- Python 的多线程
+- Python 的线程池
+- Python 的 requests 库
+- HTTP 报文的首部信息
 
 <!-- more -->
 
 ## 下载
 
-获取文件采用的是requests库，该已经封装好了许多http请求，我们只需要发送get请求，然后将请求的内容写入文件即可：
+获取文件采用的是 requests 库，该已经封装好了许多 http 请求，我们只需要发送 get 请求，然后将请求的内容写入文件即可：
 
 ```python
 import requests
@@ -37,15 +37,15 @@ with open('wallpaper.png', 'wb') as f:
     f.write(r.content)
 ```
 
-随后看看文件夹，那张名为`wallpaper.png`的图片就是我们刚刚下载的。
+随后看看文件夹，那张名为 `wallpaper.png` 的图片就是我们刚刚下载的。
 
 但是这个功能太简单了，甚至简陋，我们需要多线程并发执行下载各自的部分，然后再汇总。
 
 ## 拆分
 
-为了拆分，首先得知道数据块的大小，HTTP报文首部提供了这样的信息：
+为了拆分，首先得知道数据块的大小，HTTP 报文首部提供了这样的信息：
 
-- 用head方法去获取http首部信息，再从获取的信息提取出`Content-Length`字段（上文图片大小为 261258 bytes）
+- 用 head 方法去获取 http 首部信息，再从获取的信息提取出 `Content-Length` 字段（上文图片大小为 261258 bytes）
 
 ```python
 import requests
@@ -56,11 +56,11 @@ with open('wallpaper.png', 'wb') as f:
     f.write(r.content)
 ```
 
-我们得到了图片的前 100001 个字节（Range的范围是包括起始和终止的），打开`wallpaper.png`你应该能看到一幅“半残”的图。
+我们得到了图片的前 100001 个字节（Range的范围是包括起始和终止的），打开 `wallpaper.png` 你应该能看到一幅“半残”的图。
 
 这样我们里目标更近了一步，继续：
 
-- 确认线程数（比如8个），261258//8=32657,前7个线程都取32657个bytes，第八个取剩余的
+- 确认线程数（比如8个），261258//8 = 32657，前7个线程都取 32657 个 bytes，第八个取剩余的
 
 
 ```python
@@ -74,7 +74,7 @@ for i in range(nums):
             end = start + part
 ```
 
-- 每个线程获取到的内容按顺序写入文件（file.seek()调节文件指针）
+- 每个线程获取到的内容按顺序写入文件（file.seek() 调节文件指针）
 
 
 ```python
@@ -134,7 +134,7 @@ class Downloader():
 
 至此，核心功能都完成了，剩下的就是实际体验的优化了。
 
-完整的代码已托管至GitHub，地址见[这里](https://github.com/WincerChan/Py-Downloader) 。
+完整的代码已托管至 GitHub，地址见[这里](https://github.com/WincerChan/Py-Downloader) 。
 
 ## 结语
 

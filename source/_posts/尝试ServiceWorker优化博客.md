@@ -11,7 +11,7 @@ copyright: true
 abbrlink: a0df572f
 ---
 
-静态博客的内容是很适合用缓存来加速访问的，除了采用常见的CDN加速和压缩博文等方法，通过客户端也可以实现加速访问，本文介绍的是「服务工作线程——Service Worker」。关于Service Worker的具体介绍见[这里](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)。本文主要需要的是它的离线加载的特性。
+静态博客的内容是很适合用缓存来加速访问的，除了采用常见的 CDN 加速和压缩博文等方法，通过客户端也可以实现加速访问，本文介绍的是「服务工作线程—— Service Worker」。关于 Service Worker 的具体介绍见[这里](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)。本文主要需要的是它的离线加载的特性。
 
 ## 启用Service Worker
 
@@ -29,11 +29,11 @@ if ('serviceWorker' in navigator) {
 
 <!-- more -->
 
-当然不是直接添加在生成的静态文件`/public/index.html`，那样每次`hexo g`之后都会消失，太麻烦。我这里是放在了`/next/layout/_thrid-party/comments/livere.swig`，因为我采用了livere的评论系统，当然你也可以不放在这里，只需要确保生成的`/publuc/index.html`包含上述代码就可以了。
+当然不是直接添加在生成的静态文件 `/public/index.html`，那样每次 `hexo g` 之后都会消失，太麻烦。我这里是放在了 `/next/layout/_thrid-party/comments/livere.swig`，因为我采用了 livere 的评论系统，当然你也可以不放在这里，只需要确保生成的 `/publuc/index.html` 包含上述代码就可以了。
 
 ### 添加Js文件
 
-从[这里](https://gist.github.com/WincerChan/a553ea6ab3de0afc0d3945bbbccaebd3)下载所需文件(sw.js)，需要添加如下文件在`/source`目录下：
+从[这里](https://gist.github.com/WincerChan/a553ea6ab3de0afc0d3945bbbccaebd3)下载所需文件 (sw.js) ，需要添加如下文件在 `/source `目录下：
 
 - `sw.js`
 - `offline.svg`
@@ -55,7 +55,7 @@ const ignoreFetch = [
 
 ### 是否成功？
 
-同样在 `Dev Tools` 的Application选项卡中看到 `Service Workers` 就表示成功了。见下图
+同样在 `Dev Tools` 的 Application 选项卡中看到 `Service Workers` 就表示成功了。见下图
 
 ## 加速效果
 
@@ -69,7 +69,7 @@ const ignoreFetch = [
 
 ### 缓存 
 
-刷新页面可以看到许多资源是直接 (from ServiceWorker) 加载的，大大提高载入速度。
+刷新页面可以看到许多资源是直接 ( from ServiceWorker ) 加载的，大大提高载入速度。
 
 ![效果2](https://ws1.sinaimg.cn/large/ba22af52gy1fhw07svg0cg213l0bcwre.gif)
 
@@ -83,7 +83,7 @@ const ignoreFetch = [
 
 ### HTTPS
 
-服务器工作线程只能工作在HTTPS加密的网站上，本地的 `localhost` 是默认安全。
+服务器工作线程只能工作在 HTTPS 加密的网站上，本地的 `localhost` 是默认安全。
 
 <div class="pr"></div>
 

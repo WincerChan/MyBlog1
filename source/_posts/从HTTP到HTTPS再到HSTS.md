@@ -1,5 +1,5 @@
 ---
-title: 从HTTP到HTTPS再到HSTS
+title: 从 HTTP 到 HTTPS 再到 HSTS
 type: categories
 categories: 网络
 tags:
@@ -25,7 +25,7 @@ abbrlink: dfc84766
 
 <!-- more -->
 
-## HSTS原理
+## HSTS 原理
 
  `HSTS` 是 `HTTP Strict Transport Security` 的简称，定义在「[RFC 6797](https://tools.ietf.org/html/rfc6797) 」，旨在帮助使用 `HTTPS` 的服务器免受「**降级攻击**」。
 
@@ -33,11 +33,11 @@ abbrlink: dfc84766
 
 1. 用户首次访问开启 `HSTS` 服务的网站
 2. 浏览器会留下一个包含 `max-age` 参数的 `HSTS` 缓存文件
-3. 在`max-age`到期之前访问网站，浏览器会根据缓存中的 `HSTS` 设置自动访问 `HTTPS` 页面
+3. 在 `max-age` 到期之前访问网站，浏览器会根据缓存中的 `HSTS` 设置自动访问 `HTTPS` 页面
 
-开启 `HSTS` 后可以有效防止「**降级攻击**」，同时也会省去301至`HTTPS`的时间，于安全系数和用户体验都有提升。
+开启 `HSTS` 后可以有效防止「**降级攻击**」，同时也会省去301至 `HTTPS` 的时间，于安全系数和用户体验都有提升。
 
-## 如何开启HSTS
+## 如何开启 HSTS
 
 由于我的网站的 cdn 提供商 Cloudflare（CloudFlare大法好！） 已经提供了 `HSTS` 技术，只需要手动开启就可以了。
 
@@ -51,10 +51,10 @@ abbrlink: dfc84766
 
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1fjiuub5d6sj20rd0du3zd.jpg)
 
-在开启后，我的网站安全等级变成了 A+ ，开启之前是A 。
+在开启后，我的网站安全等级变成了 A+ ，开启之前是 A。
 
 ## 结语
 
 在用户第一次访问时，如果输入网址没有 `HTTPS` 字段，无法避免的会进行一次 301 跳转，有可能还是会被攻击。
 
-这个时候就需要用到 [HSTS Preload](https://hstspreload.org/) ，这是由Google维护的一个域名列表，只要加入这个列表的域名，当使用主流浏览器，如：Chrome, Firefox, Opera, Safari, IE 11 和 Edge时，即使第一次也会强制转换成 `HTTPS` 再访问。从而使访问更加安全。
+这个时候就需要用到 [HSTS Preload](https://hstspreload.org/) （本站域名已申请加入），这是由Google维护的一个域名列表，只要加入这个列表的域名，当使用主流浏览器，如：Chrome, Firefox, Opera, Safari, IE 11 和 Edge时，即使第一次也会强制转换成 `HTTPS` 再访问。从而使访问更加安全。
