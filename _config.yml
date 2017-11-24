@@ -154,6 +154,10 @@ service_worker:
       handler: cacheFirst
       options:
         origin: fonts.googleapis.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: itswincer.com
 
 # The following settings is the quick start options.
 generator_amp:
