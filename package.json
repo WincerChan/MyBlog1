@@ -39,6 +39,7 @@
     "hexo-server": "^0.2.0",
     "hexo-service-worker": "^1.0.1",
     "hexo-wordcount": "^2.0.1",
+    "jquery-lazyload": "^1.9.7",
     "keyword-extractor": "0.0.13",
     "run-sequence": "^1.2.2",
     "social-share.js": "^1.0.16"
