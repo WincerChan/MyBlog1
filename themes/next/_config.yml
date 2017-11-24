@@ -148,7 +148,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: https://ws1.sinaimg.cn/large/ba22af52gy1fhzhbwsvxij20b40b4q2y.jpg
+avatar: /images/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
