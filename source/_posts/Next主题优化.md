@@ -1,5 +1,5 @@
 ---
-title: NexT主题配置备份
+title: NexT 主题配置备份
 type: categories
 categories: 笔记
 tags:
@@ -12,11 +12,11 @@ date: 2017-05-31 18:04:00
 
 ### 基本设置
 
-参照[NexT使用文档](http://theme-next.iissnan.com/getting-started.html#theme-settings) ，设置中文语言、头像、作者、网站描述和URL等。
+参照 [NexT使用文档](http://theme-next.iissnan.com/getting-started.html#theme-settings) ，设置中文语言、头像、作者、网站描述和URL等。
 
 ### 动态背景
 
-修改`themes/next/layout/_layout.swig`:
+修改 `themes/next/layout/_layout.swig`:
 
 加上下面内容：
 
@@ -25,11 +25,11 @@ date: 2017-05-31 18:04:00
 <script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"></script>
 ```
 
-目前的NexT主题已经自带canvas_nest等四个特效，可以在主题配置文件搜索并将对应的值改为`true` ，这里不用自带是因为想添加彩色的线条，自带的只有黑色。
+目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 `true` ，这里不用自带是因为想添加彩色的线条，自带的只有黑色。
 
 <!-- more -->
 
-然后在`thmems/next/source/js/src/`目录新建`particle.js` ，文件写入以下代码：
+然后在 `thmems/next/source/js/src/` 目录新建 `particle.js` ，文件写入以下代码：
 
 ```javascript
 ! function() {
@@ -105,7 +105,7 @@ date: 2017-05-31 18:04:00
 
 ### 鼠标点击小红心
 
-修改`themes/next/layout/_layout.swig`:
+修改 `themes/next/layout/_layout.swig`:
 
 加上下面内容：
 
@@ -113,7 +113,7 @@ date: 2017-05-31 18:04:00
 <script type="text/javascript" src="/js/src/love.js"></script>
 ```
 
-然后在`themes/next/source/js/src/`目录新建文件`love.js` ，添加以下代码：
+然后在 `themes/next/source/js/src/` 目录新建文件 `love.js`，添加以下代码：
 
 ```javascript
 ! function(e, t, a) {
@@ -170,15 +170,15 @@ date: 2017-05-31 18:04:00
 
 ### 文章的标签
 
-文章的tags是用‘#’来标注，将‘#’换成图标：
+文章的 tags 是用「#」来标注，将「#」换成图标：
 
-修改`layout/_macro/post.swig`，搜索`rel="tag">#`，将#换成`<i class="fa fa-tag"></i>`
+修改 `layout/_macro/post.swig`，搜索 `rel="tag">#`，将 # 换成 `<i class="fa fa-tag"></i>`
 
 ### 博文置顶
 
-修改`hexo-generator-index`插件：
+修改 `hexo-generator-index` 插件：
 
-修改文件：`node_modules/hexo-generator-index/lib/generator.js`为：
+修改文件：`node_modules/hexo-generator-index/lib/generator.js` 为：
 
 ```javascript
 'use strict';
@@ -211,7 +211,7 @@ module.exports = function(locals){
 };
 ```
 
-在文章的`Front-matter`中添加`top`值，数值越大文章越靠前， 如：
+在文章的 `Front-matter` 中添加 `top` 值，数值越大文章越靠前， 如：
 
 ```yaml
 title: Next主题配置备份
@@ -224,9 +224,9 @@ top: 10
 date: 2017-05-31 18:04:00
 ```
 
-### NexT主题自定义无序列表样式
+### NexT 主题自定义无序列表样式
 
-打开自定义CSS： `\themes\next\source\css\_custom\custom.styl` 加入：
+打开自定义 CSS： `\themes\next\source\css\_custom\custom.styl` 加入：
 
 ```css
 ul {
@@ -236,7 +236,7 @@ list-style-type: circle;  // 空心圆，实心圆为 disc
 
 ### 修改侧边栏头像为圆形
 
-修改文件`themes\next\source\css\_common\components\sidebar\sidebar-author.styl`，修改其中的`.site-author-image`段代码，改为如下形式：
+修改文件 `themes\next\source\css\_common\components\sidebar\sidebar-author.styl`，修改其中的 `.site-author-image` 段代码，改为如下形式：
 
 ```css
 .site-author-image {
@@ -281,11 +281,11 @@ list-style-type: circle;  // 空心圆，实心圆为 disc
 
 ### 文章链接唯一化
 
-也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。安装此插件后，不要在`hexo s`模式下更改文章文件名，否则文章将成空白。
+也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。安装此插件后，不要在 `hexo s` 模式下更改文章文件名，否则文章将成空白。
 
 安装：`npm install hexo-abbrlink --save`
 
-在站点配置文件中查找代码`permalink`， 将其更改为：`permalink: posts/:abbrlink/  # “posts/” 可自行更换`
+在站点配置文件中查找代码 `permalink`， 将其更改为：`permalink: posts/:abbrlink/  # “posts/” 可自行更换`
 
 同样在站点配置文件中添加代码：
 
@@ -305,9 +305,9 @@ abbrlink:
 
 ### 文章底部增加版权信息
 
-自定义版权信息，不采用NexT本身的版权设置
+自定义版权信息，不采用 NexT 本身的版权设置
 
-在目录 `next/layout/_macro/下`添加 `my-copyright.swig`：
+在目录 `next/layout/_macro/下` 添加 `my-copyright.swig`：
 
 ```javascript
 {% if page.copyright %}
@@ -344,7 +344,7 @@ abbrlink:
 {% endif %}
 ```
 
-在目录`next/source/css/_common/components/post/`下添加`my-post-copyright.styl`：
+在目录 `next/source/css/_common/components/post/` 下添加 `my-post-copyright.styl`：
 
 ```css
 .my_post_copyright {
@@ -394,7 +394,7 @@ abbrlink:
 }
 ```
 
-修改`next/layout/_macro/post.swig`，在代码
+修改 `next/layout/_macro/post.swig`，在代码
 
 ```javascript
 <div>
@@ -414,8 +414,8 @@ abbrlink:
 </div>
 ```
 
-修改`next/source/css/_common/components/post/post.styl`文件，在最后一行增加代码：`@import "my-post-copyright"`
+修改 `next/source/css/_common/components/post/post.styl` 文件，在最后一行增加代码：`@import "my-post-copyright"`
 
-每当发布一篇文章，需要在`Front-matter `添加`copyright: true`
+每当发布一篇文章，需要在 `Front-matter ` 添加 `copyright: true`
 
 参考链接：[务虚笔记](http://www.wuxubj.cn/)

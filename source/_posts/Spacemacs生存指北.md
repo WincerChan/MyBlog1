@@ -1,5 +1,5 @@
 ---
-title: Spacemacs生存指北
+title: Spacemacs 生存指北
 type: categories
 categories: 笔记
 tags:

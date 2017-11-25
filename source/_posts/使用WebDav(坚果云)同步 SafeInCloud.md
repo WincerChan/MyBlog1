@@ -1,5 +1,5 @@
 ---
-title: 使用WebDav(坚果云)同步 SafeInCloud
+title: 使用 WebDav（坚果云）同步 SafeInCloud
 type: categories
 categories: 软件
 tags:
@@ -17,13 +17,13 @@ date: 2017-05-06 00:00:00
 
 #### 数据同步
 
-SafeInCloud支持的云同步大多都是国外的，考虑到国内的网络环境，可以选择OneDrive和坚果云同步，OneDrive同步直接登录就可以，本文主要讲解如何利用WebDav和坚果云同步：<!-- more -->
+SafeInCloud 支持的云同步大多都是国外的，考虑到国内的网络环境，可以选择OneDrive 和坚果云同步，OneDrive 同步直接登录就可以，本文主要讲解如何利用 WebDav 和坚果云同步：<!-- more -->
 
 1. 登录[坚果云](https://www.jianguoyun.com/)，左上角 **创建-->新建个人同步文件夹** .记住该文件夹的名字
 
    ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffhaoxnvrbj20r907hwfc.jpg)
 
-2. 进入SafeInCloud，在登录界面选择WebDav登录：
+2. 进入 SafeInCloud，在登录界面选择 WebDav 登录：
 
    ![](https://ws1.sinaimg.cn/large/ba22af52gy1ffjifoiladj20bt096jrx.jpg)
 

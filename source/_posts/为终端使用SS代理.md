@@ -1,5 +1,5 @@
 ---
-title: 为终端使用SS代理
+title: 为终端使用 SS 代理
 type: categories
 categories: 教程
 tags:
@@ -10,9 +10,9 @@ updated: 2017-06-12 16:32:18
 abbrlink: 39613bbd
 ---
 
-Shadowsocks是我们最常用的代理工具，它使用socks协议，而我们目前使用的终端只支持http、https协议，所以我们需要用软件来将socks协议转化为http等协议，我采用的是Proxychains软件（SS的安装和配置自行谷歌）
+Shadowsocks 是我们最常用的代理工具，它使用 socks 协议，而我们目前使用的终端只支持 http、https 协议，所以我们需要用软件来将 socks 协议转化为 http 等协议，我采用的是 Proxychains 软件（SS 的安装和配置自行谷歌）
 
-#### Proxychains安装
+#### Proxychains 安装
 
 ```bash
 git clone https://github.com/rof10r/proxychains-ng.git
@@ -23,7 +23,7 @@ cp ./src/proxychains.conf /etc/proxychains.conf
 cd .. && rm -rf proxychains-ng
 ```
 
-#### 编辑Proxychains配置
+#### 编辑 Proxychains 配置
 
 ```bash
 vim /etc/proxychains.conf
@@ -45,7 +45,7 @@ socks5 127.0.0.1 1080
 
 #### 使用方法
 
-在需要代理的命令前加上`proxychains4`，可用`curl ip.gs`命令测试一下
+在需要代理的命令前加上 `proxychains`，可用 `curl ip.gs` 命令测试一下
 
 
 

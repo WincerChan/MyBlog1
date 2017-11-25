@@ -1,5 +1,5 @@
 ---
-title: NexT主题配置备份（二）
+title: NexT 主题配置备份（二）
 type: categories
 categories: 笔记
 tags:
@@ -10,15 +10,15 @@ date: '2017/06/30 10:55:34'
 abbrlink: 654861fb
 ---
 
-这篇博客是承接上一篇[Next主题配置备份](https://www.itswincer.com/posts/a40f8cd0/)，按照个人喜好做了一些修改。
+这篇博客是承接上一篇 [Next主题配置备份](https://www.itswincer.com/posts/a40f8cd0/)，按照个人喜好做了一些修改。
 
 ### 加密文章
 
-网上针对Hexo博客加密文章的办法有两种：
+网上针对 Hexo 博客加密文章的办法有两种：
 
-#### js的阻塞机制
+#### js 的阻塞机制
 
-在`themes->next->layout->_partials->head.swig`中的\<meta>标签后添加以下代码：
+在 `themes->next->layout->_partials->head.swig` 中的 \<meta> 标签后添加以下代码：
 
 ```javascript
 <script>
@@ -35,7 +35,7 @@ abbrlink: 654861fb
 
 <!-- more -->
 
-这里的`page`变量就是文章的首部：需要在首部自行添加`password`字段，再设置一个密码值：
+这里的 `page` 变量就是文章的首部：需要在首部自行添加 `password` 字段，再设置一个密码值：
 
 ```markdown
 ---
@@ -53,24 +53,24 @@ password: ffffff
 
 当然这个并不是真的加密，用查源代码的方式还是能看出博客的内容，不过这已经可以阻挡绝大部分访客了。
 
-#### crypto-js的AES加密
+#### crypto-js 的 AES 加密
 
-采用的是[hexo-encrypt](https://github.com/edolphin-ydf/hexo-encrypt)插件，原理见作者[博客](http://edolphin.site/2016/05/31/encrypt-post/)，这个就属于真正的加密了，不知道密码查看源代码就是一堆无法辨认的字符。
+采用的是 [hexo-encrypt](https://github.com/edolphin-ydf/hexo-encrypt) 插件，原理见作者[博客](http://edolphin.site/2016/05/31/encrypt-post/)，这个就属于真正的加密了，不知道密码查看源代码就是一堆无法辨认的字符。
 
 ### 添加一言
 
 使用效果见我的博客侧边栏的底部。
 
-需要修改`themes->next->layout->_macro->sidebar.swig`，在倒数第三行的</div>后面加上：
+需要修改 `themes->next->layout->_macro->sidebar.swig`，在倒数第三行的 </div> 后面加上：
 
 ```html
 <div class = "cost"></div>
 <div class="cost-inner"><script language="Javascript" src="https://rawgit.com/WincerChan/d314ff3a0ddc197134ad56efaeb34da0/raw/f4c3e73cdb08235fb01cd8849457c81d52236a1d/hitokoto.js"></script></div>
 ```
 
-这里的Js文件是我自己写的，托管在「[Gist](https://gist.github.com/d314ff3a0ddc197134ad56efaeb34da0.git)」，当然你可以自由修改这其中的每一句。我以后也会添加的越来越多
+这里的 Js 文件是我自己写的，托管在「[Gist](https://gist.github.com/d314ff3a0ddc197134ad56efaeb34da0.git)」，当然你可以自由修改这其中的每一句。我以后也会添加的越来越多
 
-然后修改`themes->next->source->css->_schemes->Pisces`，添加：
+然后修改 `themes->next->source->css->_schemes->Pisces`，添加：
 
 ```css
 .cost {
@@ -90,7 +90,7 @@ password: ffffff
 
 ### 压缩博客文章
 
-这里采用的是`gulp`插件，hexo根目录新建`gulpfile.js`文件：
+这里采用的是 `gulp` 插件，hexo 根目录新建 `gulpfile.js` 文件：
 
 ```javascript
 var gulp = require('gulp'),
@@ -188,7 +188,7 @@ gulp.task('default', ['build'])
 
 ```
 
-需要用npm安装一些包：
+需要用 npm 安装一些包：
 
 ```json
 "del": "^3.0.0",
@@ -204,13 +204,13 @@ gulp.task('default', ['build'])
 "gulp-imagemin": "^3.3.0",
 ```
 
-在执行`gulp build`时，会自动执行`hexo clean`、`hexo g` ，这时直接 `hexo d`就行了。
+在执行 `gulp build` 时，会自动执行 `hexo clean`、`hexo g` ，这时直接 `hexo d` 就行了。
 
 这是网站优化后的结果：![](https://ws1.sinaimg.cn/large/ba22af52gy1fh33l1gzdxj20no08uaaj.jpg)
 
 ### 博文置顶
 
-修改`node_modules/hexo-generator-index/lib/generator`内的代码为：
+修改 `node_modules/hexo-generator-index/lib/generator` 内的代码为：
 
 ```javascript
 'use strict';
@@ -243,7 +243,7 @@ module.exports = function(locals){
 };
 ```
 
-在文章的首部添加`top`值，数值越大越靠前：
+在文章的首部添加 `top` 值，数值越大越靠前：
 
 ```markdown
 ---
@@ -264,11 +264,11 @@ abbrlink: 654861fb
 
 可实现在首页和归档隐藏指定文章
 
-首先在需要隐藏文章的`Front-matter`添加`visible`值，值为`hide`就表示隐藏。
+首先在需要隐藏文章的 `Front-matter` 添加 `visible` 值，值为 `hide` 就表示隐藏。
 
 #### 首页
 
-修改`next/layout/index.swig`中的
+修改 `next/layout/index.swig` 中的
 
 ```javascript
 {% for post in page.post %}
@@ -278,11 +278,11 @@ abbrlink: 654861fb
 {% endfor %}
 ```
 
-在第14行左右，将`for post in page.post`中的内容修改成以上
+在第 14 行左右，将 `for post in page.post` 中的内容修改成以上
 
 #### 归档
 
-修改`next/layout/index.swig`：
+修改 `next/layout/index.swig`：
 
 ```javascript
 {% if post.visible !== 'hide' %}
@@ -290,13 +290,13 @@ abbrlink: 654861fb
 {% endif %}
 ```
 
-在第42行左右，将原本的` post_template.render(post) `改成以上。
+在第 42 行左右，将原本的 ` post_template.render(post) ` 改成以上。
 
-不建议在归档中隐藏是因为归档提供的是一个统计的功能，隐藏后统计的文章篇数没变，但却显示不出来，有点别扭，不想要别人看就直接加密就好了。至于`type`和`tags`，删除文章的相应字段就行了。
+不建议在归档中隐藏是因为归档提供的是一个统计的功能，隐藏后统计的文章篇数没变，但却显示不出来，有点别扭，不想要别人看就直接加密就好了。至于 `type` 和 `tags`，删除文章的相应字段就行了。
 
 ### 分享页面
 
-Next主题自带的是[JiaThis](http://www.jiathis.com/)，可是太丑了，还不支持`https`，找了好久终于到了「[Share.js](http://overtrue.me/share.js/)」，简直把JiaThis秒成渣：
+NexT主题自带的是 [JiaThis](http://www.jiathis.com/)，可是太丑了，还不支持 `https`，找了好久终于到了「[Share.js](http://overtrue.me/share.js/)」，简直把 JiaThis 秒成渣：
 
 新增文件：`next/layout/_partials/share/sharejs.swig`
 
@@ -309,7 +309,7 @@ Next主题自带的是[JiaThis](http://www.jiathis.com/)，可是太丑了，还
 <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 ```
 
-随后修改`next\layout\post.swig`：
+随后修改 `next\layout\post.swig`：
 
 ```javascript
 <div class="post-spread">			//在这一行后面添加：

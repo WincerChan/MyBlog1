@@ -1,5 +1,5 @@
 ---
-title: Python正则表达式
+title: Python 正则表达式
 type: categories
 categories: 笔记
 tags:
@@ -10,9 +10,9 @@ abbrlink: fc635c56
 date: 2017-05-26 09:26:00
 ---
 
-目前在跟Udacity的[cs212](https://classroom.udacity.com/courses/cs212)课程，避免懒癌发作，开篇博客来记录一下
+目前在跟 Udacity 的 [cs212](https://classroom.udacity.com/courses/cs212) 课程，避免懒癌发作，开篇博客来记录一下
 
-## Python的正则表达式
+## Python 的正则表达式
 
 ### 正则表达式模式
 
@@ -29,11 +29,11 @@ date: 2017-05-26 09:26:00
 
 <!-- more -->
 
-### re.search和re.search的区别
+### re.match 和 re.search 的区别
 
-re.macth只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回None；
+re.macth 只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回 None；
 
-re.search匹配整个字符串的所有位置，如果整个字符串都匹配不到，则返回None.
+re.search 匹配整个字符串的所有位置，如果整个字符串都匹配不到，则返回 None.
 
 如：
 
@@ -45,7 +45,7 @@ def test():
     assert match('baa*!', 'baaaaaaaa! said the sheep')
 ```
 
-### 自己实现的match和search
+### 自己实现的 match 和 search
 
 ```python
 def search(pattern, text):
