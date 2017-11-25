@@ -126,38 +126,7 @@ encrypt:
 
 '
 
-# service worker
-service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
-  staticFileGlobs:
-    - public/**/*.{js,html,css,svg,db,woff,png,gif,woff2,ttf,eot}
-  stripPrefix: public
-  verbose: true
-  runtimeCaching:
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: cdn.bootcss.com
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: wincer.disqus.com
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: fonts.gstatic.com
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: www.google-analytics.com
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: fonts.googleapis.com
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: itswincer.com
+
 
 # The following settings is the quick start options.
 generator_amp:
