@@ -1,6 +1,6 @@
 {% if page.copyright %}
 <div class="my_post_copyright">
-  <script src="https://cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  <script>basket.require({ url: 'https://cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js' });</script>
   <p><span>本文标题:</span><a href="{{ url_for(page.path) }}">{{ page.title }}</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 {{ theme.author }} 的个人博客">{{ theme.author }}</a></p>
   <p><span>发布时间:</span>{{ page.date.format("YYYY年MM月DD日 - HH:MM") }}</p>

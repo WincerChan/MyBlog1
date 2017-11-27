@@ -62,7 +62,7 @@
   {% if theme.vendors.fancybox_css %}
     {% set fancybox_css_uri = theme.vendors.fancybox_css %}
   {% endif %}
-  <link href="{{ fancybox_css_uri }}" rel="stylesheet" type="text/css" />
+
 {% endif %}
 
 {% include "./head/external-fonts.swig" %}
@@ -71,7 +71,7 @@
 {% if theme.vendors.fontawesome %}
   {% set font_awesome_uri = theme.vendors.fontawesome %}
 {% endif %}
-<link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
+
 
 
 {% if theme.favicon.apple_touch_icon %}
