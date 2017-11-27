@@ -5,7 +5,7 @@
 {% if is_post() && config.generator_amp %}
   <link rel="amphtml" href="./amp/index.html">
 {% endif %}
-
+<link href="/css/main.css" rel="stylesheet" type="text/css">
 {% if theme.pace %}
   {% set pace_css_uri = url_for(theme.vendors._internal + '/pace/'+ theme.pace_theme +'.min.css?v=1.0.2') %}
   {% set pace_js_uri = url_for(theme.vendors._internal + '/pace/pace.min.js?v=1.0.2') %}
