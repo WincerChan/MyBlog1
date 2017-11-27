@@ -1,4 +1,4 @@
 {#
 Custom head.
 #}
-<script src="http://localhost:4000/js/src/lsloader.js"></script>
+<script src="https://itswincer.com/js/src/lsloader.js"></script>
