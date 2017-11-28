@@ -1,8 +1,9 @@
-<div class="copyright">{#
-#}<a href="https://www.upyun.com/"><img align="center" src="https://itswincer.com/images/upyun.svg" width="80"></a>{% set current = date(Date.now(), "YYYY") %}{#
+<div style="line-height: 40px; height: 30px">
+{% set current = date(Date.now(), "YYYY") %}{#
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
-  <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }}</span>
+  <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }} |</span>
+<div style="vertical-align:middle;display:inline-block;"><a href="https://www.upyun.com/"><img src="http://localhost:4000/images/upyun.svg" width="90%"></a></div>
 
   {% if theme.post_wordcount.totalcount %}
     <span class="post-meta-divider">|</span>
