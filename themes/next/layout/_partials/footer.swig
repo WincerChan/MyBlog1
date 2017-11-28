@@ -1,8 +1,9 @@
 <div class="copyright">{#
-#}{% set current = date(Date.now(), "YYYY") %}{#
+#}<a href="https://www.upyun.com/"><img align="center" src="https://itswincer.com/images/upyun.svg" width="80"></a>{% set current = date(Date.now(), "YYYY") %}{#
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }}</span>
+
   {% if theme.post_wordcount.totalcount %}
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
@@ -31,11 +32,11 @@
   <div class="theme-info">{#
   #}{{ __('footer.theme') }} &mdash; {#
   #}<a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
-    #}NexT.{{ theme.scheme }}{#
+    #}NexT{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}<span class="post-meta-divider">|</span>
   <i class="fa fa-area-chart"></i>
-  <span class="post-count">全站共{{ totalcount(site) }} 字 </span></div>
+  <span class="post-count">全站共 {{ totalcount(site) }} 字 </span></div>
 {% endif %}
 
 {% if theme.footer.custom_text %}
