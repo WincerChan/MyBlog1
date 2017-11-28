@@ -38,11 +38,10 @@
 {% if theme.canvas_ribbon.enable and theme.scheme === 'Pisces'%}
   {% set js_vendors.canvas_ribbon  = 'canvas-ribbon/canvas-ribbon.js' %}
 {% endif %}
-
+<script typy="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
 
 <script>
-basket.require({ url: 'https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js'}).then(function () {
-                 basket.require(
+        basket.require(
                  { url: 'https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js' },
                  { url: 'https://itswincer.com/lib/velocity/velocity.min.js'},
                  { url: 'https://itswincer.com/lib/velocity/velocity.ui.min.js' },
@@ -58,5 +57,4 @@ basket.require({ url: 'https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js'}).the
                                 { url: 'https://itswincer.com/js/src/hitokoto.js' });
                                 });
                         });
-               });
 </script>
