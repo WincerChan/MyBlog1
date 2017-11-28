@@ -62,13 +62,13 @@
              maxEntries: maxEntries
          }
      });
-     // self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
-     //     origin: /cdn\.bootcss\.com/,
-     //     cache: {
-     //         name: staticAssetsCacheName,
-     //         maxEntries: maxEntries
-     //     }
-     // });
+     self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
+         origin: /cdn\.bootcss\.com/,
+         cache: {
+            name: staticAssetsCacheName,
+            maxEntries: maxEntries
+         }
+     });
 
      /* ContentCache */
      self.toolbox.router.get("/posts/(.*)/", self.toolbox.networkFirst, {
