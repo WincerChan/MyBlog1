@@ -95,7 +95,7 @@
              maxEntries: maxEntries
          }
      });
-     self.toolbox.router.get("/", self.toolbox.networkFirst, {
+     self.toolbox.router.get("", self.toolbox.networkFirst, {
          cache: {
              name: contentCacheName,
              maxEntries: maxEntries

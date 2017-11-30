@@ -10,7 +10,7 @@ date: '2017/11/30 15:09:34'
 abbrlink: a9d193c6
 ---
 
-![localstorage.jpeg](https://i.loli.net/2017/11/30/5a1fc60d7982e.jpeg)
+<img class="lazyload" data-original="https://i.loli.net/2017/11/30/5a1fd168932e2.png" alt="" />
 
 ## localStorage 的意义
 
@@ -18,7 +18,9 @@ abbrlink: a9d193c6
 
 <!-- more -->
 
-而且对于 Server Worker，它并不能减少你的 HTTP 连接数量，只是拦截你的请求，减少 Stalled、Request sent 和 TTFB 的时间，见下图：![左边从 SW 加载，右边正常加载](https://i.loli.net/2017/11/30/5a1fb5e57fcf3.png "左边从 SW 加载，右边正常加载")
+而且对于 Server Worker，它并不能减少你的 HTTP 连接数量，只是拦截你的请求，减少 Stalled、Request sent 和 TTFB 的时间，见下图：
+
+<img class="lazyload" data-original="https://i.loli.net/2017/11/30/5a1fb5e57fcf3.png" alt="左边从 SW 加载，右边正常加载" title="左边从 SW 加载，右边正常加载"/>
 
 针对以上两个问题，本博客采用另一种 HTML5 新技术 —— local Storage。
 
