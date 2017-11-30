@@ -24,7 +24,7 @@ date: 2017-05-10 22:46:00
 > 联系我
 
 - 电子邮件（推荐）：[WincerChan@gmail.com](mailto:WincerChan@gmail.com) （每天定时检查 Inbox ）
-- 社交网络：Twitter（不怎么发推）：[@wincer_chan](https://twitter.com/wincer_chan)  ~~Weibo~~（已弃用）
+- 社交网络：Twitter（不怎么发推）：[@wincer_chan](https://twitter.com/wincer_chan)   &nbsp;&nbsp; ~~Weibo~~（已弃用）
 - 即使通讯：鹅厂 QQ：（只加朋友）Telegram：[@Wincer](https://t.me/Wincer)
 - 网站评论（Disqus 会自动将评论推送至我的 Inbox）
 

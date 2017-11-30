@@ -188,9 +188,9 @@ $ heroku maintenance:off
 
 - 请求方式：GET
 
-- 返回函数名hitokoto的js脚本，本质为document.write的脚本
+- 返回函数名 hitokoto 的 js 脚本，本质为 document.write 函数的脚本
 
-- 如果需要json格式的数据：https://wincer-hito.herokuapp.com/api/json/
+- 如果需要 json 格式的数据：https://wincer-hito.herokuapp.com/api/json/
 
 
 在你想使用「一言」的地方插入以下代码：
