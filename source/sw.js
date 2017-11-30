@@ -1,6 +1,6 @@
  "use strict";
  (function() {
-     var cacheVersion = "-170816";
+     var cacheVersion = "-171130";
      var staticImageCacheName = "image" + cacheVersion;
      var staticAssetsCacheName = "assets" + cacheVersion;
      var contentCacheName = "content" + cacheVersion;
@@ -95,7 +95,7 @@
              maxEntries: maxEntries
          }
      });
-     self.toolbox.router.get("/", self.toolbox.cacheFirst, {
+     self.toolbox.router.get("/", self.toolbox.networkFirst, {
          cache: {
              name: contentCacheName,
              maxEntries: maxEntries
