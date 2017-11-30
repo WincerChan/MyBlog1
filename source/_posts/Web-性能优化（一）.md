@@ -16,6 +16,8 @@ abbrlink: a9d193c6
 
 为了针对我的网站提供更好的浏览体验（或者说更接近原生 App 的用户体验），在之前我就已经[开启了Server Worker 技术](https://itswincer.com/posts/a0df572f/)，针对离线或者网速慢的情况下改善用户体验。但只有少数几个浏览器支持 （Chrome、Firefox、Opera），对目前手机端用户数最多的QQ浏览器、UC浏览器却没有支持，也就是说该方法针对QQ浏览器和UC浏览器并没有什么实际优化。
 
+<!-- more -->
+
 而且对于 Server Worker，它并不能减少你的 HTTP 连接数量，只是拦截你的请求，减少 Stalled、Request sent 和 TTFB 的时间，见下图：![左边从 SW 加载，右边正常加载](https://i.loli.net/2017/11/30/5a1fb5e57fcf3.png "左边从 SW 加载，右边正常加载")
 
 针对以上两个问题，本博客采用另一种 HTML5 新技术 —— local Storage。
