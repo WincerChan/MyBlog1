@@ -36,13 +36,13 @@ abbrlink: '72474942'
 
 不愧是「二手东」，这饱经沧桑的包装盒：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3qctsaguj243k2b0kjl.jpg "Poker外包装")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b64c7fd6.jpg" alt="Poker 外包装" title="Poker 外包装" />
 
 关于包装盒，去拿快递的时候还发生了一个小插曲：当时京东的人问我手机尾号，我告诉了她，然后又问我是什么东西，我说是一把键盘，然后他就去找，找了半天，没找到，然后就问另一个人，说：“尾号是 6 的快件都在这里了吧，怎么没有键盘啊？”，然后转头问我：“键盘应该是挺大的吧？”，我说：“不，不大，挺短的”，然后她又去找小一点的包裹，结果一找就找到了。
 
 回到寝室，迫不及待的拆开了包装：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3qj2ui4kj243k2b0kjl.jpg "Poker包装内容")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214de043960.jpeg" alt="Poker 包装内容" title="Poker 包装内容" />
 
 这便是全家福了，包含：键盘本体、USB 连接线、RGB 的大键键帽、说明书、拔键器。
 
@@ -52,11 +52,13 @@ abbrlink: '72474942'
 
 Poker 这一系列，最大的特点应当就是 60% 尺寸的设计了，准确来说是 61 键。相对于普通 87 键的键盘，尺寸更加玲珑小巧，省去了方向键和功能键，改为用 `FN` 的组合键来实现相应功能。方向键是用 `Fn` + WASD 来实现，不过，对于用 Spacemacs 的我来说，没啥影响，哈哈。
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3qxfv4goj243k2b0hdt.jpg "键盘本体")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214ddff3afa.jpeg" alt="键盘本体" title="键盘本体" />
 
 真正拆开的时候才发现 60% 尺寸带来的冲击有多么大。
 
-说到组合键，`Fn` 与组合键的功能在侧刻上都已标注：![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3r1trl7vj243k2b0x6t.jpg "Poker的侧刻")
+说到组合键，`Fn` 与组合键的功能在侧刻上都已标注：
+
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b6385bab.jpeg" alt="Poker 的侧刻" title="Poker 的侧刻" />
 
 `Fn` 与数字键组合就是 F1~F12。`Fn` + N、M、< 分别是音量 -、+、静音等。
 
@@ -68,13 +70,13 @@ Poker 这一系列，最大的特点应当就是 60% 尺寸的设计了，准确
 
 轴体方面，采用的是 Cherry 原厂轴体，大键也是卫星轴设计。手感嘛，自然是没话说了。我这里购买的是红轴的版本，毕竟用了两年，还是红轴最为顺手。
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3r9v9mnoj243k2b07wh.jpg "Cherry 红轴")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b63d5896.jpeg" alt="Cherry 红轴" title="Cherry 红轴" />
 
 ### 键帽
 
 键帽采用的是 PBT 材质，对于 ABS 来说，PBT 的好处就是绝不会打油。
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3rc4e86zj243k2b04qp.jpg "键盘+手托")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b62f0af5.jpeg" alt="键盘 + 手托" title="键盘 + 手托" />
 
 而且这款 PBT 键帽比我之前在网上购入的 PBT 键帽手感要更胜一筹，对着光看起来还闪着微弱的光，挺有意思。
 
@@ -82,11 +84,11 @@ Poker 这一系列，最大的特点应当就是 60% 尺寸的设计了，准确
 
 ## 背部
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3shsmhccj243k2b07wh.jpg "正面'遗照'")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b63d57a5.jpeg" alt="正面'遗照'" title="正面'遗照'" />
 
 相对与小巧玲珑的正面来说，背部就没有那么精致了：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3rltroerj243k2b0kjl.jpg "键盘背部")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b63a7325.jpeg" alt="键盘背部" title="键盘背部" />
 
 四周是四个黑色的防滑垫，没有撑脚，可能是为了缩减体积来作出的取舍（当然键盘也设计成了前高后低的人体工学形状），防滑垫对我来说用处不大，因为我是把键盘放在鼠标垫上使用的。
 
@@ -105,7 +107,7 @@ Poker 这一系列，最大的特点应当就是 60% 尺寸的设计了，准确
 
 ## 总结
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fl3s3s96igj243k2b0hdt.jpg "全家福")
+<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b64e62e8.jpeg" alt="全家福" title="全家福" />
 
 换上附赠的 RGB 键帽后，白色素雅的 Poker 顿时骚了起来，哈哈。
 
