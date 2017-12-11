@@ -44,8 +44,10 @@ date: 2017-06-15 10:56:58
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p792510233.jpg 出租车司机 https://movie.douban.com/subject/1292222/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2329821809.jpg 在下坂本，有何贵干？ https://movie.douban.com/subject/26708698/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2356774246.jpg 齐木楠雄的灾难 https://movie.douban.com/subject/26801048/ %}
+{% figure https://img3.doubanio.com/lpic/s29009243.jpg 我可以咬一口吗 https://book.douban.com/subject/26755503/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2483150767.jpg 白夜追凶 https://movie.douban.com/subject/26883064/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2358698477.jpg 灵能百分百 https://movie.douban.com/subject/26677934/ %}
+{% figure https://img3.doubanio.com/lpic/s28369176.jpg 你今天真好看 https://book.douban.com/subject/26602392/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2499793218.jpg 羞羞的铁拳 https://movie.douban.com/subject/27038183/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2393044761.jpg 驴得水 https://movie.douban.com/subject/25921812/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2234184583.jpg 一拳超人 https://movie.douban.com/subject/26339248/ %}
