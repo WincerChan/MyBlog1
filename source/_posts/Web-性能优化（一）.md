@@ -10,7 +10,7 @@ date: '2017/11/30 15:09:34'
 abbrlink: a9d193c6
 ---
 
-<img class="lazyload" data-original="https://i.loli.net/2017/11/30/5a1fd168932e2.png" alt="" />
+<img class="lazyload" data-original="https://i.loli.net/2017/11/30/5a1fd168932e2.png" alt="pic" />
 
 ## localStorage 的意义
 

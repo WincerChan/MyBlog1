@@ -41,7 +41,7 @@
                   <i class="fa fa-thumb-tack"></i>
                 </span>
               {% endif %}
-              <a class="post-title-link post-title-link-external" target="_blank" href="{{ url_for(post.link) }}" itemprop="url">
+              <a class="post-title-link post-title-link-external" target="_blank" rel="noopener" href="{{ url_for(post.link) }}" itemprop="url">
                 {{ post.title or post.link }}
                 <i class="fa fa-external-link"></i>
               </a>

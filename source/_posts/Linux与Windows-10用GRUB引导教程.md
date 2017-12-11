@@ -14,7 +14,7 @@ abbrlink: ad42f575
 去年暑假的时候，写了一篇如何装 Linux 和 Windows 10 双系统的文章发在了简书上，我写这篇文章的原因是当初装双系统确实是折腾了许久，网上也找不到一篇详尽的教程。由于去年对于写教程还不是熟练，而这一年多的使用过程也遇到了一些问题，所以就准备「Refactoring」这篇文章。
 ## EFI 分区
 在教程正式开始之前，先花一点时间说明 EFI 分区的组成和作用。
-首先，在你装了 Windows 之后，Windows 在装机过程中会将硬盘划分出一个约 100m 大小的分区，称为 EFI 分区这个分区就是起引导作用的。在资源管理器中是看不到的这个分区的，可以在磁盘管理中看到，管理则需要借助 [DG 工具](http://www.diskgenius.cn/)。便于说明，在装好了 Linux 之后，我将 EFI 挂载至 boot 分区截图:
+首先，在你装了 Windows 之后，Windows 在装机过程中会将硬盘划分出一个约 100m 大小的分区，称为 EFI 分区这个分区就是起引导作用的。在资源管理器中是看不到的这个分区的，可以在磁盘管理中看到，管理则需要借助 <a href="http://www.diskgenius.cn/" target="_blank" rel="noopener">DG 工具</a>。便于说明，在装好了 Linux 之后，我将 EFI 挂载至 boot 分区截图:
 <!-- more -->
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1fkl3a5pwv6j20ng0hwwfn.jpg)
 可以看到，该分区包含3个文件夹(如果你没有装Linux的话，就只有两个)，分别是Boot、Microsoft和Manjaro，其中Boot文件夹就是UEFI引导所必需的文件。
