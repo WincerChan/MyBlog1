@@ -24,7 +24,7 @@ hexo.extend.tag.register('stream', function(args, content) {
     }
     result += '<div class="hexo-img-stream">';
     result += '<style type="text/css">';
-    result += '.post-gallery {border-bottom: 0; padding-bottom: 3px;} figcaption{text-align: center; line-height: 1.5; font-size: .6rem; color: #999; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;} figure{ background: #fefefe; box-shadow: 0 1px 2px rgba(34, 25, 25, 0.2); margin: 0 0.5% 3%; padding: 0%; padding-bottom: 3px; display: inline-block; max-width: 23%;} .lazyload{ max-width: 95%; padding-top: 0.7em;}';
+    result += '.post-gallery {border-bottom: 0; padding-bottom: 3px;} figcaption{text-align: center; line-height: 1.5; font-size: .6rem; color: #999; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;} figure{ background: #fefefe; box-shadow: 0 1px 2px rgba(34, 25, 25, 0.2); margin: 0 0.5% 3%; padding: 0%; padding-bottom: 3px; display: inline-block; max-width: 24%;} .lazyload{ max-width: 95%; padding-top: 0.7em;}';
     result += '</style>';
     result += content;
     result += '</div>';
