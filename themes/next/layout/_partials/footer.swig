@@ -3,7 +3,7 @@
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }} |</span>
-<div style="vertical-align:middle;display:inline-block;"><a href="https://www.upyun.com/"><img src="https://itswincer.com/images/upyun.svg" width="90%"></a></div>
+<div style="vertical-align:middle;display:inline-block;"><a href="https://www.upyun.com/"><img src="https://itswincer.com/images/upyun.svg" width="90%" alt="upyun"></a></div>
 
   {% if theme.post_wordcount.totalcount %}
     <span class="post-meta-divider">|</span>
