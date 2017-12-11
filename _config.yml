@@ -126,4 +126,7 @@ encrypt:
 
 '
 
-
+image_stream:
+  jquery: false
+  jquery_lazyload: false
+  img_placeholder: false
