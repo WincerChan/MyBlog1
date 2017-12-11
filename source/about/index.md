@@ -5,7 +5,7 @@ date: 2017-05-10 22:46:00
 
 {% cq %} 佛曰：万发缘生，皆系缘分{% endcq %}
 
-![My Dragon](https://ws1.sinaimg.cn/large/ba22af52gy1flavmdeyt8j215o0o5e7c.jpg)
+<img class="lazyload" data-original="https://ws1.sinaimg.cn/large/ba22af52gy1flavmdeyt8j215o0o5e7c.jpg" alt="My Dragon" />
 
 在众多博客中与你相遇，想必是一种缘分。
 
