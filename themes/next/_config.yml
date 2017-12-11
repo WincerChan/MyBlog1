@@ -721,12 +721,12 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  # Internal version: 2.1.3
+  # Internal version: 2.2.0
   jquery: https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js
 
-  # Internal version: 2.1.5
+  # Internal version: 3.2.5
   # See: http://fancyapps.com/fancybox/
-  fancybox: https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js
+  fancybox: https://cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js
   fancybox_css: https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css
 
   # Internal version: 1.0.6

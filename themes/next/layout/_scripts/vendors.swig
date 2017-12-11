@@ -45,7 +45,7 @@
                  { url: 'https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js' },
                  { url: 'https://itswincer.com/lib/velocity/velocity.min.js'},
                  { url: 'https://itswincer.com/lib/velocity/velocity.ui.min.js' },
-                 { url: 'https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js' },
+                 { url: 'https://cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js' },
                  { url: 'https://cdn.bootcss.com/sql.js/0.4.0/js/sql.js' },
                  { url: 'https://itswincer.com/js/src/scrollspy.js' }).then(function () {
                  basket.require({ url: 'https://itswincer.com/js/src/utils.js' },
