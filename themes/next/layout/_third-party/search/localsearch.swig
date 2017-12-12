@@ -26,7 +26,7 @@
       $("body")
         .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
         .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
+      $('.search-popup-overlay').on("click", onPopupClose);
       $('.popup').toggle();
       var $localSearchInput = $('#local-search-input');
       $localSearchInput.attr("autocapitalize", "none");
@@ -276,7 +276,7 @@
           if ('auto' === '{{ theme.local_search.trigger }}') {
             input.addEventListener('input', inputEventFunction);
           } else {
-            $('.search-icon').click(inputEventFunction);
+            $('.search-icon').on("click", inputEventFunction);
             input.addEventListener('keypress', function (event) {
               if (event.keyCode === 13) {
                 inputEventFunction();
@@ -294,7 +294,7 @@
     }
 
     // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
+    $('.popup-trigger').on("click", function(e) {
       e.stopPropagation();
       if (isfetched === false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
@@ -303,8 +303,8 @@
       };
     });
 
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
+    $('.popup-btn-close').on("click", onPopupClose);
+    $('.popup').on("click", function(e){
       e.stopPropagation();
     });
     $(document).on('keyup', function (event) {

@@ -38,7 +38,7 @@
 {% if theme.canvas_ribbon.enable and theme.scheme === 'Pisces'%}
   {% set js_vendors.canvas_ribbon  = 'canvas-ribbon/canvas-ribbon.js' %}
 {% endif %}
-<script typy="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+<script typy="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
 <script>
         basket.require(
