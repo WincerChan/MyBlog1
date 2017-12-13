@@ -1,4 +1,3 @@
-
 ---
 title: 生活
 comments: true
@@ -20,9 +19,9 @@ date: 2017-06-15 10:56:58
 
 <div class="pr"></div>
 
-
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2463178431.webp 猎凶风河谷 https://movie.douban.com/subject/26389601/ %}
 {% figure https://img3.doubanio.com/lpic/s1113106.jpg 计算机程序的构造和解释 https://book.douban.com/subject/1148282/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2257392597.jpg 江户盗贼团五叶 https://movie.douban.com/subject/4176578/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2452537144.jpg 小丑回魂 https://movie.douban.com/subject/3604148/ %}
