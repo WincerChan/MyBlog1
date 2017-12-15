@@ -266,11 +266,8 @@ $(document).ready(function () {
        * @returns {boolean}
        */
       function hasElement ($elements) {
-        console.log($elements)
         $elements = Array.isArray($elements) ? $elements : [$elements];
         return $elements.every(function ($element) {
-          console.log($.isFunction($element.size))
-          console.log($element.length)
           return $element.length > 0;
         });
       }
