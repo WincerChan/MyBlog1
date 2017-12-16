@@ -107,7 +107,7 @@ if __name__ == '__main__':
 
 一开始担心是没有主机，后来才知道有「[Heroku](https://dashboard.heroku.com/)」这个造福大众的云平台服务。
 
-首先你需要安装 [Heroku 客户端工具](https://toolbelt.heroku.com/)，安装完成后，输入以下命令来验证按住uang是否成功：
+首先你需要安装 [Heroku 客户端工具](https://toolbelt.heroku.com/)，安装完成后，输入以下命令来验证安装是否成功：
 
 ```bash
 $ heroku --version
@@ -185,12 +185,10 @@ $ heroku maintenance:off
 
 
 - 请求地址：https://wincer-hito.herokuapp.com/api/
-
 - 请求方式：GET
-
 - 返回函数名 hitokoto 的 js 脚本，本质为 document.write 函数的脚本
-
 - 如果需要 json 格式的数据：https://wincer-hito.herokuapp.com/api/json/
+- 如果仅需要 hitokoto 主体：https://wincer-hito.herokuapp.com/api/main/
 
 
 在你想使用「一言」的地方插入以下代码：
@@ -200,3 +198,5 @@ $ heroku maintenance:off
 <script>hitokoto();</script>
 ```
 演示效果看侧栏。
+
+注：由于是 Heroku 的主机是在美国，所以该 API 延迟可能会有一点高。
