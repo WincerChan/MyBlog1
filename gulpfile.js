@@ -107,7 +107,7 @@ gulp.task('minify-img-cover', function() {
 })
 // 用run-sequence并发执行，同时处理html，css，js，img
 gulp.task('compress', function(cb) {
-    runSequence(['minify-html', 'cssmin', 'uglify', 'fancybox:js', 'fancybox:css', 'minify-img-aggressive', 'minify-img-cover'], cb);
+    runSequence(['minify-html', 'cssmin', 'uglify', 'fancybox:js', 'fancybox:css', 'minify-img-aggressive'], cb);
 });
 // 执行顺序： 清除public目录 -> 产生原始博客内容 -> 执行压缩混淆
 gulp.task('build', function(cb) {
