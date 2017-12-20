@@ -10,7 +10,7 @@ tags:
 copyright: true
 abbrlink: '72474942'
 ---
-{% cq %}一入外设深似海，从此钱财是路人。{% endcq %}
+
 
 ## 初识
 

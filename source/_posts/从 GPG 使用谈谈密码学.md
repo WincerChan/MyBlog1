@@ -11,7 +11,7 @@ copyright: right
 abbrlink: 4aa5d46d
 ---
 
-<img class="lazyload" data-original="https://i.loli.net/2017/12/11/5a2e046558167.png" alt="Christmas_Trees" title="" />
+<img class="lazyload" src="https://i.loli.net/2017/12/11/5a2e046558167.png" alt="Christmas_Trees" title="" />
 
 ## 前言
 

@@ -3,7 +3,6 @@ title: 关于
 date: 2017-05-10 22:46:00
 ---
 
-{% cq %} 佛曰：万发缘生，皆系缘分{% endcq %}
 
 <div id="aplayer1" class="aplayer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.6.0/APlayer.min.js"></script>

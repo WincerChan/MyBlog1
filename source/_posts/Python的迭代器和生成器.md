@@ -175,5 +175,4 @@ def gen_something():
         yield x
 ```
 
-{% note warning %} 注意事项：生成器只能遍历一次{% endnote %}
 
