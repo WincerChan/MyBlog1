@@ -129,5 +129,8 @@ image_stream:
   jquery: false
   jquery_lazyload: false
   img_placeholder: false
-  
-prism_plugin: false
+
+lazyload:
+  enable: true
+  onlypost: true
+  loadingImg: https://ww4.sinaimg.cn/large/e724cbefgw1etyppy7bgwg2001001017.gif

@@ -32,6 +32,7 @@
     "hexo-generator-searchdb": "^1.0.7",
     "hexo-generator-sitemap": "^1.1.2",
     "hexo-generator-tag": "^0.2.0",
+    "hexo-lazyload-image": "^1.0.2",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-jade": "^0.4.1",
     "hexo-renderer-marked": "^0.2.11",
