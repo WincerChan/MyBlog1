@@ -70,7 +70,7 @@ gulp.task('minify-html', function() {
 });
 // 同上，压缩图片，这里采用了： 最大化压缩效果。
 gulp.task('minify-img-aggressive', function() {
-    return gulp.src('./public/images/**/*.*')
+    return gulp.src('./public/img/**/*.*')
         .pipe(imagemin(
             [imagemin.gifsicle({
                     'optimizationLevel': 3
