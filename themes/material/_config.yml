@@ -18,7 +18,7 @@ head:
 
 # Jump Links Settings
 url:
-    rss: /atom.xml
+    rss: false
     daily_pic: "#"
     logo: "#"
 
@@ -216,7 +216,7 @@ sidebar:
             link: "/about/"
             icon: person
             divider: true
-        RSS 订阅:
+        订阅:
             link: "/atom.xml"
             icon: rss_feed
             divider: false
@@ -290,8 +290,8 @@ leancloud:
 # Busuanzi 不蒜子 Views
 busuanzi:
     enable: false
-    all_site_uv: true
-    post_pv: true
+    all_site_uv: false
+    post_pv: false
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
 
 # Files Vendors
