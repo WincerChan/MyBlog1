@@ -70,10 +70,10 @@ background:
 
 # Images Settings
 img:
-    logo: "/img/logo.png"
-    avatar: "/img/avatar.png"
-    daily_pic: "/img/daily_pic.png"
-    sidebar_header: "/img/sidebar_header.jpeg"
+    logo: "https://i.loli.net/2017/12/21/5a3b733b76cbc.png"
+    avatar: "https://i.loli.net/2017/12/21/5a3b73c414638.png"
+    daily_pic: "https://i.loli.net/2017/12/21/5a3b73e7a59ca.png"
+    sidebar_header: "https://i.loli.net/2017/12/21/5a3b74111e6b0.jpeg"
     random_thumbnail: "/img/random/material-"
     footer_image:
         #upyun_logo:
