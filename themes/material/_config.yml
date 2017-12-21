@@ -215,11 +215,11 @@ sidebar:
         关于:
             link: "/about/"
             icon: person
-            divider: true
+            divider: false
         订阅:
             link: "/atom.xml"
             icon: rss_feed
-            divider: false
+            divider: true
     article_num:
         use: true
         divider: false
