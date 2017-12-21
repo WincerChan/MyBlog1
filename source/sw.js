@@ -55,13 +55,6 @@
              maxEntries: maxEntries
          }
      });
-     self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
-         origin: /cdn\.bootcss\.com/,
-         cache: {
-            name: staticAssetsCacheName,
-            maxEntries: maxEntries
-         }
-     });
 
      /* ContentCache */
      self.toolbox.router.get("/posts/(.*)/", self.toolbox.networkFirst, {
@@ -82,6 +75,12 @@
              maxEntries: maxEntries
          }
      });
+     self.toolbox.router.get("manifest.json", self.toolbox.cacheFirst, {
+         cache: {
+             name: contentCacheName,
+             maxEntries: maxEntries
+        }
+    })
      self.toolbox.router.get("", self.toolbox.networkFirst, {
          cache: {
              name: contentCacheName,
