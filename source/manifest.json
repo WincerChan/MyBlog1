@@ -3,8 +3,8 @@
     "short_name": "Wincer",
     "icons": [
         {
-            "src": "/img/pwa/logo.png",
-            "sizes": "191x191",
+            "src": "https://i.loli.net/2017/12/21/5a3bb5742bf56.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
