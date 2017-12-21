@@ -70,7 +70,7 @@ gulp.task('minify-html', function() {
 });
 // 同上，压缩图片，这里采用了： 最大化压缩效果。
 gulp.task('minify-img-aggressive', function() {
-    return gulp.src('./public/img/**/*.*')
+    return gulp.src('./public/img/*.*')
         .pipe(imagemin(
             [imagemin.gifsicle({
                     'optimizationLevel': 3
@@ -85,7 +85,7 @@ gulp.task('minify-img-aggressive', function() {
             ], {
                 'verbose': true
             }))
-        .pipe(gulp.dest('./public/images'));
+        .pipe(gulp.dest('./public/img'));
 })
 gulp.task('minify-img-cover', function() {
     return gulp.src('./public/life/cover/*.*')
