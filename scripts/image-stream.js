@@ -41,7 +41,7 @@ hexo.extend.tag.register('figure', function(args) {
     var result = '<figure>';
 
     result += '<a href="' + wordUrl + '" target="_blank" rel="external">';
-    result += '<img class="lazyload" src="' + imgUrl + '"/>';
+    result += '<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-original="' + imgUrl + '"/>';
     result += '</a>';
     result += '<figcaption>' + title + '</figcaption>';
     result += '</figure>';
