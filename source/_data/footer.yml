@@ -1,0 +1,2 @@
+ServiceWorker:
+  <script>lsloader.load("sw_js","/sw-reg.js", true)</script>
