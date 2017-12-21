@@ -51,4 +51,6 @@ GitHub Pages 不支持用户自定义证书，所以当你用自定义域名的�
 
 添加 SSL 的教程就此完成。
 
+**注意：CloudFlare 为你的网站颁发的 SSL 证书需要最多 24 小时才会生效，请耐心等待，我是半小时生效的。**
+
 参考：[Secure and fast GitHub Pages with CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)

@@ -8,9 +8,8 @@ tags:
 date: '2017/09/26 13:01:33'
 copyright: true
 abbrlink: 2aa541e6
+thumbnail: https://i.loli.net/2017/11/23/5a16dc087c01e.jpeg
 ---
-
-![spacemacs](https://i.loli.net/2017/11/23/5a16dc087c01e.jpeg)
 
 ## 简介
 

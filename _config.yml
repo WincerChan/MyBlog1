@@ -133,4 +133,4 @@ image_stream:
 lazyload:
   enable: true
   onlypost: true
-  loadingImg: https://ww4.sinaimg.cn/large/e724cbefgw1etyppy7bgwg2001001017.gif
+  loadingImg: data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=

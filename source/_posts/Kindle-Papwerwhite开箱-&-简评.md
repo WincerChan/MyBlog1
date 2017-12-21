@@ -13,6 +13,7 @@ copyright: true
 abbrlink: 6619f85a
 ---
 
+> If you don't let go old things, new ones wouldn't come.                   —— Nicolas Wincer
 
 ## 前言
 

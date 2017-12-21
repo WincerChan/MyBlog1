@@ -3,6 +3,7 @@ title: 生活
 comments: true
 type: "life"
 date: 2017-06-15 10:56:58
+hide_license: true
 ---
 
 > 「人的差异在于业余时间。」

@@ -1,3 +1,0 @@
-{#
-  见vendor.swig
-#}
