@@ -1,7 +1,7 @@
 ---
 title: Python 正则表达式
 type: categories
-categories: 笔记
+categories: 文字阁
 tags:
   - Python
   - 正则表达式

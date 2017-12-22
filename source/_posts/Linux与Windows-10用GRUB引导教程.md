@@ -1,6 +1,7 @@
 ---
 title: Linux 与 Windows 10 用 GRUB 引导教程
 type: categories
+categories: 分享境
 tags:
   - Linux
   - Windows

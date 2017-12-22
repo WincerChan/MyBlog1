@@ -1,9 +1,11 @@
 ---
 title: 使用 WebDav（坚果云）同步 SafeInCloud
 type: categories
-categories: 软件
+categories: 分享境
 tags:
   - 安全
+  - 云同步
+  - 密码
 copyright: true
 abbrlink: c7bc4900
 date: 2017-05-06 00:00:00

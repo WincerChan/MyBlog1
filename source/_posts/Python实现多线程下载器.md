@@ -1,7 +1,7 @@
 ---
 title: Python 实现多线程下载器
 type: categories
-categories: 技术
+categories: 实验室
 copyright: true
 tags:
   - Python

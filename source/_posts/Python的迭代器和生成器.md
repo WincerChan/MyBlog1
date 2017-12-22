@@ -2,7 +2,7 @@
 title: Python 的迭代器和生成器
 date: '2017/07/02 12:03:42'
 type: categories
-categories: 编程
+categories: 文字阁
 tags:
   - Python
 copyright: true

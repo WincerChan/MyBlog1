@@ -1,7 +1,7 @@
 ---
 title: Axel 下载百度云文件
 type: categories
-categories: 软件
+categories: 分享境
 tags:
   - 教程
   - 百度云加速

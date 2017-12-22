@@ -1,7 +1,7 @@
 ---
 title: 使用 Service Worker 优化网站
 type: categories
-categories: 技术
+categories: 实验室
 tags:
   - ServiceWorker
   - 博客

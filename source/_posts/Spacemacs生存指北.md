@@ -1,7 +1,7 @@
 ---
 title: Spacemacs 生存指北
 type: categories
-categories: 笔记
+categories: 分享境
 tags:
   - Spacemacs
   - 编辑器

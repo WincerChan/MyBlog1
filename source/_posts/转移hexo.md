@@ -1,11 +1,11 @@
 ---
 title: Hexo 博客备份
 type: categories
-categories: 笔记
+categories: 博客栈
 tags:
   - Hexo
   - 教程
-	- 博客
+  - 博客
 copyright: true
 abbrlink: 7efd2818
 date: 2017-06-02 21:37:00

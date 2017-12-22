@@ -1,7 +1,7 @@
 ---
 title: NexT 主题配置备份（二）
 type: categories
-categories: 笔记
+categories: 博客栈
 tags:
   - NexT
   - 博客

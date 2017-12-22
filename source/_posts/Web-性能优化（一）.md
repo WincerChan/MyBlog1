@@ -1,7 +1,7 @@
 ---
 title: Web 性能优化（一）——使用 localStorage
 type: categories
-categories: 技术
+categories: 实验室
 tags:
   - 优化
   - localStorage

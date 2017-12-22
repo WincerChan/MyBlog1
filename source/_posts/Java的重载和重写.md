@@ -2,7 +2,7 @@
 title: Java 的重载和重写
 date: 2017/06/16 17:42:39
 type: categories
-categories: 编程
+categories: 文字阁
 copyright: true
 tags:
   - Java

@@ -1,7 +1,7 @@
 ---
 title: 爬虫模拟登录之一般性解决方法（Cookie）
 type: categories
-categories: 教程
+categories: 实验室
 tags:
   - 爬虫
   - Python

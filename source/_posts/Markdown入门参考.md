@@ -1,7 +1,7 @@
 ---
 title: Markdown 入门参考
 type: categories
-categories: 笔记
+categories: 分享境
 tags:
   - Markdown
   - 语法

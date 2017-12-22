@@ -1,7 +1,7 @@
 ---
 title: 从 GnuPG 的使用谈谈密码学
 type: categories
-categories: 教程
+categories: 分享境
 tags:
   - GPG
   - 密码学

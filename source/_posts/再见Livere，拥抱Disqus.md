@@ -1,7 +1,7 @@
 ---
 title: 再见 LiveRe，拥抱 Disqus
 type: categories
-categories: 日常
+categories: 博客栈
 tags:
   - Disqus
   - 博客

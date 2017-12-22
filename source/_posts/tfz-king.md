@@ -1,7 +1,7 @@
 ---
 title: TFZ King图集
 type: categories
-categories: 图集
+categories: 日常向
 tags:
   - 随拍
 copyright: true

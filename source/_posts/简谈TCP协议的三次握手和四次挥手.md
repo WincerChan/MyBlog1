@@ -1,10 +1,10 @@
 ---
 title: 简谈 TCP 协议的三次握手和四次挥手
 type: categories
-categories: 网络
+categories: 分享境
 tags:
   - 计算机网络
-	- TCP协议
+  - TCP协议
 copyright: true
 abbrlink: a8e25856
 date: 2017-06-23 20:48:58

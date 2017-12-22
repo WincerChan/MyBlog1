@@ -2,7 +2,7 @@
 title: 构建一言 API 踩坑记录
 date: '2017/10/30 10:44:41'
 type: categories
-categories: 技术
+categories: 实验室
 tags:
   - Hitokoto
   - Flask

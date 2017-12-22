@@ -1,7 +1,7 @@
 ---
 title: 为终端使用 SS 代理
 type: categories
-categories: 教程
+categories: 分享境
 tags:
   - 代理
 copyright: true

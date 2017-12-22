@@ -1,7 +1,7 @@
 ---
 title: 从 HTTP 到 HTTPS 再到 HSTS
 type: categories
-categories: 网络
+categories: 博客栈
 tags:
   - 安全
   - HSTS

@@ -2,7 +2,7 @@
 title: 自定义域名的 GitHub Pages 添加 SSL 的方案
 date: '2017/06/16 10:25:30'
 type: categories
-categories: 网络
+categories: 博客栈
 copyright: true
 tags:
   - 安全

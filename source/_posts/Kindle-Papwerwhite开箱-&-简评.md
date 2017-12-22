@@ -1,7 +1,7 @@
 ---
 title: Kindle Papwerwhite 开箱 & 简评
 type: categories
-categories: 日常
+categories: 日常向
 tags:
   - 开箱
   - Kindle
