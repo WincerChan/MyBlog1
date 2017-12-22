@@ -1,7 +1,7 @@
 ---
 title: Manjaro 大法好
 type: categories
-categories: 日常向
+categories: 碎碎念
 tags:
   - KDE
 	- Linux

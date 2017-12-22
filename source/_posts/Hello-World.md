@@ -1,7 +1,7 @@
 ---
 title: Hello World
 type: categories
-categories: 日常向
+categories: 碎碎念
 tags:
 - 随笔
 - Hexo

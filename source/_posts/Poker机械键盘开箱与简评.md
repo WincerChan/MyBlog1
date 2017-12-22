@@ -2,7 +2,7 @@
 title: Poker 机械键盘开箱与简评
 date: '2017/11/02 13:56:40'
 type: categories
-categories: 日常向
+categories: 碎碎念
 tags:
   - 开箱
   - 键盘
