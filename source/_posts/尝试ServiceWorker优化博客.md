@@ -85,8 +85,6 @@ const ignoreFetch = [
 
 服务器工作线程只能工作在 HTTPS 加密的网站上，本地的 `localhost` 是默认安全。
 
-<div class="pr"></div>
-
 参考文章：
 
 - [服务工作线程：简介](https://developer.google.com/web/fundamentals/getting-started/primers/service-workers)

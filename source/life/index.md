@@ -19,9 +19,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 
 趁我在还能写的动代码、看的进书和电影的年纪，努力一回，看看这平庸的资质究竟可以发挥几分。
 
-<div class="pr"></div>
-
-<center><font size=5>我看过的书籍和电影</font></center>
+<div class="pr"></div><center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
 {% figure https://img3.doubanio.com/lpic/s3254244.jpg 嫌疑人X的献身 https://book.douban.com/subject/3211779/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2456625604.webp 暧昧男子 https://movie.douban.com/subject/27011834/  %}
