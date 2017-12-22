@@ -9,6 +9,7 @@ tags:
   - 评测
 copyright: true
 abbrlink: '72474942'
+thumbnail: https://i.loli.net/2017/12/01/5a214b64e62e8.jpeg
 ---
 
 > 一入外设深似海，从此钱财是路人。
@@ -107,8 +108,6 @@ Poker 这一系列，最大的特点应当就是 60% 尺寸的设计了，准确
 这一功能也算是 Poker 的特色了，目前还不是很了解，先放一放，过几天等了解了再补上。
 
 ## 总结
-
-<img class="lazyload" data-original="https://i.loli.net/2017/12/01/5a214b64e62e8.jpeg" alt="全家福" title="全家福" />
 
 换上附赠的 RGB 键帽后，白色素雅的 Poker 顿时骚了起来，哈哈。
 

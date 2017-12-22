@@ -6,19 +6,16 @@ tags:
   - Hexo
   - 教程
 	- 博客
-encrypt: false
-enc_pwd: zyi
 copyright: true
 abbrlink: 7efd2818
 date: 2017-06-02 21:37:00
 updated: 2017-06-14 20:44:33
+thumbnail: https://i.v2ex.co/5bb7J7NT.png
 ---
 
-![](https://i.v2ex.co/5bb7J7NT.png)
+使用 Hexo 在 github 搭建的博客，博客作为一个单独的 GitHub 仓库存在，但是这个仓库只有生成的静态网页文件，并没有 Hexo 的源文件，如果要换电脑或者重装系统后，就比较麻烦了，这里推荐一种方法。
 
 <!-- more -->
-
-使用 Hexo 在 github 搭建的博客，博客作为一个单独的 GitHub 仓库存在，但是这个仓库只有生成的静态网页文件，并没有 Hexo 的源文件，如果要换电脑或者重装系统后，就比较麻烦了，这里推荐一种方法。
 
 ### 备份
 
