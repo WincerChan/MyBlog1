@@ -9,7 +9,7 @@ tags:
   - API
 copyright: true
 abbrlink: f6e1eb2a
-thumbnail: https://sm.ms/delete/nd6RCxqtOiLTzwy
+thumbnail: https://i.loli.net/2017/12/22/5a3c7701e7e79.png
 ---
 
 ## 前言
