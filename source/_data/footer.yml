@@ -2,3 +2,5 @@ ServiceWorker:
   <script>lsloader.load("sw_js","/sw-reg.js", true)</script>
 Pr:
   <script>pr=document.getElementsByClassName("pr");if(pr!==null){for(var i=0;i<pr.length;i++){pr[i].style.height="20px";pr[i].style.margin="15px auto";pr[i].style.background='url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZBAMAAAD6cmD+AAAAJFBMVEX////+/v7u7u79/f38/Pz19fX5+fnm5ubr6+vg4ODz8/PX19fmfbrEAAABVklEQVQYGb3AsWoUQRjA8f/HN06R6ht33cJKDhSNzR4rCKlmCdEz1QkHkm4lgeSsoics6VRyQiwDJ3I2erHIvYJP5xPMRRjIjxvUUZ1V7JLLSegqXhu5YomeXXkhWz18+WEpZJPC9+36d0GuyPGpbC07cjk96yp7ckiuOP3or9/eWfIfhJQGc73sP5yzPiqcsVFgg8DzmR91q8O7C4uOBAkGIEZCAb7v9h6J/2wXEzESDASsMBK0iCezajUuOIn3vxNI0VqB/ceDhO0oT52fq3U7p+7C3g0Svgz+AKZGQiv1m/O4Kutno6MXi8aTUrYOCIQEtK4um53z0s/14IEnJOyCsFHAXn3Sax2N9y6JLUlq3MT/kHvbX/VggpFnOisHE/+3FRNyBN9T2PoKMSGH1sfv3dYykqvwZd+tf4VAptJs+m3h1BCyyFCbn2MactUMZeLUuDX/AFJQRNLkIJPDAAAAAElFTkSuQmCC")';pr[i].style.backgroundRepeat="no-repeat";pr[i].style.backgroundPosition="center"}};</script>
+TextShadow:
+  <script>document.getElementById('main').style.textShadow = '0px 0px 1px rgba(0,0,0,0.2)'</script>
