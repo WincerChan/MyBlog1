@@ -5,7 +5,7 @@
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong><%- __('post.title') %></strong> <%- page.title %>
                     <br>
-                        <strong><%- __('post.updated') %></strong><%= date(page.updated, 'MMM DD, YYYY'+'年'+' - HH:MM') %><br>
+                        <strong><%- __('post.updated') %></strong><%= date(page.updated, 'YYYY 年 MM 月 DD 日 - HH:MM') %><br>
                         <strong><%- __('post.permalink') %></strong><a href="<%= page.permalink %>"><%= page.permalink %></a>
                         <strong>                        
                         <br>

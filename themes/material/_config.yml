@@ -142,7 +142,7 @@ hanabi:
 #   For example, you can setup a CC license as:
 #       'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 # You can also use Front-Matter `license` to override this setting.
-license: "本文采用 <strong>署名-非商业性使用-禁止演绎 4.0 国际</strong> 协议进行许可，阅读 <a rel='nofollow noopener' href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh' target='_blank'>相关说明</a>"
+license: "本文采用：<strong>署名-非商业性使用-禁止演绎 4.0 国际</strong> 协议进行许可，阅读 <a rel='nofollow noopener' href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh' target='_blank'>相关说明</a>"
 
 # ---------------------------------------------------------------
 # Menu Settings
