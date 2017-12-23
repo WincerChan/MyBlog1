@@ -21,6 +21,11 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 
 <div class="pr"></div><center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2312679154.webp 卡罗尔 https://movie.douban.com/subject/10757577/ %}
+{% figure https://img3.doubanio.com/lpic/s4669554.jpg 黑客与画家 https://book.douban.com/subject/6021440/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2201518484.webp 我是谁：没有绝对安全的系统 https://movie.douban.com/subject/25932086/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p457631605.webp 七宗罪 https://movie.douban.com/subject/1292223/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2242220716.webp 十二公民 https://movie.douban.com/subject/24875534/ %}
 {% figure https://img3.doubanio.com/lpic/s3254244.jpg 嫌疑人X的献身 https://book.douban.com/subject/3211779/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2456625604.webp 暧昧男子 https://movie.douban.com/subject/27011834/  %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2495582210.webp 一千零一夜第二季 https://movie.douban.com/subject/26936441/ %}
