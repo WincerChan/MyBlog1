@@ -13,14 +13,14 @@ abbrlink: 903c6509
 
 ## 容器
 
-容器是一种把多个元素组织在一起的数据结构，容器中的元素可以逐个地迭代（即可以通过 `for` 循环去遍历）获取，可以用 `in`， `not in` 关键字判断元素是否包含在容器中。
+容器是一种把多个元素组织在一起的数据结构，容器中的元素可以逐个地迭代（即可以通过 `for` 循环去遍历）获取，可以用 `in`，`not in` 关键字判断元素是否包含在容器中。
 
 在 Python 中，常见的容器对象有：
 
-- list, deque, ....
-- set, frozensets, ....
-- dict, defaultdict, OrderedDict, Counter, ....
-- tuple, namedtuple, …
+- list, deque
+- set, frozensets
+- dict, defaultdict, OrderedDict, Counter
+- tuple, namedtuple
 - str
 
 <!-- more-->

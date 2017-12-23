@@ -22,10 +22,10 @@ thumbnail: https://i.v2ex.co/5bb7J7NT.png
 1. 创建仓库 [WincerChan.github.io](https://wincerchan.github.io)，如果同名仓库之前已经创建，请将之前的仓库改名，新建的仓库必须是 Username.github.io；
 2. 创建两个分支：master 和 hexo；
 3. 设置 hexo 为默认分支；
-4. 将刚刚创建的新仓库 `clone` 至本地，将之前的 hexo 文件夹中的`_config.yml`，`themes/`，`source/`，`scaffolds/`，`package.json`，`.gitignore`复制至WincerChan.github.io文件夹；
-5. 将 themes/next/(我用的是NexT主题) 中的 `.git/` 删除，否则无法将主题文件夹 push；
-6. 在 WincerChan.github.io 文件夹执行 `npm install` 和 `npm install hexo-deployer-git`（这里可以看一看分支是不是显示为hexo）；
-7. 执行 `git add .`、`git commit -m ""`、`git push origin hexo` 来提交 hexo 网站源文件；
+4. 将刚刚创建的新仓库 `clone` 至本地，将之前的 hexo 文件夹中的`_config.yml`、`themes/`、`source/`、`scaffolds/`、`package.json` 和 `.gitignore` 复制至 WincerChan.github.io 文件夹；
+5. 将 themes/next/(我用的是 NexT 主题) 中的 `.git/` 删除，否则无法将主题文件夹 push；
+6. 在 WincerChan.github.io 文件夹执行 `npm install` 和 `npm install hexo-deployer-git`（这里可以看一看分支是不是显示为 hexo）；
+7. 执行 `git add`、`git commit -m ""`、`git push origin hexo` 来提交 hexo 网站源文件；
 8. 执行 `hexo g -d` 生成静态网页部署至 Github 上。
 
 这样一来，[WincerChan.github.io](https://wincerchan.github.io) 仓库就有 master 分支和 hexo 分支，分别保存静态网页和源文件。
@@ -34,10 +34,10 @@ thumbnail: https://i.v2ex.co/5bb7J7NT.png
 
 在本地对博客修改（包括修改主题样式、发布新文章等）后：
 
-1. 依次执行 `git add .`、`git commit -m ""`、`git push origin hexo` 来提交 hexo 网站源文件；
+1. 依次执行 `git add`、`git commit -m ""` 和 `git push origin hexo` 来提交 hexo 网站源文件；
 2. 执行 `hexo g -d` 生成静态网页部署至 Github 上。
 
-即重复备份的 7-8 步骤，以上两部没有严格的顺序。
+即重复备份的 7-8 步骤，以上两步没有严格的顺序。
 
 ### 恢复
 

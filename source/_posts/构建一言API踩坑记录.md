@@ -29,7 +29,7 @@ thumbnail: https://i.loli.net/2017/12/22/5a3c7701e7e79.png
 
 ## 转化数据库
 
-先前已经说过，一旦数据多了起来。那么数组的访问和加载都是问题，而访问慢的问题可以用数据库来解决。而这学期正好在学数据库这门课，于是便花了点时间将 JSON 格式的数据转化成 sqlite 数据库。JSON 格式的数据有需要的只有3项，分别是ID（用以标识每个 Hitokoto）、HITOKOTO（每个 Hitokoto 的内容）、SOURCE（每个 Hitokoto 的出处）。知道了这些，转化的代码就呼之欲出了：
+先前已经说过，一旦数据多了起来。那么数组的访问和加载都是问题，而访问慢的问题可以用数据库来解决。而这学期正好在学数据库这门课，于是便花了点时间将 JSON 格式的数据转化成 sqlite 数据库。JSON 格式的数据有需要的只有 3 项，分别是 ID（用以标识每个 Hitokoto）、HITOKOTO（每个 Hitokoto 的内容）、SOURCE（每个 Hitokoto 的出处）。知道了这些，转化的代码就呼之欲出了：
 
 ```python
 import json
@@ -59,7 +59,7 @@ conn.close()
 
 有了数据库，自然要构建一个 API，这里选用的是 Flask 框架提供的接口。
 
-首先你需要安装 Flask，而Python是自带 sqlite3 模块的。直接上代码：
+首先你需要安装 Flask，而 Python 是自带 sqlite3 模块的。直接上代码：
 
 ```python
 import sqlite3
@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
 保存为 `run.py`。然后运行，打开 `http://0.0.0.0/api/` 如果没有意外的话，应当是成功了。接下来就是部署了。
 
-## 部署至Heroku
+## 部署至 Heroku
 
 ### 环境准备
 
@@ -180,7 +180,7 @@ $ heroku restart
 $ heroku maintenance:off
 ```
 
-## 使用API
+## 使用 API
 
 数据获取：
 

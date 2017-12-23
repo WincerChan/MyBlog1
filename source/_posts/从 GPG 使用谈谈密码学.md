@@ -67,7 +67,7 @@ GPG 支持的算法有很多：
 >
 > 散列：SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
 >
-> 压缩：不压缩, ZIP, ZLIB, BZIP2
+> 压缩：不压缩，ZIP，ZLIB，BZIP2
 
 ### 对称加密
 
@@ -227,4 +227,4 @@ gpg -o FILENAME -d FILENAME.gpg
 参考：
 
 - [公开密钥加密](https://zh.wikipedia.org/wiki/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86)
-- [GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html)
+- [GPG 入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html)

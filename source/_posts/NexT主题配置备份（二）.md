@@ -10,7 +10,7 @@ date: '2017/06/30 10:55:34'
 abbrlink: 654861fb
 ---
 
-这篇博客是承接上一篇 [Next主题配置备份](https://www.itswincer.com/posts/a40f8cd0/)，按照个人喜好做了一些修改。
+这篇博客是承接上一篇 [Next 主题配置备份](https://www.itswincer.com/posts/a40f8cd0/)，按照个人喜好做了一些修改。
 
 ### 加密文章
 
@@ -204,7 +204,7 @@ gulp.task('default', ['build'])
 "gulp-imagemin": "^3.3.0",
 ```
 
-在执行 `gulp build` 时，会自动执行 `hexo clean`、`hexo g` ，这时直接 `hexo d` 就行了。
+在执行 `gulp build` 时，会自动执行 `hexo clean`、`hexo g`，这时直接 `hexo d` 就行了。
 
 这是网站优化后的结果：![](https://ws1.sinaimg.cn/large/ba22af52gy1fh33l1gzdxj20no08uaaj.jpg)
 
@@ -296,7 +296,7 @@ abbrlink: 654861fb
 
 ### 分享页面
 
-NexT主题自带的是 [JiaThis](http://www.jiathis.com/)，可是太丑了，还不支持 `https`，找了好久终于到了「[Share.js](http://overtrue.me/share.js/)」，简直把 JiaThis 秒成渣：
+NexT 主题自带的是 [JiaThis](http://www.jiathis.com/)，可是太丑了，还不支持 `https`，找了好久终于到了「[Share.js](http://overtrue.me/share.js/)」，简直把 JiaThis 秒成渣：
 
 新增文件：`next/layout/_partials/share/sharejs.swig`
 

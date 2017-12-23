@@ -13,7 +13,7 @@ abbrlink: a0df572f
 
 静态博客的内容是很适合用缓存来加速访问的，除了采用常见的 CDN 加速和压缩博文等方法，通过客户端也可以实现加速访问，本文介绍的是「服务工作线程—— Service Worker」。关于 Service Worker 的具体介绍见[这里](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)。本文主要需要的是它的离线加载的特性。
 
-## 启用Service Worker
+## 启用 Service Worker
 
 ### 添加注册代码
 
@@ -31,9 +31,9 @@ if ('serviceWorker' in navigator) {
 
 当然不是直接添加在生成的静态文件 `/public/index.html`，那样每次 `hexo g` 之后都会消失，太麻烦。我这里是放在了 `/next/layout/_thrid-party/comments/livere.swig`，因为我采用了 livere 的评论系统，当然你也可以不放在这里，只需要确保生成的 `/publuc/index.html` 包含上述代码就可以了。
 
-### 添加Js文件
+### 添加 Js 文件
 
-从[这里](https://gist.github.com/WincerChan/a553ea6ab3de0afc0d3945bbbccaebd3)下载所需文件 (sw.js) ，需要添加如下文件在 `/source `目录下：
+从[这里](https://gist.github.com/WincerChan/a553ea6ab3de0afc0d3945bbbccaebd3)下载所需文件 (sw.js)，需要添加如下文件在 `/source `目录下：
 
 - `sw.js`
 - `offline.svg`

@@ -12,7 +12,7 @@ date: 2017-05-31 18:04:00
 
 ### 基本设置
 
-参照 [NexT使用文档](http://theme-next.iissnan.com/getting-started.html#theme-settings) ，设置中文语言、头像、作者、网站描述和URL等。
+参照 [NexT 使用文档](http://theme-next.iissnan.com/getting-started.html#theme-settings)，设置中文语言、头像、作者、网站描述和 URL 等。
 
 ### 动态背景
 
@@ -25,11 +25,11 @@ date: 2017-05-31 18:04:00
 <script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"></script>
 ```
 
-目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 `true` ，这里不用自带是因为想添加彩色的线条，自带的只有黑色。
+目前的 NexT 主题已经自带 canvas_nest 等四个特效，可以在主题配置文件搜索并将对应的值改为 `true`，这里不用自带是因为想添加彩色的线条，自带的只有黑色。
 
 <!-- more -->
 
-然后在 `thmems/next/source/js/src/` 目录新建 `particle.js` ，文件写入以下代码：
+然后在 `thmems/next/source/js/src/` 目录新建 `particle.js`，文件写入以下代码：
 
 ```javascript
 ! function() {
@@ -211,7 +211,7 @@ module.exports = function(locals){
 };
 ```
 
-在文章的 `Front-matter` 中添加 `top` 值，数值越大文章越靠前， 如：
+在文章的 `Front-matter` 中添加 `top` 值，数值越大文章越靠前，如：
 
 ```yaml
 title: Next主题配置备份
@@ -226,7 +226,7 @@ date: 2017-05-31 18:04:00
 
 ### NexT 主题自定义无序列表样式
 
-打开自定义 CSS： `\themes\next\source\css\_custom\custom.styl` 加入：
+打开 `\themes\next\source\css\_custom\custom.styl` 加入：
 
 ```css
 ul {
@@ -285,7 +285,7 @@ list-style-type: circle;  // 空心圆，实心圆为 disc
 
 安装：`npm install hexo-abbrlink --save`
 
-在站点配置文件中查找代码 `permalink`， 将其更改为：`permalink: posts/:abbrlink/  # “posts/” 可自行更换`
+在站点配置文件中查找代码 `permalink`，将其更改为：`permalink: posts/:abbrlink/  # “posts/” 可自行更换`
 
 同样在站点配置文件中添加代码：
 

@@ -37,7 +37,7 @@ abbrlink: 7e325dad
 6. 更换图标包
 7. fcitx 输入法
 8. 安装 docky
-9. 美化终端，安装 zsh、 Oh my zsh、powerline
+9. 美化终端，安装 zsh、Oh my zsh、powerline
 10. 配置 conky（之前 Ubuntu 上的不知道为什么不能用了）
 
 ### 使用感想
@@ -46,7 +46,7 @@ abbrlink: 7e325dad
 2. 特效比 Ubuntu 华丽多了
 3. 可随意切换工作区，效率确实高了一些
 4. KDE 设置确实较多，需要花时间
-5. KDE Connect 简直方便到爆炸！！
+5. KDE Connect 简直方便到爆炸！
 
 ### 效果图
 

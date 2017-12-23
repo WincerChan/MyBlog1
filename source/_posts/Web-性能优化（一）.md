@@ -13,7 +13,7 @@ thumbnail: https://i.loli.net/2017/11/30/5a1fd168932e2.png
 
 ## localStorage 的意义
 
-为了针对我的网站提供更好的浏览体验（或者说更接近原生 App 的用户体验），在之前我就已经[开启了Server Worker 技术](https://itswincer.com/posts/a0df572f/)，针对离线或者网速慢的情况下改善用户体验。但只有少数几个浏览器支持 （Chrome、Firefox、Opera），对目前手机端用户数最多的QQ浏览器、UC浏览器却没有支持，也就是说该方法针对QQ浏览器和UC浏览器并没有什么实际优化。
+为了针对我的网站提供更好的浏览体验（或者说更接近原生 App 的用户体验），在之前我就已经[开启了 Server Worker 技术](https://itswincer.com/posts/a0df572f/)，针对离线或者网速慢的情况下改善用户体验。但只有少数几个浏览器支持 （Chrome、Firefox、Opera），对目前手机端用户数最多的 QQ 浏览器、UC 浏览器却没有支持，也就是说该方法针对 QQ 浏览器和 UC 浏览器并没有什么实际优化。
 
 <!-- more -->
 

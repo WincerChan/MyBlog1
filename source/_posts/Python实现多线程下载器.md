@@ -56,11 +56,11 @@ with open('wallpaper.png', 'wb') as f:
     f.write(r.content)
 ```
 
-我们得到了图片的前 100001 个字节（Range的范围是包括起始和终止的），打开 `wallpaper.png` 你应该能看到一幅“半残”的图。
+我们得到了图片的前 100001 个字节（Range 的范围是包括起始和终止的），打开 `wallpaper.png` 你应该能看到一幅“半残”的图。
 
 这样我们里目标更近了一步，继续：
 
-- 确认线程数（比如8个），261258//8 = 32657，前7个线程都取 32657 个 bytes，第八个取剩余的
+- 确认线程数（比如 8 个），261258//8 = 32657，前 7 个线程都取 32657 个 bytes，第八个取剩余的
 
 
 ```python
@@ -134,7 +134,7 @@ class Downloader():
 
 至此，核心功能都完成了，剩下的就是实际体验的优化了。
 
-完整的代码已托管至 GitHub，地址见[这里](https://github.com/WincerChan/Py-Downloader) 。
+完整的代码已托管至 GitHub，地址见[这里](https://github.com/WincerChan/Py-Downloader)。
 
 ## 结语
 

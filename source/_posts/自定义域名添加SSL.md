@@ -10,7 +10,7 @@ tags:
 abbrlink: 444a2b9d
 ---
 
-> 从2017年1月份正式发布的Chrome 56开始，Google将把某些包含敏感内容的HTTP页面标记为“不安全”，比如含有密码或支付表单信息。
+> 从 2017 年 1 月份正式发布的 Chrome 56 开始，Google 将把某些包含敏感内容的 HTTP 页面标记为“不安全”，比如含有密码或支付表单信息。
 
 GitHub Pages 不支持用户自定义证书，所以当你用自定义域名的时候是不能用自己购买的 SSL 证书的，会和 GitHub 的起冲突，这里采用的是 [CloudFlare](https://www.cloudflare.com/) 自主研发的 [Keyless SSL](https://www.cloudflare.com/ssl/keyless-ssl/) 服务。简单来说就是你把网站放在 CloudFlare 的 cdn 上，不用提供自己的私钥，也能使用 SSL 加密链接。
 
@@ -27,7 +27,7 @@ GitHub Pages 不支持用户自定义证书，所以当你用自定义域名的�
 
 ![](https://ws1.sinaimg.cn/large/ba22af52gy1fgmugjxm3mj20ql08zt98.jpg)
 
-按照上图，将 `wincer.top` 换成你自己的域名，ip 地址不用换，是 GithHub 服务器的ip。
+按照上图，将 `wincer.top` 换成你自己的域名，ip 地址不用换，是 GithHub 服务器的 IP。
 
 完成之后，去你的域名提供商处修改你的 DNS 服务器为 CloudFlare 提供的（完成上一步后 CloudFlare 会提供两个 DNS 服务器给你）。
 
