@@ -5,8 +5,16 @@
   "hexo": {
     "version": "3.3.7"
   },
+  "scripts": {
+    "build": "hexo generate && gulp",
+    "eslint": "eslint .",
+    "deploy": "hexo deploy"
+  },
   "dependencies": {
+    "cheerio": "^0.20.0",
     "del": "^3.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-hexo": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.4.2",
     "gulp-htmlclean": "^2.7.14",
@@ -32,6 +40,9 @@
     "hexo-renderer-marked": "^0.2.11",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.2.0",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "lodash": "^4.5.1",
+    "lunr": "^2.1.2",
+    "rename": "^1.0.4"
   }
 }
