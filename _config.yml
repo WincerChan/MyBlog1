@@ -118,7 +118,7 @@ encrypt:
                 }
             }
         </script>
-        <input type="text" onkeydown="EnterPress" onkeypress="EnterPress(event)" style="/* border-radius: 10px; */border-style: groove;/* border: 0px; */border-bottom: 2px solid #0097a7; /* 下划线效果 */border-top:0px;border-left:0px;border-right:0px;height: 30px;width: 61.8%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;background: #61616;padding-left: 5px" placeholder="输入后按回车">
+        <input type="text" onkeydown="EnterPress" onkeypress="EnterPress(event)" style="/* border-radius: 10px; */border-style: groove;/* border: 0px; */border-bottom: 2px solid #0097a7; /* 下划线效果 */border-top:0px;border-left:0px;border-right:0px;height: 30px;width: 61.8%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;background: #61616;padding-left: 5px" placeholder="输入密码后请按回车">
         <div id="enc_error" style=" display: inline-block; color: #d84527; font: large; ">
         </div>
     </div>
