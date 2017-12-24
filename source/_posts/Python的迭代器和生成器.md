@@ -7,6 +7,7 @@ tags:
   - Python
 copyright: true
 abbrlink: 903c6509
+thumbnail: https://s1.ax1x.com/2017/12/24/vGeO0.png
 ---
 
 我最初接触 Python 是在 17 年 2 月份，现在半年过去了，对迭代器和生成器的概念却及其有限，其实也是因为其它主流语言如：C、Java 中没有生成器的概念，所以当时学了就忘了。现在正准备好好复习一下迭代器和生成器。

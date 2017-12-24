@@ -9,6 +9,7 @@ tags:
 date: '2017/07/25 13:06:47'
 copyright: true
 abbrlink: a0df572f
+thumbnail: https://i.loli.net/2017/12/24/5a3f3ce69775c.png
 ---
 
 静态博客的内容是很适合用缓存来加速访问的，除了采用常见的 CDN 加速和压缩博文等方法，通过客户端也可以实现加速访问，本文介绍的是「服务工作线程—— Service Worker」。关于 Service Worker 的具体介绍见[这里](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)。本文主要需要的是它的离线加载的特性。
@@ -19,6 +20,8 @@ abbrlink: a0df572f
 
 位置需要在网站的根目录添加，这样才能保证接管整个网站的全部资源。
 
+<!-- more -->
+
 ```javascript
 <script>
 if ('serviceWorker' in navigator) {
@@ -26,8 +29,6 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 ```
-
-<!-- more -->
 
 当然不是直接添加在生成的静态文件 `/public/index.html`，那样每次 `hexo g` 之后都会消失，太麻烦。我这里是放在了 `/next/layout/_thrid-party/comments/livere.swig`，因为我采用了 livere 的评论系统，当然你也可以不放在这里，只需要确保生成的 `/publuc/index.html` 包含上述代码就可以了。
 

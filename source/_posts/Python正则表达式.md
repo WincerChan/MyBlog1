@@ -8,6 +8,7 @@ tags:
 copyright: true
 abbrlink: fc635c56
 date: 2017-05-26 09:26:00
+thumbnail: https://s1.ax1x.com/2017/12/24/vJm3d.png
 ---
 
 目前在跟 Udacity 的 [cs212](https://classroom.udacity.com/courses/cs212) 课程，避免懒癌发作，开篇博客来记录一下
@@ -16,16 +17,16 @@ date: 2017-05-26 09:26:00
 
 ### 正则表达式模式
 
-| special | example |        match           |
-| :-----: | :-----: | :------------------:   |
+| special | example |         match          |
+| :-----: | :-----: | :--------------------: |
 |    *    |   a*    | '', a, aa, aaa, . . .  |
 |    ?    |   a?    |      '', a, . . .      |
-|    .    |    .    |  a, b, c, 7, ! . . .  |
+|    .    |    .    |  a, b, c, 7, ! . . .   |
 |    ^    |   ^b    | ba, bb, . . .  ~~abc~~ |
-|    $    |   a$    |   ba, . . . ~~ab~~   |
-|   ''    |   ''    |          ''            |
-|    a    |    a    |          a             |
-|   ba    |   bba   |  ba, ~~aa~~, ~~bb~~    |
+|    $    |   a$    |    ba, . . . ~~ab~~    |
+|   ''    |   ''    |           ''           |
+|    a    |    a    |           a            |
+|   ba    |   bba   |   ba, ~~aa~~, ~~bb~~   |
 
 <!-- more -->
 

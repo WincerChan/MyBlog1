@@ -8,11 +8,10 @@ tags:
 date: '2017/07/29 10:08:32'
 copyright: true
 abbrlink: e5d13eb
+thumbnail: https://ws1.sinaimg.cn/large/ba22af52gy1fi35u8pm3xj20sg0ayaa4.jpg
 ---
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fi35u8pm3xj20sg0ayaa4.jpg)
-
-没错，我又双叒叕换评论系统了，从最初的网易云跟帖，到后来的 Livere，再到现在的 Disqus，两个多月就换了好了三四次（中间从 Livere 切换过一次 Disqus，后来又换回来了）了，仿佛我在折腾这些非博客主体的路上越走越远，也幸好我的博客才建成，没啥人留言，不然就得不偿失了。
+没错，我又双叒叕换评论系统了，从最初的网易云跟帖，到后来的 LiveRe，再到现在的 Disqus，两个多月就换了好了三四次（中间从 LiveRe 切换过一次 Disqus，后来又换回来了）了，仿佛我在折腾这些非博客主体的路上越走越远，也幸好我的博客才建成，没啥人留言，不然就得不偿失了。
 
 <!-- more -->
 

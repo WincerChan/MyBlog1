@@ -8,6 +8,7 @@ categories: 文字阁
 tags:
   - Java
 abbrlink: 43fc1528
+thumbnail: https://s1.ax1x.com/2017/12/24/vGo1s.png
 ---
 
 ## 抽象类

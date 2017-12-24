@@ -8,6 +8,7 @@ tags:
   - 安全
   - HTTPS
 abbrlink: 444a2b9d
+thumbnail: https://s1.ax1x.com/2017/12/24/vGXAU.png
 ---
 
 > 从 2017 年 1 月份正式发布的 Chrome 56 开始，Google 将把某些包含敏感内容的 HTTP 页面标记为“不安全”，比如含有密码或支付表单信息。

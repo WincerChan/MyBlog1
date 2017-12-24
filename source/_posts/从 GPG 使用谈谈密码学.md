@@ -9,7 +9,7 @@ tags:
 date: '2017/12/11 09:26:16'
 copyright: right
 abbrlink: 4aa5d46d
-thumbnail: https://i.loli.net/2017/12/11/5a2e046558167.png
+thumbnail: https://s1.ax1x.com/2017/12/24/vYEq0.png
 ---
 
 ## 前言

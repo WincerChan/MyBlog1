@@ -8,7 +8,7 @@ tags:
   - Web
 date: '2017/11/30 15:09:34'
 abbrlink: a9d193c6
-thumbnail: https://i.loli.net/2017/11/30/5a1fd168932e2.png
+thumbnail: https://s1.ax1x.com/2017/12/24/vYeaT.png
 ---
 
 ## localStorage 的意义

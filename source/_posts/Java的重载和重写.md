@@ -8,6 +8,7 @@ tags:
   - Java
   - 多态
 abbrlink: af291f12
+thumbnail: https://s1.ax1x.com/2017/12/24/vGL7T.png
 ---
 
 ## 重载（Overload）

@@ -8,6 +8,7 @@ tags:
 copyright: true
 abbrlink: a8e25856
 date: 2017-06-23 20:48:58
+thumbnail: https://s1.ax1x.com/2017/12/24/vG4hQ.png
 ---
 
 最近计算机网络考试，无奈本学期没听多少，对三次握手和四次挥手的概念是模模糊糊，在看了哈工的网课后，了解了一些，就写篇博客记录和分享一下。

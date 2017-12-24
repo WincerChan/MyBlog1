@@ -8,6 +8,7 @@ tags:
 copyright: true
 abbrlink: cfd78fa9
 date: 2017-05-22 14:32:00
+thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 ---
 
 ## Axel 工具

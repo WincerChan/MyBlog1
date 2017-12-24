@@ -8,6 +8,7 @@ tags:
 copyright: true
 abbrlink: a40f8cd0
 date: 2017-05-31 18:04:00
+thumbnail: https://s1.ax1x.com/2017/12/24/vGU0K.png
 ---
 
 ### 基本设置

@@ -9,6 +9,7 @@ tags:
 copyright: true
 abbrlink: c7bc4900
 date: 2017-05-06 00:00:00
+thumbnail: https://s1.ax1x.com/2017/12/24/vJb2d.png
 ---
 
 #### SafeInCloud 介绍

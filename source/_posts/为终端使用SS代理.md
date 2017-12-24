@@ -8,6 +8,7 @@ copyright: true
 date: 2017-06-04 20:31:10
 updated: 2017-06-12 16:32:18
 abbrlink: 39613bbd
+thumbnail: https://s1.ax1x.com/2017/12/24/vJpcR.png
 ---
 
 Shadowsocks 是我们最常用的代理工具，它使用 socks 协议，而我们目前使用的终端只支持 http、https 协议，所以我们需要用软件来将 socks 协议转化为 http 等协议，我采用的是 Proxychains 软件（SS 的安装和配置自行谷歌）
