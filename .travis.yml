@@ -1,33 +1,28 @@
-language: node_js
+language: node_js       # 设置语言
 
-sudo: false
+node_js: stable         # 设置版本
 
-node_js:
-  - "node"
+before_install:
+  - git config --global user.name "WincerChan"
+  - git config --global user.email "WincerChan@gmail.com"
 
-cache:
-  apt: true
-  directories:
-    - node_modules
-
-env:
-  - CXX=g++-4.8
-
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-  ssh_known_hosts: github.com
-
+install:
+  - npm install         # 安装package
+  
 script:
-  - npm run eslint
-  - npm run build
-
-deploy:
-  provider: script
-  script: .travis/deploy.sh
-  skip_cleanup: true
-  on:
-    branch: master
+  - gulp build          # 生成
+  
+after_script:
+  - cd ./public
+  - git init
+  - git add .
+  - git commit -m "Travis CI Auto Builder"
+  - git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master:master
+  
+branches:
+  only:
+    - hexo
+    
+env:
+  global:
+    - GH_REF: github.com/WincerChan/WincerChan.github.io.git
