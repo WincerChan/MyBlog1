@@ -76,9 +76,9 @@ img:
     sidebar_header: "https://i.loli.net/2017/12/21/5a3b74111e6b0.jpeg"
     random_thumbnail: "/img/random/material-"
     footer_image:
-        #upyun_logo:
-            #link: "https://www.upyun.com/"
-            #src: "/img/upyun_logo.svg"
+        upyun_logo:
+            link: "https://www.upyun.com/"
+            src: "/img/upyun_logo.svg"
 
 # Custom Fonts
 #    family: the font-family which will be used in the theme
