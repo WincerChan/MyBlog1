@@ -45,7 +45,7 @@ thumbnail: https://i.v2ex.co/5bb7J7NT.png
 
 1. 安装 git；
 2. 安装 Nodejs 和 npm；
-3. 使用 `git clone git@github.com:WincerChan/WincerChan.github.io.git` 将仓库拷贝至本地；
+3. 使用 `git clone git#github.com:WincerChan/WincerChan.github.io.git` 将仓库拷贝至本地；
 4. 在文件夹内执行以下命令 `npm install hexo-cli -g`、`npm install`、`npm install hexo-deployer-git`。
 
 ### 附录
@@ -54,7 +54,7 @@ thumbnail: https://i.v2ex.co/5bb7J7NT.png
 
 ##### 添加 ssh-keys
 
-1. 在终端下运行：`ssh-keygen -t rsa -C "yourname@email.com"`，一路回车；
+1. 在终端下运行：`ssh-keygen -t rsa -C "yourname#email.com"`，一路回车；
 2. 会在 .ssh 目录生成 `id_rsa`、`id_rsa.pub` 两个文件，这就是密钥对，id_rsa 是私钥，千万不能泄漏出去；
 3. 登录 Github，打开「Settings」-->「SSH and GPG keys」，然后点击「new SSH key」，填上任意 Title，在 Key 文本框里粘贴公钥 `id_rsa.pub` 文件的内容，注意不要粘贴成 `id_rsa`，最后点击「Add SSH Key」。
 

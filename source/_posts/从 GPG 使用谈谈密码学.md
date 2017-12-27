@@ -136,7 +136,7 @@ RSA 密钥长度应在 1024 位与 4096 位之间。
 ```bash
 You need a user ID to identify your key; the software constructs the user ID
 from the Real Name, Comment and Email Address in this form:
-    "Heinrich Heine (Der Dichter) <heinrichh@duesseldorf.de>"
+    "Heinrich Heine (Der Dichter) <heinrichh#duesseldorf.de>"
 
 真实姓名：
 电子邮件地址：
