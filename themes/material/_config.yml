@@ -157,7 +157,7 @@ toc:
 
 # SNS Menu
 sns:
-    email: WincerChan@gmail.com
+    email: WincerChan#gmail.com
     facebook:
     twitter:
     googleplus:
@@ -185,7 +185,7 @@ sns_share:
 sidebar:
     dropdown:
         Email Me:
-            link: "mailto:WincerChan@gmail.com"
+            link: "mailto:WincerChan#gmail.com"
             icon: email
     homepage:
         use: true
