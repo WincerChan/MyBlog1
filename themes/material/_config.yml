@@ -185,7 +185,7 @@ sns_share:
 sidebar:
     dropdown:
         Email Me:
-            link: "mailto:WincerChan#gmail.com"
+            link: "mailto:WincerChan[at]gmail[dot]com"
             icon: email
     homepage:
         use: true
