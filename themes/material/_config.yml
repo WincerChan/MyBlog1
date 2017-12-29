@@ -70,10 +70,10 @@ background:
 
 # Images Settings
 img:
-    logo: "https://i.loli.net/2017/12/21/5a3bb5742bf56.png"
-    avatar: "https://i.loli.net/2017/12/26/5a4242e2dfb81.jpg"
-    daily_pic: "https://i.loli.net/2017/12/21/5a3b73e7a59ca.png"
-    sidebar_header: "https://i.loli.net/2017/12/21/5a3b74111e6b0.jpeg"
+    logo: "https://p.ssl.qhimg.com/t01d71b8534fa713a38.png"
+    avatar: "https://p.ssl.qhimg.com/dmfd/200_200_90/t01596ccafe9e2f3ad6.jpg"
+    daily_pic: "https://p.ssl.qhimg.com/t0133b87328bfa9809b.png"
+    sidebar_header: "https://p.ssl.qhimg.com/t01b29c4d9780e5701b.jpg"
     random_thumbnail: "/img/random/material-"
     footer_image:
         #upyun_logo:
