@@ -15,13 +15,17 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 
 我的能力就这么多。我若全心工作，则必然忽略生活；我若用心生活，则必然一事无成；若我两者兼顾，又难免平庸。
 
-> 「我们用“我能做到什么”来判断和定位自己，而别人用“你已经做过什么”来判断和定位你。」
+> 「我们用『我能做到什么』来判断和定位自己，而别人用『你已经做过什么』来判断和定位你。」
 
 趁我在还能写的动代码、看的进书和电影的年纪，努力一回，看看这平庸的资质究竟可以发挥几分。
 
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1403875505.webp 黑镜第一季 https://movie.douban.com/subject/7054120/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2496940327.webp 海边的曼彻斯特 https://movie.douban.com/subject/25980443/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1043597424.webp 喜剧之王 https://movie.douban.com/subject/1302425/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p452546089.webp 汉江怪物 https://movie.douban.com/subject/1763134/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2312679154.webp 卡罗尔 https://movie.douban.com/subject/10757577/ %}
 {% figure https://img3.doubanio.com/lpic/s4669554.jpg 黑客与画家 https://book.douban.com/subject/6021440/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2201518484.webp 我是谁：没有绝对安全的系统 https://movie.douban.com/subject/25932086/ %}
