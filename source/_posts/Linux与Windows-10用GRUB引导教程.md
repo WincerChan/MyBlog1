@@ -39,7 +39,7 @@ thumbnail: https://i.loli.net/2017/12/22/5a3c72ce0092c.png
 但是不得不说，这对我们安装 Linux 造成了很大的困扰，也是直接导致我们重启到 Windows 10 后进不去 Linux 的原因。
 首先我们要关闭这个功能：进入 BIOS 找到 Secure Boot，选择 disabled，这样就关闭了。当然，有些人进入 BIOS 会发现 Secure Boot 这个选项是灰色的（比如我的就是），这时你需要先给你的 BIOS 设一个密码，然后就能关 Secure Boot 了。
 ## 安装 Linux
-所有的准备都已经完成，这时就可以准备刻录 U 盘了，不推荐 UltraISO，经亲测，软碟通仅刻录 Ubuntu 能成功，其它绝大多数发行部都会失败。推荐「[Rufus](https://rufus.akeo.ie/)」和「[USBWriter](https://sourceforge.net/projects/usbwriter/)」，这两个软件都可以。
+所有的准备都已经完成，这时就可以准备刻录 U 盘了，不推荐 UltraISO，经亲测，软碟通仅刻录 Ubuntu 能成功，其它绝大多数发行版都会失败。推荐「[Rufus](https://rufus.akeo.ie/)」和「[USBWriter](https://sourceforge.net/projects/usbwriter/)」，这两个软件都可以。
 刻录完成后，重启按 `f12`，选择从 USB 设备启动，对于绝大多数发行版来说一路回车就行了，只需要注意一点：**在选择挂载 boot 位置的时候，一定要挂载在 efi 分区**，别的都不行。
 重启之后，不出意外的话，你会直接进入 Windows 10，不要担心，这时 Linux 已经安装成功了，我们只需要将引导文件替换一下。
 
