@@ -70,10 +70,10 @@ background:
 
 # Images Settings
 img:
-    logo: "https://p.ssl.qhimg.com/t01d71b8534fa713a38.png"
-    avatar: "https://p.ssl.qhimg.com/dmfd/200_200_90/t01596ccafe9e2f3ad6.jpg"
-    daily_pic: "https://p.ssl.qhimg.com/t0133b87328bfa9809b.png"
-    sidebar_header: "https://p.ssl.qhimg.com/t01b29c4d9780e5701b.jpg"
+    logo: "https://upload-images.jianshu.io/upload_images/2133488-8e0c6349a6004e5e.png"
+    avatar: "https://upload-images.jianshu.io/upload_images/2133488-9cf5109c2d59a64a.jpg"
+    daily_pic: "https://upload-images.jianshu.io/upload_images/2133488-61c30a850dffdcd9.jpg"
+    sidebar_header: "https://upload-images.jianshu.io/upload_images/2133488-a2ec6b5d8fb8e0c9.jpg"
     random_thumbnail: "/img/random/material-"
     footer_image:
         #upyun_logo:

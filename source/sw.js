@@ -19,6 +19,13 @@
              maxEntries: maxEntries
          }
      });
+     self.toolbox.router.get("/(.*)",self.toolbox.cacheFirst, {
+     	origin: /upload-images\.jianshu\.io/,
+     	cache: {
+     	 name: staticImageCacheName,
+             maxEntries: maxEntries
+     	}
+     })
      self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
          origin: /i\.loli\.net/,
          cache: {
