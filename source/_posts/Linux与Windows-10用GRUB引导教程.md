@@ -90,7 +90,7 @@ sudo grub-probe --target=fs_uuid /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi
 
 在使用这一年多的时间，遇到了以下的几个问题：
 1. 在 Windows 10 进行了一个大更新后，会发现 GRUB 引导界面没有了，还是直接进入了 Windows 10，这时只需要按照 `替换引导文件` 的方法重新输入一遍命令就行。
-2. 使用 Linux 某个发行版一段时间之后，难免会想尝试一下另一个发行版。这时请务必将之前的发型版的引导文化删除，否则可能会出现无论怎么设置都无法进入 GRUB 的情况。例如：我之前用的是 Ubuntu，我现在换成了 Manjaro，我就需要用 DG 删除 EFI 分区的 Ubuntu 文件夹。
+2. 使用 Linux 某个发行版一段时间之后，难免会想尝试一下另一个发行版。这时请务必将之前的发型版的引导文件删除，否则可能会出现无论怎么设置都无法进入 GRUB 的情况。例如：我之前用的是 Ubuntu，我现在换成了 Manjaro，我就需要用 DG 删除 EFI 分区的 Ubuntu 文件夹。
 3. 在我使用 Manjaro 更新了一次 Linux 的内核后，进不去 Windows 10 了，这个时候千万不要直接修复 Windows 10 引导，这会格式化 EFI 分区，只需要按上面 [修复 Windows 引导](https://itswincer.com/posts/ad42f575/#%E4%BF%AE%E5%A4%8D-Windows-%E5%BC%95%E5%AF%BC) 的方法编辑一下 GRUB 就可以了。
 
 最后：祝使用愉快。
