@@ -6,11 +6,15 @@ Allow: /tags/
 Allow: /page/
 Allow: /posts/
 Allow: /about/
+Allow: /categories/分享境/
+Allow: /categories/博客栈/
+Allow: /categories/实验室/
+Allow: /categories/文字阁/
+Allow: /categories/碎碎念/
 
 
 Disallow: /images/
-Disallow: /categories/笔记/
+Disallow: /categories/
 Disallow: /sw.js
 
 Sitemap: https://wincerchan.github.io/sitemap.xml
-
