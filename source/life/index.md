@@ -18,10 +18,15 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 > 「我们用『我能做到什么』来判断和定位自己，而别人用『你已经做过什么』来判断和定位你。」
 
 趁我在还能写的动代码、看的进书和电影的年纪，努力一回，看看这平庸的资质究竟可以发挥几分。
+<!-- more -->
 
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/lpic/s27264181.jpg 解忧杂货店 https://book.douban.com/subject/25862578/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2499052494.jpg 追龙 https://movie.douban.com/subject/26425068/ %}
+{% figure https://img1.doubanio.com/lpic/s29460229.jpg 七根凶简 https://book.douban.com/subject/27035382/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2217557172.jpg 一代宗师 https://movie.douban.com/subject/3821067/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1403875505.jpg 黑镜第一季 https://movie.douban.com/subject/7054120/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2496940327.jpg 海边的曼彻斯特 https://movie.douban.com/subject/25980443/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1043597424.jpg 喜剧之王 https://movie.douban.com/subject/1302425/ %}
