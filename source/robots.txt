@@ -13,7 +13,6 @@ Allow: /categories/碎碎念/
 
 
 Disallow: /images/
-Disallow: /categories/
 Disallow: /sw.js
 
 Sitemap: https://wincerchan.github.io/sitemap.xml
