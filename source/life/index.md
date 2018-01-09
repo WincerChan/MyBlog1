@@ -23,6 +23,12 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2508926717.jpg 前任3：再见前任 https://movie.douban.com/subject/26662193/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2416438068.jpg 逃出绝命镇 https://movie.douban.com/subject/26688480/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1995752943.jpg 怪化猫 https://movie.douban.com/subject/2340927/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2489075721.jpg 来自深渊 https://movie.douban.com/subject/26940008/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2502466029.jpg 恐袭波士顿 https://movie.douban.com/subject/26357945/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2388072355.jpg 心里的声音 https://movie.douban.com/subject/26435723/ %}
 {% figure https://img3.doubanio.com/lpic/s27264181.jpg 解忧杂货店 https://book.douban.com/subject/25862578/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2499052494.jpg 追龙 https://movie.douban.com/subject/26425068/ %}
 {% figure https://img1.doubanio.com/lpic/s29460229.jpg 七根凶简 https://book.douban.com/subject/27035382/ %}
@@ -38,6 +44,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2242220716.jpg 十二公民 https://movie.douban.com/subject/24875534/ %}
 {% figure https://img3.doubanio.com/lpic/s3254244.jpg 嫌疑人X的献身 https://book.douban.com/subject/3211779/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2456625604.jpg 暧昧男子 https://movie.douban.com/subject/27011834/  %}
+{% figure https://img3.doubanio.com/lpic/s28350186.jpg 天才在左，疯子在右 https://book.douban.com/subject/26666472/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2495582210.jpg 一千零一夜第二季 https://movie.douban.com/subject/26936441/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2463178431.jpg 猎凶风河谷 https://movie.douban.com/subject/26389601/ %}
 {% figure https://img3.doubanio.com/lpic/s1113106.jpg 计算机程序的构造和解释 https://book.douban.com/subject/1148282/ %}
