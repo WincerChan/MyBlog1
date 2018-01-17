@@ -19,8 +19,8 @@ head:
 # Jump Links Settings
 url:
     rss: false
-    daily_pic: "#"
-    logo: "#"
+    daily_pic: ""
+    logo: "https://www.itswincer.com"
 
 
 # ---------------------------------------------------------------
