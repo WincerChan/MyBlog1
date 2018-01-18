@@ -23,6 +23,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2505160594.jpg 暴雪将至 https://movie.douban.com/subject/26775933/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2508926717.jpg 前任3：再见前任 https://movie.douban.com/subject/26662193/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2416438068.jpg 逃出绝命镇 https://movie.douban.com/subject/26688480/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1995752943.jpg 怪化猫 https://movie.douban.com/subject/2340927/ %}
