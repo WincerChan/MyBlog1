@@ -7,3 +7,6 @@ public/
 .deploy*/
 .directory
 themes/next2/
+.eslin*
+netlify.toml
+deploy

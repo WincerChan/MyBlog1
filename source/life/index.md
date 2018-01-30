@@ -23,6 +23,10 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.jpg 忌日快乐 https://movie.douban.com/subject/27027913/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1447987261.jpg 反叛的鲁路修R2 https://movie.douban.com/subject/3004532/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1984503283.jpg 反叛的鲁路修 https://movie.douban.com/subject/2043155/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2298996369.jpg 泰勒·斯威夫特：1989世界巡回演唱会 https://movie.douban.com/subject/26692640/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2505160594.jpg 暴雪将至 https://movie.douban.com/subject/26775933/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2508926717.jpg 前任3：再见前任 https://movie.douban.com/subject/26662193/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2416438068.jpg 逃出绝命镇 https://movie.douban.com/subject/26688480/ %}
