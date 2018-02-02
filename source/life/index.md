@@ -23,6 +23,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2512204463.jpg 灵魂摆渡·黄泉 https://movie.douban.com/subject/26910820/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2503997609.jpg 寻梦环游记 https://movie.douban.com/subject/20495023/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2510057340.jpg 忌日快乐 https://movie.douban.com/subject/27027913/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1447987261.jpg 反叛的鲁路修R2 https://movie.douban.com/subject/3004532/ %}
