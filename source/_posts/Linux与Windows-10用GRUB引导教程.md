@@ -7,6 +7,7 @@ tags:
   - Windows
   - 双系统
 date: '2017/10/17 11:35:19'
+updated: 208/02/05 10:13:49
 copyright: true
 abbrlink: ad42f575
 thumbnail: https://i.loli.net/2017/12/22/5a3c72ce0092c.png
@@ -47,6 +48,8 @@ thumbnail: https://i.loli.net/2017/12/22/5a3c72ce0092c.png
 先用 DG 打开 EFI 分区，你会看到多了一个文件夹，名称取决于你安装的是哪一个发行版。我安装的是 Manjaro Linux，名称就是 Manjaro，打开之后会发现里面有一个名为 grubx64.efi 的文件，这就是启动 Linux 的引导文件。和 Windows 10 的 bootmgfw.efi 类似，我们想要用 grubx64.efi 引导代替掉 bootmgfw.efi，这样就可以用 GRUB 引导了。步骤：
 1. 进入管理员命令行。方法：win + x，再按 a
 2. 输入 `bcdedit /set {bootmgr} path \EFI\Manjaro\grubx64.efi`。提示操作成功的话，就完成了。
+
+> 注：经人提醒，如果输入以上命令提示「参数错误」的话，将 {bootmgr} 改为 '{bootmgr}'，原因是 PowerShell 和 CMD 语法的差别。
 
 至此，如果你安装的是除 Arch 之外绝大多数发行版，那么接下来就和你没有啥关系了，你已经成功了，好好享受吧！
 
