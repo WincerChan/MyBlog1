@@ -88,7 +88,7 @@ img:
 #        - If you have setup your custom font-family, don't forget to add style tag with @font-face or link.tag with font css
 #          to /source/data/head.yml as custom code, to load custom font files.
 fonts:
-    family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif
+    family: Raleway
     use: catnet
     custom_font_host:
 
