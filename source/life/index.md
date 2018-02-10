@@ -23,7 +23,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
-{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2162615597.jpg 纸牌屋第一季 https://movie.douban.com/subject/6037429/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2162615597.jpg '纸牌屋 第一季' https://movie.douban.com/subject/6037429/ %}
 {% figure https://img3.doubanio.com/lpic/s29517520.jpg 浮生六记 https://book.douban.com/subject/27006467/ %}
 {% figure https://img1.doubanio.com/lpic/s28476077.jpg 撞铃 https://book.douban.com/subject/26712111/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1222949946.jpg 罪恶王冠 https://movie.douban.com/subject/6518736/ %}
@@ -44,7 +44,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2499052494.jpg 追龙 https://movie.douban.com/subject/26425068/ %}
 {% figure https://img1.doubanio.com/lpic/s29460229.jpg 七根凶简 https://book.douban.com/subject/27035382/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2217557172.jpg 一代宗师 https://movie.douban.com/subject/3821067/ %}
-{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1403875505.jpg 黑镜第一季 https://movie.douban.com/subject/7054120/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1403875505.jpg '黑镜 第一季' https://movie.douban.com/subject/7054120/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2496940327.jpg 海边的曼彻斯特 https://movie.douban.com/subject/25980443/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1043597424.jpg 喜剧之王 https://movie.douban.com/subject/1302425/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p452546089.jpg 汉江怪物 https://movie.douban.com/subject/1763134/ %}
@@ -56,7 +56,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 {% figure https://img3.doubanio.com/lpic/s3254244.jpg 嫌疑人X的献身 https://book.douban.com/subject/3211779/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2456625604.jpg 暧昧男子 https://movie.douban.com/subject/27011834/  %}
 {% figure https://img3.doubanio.com/lpic/s28350186.jpg 天才在左，疯子在右 https://book.douban.com/subject/26666472/ %}
-{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2495582210.jpg 一千零一夜第二季 https://movie.douban.com/subject/26936441/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2495582210.jpg '一千零一夜 第二季' https://movie.douban.com/subject/26936441/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2463178431.jpg 猎凶风河谷 https://movie.douban.com/subject/26389601/ %}
 {% figure https://img3.doubanio.com/lpic/s1113106.jpg 计算机程序的构造和解释 https://book.douban.com/subject/1148282/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2257392597.jpg 江户盗贼团五叶 https://movie.douban.com/subject/4176578/ %}
@@ -139,8 +139,8 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2016930906.jpg 恐怖直播 https://movie.douban.com/subject/21360417/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2255040492.jpg 模仿游戏 https://movie.douban.com/subject/10463953/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1512562287.jpg 让子弹飞 https://movie.douban.com/subject/3742360/ %}
-{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2153367599.jpg 神探夏洛克 https://movie.douban.com/subject/6522269/ %}
-{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p760534033.jpg 神探夏洛克 https://movie.douban.com/subject/3986493/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2153367599.jpg '神探夏洛克 第二季' https://movie.douban.com/subject/6522269/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p760534033.jpg '神探夏洛克 第一季' https://movie.douban.com/subject/3986493/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p698531629.jpg 嫌疑人X的献身 https://movie.douban.com/subject/2369845/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2215164906.jpg 智取威虎山 https://movie.douban.com/subject/10807909/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2246885606.jpg 杀破狼2 https://movie.douban.com/subject/23788440/ %}
