@@ -23,6 +23,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2162615597.jpg 纸牌屋第一季 https://movie.douban.com/subject/6037429/ %}
 {% figure https://img3.doubanio.com/lpic/s29517520.jpg 浮生六记 https://book.douban.com/subject/27006467/ %}
 {% figure https://img1.doubanio.com/lpic/s28476077.jpg 撞铃 https://book.douban.com/subject/26712111/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1222949946.jpg 罪恶王冠 https://movie.douban.com/subject/6518736/ %}
