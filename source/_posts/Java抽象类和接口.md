@@ -1,7 +1,7 @@
 ---
 title: Java 抽象类和接口
 date: '2017/06/17 08:43:23'
-updated: 2017/06/18 19:22:30
+updated: 2017/12/24 19:22:30
 copyright: true
 type: categories
 categories: 文字阁

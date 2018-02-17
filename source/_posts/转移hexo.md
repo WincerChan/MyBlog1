@@ -8,8 +8,8 @@ tags:
   - 博客
 copyright: true
 abbrlink: 7efd2818
-date: 2017-06-02 21:37:00
-updated: 2017-06-14 20:44:33
+date: 2017/06/02 21:37:00
+updated: 2017/06/14 20:44:33
 thumbnail: https://i.v2ex.co/5bb7J7NT.png
 ---
 

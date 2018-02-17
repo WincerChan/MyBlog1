@@ -4,9 +4,11 @@ type: categories
 categories: 碎碎念
 tags:
   - 随拍
+  - 
 copyright: true
 abbrlink: 92e17eb5
-date: 2017-05-12 00:00:00
+date: 2017/05/12 18:28:27
+updated: 2017/12/24 19:38:59
 thumbnail: https://s1.ax1x.com/2017/12/24/vJ6C4.png
 ---
 前两天逛耳机吧的时候发现了一条新耳机，顺手查了一下，一查到宣传海报就被这条耳机深深的吸引，与之高调的外观设计相符的是 King 这个名称，于是右手不听使唤的点下了购买键。
