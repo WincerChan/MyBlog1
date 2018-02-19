@@ -5,7 +5,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item"><%= __('post.qrcode') %></li>
     <% if(theme.qrcode.use === "plugin") { %>
-        <img src="<%- qrcode(url, {
+        <img src="<%- qrcode(page.permalink, {
             margin: 2
         }) %>">
     <% } else if(theme.qrcode.use === "online") { %>
