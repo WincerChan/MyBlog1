@@ -23,6 +23,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2504277551.jpg '至暗时刻' https://movie.douban.com/subject/26761416/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2302930556.jpg '唐人街探案' https://movie.douban.com/subject/26311973/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2511355624.jpg '唐人街探案2' https://movie.douban.com/subject/26698897/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2507024497.jpg '妖猫传' https://movie.douban.com/subject/5350027/ %}
