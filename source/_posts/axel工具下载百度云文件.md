@@ -8,7 +8,7 @@ tags:
 copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
-updated: 2018/02/22 19:39:13
+updated: 2018/02/23 20:46:10
 thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 ---
 
@@ -56,7 +56,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 ~~目前解决百度云限速的思路主要是先获取百度云文件的直链，Linux 下直接登录云盘，点击下载，下载内容界面右击下载内容：`复制链接地址`，即可获取百度云的下载直链，Windows 可用[这个插件](https://github.com/cloudroc/baidu-nolimit)来禁止启动百度云管家。~~
 
-> **注：此方法获取的直链已无法通过 Axel 下载，却可以通过 ariac2 下载，原因是百度云增加了 User-Agent 检测，而亲测 Axel 设置 User-Agent 好像也没有什么用，而 ariac2 最多只能 32 线程，所以此方法已基本无用**
+> **注：此方法获取的直链已无法通过 Axel 下载，却可以通过 ariac2 下载，原因是百度云增加了 User-Agent 检测，~~而亲测 Axel 设置 User-Agent 好像也没有什么用~~，而 ariac2 最多只能 32 线程，所以此方法已基本无用**
 
 ## 百度网盘直接下载助手
 
@@ -89,7 +89,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 目前我可以想到的就只有用手机端「ES 文件浏览器」+「ADM」的方法了
 
-同样该方法并非完美，用「ES 文件浏览器」获取的百度云链接只能在该手机端使用，因为该链接是通过本地端口远程链接所生成的，故还是有一些限制，速度倒是挺快：
+同样该方法并非完美，用「ES 文件浏览器」获取的百度云链接只能在该手机端使用，因为该链接是通过本地端口远程链接所生成的，故还是有一些限制，速度倒是挺快（会有一些不稳定的波动）：
 
 ![ADM 下载](https://i.loli.net/2018/02/22/5a8e419cd7d7f.png)
 
@@ -104,3 +104,30 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 5. `ES 文件浏览器 -> 网络 -> 新建 -> 百度网盘`，随后登录就会进入网盘界面，进入文件夹找到需要下载的文件后：`长按 -> 更多 -> 打开为 -> 视频 -> ADM`，这样就会调用 ADM 下载了
 
 > **注意：下载过程中需要保证「ES 文件浏览器」在后台运行**
+
+## BaiduExporter
+
+[该项目](https://github.com/acgotaku/BaiduExporter)同样开源在 GitHub，算是目前比较完美的解决方案了，以下是使用 Axel 开启 256 个线程后的速度（不要在意中间的乱码）：
+
+![Screenshot_20180223_203445.png](https://i.loli.net/2018/02/23/5a900a9be6387.png)
+
+原项目是将链接导出至 ariac2 下载，但是 ariac2 却只能最多开启 16 个线程，这对一般下载任务也够了，但是对于百度这种老流氓来说（每个连接限速至 10Kb/s ），还是不够用的，所以这里采用 Axel 代替 ariac2，Axel 可以设置任意连接数。
+
+### 使用
+
+1. git clone 该仓库
+
+2. `Chrome -> 更多工具 -> 扩展程序 -> 加载已解压的扩展程序（需勾选开发者模式） -> chrome/release（文件夹）`
+
+3. 进入想要下载文件的界面
+
+4. 勾选，点击 `导出下载 -> 文本导出 -> 拷贝下载链接`：![Screenshot_20180223_204853.png](https://i.loli.net/2018/02/23/5a900de351951.png)
+
+5. 采用如下命令下载：
+
+   ```bash
+   axel -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" -H "Referer: https://pan.baidu.com/disk/home" -H "Cookie: BDUSS=9aRnpJYjF-THlHUbbjxkTYUnjk^&8naddR2NscTF-cFZJVWV3cDBvVkVaeHpHOFNJcXRhQVFBQUFBJCQAAAAAAAAAAAEAAADvjlIvY3cwODI5OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKVg1oSlYNaS0; pcsett=4789643579-hukfa445465a15156c1515a5f12cxzw4" -n 256 -o sample.mp4
+   ```
+
+   其中包含三个 HTTP 首部信息：分别是 UA、Referer、Cookie，这三个信息在上一步骤的框里均会显示，**不要直接复制我的，Cookie 会过期**。`-n 256` 中的 256 为连接数目（即线程数）；`-o sample.mp4` 中的 sample.mp4 为输出文件名称。
+
