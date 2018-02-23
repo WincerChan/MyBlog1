@@ -1,6 +1,6 @@
  "use strict";
  (function() {
-     var cacheVersion = "-171221";
+     var cacheVersion = "-180222";
      var staticImageCacheName = "image" + cacheVersion;
      var staticAssetsCacheName = "assets" + cacheVersion;
      var contentCacheName = "content" + cacheVersion;
@@ -12,13 +12,6 @@
      self.toolbox.options.networkTimeoutSeconds = 3;
 
      /* staticImageCache */
-     self.toolbox.router.get("/img/(.*)", self.toolbox.cacheFirst, {
-         // origin: /itswincer\.com/,
-         cache: {
-             name: staticImageCacheName,
-             maxEntries: maxEntries
-         }
-     });
      self.toolbox.router.get("/(.*)",self.toolbox.cacheFirst, {
      	origin: /upload-images\.jianshu\.io/,
      	cache: {
@@ -35,19 +28,6 @@
      });
 
      /* StaticAssetsCache */
-     self.toolbox.router.get("/css/(.*)", self.toolbox.networkFirst, {
-         origin: /itswincer\.com/,
-     });
-     self.toolbox.router.get("/js/(.*)", self.toolbox.networkFirst, {
-         origin: /itswincer\.com/,
-     });
-     self.toolbox.router.get("/lib/(.*)", self.toolbox.networkFirst, {
-         origin: /itswincer\.com/,
-         cache: {
-             name: staticAssetsCacheName,
-             maxEntries: maxEntries
-         }
-     });
      self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
          origin: /fonts\.googleapis\.com/,
          cache: {
@@ -70,7 +50,7 @@
              maxEntries: maxEntries
          }
      });
-     self.toolbox.router.get("/(tags|about|archives|life)(.*)", self.toolbox.networkFirst, {
+     self.toolbox.router.get("/(tags|about|archives|life|categories)(.*)", self.toolbox.networkFirst, {
          cache: {
              name: contentCacheName,
              maxEntries: maxEntries
@@ -82,12 +62,6 @@
              maxEntries: maxEntries
          }
      });
-     self.toolbox.router.get("manifest.json", self.toolbox.cacheFirst, {
-         cache: {
-             name: contentCacheName,
-             maxEntries: maxEntries
-        }
-    })
      self.toolbox.router.get("", self.toolbox.networkFirst, {
          cache: {
              name: contentCacheName,
