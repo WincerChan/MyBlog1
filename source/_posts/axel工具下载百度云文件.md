@@ -8,7 +8,7 @@ tags:
 copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
-updated: 2018/02/23 20:46:10
+updated: 2018/02/24 20:46:10
 thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 ---
 
@@ -126,8 +126,9 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 5. 采用如下命令下载：
 
    ```bash
-   axel -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" -H "Referer: https://pan.baidu.com/disk/home" -H "Cookie: BDUSS=9aRnpJYjF-THlHUbbjxkTYUnjk^&8naddR2NscTF-cFZJVWV3cDBvVkVaeHpHOFNJcXRhQVFBQUFBJCQAAAAAAAAAAAEAAADvjlIvY3cwODI5OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKVg1oSlYNaS0; pcsett=4789643579-hukfa445465a15156c1515a5f12cxzw4" -n 256 -o sample.mp4
+   axel -U "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" -H "Cookie: BDUSS=9aRnpJYjF-THlHUbbjxkTYUnjk^&8naddR2NscTF-cFZJVWV3cDBvVkVaeHpHOFNJcXRhQVFBQUFBJCQAAAAAAAAAAAEAAADvjlIvY3cwODI5OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKVg1oSlYNaS0; pcsett=4789643579-hukfa445465a15156c1515a5f12cxzw4" -n 256 -o sample.mp4 [URL]
    ```
 
-   其中包含三个 HTTP 首部信息：分别是 UA、Referer、Cookie，这三个信息在上一步骤的框里均会显示，**不要直接复制我的，Cookie 会过期**。`-n 256` 中的 256 为连接数目（即线程数）；`-o sample.mp4` 中的 sample.mp4 为输出文件名称。
+   其中包含两个 HTTP 首部信息：分别是 UA、Cookie，这两个信息在上一步骤的框里均会显示，**不要直接复制我的，Cookie 会过期**。`-n 256` 中的 256 为连接数目（即线程数）；`-o sample.mp4` 中的 sample.mp4 为输出文件名称（具体参数命令使用 axel -h 查看）。
+
 
