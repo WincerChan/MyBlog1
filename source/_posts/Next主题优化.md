@@ -309,7 +309,7 @@ abbrlink:
 
 自定义版权信息，不采用 NexT 本身的版权设置
 
-在目录 `next/layout/_macro/下` 添加 `my-copyright.swig`：
+添加 `next/layout/_macro/my-copyright.swig` 文件：
 
 ```javascript
 {% if page.copyright %}
