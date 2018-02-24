@@ -312,7 +312,6 @@ abbrlink:
 添加 `next/layout/_macro/my-copyright.swig` 文件：
 
 ```swig
-{% if page.copyright %}
 <div class="my_post_copyright">
   <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
   <!-- JS库 sweetalert 可修改路径 -->
@@ -342,7 +341,6 @@ abbrlink:
 	  });
     }));  
 </script>
-{% endif %}
 ```
 
 在目录 `next/source/css/_common/components/post/` 下添加 `my-post-copyright.styl`：
