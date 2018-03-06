@@ -2,3 +2,5 @@ PWA:
   <link rel="manifest" href="/manifest.json">
 Aplayer:
   <script>lsloader.load("ap_js","https://cdn.jsdelivr.net/npm/aplayer@1.6.0/dist/APlayer.min.js", true)</script>
+Music:
+  <script>lsloader.load("music_js", "https://cdn.jsdelivr.net/gh/wincerchan/QQMusic-Analysis@0.1/analysis.js", true)</script>
