@@ -89,7 +89,7 @@ img:
 #          to /source/data/head.yml as custom code, to load custom font files.
 fonts:
     family: Raleway
-    use: google
+    use: catnet
     custom_font_host:
 
 # Card Elevation Level
