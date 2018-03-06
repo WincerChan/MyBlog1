@@ -103,7 +103,7 @@ a {
 #post-content p {
     font-size: 15px;
     line-height: 1.7;
-    overflow: hidden;
+    overflow: unset!important;
 }
 #post-content>*:first-child {
     margin-top: 0 !important;
@@ -204,7 +204,6 @@ a {
 #post-content p,
 #post-content blockquote,
 #post-content ul,
-#post-content ol,
 #post-content dl,
 #post-content table {
     margin: 15px 0;
@@ -221,7 +220,6 @@ a {
 }
 #post-content ul,
 #post-content ol {
-    padding-left: 30px;
     font-size: 15px;
     line-height: 1.7;
     overflow: hidden;
@@ -523,7 +521,7 @@ a {
     min-height: 400px;
     flex-direction: column;
     align-items: stretch;
-    border-radius: 2px;
+    border-radius: 6px;
 }
 @media screen and (max-width: 480px) {
     #scheme-Paradox .material-post .mdl-card {
