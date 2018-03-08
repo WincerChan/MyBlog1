@@ -59,7 +59,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none; font-size: 15px"><p>注：为避免爬虫恶意爬取，本站所有邮箱的「@」改成「#」</p></blockquote>
 <script>
 	async function syncHand() {
-		new APlayer({element:document.getElementById("aplayer1"),narrow:false,autoplay:false,showlrc:3,mutex:true,theme:"#ad7a86",mode:"random",listmaxheight: '263px',music:[{title:"if (piano arrange)",author:"折倉俊則",url:await getData('0000Mzli2dE2ps'),pic:"https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130",lrc:"lrc/pure.lrc"}]});
+		new APlayer({element:document.getElementById("aplayer1"),narrow:false,autoplay:false,showlrc:3,mutex:true,theme:"#ad7a86",mode:"random",listmaxheight: '263px',music:[{title:"if (piano arrange)",author:"折倉俊則",url:await getMusic('0000Mzli2dE2ps'),pic:"https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130",lrc:"lrc/pure.lrc"}]});
 	}
 	syncHand();
 </script>
