@@ -8,7 +8,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 
 <div id="aplayer1" class="aplayer"></div>
 
-在众多博客中与你相遇，想比是一种缘分。
+在众多博客中与你相遇，想必是一种缘分。
 
 ## 关于我
 
