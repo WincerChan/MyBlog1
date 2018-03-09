@@ -88,7 +88,7 @@ img:
 #        - If you have setup your custom font-family, don't forget to add style tag with @font-face or link.tag with font css
 #          to /source/data/head.yml as custom code, to load custom font files.
 fonts:
-    family: Raleway
+    family: Monda
     use: catnet
     custom_font_host:
 
@@ -302,8 +302,7 @@ vendors:
 #   The new src will have the base domain you configured below.
 #   For example
 #       materialcdn: https://cdn.jsdelivr.net/npm/hexo-material@1.4.0/source
-    materialcdn: https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.3/source/
-
+    materialcdn: https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.5.4/source/
 # Third party library
 #   You can load these files from public cdn.
 #   For example

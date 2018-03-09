@@ -185,7 +185,7 @@ a {
     border-bottom: 1px solid #ddd;
 }
 #post-content h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     border-bottom: 1px solid #eee;
 }
 #post-content h3 {
@@ -473,6 +473,7 @@ a {
     }
 }
 #scheme-Paradox .index-top-block-slogan {
+    font-family: "Helvetica Neue", Helvetica,"Microsoft YaHei", "微软雅黑", sans-serif;
     font-size: 24px;
     line-height: 26px;
     font-weight: 400;
@@ -551,10 +552,11 @@ a {
     padding: 20px 0 1pc;
     width: 100%;
     min-height: 4pc;
-    align-items: center
+    align-items: center;
+    font-size: 14px;
 }
 #scheme-Paradox .material-layout .mdl-card__supporting-text strong {
-    font-weight: 700
+    font-weight: 500
 }
 #scheme-Paradox .material-layout .mdl-card__media~.mdl-card__supporting-text {
     min-height: 4pc
@@ -1898,6 +1900,7 @@ a {
 .sidebar .sidebar-brand {
     position: absolute;
     bottom: 0;
+    font-weight: 500;
     left: 0;
     right: 0;
     display: block;
@@ -1938,14 +1941,16 @@ a {
     min-width: 24px;
     height: 24px;
     line-height: 24px;
-    padding: 0 3px;
     font-size: 10px;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline
 }
 .sidebar .sidebar-badge.badge-circle {
-    border-radius: 50%
+    border-radius: 4rem;
+    padding-left: .5rem!important;
+    padding-right: .5rem!important;
+    font-size: .9em!important;
 }
 .sidebar .sidebar-divider,
 .sidebar .sidebar-nav .divider {
@@ -2011,7 +2016,9 @@ a {
 }
 .sidebar .sidebar-nav li {
     position: relative;
-    list-style-type: none
+    list-style-type: none;
+    font-size: 16px;
+    color: #667189;
 }
 .sidebar .sidebar-nav li a {
     position: relative;
@@ -2090,7 +2097,7 @@ a {
     color: #212121
 }
 .sidebar-colored .sidebar-nav li>a {
-    color: #212121;
+    color: #656565;
     background-color: transparent
 }
 .sidebar-colored .sidebar-nav li>a i {
