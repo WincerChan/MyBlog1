@@ -3,17 +3,16 @@
         <%- page.content %>
         <% if (page.hide_license !== true && theme.license || page.license) { %>
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
-                    <p><strong><%- __('post.title') %></strong> <%- page.title %>
+                    <p><b><%- __('post.title') %></b> <%- page.title %>
                     <br>
-                        <strong><%- __('post.updated') %></strong><%= date(page.updated, 'YYYY 年 MM 月 DD 日 - HH:MM') %><br>
-                        <strong><%- __('post.permalink') %></strong><a href="<%= page.permalink %>"><%= page.permalink %></a>
-                        <strong>                        
+                        <b><%- __('post.updated') %></b><%= date(page.updated, 'YYYY 年 MM 月 DD 日 - HH:MM') %><br>
+                        <b><%- __('post.permalink') %></b><a href="<%= page.permalink %>"><%= page.permalink %></a>                   
                         <br>
                         <% if (page.license) { %>
                             <%- page.license %>
                         <% } else { %> 
                             <%- theme.license %>
-                        <% } %></strong>
+                        <% } %>
                     </p>
                 </blockquote>
         <% } %>
