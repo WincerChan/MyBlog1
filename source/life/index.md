@@ -23,6 +23,8 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2407543903.jpg '无名女尸' https://movie.douban.com/subject/26339213/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2516247690.jpg '中邪' https://movie.douban.com/subject/26820833/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2512123434.jpg '黑豹' https://movie.douban.com/subject/6390825/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2504277551.jpg '至暗时刻' https://movie.douban.com/subject/26761416/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2302930556.jpg '唐人街探案' https://movie.douban.com/subject/26311973/ %}
