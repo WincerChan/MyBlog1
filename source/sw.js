@@ -7,7 +7,7 @@
      var vendorCacheName = "vendor" + cacheVersion;
      var maxEntries = 100;
      // self.importScripts("https://s.nfz.yecdn.com/static/js/sw-t.js");
-     self.importScripts("https://cdnjs.cat.net/ajax/libs/sw-toolbox/3.6.1/sw-toolbox.js");
+     self.importScripts("https://cdn.jsdelivr.net/npm/sw-toolbox@3.6.0/sw-toolbox.js");
      self.toolbox.options.debug = false;
      self.toolbox.options.networkTimeoutSeconds = 3;
 
@@ -36,7 +36,7 @@
          }
      });
      self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
-         origin: /cdnjs\.cat\.net/,
+         origin: /cdn\.jsdelivr\.net/,
          cache: {
              name: staticAssetsCacheName,
              maxEntries: maxEntries
