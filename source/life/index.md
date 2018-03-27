@@ -23,6 +23,8 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/lpic/s1070222.jpg '围城' https://book.douban.com/subject/1008145/ %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2510081688.jpg '三块广告牌' https://movie.douban.com/subject/26611804/ %}
 {% figure
 https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507725756.jpg '最好的我们' https://movie.douban.com/subject/26602244/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2407543903.jpg '无名女尸' https://movie.douban.com/subject/26339213/ %}
