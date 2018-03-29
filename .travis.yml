@@ -12,7 +12,6 @@ script:
 - mv id_rsa $HOME/.ssh/id_rsa
 - chmod +x deploy
 - "./deploy"
-- cat $HOME/.ssh/ssh_known_hosts
 after_script:
 - cd ./public
 - git init
