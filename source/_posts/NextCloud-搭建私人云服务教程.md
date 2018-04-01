@@ -254,7 +254,13 @@ extension=smbclient.so
 
 ### 配置 NextCloud
 
-登录 NextCloud，转至管理页面，点击「外部存储」，选择 Google Drive，填入 API 和 Key，点击授权，如果提示有风险的话，忽略掉就行。
+登录 NextCloud，转至管理页面，点击「外部存储」，选择 Google Drive，填入 API 和 Key，点击授权，若授权时出现 400 错误，那么是重定向的 URI 出问题了，再添加如下一条：
+
+```
+https://cloud.example.com/index.php/settings/admin/externalstorages
+```
+
+如果提示「此应用未经过验证」，点击高级 -> 转至 example.com，忽略掉就行。
 
 ![Screenshot_20180401_115546.png](https://i.loli.net/2018/04/01/5ac058548493a.png)
 
