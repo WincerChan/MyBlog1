@@ -1,5 +1,5 @@
 ---
-title: NextCloud 搭建私人云服务教程
+title: Nextcloud 搭建私人云服务教程
 date: '2018/03/31 15:03:31'
 updated: '2018/04/01 19:03:34'
 categories: 分享境
@@ -13,11 +13,11 @@ abbrlink: bf0413ac
 
 我一直很不相信国内的那些云服务提供商（尤其是在李彦宏发表的讲话「中国用户对隐私问题没那么敏感，在个人隐私方面更加开放，一定程度上愿用隐私换方便和效率」后），因为怕隐私得不到保障，故而我的一些隐私数据都是存放在国外的云盘（如 Dropbox、Drive 等）上。<!-- more -->
 
-可这俩在国内都被墙了，而手机翻墙总是显得有些不够方便，与是我就琢磨着自己搭建一个云服务，随后就发现了 NextCloud 这一开源云服务。而网上的教程都太过复杂了，对新手太过不友好，于是乎——一篇近乎傻瓜式的 NextCloud 教程诞生了。
+可这俩在国内都被墙了，而手机翻墙总是显得有些不够方便，与是我就琢磨着自己搭建一个云服务，随后就发现了 Nextcloud 这一开源云服务。而网上的教程都太过复杂了，对新手太过不友好，于是乎——一篇近乎傻瓜式的 Nextcloud 教程诞生了。
 
 ## 安装
 
-这里采用 Docker 容器方式来安装 NextCloud，这样就不用担心各种环境依赖了（NextCloud 的依赖简直多得吓人，而 Dockerfile 会帮你把依赖都配置好）
+这里采用 Docker 容器方式来安装 Nextcloud，这样就不用担心各种环境依赖了（Nextcloud 的依赖简直多得吓人，而 Dockerfile 会帮你把依赖都配置好）
 
 ### 安装 Docker
 
@@ -42,7 +42,7 @@ service docker start
 
 #### 自动安装
 
-有了 Docker 后，就可以几行代码安装 NextCloud 了：
+有了 Docker 后，就可以几行代码安装 Nextcloud 了：
 
 ```bash
 # clone nextcloud 的 docker 容器
@@ -65,11 +65,11 @@ docker start nextcloud
 curl http://localhost:8080
 ```
 
-这样，就完成了 NextCloud 的安装工作。
+这样，就完成了 Nextcloud 的安装工作。
 
 #### 手动安装
 
-方法一只能安装最新版的 NextCloud，而最新版缺少部分功能，如：无法添加 Drive 和 Dropbox 的外置存储。如果你对外置存储不是很 care 的话，那就按照方法一安装就可以了。
+方法一只能安装最新版的 Nextcloud，而最新版缺少部分功能，如：无法添加 Drive 和 Dropbox 的外置存储。如果你对外置存储不是很 care 的话，那就按照方法一安装就可以了。
 
 ```bash
 git clone https://github.com/nextcloud/docker.git
@@ -120,7 +120,7 @@ server {
 docker exec -i -t nextcloud bash
 ```
 
-有时候 NextCloud 会自己定向至本地的 8080 端口，所以需要手动重写正确的地址：如果提示不能定位软件包，先执行 `apt-get update`
+有时候 NextCloud 会自己定向至本地的 8080 端口，所以需要手动重写正确的地址：如果提示不能定位软件包，先执行 `apt-get update`。
 
 ```bash
 vim config/config.php
@@ -189,13 +189,13 @@ docker restart nextcloud
 
 ## 挂载外部云盘
 
-由于我 VPS 的容量只有 10g，故而放不了过多的视频，就考虑采用外部存储的方法，将 Drive、Dropbox 挂载至 NextCloud 外部存储或者 VPS。
+由于我 VPS 的容量只有 10g，故而放不了过多的视频，就考虑采用外部存储的方法，将 Drive、Dropbox 挂载至 Nextcloud 外部存储或者 VPS。
 
-> 注：NextCloud 13 已经取消对 Drive、Dropbox 外部存储的支持（这时候你也可以选择把 Drive 直接挂载至 VPS 本地目录，再通过外部存储链接至挂载目录来完成）。
+> 注：Nextcloud 13 已经取消对 Drive、Dropbox 外部存储的支持（这时候你也可以选择把 Drive 直接挂载至 VPS 本地目录，再通过外部存储链接至挂载目录来完成）。
 
 ### 启用外部存储插件
 
-在应用页面，启用 `External storage support` 插件：如果提示：「没有安装 “smbclient”无法挂载 “SMB / CIFS”, “SMB / CIFS 使用 OC 登录信息”. 请联系您的系统管理员安装.」
+在应用页面，启用 `External storage support` 插件：如果提示：「没有安装 “smbclient”无法挂载 “SMB / CIFS”, “SMB / CIFS 使用 OC 登录信息”. 请联系您的系统管理员安装」
 
 解决办法：
 
@@ -215,7 +215,7 @@ apt-get install libsmbclient-dev
 pecl install smbclient
 ```
 
-同时会提示：「You should add "extension=smbclient.so" to php.ini」，这里又被小坑一把，网上大部分教程所说的 `/etc/php.d/php.ini` 并不存在，在 docker 容器内部该文件是在 ：
+同时会提示：「You should add "extension=smbclient.so" to php.ini」，这里又被小坑一把，网上大部分教程所说的 `/etc/php.d/php.ini` 并不存在，在 docker 容器内部该文件是在：
 
 ```bash
 vim /usr/local/etc/php/conf.d/docker-php-ext-intl.ini
@@ -223,9 +223,9 @@ vim /usr/local/etc/php/conf.d/docker-php-ext-intl.ini
 extension=smbclient.so
 ```
 
-随后重启 NextCloud 服务就应该就 OK 了。
+随后重启 Nextcloud 服务就应该就 OK 了。
 
-随后如果你安装的 NextCloud 是 13 版本及以上的话，就只有考虑用 [box](https://www.box.com/) 提供的 [WebDAV](https://community.box.com/t5/Upload-and-Download-Files-and/WebDav-with-Box/ta-p/310) 来作为外置存储了，不过只有 10G 的容量，且最大文件限制是 250MB。如果是用的 12 版本及以下的话，就可以考虑采取 Drive 作为外置存储了：
+随后如果你安装的 Nextcloud 是 13 版本及以上的话，就只有考虑用 [box](https://www.box.com/) 提供的 [WebDAV](https://community.box.com/t5/Upload-and-Download-Files-and/WebDav-with-Box/ta-p/310) 来作为外置存储了，不过只有 10G 的容量，且最大文件限制是 250MB。如果是用的 12 版本及以下的话，就可以考虑采取 Drive 作为外置存储了：
 
 ### 获取 API
 
@@ -252,9 +252,9 @@ extension=smbclient.so
    点击创建后，会弹出悬浮框告诉你 ID 和 Key。
 
 
-### 配置 NextCloud
+### 配置 Nextcloud
 
-登录 NextCloud，转至管理页面，点击「外部存储」，选择 Google Drive，填入 API 和 Key，点击授权，若授权时出现 400 错误，那么是重定向的 URI 出问题了，再添加如下一条：
+登录 Nextcloud，转至管理页面，点击「外部存储」，选择 Google Drive，填入 API 和 Key，点击授权，若授权时出现 400 错误，那么是重定向的 URI 出问题了，再添加如下一条：
 
 ```
 https://cloud.example.com/index.php/settings/admin/externalstorages
@@ -265,8 +265,6 @@ https://cloud.example.com/index.php/settings/admin/externalstorages
 ![Screenshot_20180401_115546.png](https://i.loli.net/2018/04/01/5ac058548493a.png)
 
 当出现了绿色按钮，就表示配置成功了。
-
-Enjoy it！
 
 参考：
 
