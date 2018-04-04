@@ -23,6 +23,8 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1354602397.jpg '男子高中生的日常' https://movie.douban.com/subject/6894811/ %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2506713014.jpg '齐木楠雄的灾难 第二季' https://movie.douban.com/subject/26946411/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2516578307.jpg '头号玩家' https://movie.douban.com/subject/4920389/ %}
 {% figure https://img3.doubanio.com/lpic/s1070222.jpg '围城' https://book.douban.com/subject/1008145/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2510081688.jpg '三块广告牌' https://movie.douban.com/subject/26611804/ %}
