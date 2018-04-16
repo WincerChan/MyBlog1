@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     del = require('del'),
     cssmin = require('gulp-minify-css'),
     htmlclean = require('gulp-htmlclean'),
-    htmlmin = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
     runSequence = require('run-sequence'),
     Hexo = require('hexo');
@@ -60,12 +59,6 @@ gulp.task('cssmin', function() {
 gulp.task('minify-html', function() {
     return gulp.src('./public/**/*.html')
         .pipe(htmlclean())
-        .pipe(htmlmin({
-            removeComments: true,
-            minifyJS: true,
-            minifyCSS: true,
-            minifyURLs: true,
-        }))
         .pipe(gulp.dest('./public'));
 });
 // 同上，压缩图片，这里采用了： 最大化压缩效果。
