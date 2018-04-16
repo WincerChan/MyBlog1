@@ -150,7 +150,7 @@ from the Real Name, Comment and Email Address in this form:
 
 ```bash
 您选定了这个用户标识：
-    “×××××× <××@×××.com>”
+    "×××××× <××@×××.com>"
 
 更改姓名(N)、注释(C)、电子邮件地址(E)或确定(O)/退出(Q)？
 ```
