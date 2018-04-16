@@ -6,7 +6,7 @@ before_install:
 - tar xvf secrets.tar
 - mv d67271d8.md source/_posts/
 install:
-- npm install
+- yarn install
 script:
 - gulp
 - mv id_rsa $HOME/.ssh/id_rsa
