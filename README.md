@@ -1,8 +1,8 @@
-<div align="center">
-  <a href="https://www.itswincer.com">
-    <img alt="Wincer's Blog" src="https://i.loli.net/2017/12/21/5a3bb5742bf56.png" width="256px">
+<p align="center">
+  <a href="https://blog.itswincer.com">
+    <img alt="Wincer's Blog" src="https://i.loli.net/2017/12/21/5a3bb5742bf56.png" width="256px">
   </a>
-</div>
+</p>
 <hr>
 <div align="center">
   <a href="https://www.itswincer.com"><img alt="Author" src="https://img.shields.io/badge/author-Wincer-0097a7.svg"></a>
