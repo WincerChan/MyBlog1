@@ -13,22 +13,22 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 ## 关于我
 
 - 年龄 20、职业为学生
+- 热爱自由、讨厌被约束
 - 伪文青、乐观的悲观主义者
-- 互联网上多数情况下言辞温和
-- 热爱自由、性格有些随遇而安
+- 互联网上**多数情况**下言辞温和
 - 喜欢看小说，有一部 Kindle
-- 喜欢耳机、键盘、鼠标等外设
 - 喜欢玩 FPS 游戏，可惜枪法一般
 - 喜欢研究新技术，可惜没多少耐心
 - ~~最大愿望的是「每逢佳节胖三斤」~~
 - 兴趣爱好广泛，技能点点得比较分散
 - 对生活质量有一定的追求，宁缺毋滥
+- 半吊子前端，钟爱 Python，折腾 Golang
 - 轻（zhòng）微（dù）强迫症，喜欢简约、美好的事物
-- 没有 [Typora](https://typora.io/) 就不会写博客，没有 [Emacs](https://www.gnu.org/software/emacs/) 就不会写代码
+- 没有 [Typora](https://typora.io/) 就不会写博客~~，没有 [Emacs](https://www.gnu.org/software/emacs/) 就不会写代码~~
 
 ## 联系我
 
-- **电子邮件**：WincerChan#gmail.com（每天定时检查 Inbox）
+- **电子邮件**：WincerChan<span style="display:none">fuck</span>@gmail.com（每天定时检查 Inbox）
 - 社交网络：~~微博~~（已弃用） Twitter（不怎么发推）：[@wincer_chan](https://twitter.com/wincer_chan) 
 - 即时通讯：QQ：（只加朋友） Telegram：[@Tivsae](https://t.me/Tivsae)
 - 网站评论：如果是和文章有关的问题，建议直接评论，同时Disqus 会自动将评论推送至 Inbox
@@ -56,7 +56,6 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 
 欢迎诸君订阅 RSS。
 
-<blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none; font-size: 15px"><p>注：为避免爬虫恶意爬取，本站所有邮箱的「@」改成「#」</p></blockquote>
 <script>
 	async function syncHand() {
 		new APlayer({element:document.getElementById("aplayer1"),narrow:false,autoplay:false,showlrc:3,mutex:true,theme:"#ad7a86",mode:"random",listmaxheight: '263px',music:[{title:"if (piano arrange)",author:"折倉俊則",url:await getMusic('0000Mzli2dE2ps'),pic:"https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130",lrc:"lrc/pure.lrc"}]});
