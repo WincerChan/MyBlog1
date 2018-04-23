@@ -12,7 +12,7 @@ abbrlink: 654861fb
 thumbnail: https://s1.ax1x.com/2017/12/24/vGU0K.png
 ---
 
-这篇博客是承接上一篇 [Next 主题配置备份](https://www.itswincer.com/posts/a40f8cd0/)，按照个人喜好做了一些修改。
+这篇博客是承接上一篇 [Next 主题配置备份](../a40f8cd0/)，按照个人喜好做了一些修改。
 
 ### 加密文章
 
