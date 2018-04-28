@@ -24,7 +24,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2513360824.jpg '昆池岩' https://movie.douban.com/subject/26945085/ %}
-{% figure https://img1.doubanio.com/view/subject/l/public/s29384019.jpg '白夜行' https://book.douban.com/subject/10554308/ %}
+{% figure https://img3.doubanio.com/lpic/s29384019.jpg '白夜行' https://book.douban.com/subject/10554308/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2520543845.jpg '幕后玩家' https://https://movie.douban.com/subject/26774033/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2411622421.jpg '降临' https://movie.douban.com/subject/21324900/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1354602397.jpg '男子高中生的日常' https://movie.douban.com/subject/6894811/ %}
