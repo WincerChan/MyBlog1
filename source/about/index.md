@@ -6,12 +6,11 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 ---
 > 佛曰：万发缘生，皆系缘分
 
-<div id="aplayer1" class="aplayer"></div>
+<div id="aplayer1" class="aplayer" title="if (piano arrange)" author="折倉俊則" url="0000Mzli2dE2ps" pic="https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130" lrc="lrc/pure.lrc"></div>
 
 在众多博客中与你相遇，想必是一种缘分。
 
 ## 关于我
-
 - 年龄 20、职业为学生
 - 热爱自由、讨厌被约束
 - 伪文青、乐观的悲观主义者
@@ -35,6 +34,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 
 本人比较注重在网上的个人隐私，如有需要请通过以上几种方式同我联系。
 
+
 ## 关于博客
 
 本博客名称为 `Wincer's Blog`，建站于公元 2017 年 5 月 5 日。~~托管于 GitHub~~ 目前托管于自购的 VPS 中，基于 Hexo 构建。
@@ -56,9 +56,22 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 
 欢迎诸君订阅 RSS。
 
-<script>
-	async function syncHand() {
-		new APlayer({element:document.getElementById("aplayer1"),narrow:false,autoplay:false,showlrc:3,mutex:true,theme:"#ad7a86",mode:"random",listmaxheight: '263px',music:[{title:"if (piano arrange)",author:"折倉俊則",url:await getMusic('0000Mzli2dE2ps'),pic:"https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130",lrc:"lrc/pure.lrc"}]});
-	}
-	syncHand();
-</script>
+## 打钱，请～
+{% raw %}
+<ul id="donateBox" class="list pos-f tr3">
+	<li id="BTC" data-footnote="Bitcoin adress">
+		<button id="BTCBn">Bitcoin</button>
+	</li>
+	<li id="LTC" data-footnote="Litecoin address">
+		<button id="LTCLn">Litecoin</button>
+	</li>
+	<li id="PayPal" data-footnote="Paypal address">
+		<a href="https://paypal.me/tivsae" target="_blank">PayPal</a>
+	</li>
+</ul>
+<div id="QRBox" class="pos-f left-100">
+		<img id="MainBox"/>
+	<p id="title"></p>
+</div>
+{% endraw %}
+	
