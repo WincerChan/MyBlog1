@@ -69,6 +69,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5fdca0710.png
 		<a href="https://paypal.me/tivsae" target="_blank">PayPal</a>
 	</li>
 </ul>
+<div id="model-background"></div>
 <div id="QRBox" class="pos-f left-100">
 		<img id="MainBox"/>
 	<p id="title"></p>
