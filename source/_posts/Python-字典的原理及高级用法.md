@@ -140,6 +140,21 @@ d.update({(0): 'zero'})
 SyntaxError: invalid syntax
 ```
 
+如果非常想使用 . 来获取 value 的话，建议使用 namedtuple
+
+当然这也就意味着必须使用合法标识符了：
+
+```python
+from collections import namedtuple
+ID = namedtuple('ID', 'name age')
+me = ID('wincer', 20)
+>>> me.name
+'wincer'
+
+ID = namedtuple('ID', '(1, 0) age')
+ValueError: Type names and field names must be valid identifiers: '(1'
+```
+
 ### 实现 switch ... case 结构
 
 同样借助键查询，可以实现 Python 中没有的 switch ... case 结构：
