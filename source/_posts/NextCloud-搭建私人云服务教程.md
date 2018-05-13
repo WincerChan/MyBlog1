@@ -120,6 +120,8 @@ server {
 docker exec -i -t nextcloud bash
 ```
 
+#### 重定向 overwritehost
+
 有时候 NextCloud 会自己定向至本地的 8080 端口，所以需要手动重写正确的地址：如果提示不能定位软件包，先执行 `apt-get update`。
 
 ```bash
