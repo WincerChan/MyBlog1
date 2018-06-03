@@ -23,6 +23,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2517517517.jpg '创造101' https://movie.douban.com/subject/30157162/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518852413.jpg '寂静之地' https://movie.douban.com/subject/26997663/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2520583697.jpg '街头美食斗士' https://movie.douban.com/subject/30207995/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2517753454.jpg '复仇者联盟3：无限战争' https://movie.douban.com/subject/24773958/ %}
