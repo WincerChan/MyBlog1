@@ -3,6 +3,9 @@ jobs:
     build:
         docker:
             - image: circleci/node:10.4.0
+        branches:
+            only:
+                - hexo
         steps:
             - checkout
             - run:
