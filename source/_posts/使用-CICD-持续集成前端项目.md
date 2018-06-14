@@ -23,7 +23,7 @@ abbrlink: f011ea9c
 
 CircleCI 支持 GitHub 和 Bitbucket 帐号的登录，授权登录完成后，就可以添加 Projects 了，支持 GitHub 和 Bitbucket 的公有及私有仓库。我这里以我的 [Meme-generator](https://github.com/WincerChan/Meme-generator) 仓库为例。
 
-选完仓库后，你就需要配置 CircleCI 了。
+选完仓库后，就可以开始配置 CircleCI 了。
 
 ## 准备工作
 
