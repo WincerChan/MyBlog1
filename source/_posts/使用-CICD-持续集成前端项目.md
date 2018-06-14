@@ -11,7 +11,7 @@ thumbnail: 'https://upload-images.jianshu.io/upload_images/2133488-c2b6653730129
 abbrlink: f011ea9c
 ---
 
-我的博客在建站后不久就使用了 [Travis CI](https://travis-ci.org/) 自动部署至服务器，即我只需要将修改的源码推送至 GitHub，Travis CI 会自动将我提交的代码拉取，在本地生成静态文件后，同步至服务器，这样可以减少一些麻烦的步骤：可以直接在 GitHub 端修改代码；不用等待生成静态文件、压缩静态文件的时间。
+我的博客在建站后不久就使用了 [Travis CI](https://travis-ci.org/) 自动部署至服务器，即我只需要将修改的源码推送至 GitHub，Travis CI 会自动将我提交的代码拉取，在本地生成静态文件后，同步至服务器，这样可以减少一些麻烦的步骤：可以直接在 GitHub 端修改代码；不用等待生成静态文件、压缩静态文件的时间。<!--more-->
 
 ## Circle CI
 
