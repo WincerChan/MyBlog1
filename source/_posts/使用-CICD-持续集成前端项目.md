@@ -36,7 +36,7 @@ CircleCI 支持 GitHub 和 Bitbucket 帐号的登录，授权登录完成后，�
 
 如果你是用来推送至 GitHub 的话，可以直接用 GitHub 提供为该仓库提供的 Token 密钥，第一点也可以使用 HTTPS 方式克隆，就可以省去添加 SSH 密钥这个步骤。
 
-点击 CircleCI 个人主页的 BUILDS 菜单项，随后点击仓库名称右边的齿轮按钮 -> 点击 `SSH Permissions` -> 点击蓝色的 `Add SSH Key` 按钮，将**私钥**（看清楚了，是私钥）粘贴进去（超级良心有木有啊，比 Travis CI 将私钥加密上传这种土办法不知道高到哪里去了）。
+点击 CircleCI 个人主页的 JOBS 菜单项，随后点击仓库名称右边的齿轮按钮 -> 点击 `SSH Permissions` -> 点击蓝色的 `Add SSH Key` 按钮，将**私钥**（看清楚了，是私钥）粘贴进去（超级良心有木有啊，比 Travis CI 将私钥加密上传这种土办法不知道高到哪里去了）。
 
 ### 添加 IP 至 known\_hosts
 
