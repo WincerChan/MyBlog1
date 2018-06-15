@@ -1,13 +1,66 @@
+defaults: &defaults
+    docker:
+        - image: circleci/node:10.4.0
+        
 version: 2
 jobs:
     build:
-        docker:
-            - image: circleci/node:10.4.0
-        branches:
-            only:
-                - hexo
+        <<: *defaults
         steps:
             - checkout
             - run:
-                name: Test
-                command: echo "Testing for private repo"
+                name: Initial Submodule
+                command: |
+                    git submodule sync
+                    git submodule update --init
+            - run:
+                name: Install Denpendence
+                command: |
+                    dd if=encrypt.des3 | openssl des3 -d -k ${PWD} | tar zxf -
+                    mv encrypt/* source/_posts/
+                    yarn install && gulp
+            - save_cache:
+                key: blog-v1-{{ .Revision }}
+                paths:
+                    - "public"
+
+    deploy:
+        <<: *defaults
+        steps:
+            - run:
+                name: Update System
+                command: |
+                    sudo apt-get update && sudo apt-get install rsync
+            - restore_cache:
+                keys:
+                    - blog-v1-{{ .Revision }}
+            - run:
+                name: Deploy to VPS
+                command: |
+                    mkdir -p ~/.ssh
+                    touch ~/.ssh/known_hosts
+                    { ssh-keyscan $SSH_IP 2> /dev/null; } >> ~/.ssh/known_hosts
+                    rsync -az -v --delete -e ssh public/* $SSH_USER@$SSH_IP:/data/www/hexo/
+            - run:
+                name: Push to GITHUB
+                command: |
+                    cd ./public
+                    git init
+                    git add .
+                    git commit -m "Circle CI Auto Built: `date +"%Y-%m-%d %H:%M:%S"`"
+                    git push --force --quite "https://${GH_Token}@${GH_REF}" master:master
+
+
+
+workflows:
+    version: 2
+
+    MyBlog-CI:
+        jobs:
+            - build
+            - deploy:
+                requires:
+                    - build
+                filters:
+                    branches:
+                        only: hexo
