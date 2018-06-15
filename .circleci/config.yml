@@ -16,8 +16,9 @@ jobs:
             - run:
                 name: Install Denpendence
                 command: |
-                    dd if=encrypt.des3 | openssl des3 -d -k ${PWD} | tar zxf -
+                    dd if=encrypt.des3 | openssl des3 -d -k $pswd | tar zxf -
                     mv encrypt/* source/_posts/
+                    sudo yarn global add gulp
                     yarn install && gulp
             - save_cache:
                 key: blog-v1-{{ .Revision }}
@@ -27,6 +28,7 @@ jobs:
     deploy:
         <<: *defaults
         steps:
+            - checkout
             - run:
                 name: Update System
                 command: |
@@ -37,6 +39,7 @@ jobs:
             - run:
                 name: Deploy to VPS
                 command: |
+                    ls
                     mkdir -p ~/.ssh
                     touch ~/.ssh/known_hosts
                     { ssh-keyscan $SSH_IP 2> /dev/null; } >> ~/.ssh/known_hosts
@@ -48,7 +51,7 @@ jobs:
                     git init
                     git add .
                     git commit -m "Circle CI Auto Built: `date +"%Y-%m-%d %H:%M:%S"`"
-                    git push --force --quite "https://${GH_Token}@${GH_REF}" master:master
+                    git push --force --quite "git@${GH_REF}" master:master
 
 
 
