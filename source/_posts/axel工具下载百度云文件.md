@@ -12,7 +12,7 @@ updated: 2018/02/24 20:46:10
 thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 ---
 
-目前关于破解百度云限速其实就只有一个方法：高速链接 + 多线程下载工具。而目前获取的「高速链接」的方法并非完美且存在诸多限制（如：并非不限速，每个连接仍然会限速在 100kB/s、并非所有文件都可以用，只有可以分享的文件才可获得高速链接），但聊胜于无。
+目前关于破解百度云限速的方法看似有很多种，实则是殊途同归，即：高速链接 + 多线程下载工具。而目前获取的「高速链接」的方法并非完美且存在一些限制，但聊胜于无。
 
 <!-- more -->
 
@@ -48,7 +48,6 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 --alternate		-a	文本式进度指示器
 --help			-h	帮助信息
 --version		-V	版本信息
-
 ```
 
 
@@ -58,22 +57,33 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 > **注：此方法获取的直链已无法通过 Axel 下载，却可以通过 ariac2 下载，原因是百度云增加了 User-Agent 检测，~~而亲测 Axel 设置 User-Agent 好像也没有什么用~~，而 ariac2 最多只能 32 线程，所以此方法已基本无用**
 
-## 百度网盘直接下载助手
+## 下载助手修改版
 
-下载助手只能在文件分享的界面使用，如下图：
+此方法适用性应当比较高，活得也比较持久。
 
-![下载助手实例](https://i.loli.net/2018/02/22/5a8e3840a300e.png)
+缺点就是有些麻烦：需复制 Header 信息才可掉调用下载工具（如 Axel 等）下载，获得 Header 的方法就是打开调试窗口，粘贴该链接在 Chrome 地址栏，在 Network 选项卡中查看该链接的 Request Headers，至少需要将 Cookie、Host、User-Agent 三项传入给下载工具。
+
+这个方法会让每个线程的速度只有 10Kb/s，以下是 128 线程的示例：
+
+![下载实例](https://i.loli.net/2018/06/19/5b28e96097047.png)
 
 ### 使用
 
-1. 安装[油猴脚本管理器](http://tampermonkey.net/)
-2. 安装[下载助手脚本](https://greasyfork.org/zh-CN/scripts/37515)
-3. 点击`显示链接`后复制「高速链接」
-4. 使用多线程工具如：Axel、aria2、IDM 下载
+1. 下载[油猴脚本管理器](http://tampermonkey.net/)
+
+2. 安装[下载助手修改版](https://greasyfork.org/zh-CN/scripts/39776)脚本
+
+3. 打开百度云，勾选需要下载的文件
+
+4. 随后打开百度云，勾选需要下载的文件后，上方会出现「下载助手」的按钮，依次点击：`压缩按钮->获取压缩按钮`：
+
+   ![下载助手](https://i.loli.net/2018/06/19/5b28e5db669da.png)
+
+
 
 ## baidudl
 
-这是爱吾破解的一位大佬开发的插件，已在 GitHub 上[开源](https://github.com/Kyle-Kyle/baidudl)，同时也已上架 [Chrome 应用商店](https://chrome.google.com/webstore/detail/baidudl/mccebkegnopjehbdbjbepjkoefnlkhef)
+这是爱吾破解的一位大佬开发的插件，已在 GitHub 上[开源](https://github.com/Kyle-Kyle/baidudl)，同时也已上架 [Chrome 应用商店](https://chrome.google.com/webstore/detail/baidudl/lflnkcmjnhfedgibjackiibmcdnnoadb)
 
 ### 使用
 
@@ -107,11 +117,13 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 ## BaiduExporter
 
+> 自本文最近一次更新起， 该方法获取的链接已无法在 Axel 中使用，原因是 Axel 会发送 Request Headers 为「Range: xxx」的部分用以多线程下载，而百度检测到则会将此请求转向 403，故此方法失效，建议使用[下载助手修改版](#下载助手修改版)
+
 [该项目](https://github.com/acgotaku/BaiduExporter)同样开源在 GitHub，算是目前比较完美的解决方案了，以下是使用 Axel 开启 256 个线程后的速度（不要在意中间的乱码）：
 
 ![Screenshot_20180223_203445.png](https://i.loli.net/2018/02/23/5a900a9be6387.png)
 
-原项目是将链接导出至 ariac2 下载，但是 ariac2 却只能最多开启 16 个线程，这对一般下载任务也够了，但是对于百度这种老流氓来说（每个连接限速至 10Kb/s ），还是不够用的，所以这里采用 Axel 代替 ariac2，Axel 可以设置任意连接数。
+原项目是将链接导出至 ariac2 下载，但是 ariac2 却只能最多开启 16 个线程，这对一般下载任务也够了，但是对于百度这种老流氓来说（每个连接限速至 10Kb/s ），还是不够用的，所以这里采用 Axel 代替 ariac2，Axel 可以设置任意连接数）。
 
 ### 使用
 
@@ -131,4 +143,4 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
    其中包含两个 HTTP 首部信息：分别是 UA、Cookie，这两个信息在上一步骤的框里均会显示，**不要直接复制我的，Cookie 会过期**。`-n 256` 中的 256 为连接数目（即线程数）；`-o sample.mp4` 中的 sample.mp4 为输出文件名称（具体参数命令使用 axel -h 查看）。
 
-
+本文持续更新中。
