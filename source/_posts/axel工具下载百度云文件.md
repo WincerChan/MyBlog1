@@ -12,11 +12,13 @@ updated: 2018/02/24 20:46:10
 thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 ---
 
-目前关于破解百度云限速的方法看似有很多种，实则是殊途同归，即：高速链接 + 多线程下载工具。而目前获取的「高速链接」的方法并非完美且存在一些限制，但聊胜于无。
+目前关于破解百度云限速的方法网上提供了许多种，实则是殊途同归，即：高速链接 + 多线程下载工具。而目前获取的链接的方法并非完美且存在一些限制，但聊胜于无。
 
 <!-- more -->
 
 ## Axel 下载
+
+本文以下将采用 Axel 代替 aria2c 作为多线程下载工具，原因是 aria2c 最多只能设置 16 线程下载，Axel 则没有限制。
 
 ### 安装
 
@@ -50,18 +52,15 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 --version		-V	版本信息
 ```
 
-
-### 获取直链
-
-~~目前解决百度云限速的思路主要是先获取百度云文件的直链，Linux 下直接登录云盘，点击下载，下载内容界面右击下载内容：`复制链接地址`，即可获取百度云的下载直链，Windows 可用[这个插件](https://github.com/cloudroc/baidu-nolimit)来禁止启动百度云管家。~~
-
-> **注：此方法获取的直链已无法通过 Axel 下载，却可以通过 ariac2 下载，原因是百度云增加了 User-Agent 检测，~~而亲测 Axel 设置 User-Agent 好像也没有什么用~~，而 ariac2 最多只能 32 线程，所以此方法已基本无用**
+以下为实例。
 
 ## 下载助手修改版
 
 此方法适用性应当比较高，活得也比较持久。
 
-缺点就是有些麻烦：需复制 Header 信息才可掉调用下载工具（如 Axel 等）下载，获得 Header 的方法就是打开调试窗口，粘贴该链接在 Chrome 地址栏，在 Network 选项卡中查看该链接的 Request Headers，至少需要将 Cookie、Host、User-Agent 三项传入给下载工具。
+缺点就是有些麻烦：需复制 Header 信息才可掉调用下载工具（如 Axel 等）下载，获得 Header 的方法就是打开调试窗口，粘贴该链接在 Chrome 地址栏，在 Network 选项卡中查看该链接的 Request Headers，至少需要将 Cookie、User-Agent 两项传入给下载工具。
+
+> **注意：这里的 Cookie 并不是当前域名（pan.baidu.com）的 Cookie，是 `pcs.baidu.com` 的 Cookie，其实所需要的仅仅是 Cookie 的 `BDUSS` 和 `pcsett` 值**
 
 这个方法会让每个线程的速度只有 10Kb/s，以下是 128 线程的示例：
 
@@ -117,11 +116,11 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 ## BaiduExporter
 
-> 自本文最近一次更新起， 该方法获取的链接已无法在 Axel 中使用，原因是 Axel 会发送 Request Headers 为「Range: xxx」的部分用以多线程下载，而百度检测到则会将此请求转向 403，故此方法失效，建议使用[下载助手修改版](#下载助手修改版)
+> **自本文最近一次更新起， 该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载，可以使用[下载助手修改版](#下载助手修改版)**
 
 [该项目](https://github.com/acgotaku/BaiduExporter)同样开源在 GitHub，算是目前比较完美的解决方案了，以下是使用 Axel 开启 256 个线程后的速度（不要在意中间的乱码）：
 
-![Screenshot_20180223_203445.png](https://i.loli.net/2018/02/23/5a900a9be6387.png)
+![截图](https://i.loli.net/2018/02/23/5a900a9be6387.png)
 
 原项目是将链接导出至 ariac2 下载，但是 ariac2 却只能最多开启 16 个线程，这对一般下载任务也够了，但是对于百度这种老流氓来说（每个连接限速至 10Kb/s ），还是不够用的，所以这里采用 Axel 代替 ariac2，Axel 可以设置任意连接数）。
 
