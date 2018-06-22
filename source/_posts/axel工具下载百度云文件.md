@@ -8,7 +8,7 @@ tags:
 copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
-updated: 2018/02/24 20:46:10
+updated: 2018/06/22 20:46:10
 thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 ---
 
@@ -18,7 +18,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 ## Axel 下载
 
-本文以下将采用 Axel 代替 aria2c 作为多线程下载工具，原因是 aria2c 最多只能设置 16 线程下载，Axel 则没有限制。
+本文以下将采用 Axel 代替 aria2c 作为多线程下载工具，原因是 aria2c 最多只能设置 16 线程下载，Axel 对此则没有限制。
 
 ### 安装
 
@@ -116,7 +116,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 ## BaiduExporter
 
-> **自本文最近一次更新起， 该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载，可以使用[下载助手修改版](#下载助手修改版)**
+> ~~自本文最近一次更新起， 该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载。~~可以使用我 Fork 后修改的[版本](https://github.com/WincerChan/BaiduExporter)作为代替。
 
 [该项目](https://github.com/acgotaku/BaiduExporter)同样开源在 GitHub，算是目前比较完美的解决方案了，以下是使用 Axel 开启 256 个线程后的速度（不要在意中间的乱码）：
 
@@ -134,12 +134,12 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 4. 勾选，点击 `导出下载 -> 文本导出 -> 拷贝下载链接`：![Screenshot_20180223_204853.png](https://i.loli.net/2018/02/23/5a900de351951.png)
 
-5. 采用如下命令下载：
+5. 复制链接后，是一串格式类似以下内容的命令：
 
    ```bash
-   axel -U "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" -H "Cookie: BDUSS=9aRnpJYjF-THlHUbbjxkTYUnjk^&8naddR2NscTF-cFZJVWV3cDBvVkVaeHpHOFNJcXRhQVFBQUFBJCQAAAAAAAAAAAEAAADvjlIvY3cwODI5OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKVg1oSlYNaS0; pcsett=4789643579-hukfa445465a15156c1515a5f12cxzw4" -n 256 -o sample.mp4 [URL]
+   axel -o "xxxxxx" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36" -H "Cookie: BDUSS=9aRnpJYjF-THlHUbbjxkTYUnjk^&8naddR2NscTF-cFZJVWV3cDBvVkVaeHpHOFNJcXRhQVFBQUFBJCQAAAAAAAAAAAEAAADvjlIvY3cwODI5OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABKVg1oSlYNaS0; pcsett=4789643579-hukfa445465a15156c1515a5f12cxzw4" "URL" -n 233
    ```
 
-   其中包含两个 HTTP 首部信息：分别是 UA、Cookie，这两个信息在上一步骤的框里均会显示，**不要直接复制我的，Cookie 会过期**。`-n 256` 中的 256 为连接数目（即线程数）；`-o sample.mp4` 中的 sample.mp4 为输出文件名称（具体参数命令使用 axel -h 查看）。
+   其中包含两个 HTTP 首部信息：分别是 UA、Cookie，这两个信息在上一步骤的框里均会显示，**不要直接复制我的，Cookie 会过期**。其中 `-n 233` 是需要你手动输入的线程数量，即为采取 233 个线程下载。
 
 本文持续更新中。
