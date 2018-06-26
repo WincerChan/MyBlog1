@@ -72,7 +72,7 @@ gif.on('finished', Blob => {
 })
 ```
 
-以上是动图的设计思路，静态图就显得简单多了，采用 dom-to-img 绘制就行了，但是在 Edge 上似乎是无法使用的，作者提到似乎是因为添加了 foreignObject 标签，倒置 toDataUrl() 在 Edge 上无法工作，所以 Edge 用户只能使用动图部分了。
+以上是动图的设计思路，静态图就显得简单多了，采用 dom-to-img 绘制就行了，但是在 Edge 上似乎是无法使用的，作者提到似乎是因为添加了 foreignObject 标签，导致 toDataUrl() 在 Edge 上无法工作，所以 Edge 用户只能使用动图部分了。
 
 其实核心思路很简单， gif.js 和 omggif 提供的 API 也不复杂，但我还是花了将近一周的时间，因为这是我首次使用 React 开发应用，所以有大半时间都花在了学习 React 上，然而写出来的结果还是偏「Pure JavaScript」一些。
 
