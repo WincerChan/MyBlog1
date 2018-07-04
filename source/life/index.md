@@ -23,6 +23,7 @@ thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg '我不是药神' https://movie.douban.com/subject/26752088/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2171877514.jpg '胜者即是正义2' https://movie.douban.com/subject/23997724/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2151557606.jpg '胜者即是正义SP' https://movie.douban.com/subject/21332518/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1901775591.jpg '胜者即是正义' https://movie.douban.com/subject/10491666/ %}
