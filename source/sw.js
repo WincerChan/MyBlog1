@@ -1,6 +1,6 @@
  "use strict";
  (function() {
-     var cacheVersion = "-180503";
+     var cacheVersion = "-180706";
      var staticImageCacheName = "image" + cacheVersion;
      var staticAssetsCacheName = "assets" + cacheVersion;
      var contentCacheName = "content" + cacheVersion;
@@ -13,28 +13,14 @@
 
      /* staticImageCache */
      self.toolbox.router.get("/(.*)",self.toolbox.cacheFirst, {
-     	origin: /upload-images\.jianshu\.io/,
+     	origin: /res\.cloudinary\.com/,
      	cache: {
      	 name: staticImageCacheName,
              maxEntries: maxEntries
      	}
      })
-     self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
-         origin: /i\.loli\.net/,
-         cache: {
-             name: staticImageCacheName,
-             maxEntries: maxEntries
-         }
-     });
 
      /* StaticAssetsCache */
-     self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
-         origin: /fonts\.googleapis\.com/,
-         cache: {
-             name: staticAssetsCacheName,
-             maxEntries: maxEntries
-         }
-     });
      self.toolbox.router.get("/(.*)", self.toolbox.cacheFirst, {
          origin: /cdn\.jsdelivr\.net/,
          cache: {
