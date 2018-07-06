@@ -11,7 +11,7 @@ date: '2017/07/25 13:06:47'
 updated: '2018/07/05 20:02:59'
 copyright: true
 abbrlink: a0df572f
-thumbnail: https://i.loli.net/2017/12/24/5a3f3ce69775c.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858372/blog/sw_optimize/cover.png 
 ---
 
 静态博客的内容是很适合用缓存来加速访问的，除了采用常见的 CDN 加速和压缩博文等方法，通过客户端也可以实现加速访问，本文介绍的是「服务工作线程—— Service Worker」。关于 Service Worker 的具体介绍见[这里](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)。本文主要需要的是它的离线加载的特性。
@@ -82,7 +82,7 @@ if ('serviceWorker' in navigator) {
 
 可以看到在启用了 `Offline` 仍然可以加载页面
 
-![效果1](https://ws1.sinaimg.cn/large/ba22af52gy1fhvzzyefwxg213l0mvawg.gif)
+![效果1](https://res.cloudinary.com/wincer/image/upload/v1530862392/blog/sw_optimize/pic1.gif)
 
 
 
@@ -90,7 +90,7 @@ if ('serviceWorker' in navigator) {
 
 刷新页面可以看到许多资源是直接 ( from ServiceWorker ) 加载的，并未发起新的 http 请求。
 
-![效果2](https://ws1.sinaimg.cn/large/ba22af52gy1fhw07svg0cg213l0bcwre.gif)
+![效果2](https://res.cloudinary.com/wincer/image/upload/v1530862438/blog/sw_optimize/pic2.gif)
 
 ## 先决条件
 
@@ -98,7 +98,7 @@ if ('serviceWorker' in navigator) {
 
  [is Serviceworker ready](https://jakearchibald.github.io/isserviceworkerready/) 详细列出了所有浏览器支持的情况。
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fhw4volxvyj20qc09dacd.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530862459/blog/sw_optimize/broswer_support.png)
 
 ### HTTPS
 

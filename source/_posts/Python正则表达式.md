@@ -9,7 +9,7 @@ copyright: true
 abbrlink: fc635c56
 date: 2017/05/26 09:26:00
 updated: 2017/12/24 19:23:48
-thumbnail: https://s1.ax1x.com/2017/12/24/vJm3d.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859311/blog/re_tutotial/cover.png
 ---
 
 目前在跟 Udacity 的 [cs212](https://classroom.udacity.com/courses/cs212) 课程，避免懒癌发作，开篇博客来记录一下

@@ -10,7 +10,7 @@ tags:
   - API
 copyright: true
 abbrlink: f6e1eb2a
-thumbnail: https://i.loli.net/2017/12/22/5a3c7701e7e79.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858503/blog/cons_hitokoto_record/cover.png
 ---
 
 ## 前言

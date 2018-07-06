@@ -10,20 +10,21 @@ date: '2017/10/17 11:35:19'
 updated: 2018/02/05 10:13:49
 copyright: true
 abbrlink: ad42f575
-thumbnail: https://i.loli.net/2017/12/22/5a3c72ce0092c.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530844230/blog/linux_guide/cover.png
 ---
 
 ## 前言
 去年暑假的时候，写了一篇如何装 Linux 和 Windows 10 双系统的文章发在了简书上，我写这篇文章的原因是当初装双系统确实是折腾了许久，网上也找不到一篇详尽的教程。由于去年对于写教程还不是熟练，而这一年多的使用过程也遇到了一些问题，所以就准备「Refactoring」这篇文章。
+<!-- more -->
+
 ## EFI 分区
 在教程正式开始之前，先花一点时间说明 EFI 分区的组成和作用。
 首先，在你装了 Windows 之后，Windows 在装机过程中会将硬盘划分出一个约 100m 大小的分区，称为 EFI 分区这个分区就是起引导作用的。在资源管理器中是看不到的这个分区的，可以在磁盘管理中看到，管理则需要借助 <a href="http://www.diskgenius.cn/" target="_blank" rel="noopener">DG 工具</a>。便于说明，在装好了 Linux 之后，我将 EFI 挂载至 boot 分区截图：
-<!-- more -->
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fkl3a5pwv6j20ng0hwwfn.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861605/blog/linux_guide/efi_folder.png)
 可以看到，该分区包含 3 个文件夹（如果你没有装 Linux 的话，就只有两个），分别是 Boot、Microsoft 和 Manjaro，其中 Boot 文件夹就是 UEFI 引导所必需的文件。
 我们继续打开 `Microsoft/Boot` 文件夹：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fkl3b006w1j20ng0hwdhj.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861647/blog/linux_guide/boot_folder.png)
 
 这些文件就是启动 Windows 10 所必需的，包含了语言包、字体等，BCD 包含了 Windows 引导开始以后的信息。其中，**bootmgfw.efi 是 Windows 默认引导文件**。
 1. EFI/Boot/bootx64.efi

@@ -9,7 +9,7 @@ tags:
 date: '2017/07/19 14:53:24'
 updated: 2017/08/30 17:46:40
 abbrlink: 80689c8d
-thumbnail: https://i.loli.net/2017/12/24/5a3f3c1709e60.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530844931/blog/python_downloader/cover.png
 ---
 
 ## 前言

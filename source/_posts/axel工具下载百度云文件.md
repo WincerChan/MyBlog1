@@ -9,7 +9,7 @@ copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
 updated: 2018/06/22 20:46:10
-thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baiduyun_accelerate/cover.png
 ---
 
 目前关于破解百度云限速的方法网上提供了许多种，实则是殊途同归，即：高速链接 + 多线程下载工具。而目前获取的链接的方法并非完美且存在一些限制，但聊胜于无。
@@ -64,7 +64,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 这个方法会让每个线程的速度只有 10Kb/s，以下是 128 线程的示例：
 
-![下载实例](https://i.loli.net/2018/06/19/5b28e96097047.png)
+![下载实例](https://res.cloudinary.com/wincer/image/upload/v1530843976/blog/baiduyun_accelerate/thread_sample.png)
 
 ### 使用
 
@@ -76,7 +76,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 4. 随后打开百度云，勾选需要下载的文件后，上方会出现「下载助手」的按钮，依次点击：`压缩按钮->获取压缩按钮`：
 
-   ![下载助手](https://i.loli.net/2018/06/19/5b28e5db669da.png)
+   ![下载助手](https://res.cloudinary.com/wincer/image/upload/v1530844040/blog/baiduyun_accelerate/assistant.png)
 
 
 
@@ -100,7 +100,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 同样该方法并非完美，用「ES 文件浏览器」获取的百度云链接只能在该手机端使用，因为该链接是通过本地端口远程链接所生成的，故还是有一些限制，速度倒是挺快（会有一些不稳定的波动）：
 
-![ADM 下载](https://i.loli.net/2018/02/22/5a8e419cd7d7f.png)
+![ADM 下载](https://res.cloudinary.com/wincer/image/upload/v1530844066/blog/baiduyun_accelerate/adm.png)
 
 基本可以达到满速。
 
@@ -120,7 +120,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 [该项目](https://github.com/acgotaku/BaiduExporter)同样开源在 GitHub，算是目前比较完美的解决方案了，以下是使用 Axel 开启 256 个线程后的速度（不要在意中间的乱码）：
 
-![截图](https://i.loli.net/2018/02/23/5a900a9be6387.png)
+![截图](https://res.cloudinary.com/wincer/image/upload/v1530844096/blog/baiduyun_accelerate/axel.png)
 
 原项目是将链接导出至 ariac2 下载，但是 ariac2 却只能最多开启 16 个线程，这对一般下载任务也够了，但是对于百度这种老流氓来说（每个连接限速至 10Kb/s ），还是不够用的，所以这里采用 Axel 代替 ariac2，Axel 可以设置任意连接数）。
 
@@ -132,7 +132,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vJYCQ.png
 
 3. 进入想要下载文件的界面
 
-4. 勾选，点击 `导出下载 -> 文本导出 -> 拷贝下载链接`：![Screenshot_20180223_204853.png](https://i.loli.net/2018/02/23/5a900de351951.png)
+4. 勾选，点击 `导出下载 -> 文本导出 -> 拷贝下载链接`：![导出下载](https://res.cloudinary.com/wincer/image/upload/v1530844131/blog/baiduyun_accelerate/export.png)
 
 5. 复制链接后，是一串格式类似以下内容的命令：
 

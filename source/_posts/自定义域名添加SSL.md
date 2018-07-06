@@ -9,10 +9,12 @@ tags:
   - 安全
   - HTTPS
 abbrlink: 444a2b9d
-thumbnail: https://s1.ax1x.com/2017/12/24/vGXAU.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530860231/blog/customer_ssl/cover.png
 ---
 
 > 从 2017 年 1 月份正式发布的 Chrome 56 开始，Google 将把某些包含敏感内容的 HTTP 页面标记为“不安全”，比如含有密码或支付表单信息。
+
+<!-- more -->
 
 GitHub Pages 不支持用户自定义证书，所以当你用自定义域名的时候是不能用自己购买的 SSL 证书的，会和 GitHub 的起冲突，这里采用的是 [CloudFlare](https://www.cloudflare.com/) 自主研发的 [Keyless SSL](https://www.cloudflare.com/ssl/keyless-ssl/) 服务。简单来说就是你把网站放在 CloudFlare 的 cdn 上，不用提供自己的私钥，也能使用 SSL 加密链接。
 
@@ -23,11 +25,9 @@ GitHub Pages 不支持用户自定义证书，所以当你用自定义域名的�
 1. 点击注册 [CloudFlare](https://www.cloudflare.com/a/sign-up)
 2. 登录后，添加域名，例如：wincer.top（大约需要等待 1 分钟扫描）。注意：**不要填写前缀**
 
-<!-- more -->
-
 ## 添加 DNS 记录
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fgmugjxm3mj20ql08zt98.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530862957/blog/customer_ssl/dns_record.png)
 
 按照上图，将 `wincer.top` 换成你自己的域名，ip 地址不用换，是 GithHub 服务器的 IP。
 
@@ -35,7 +35,7 @@ GitHub Pages 不支持用户自定义证书，所以当你用自定义域名的�
 
 > 官方说明修改域名服务器需要最快 72 小时生效，我大概花了 10 分钟生效，如下图代表已生效。
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fgmuohxy0yj20qm06b3yl.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530862978/blog/customer_ssl/active.png)
 
 ## 设置 SSL
 
@@ -45,11 +45,11 @@ GitHub Pages 不支持用户自定义证书，所以当你用自定义域名的�
 
 1. 将 `www.wincer.top` 重定向至 `https://www.wincer.top`
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fgmutr20e5j20m70dzwfc.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530862995/blog/customer_ssl/redirect.png)
 
 2. 强制站内所有网页使用 HTTPS
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fgmuuekyzuj20m70csaav.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530863011/blog/customer_ssl/https.png)
 
 添加 SSL 的教程就此完成。
 

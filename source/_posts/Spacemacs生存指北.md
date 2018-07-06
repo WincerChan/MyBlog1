@@ -9,7 +9,7 @@ date: '2017/09/26 13:01:33'
 updated: '2017/12/23 19:38:23'
 copyright: true
 abbrlink: 2aa541e6
-thumbnail: https://i.loli.net/2017/11/23/5a16dc087c01e.jpeg
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530845061/blog/spacemacs_guide/cover.png
 ---
 
 ## 简介

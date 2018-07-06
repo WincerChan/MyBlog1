@@ -7,7 +7,7 @@ tags:
   - Javascript
   - 网易云
 updated: '2018/03/08 17:39:51'
-thumbnail: 'https://upload-images.jianshu.io/upload_images/2133488-388a89aaa69dce02.png'
+thumbnail: 'https://res.cloudinary.com/wincer/image/upload/v1530861006/blog/qqmusic_parse/cover.png'
 abbrlink: '72171293'
 ---
 
@@ -92,7 +92,7 @@ document.body.appendChild(script);
 
 接口：`await getMusic()`，如下图：
 
-![Screenshot_20180308_165406.png](https://i.loli.net/2018/03/08/5aa0fa4a9dd89.png)
+![示例](https://res.cloudinary.com/wincer/image/upload/v1530844981/blog/qqmusic_parse/sample.png)
 
 > 注意：在调用 getMusic() 的时候一定要加上 await 关键字，否则返回的就是一个 Promise 对象了
 

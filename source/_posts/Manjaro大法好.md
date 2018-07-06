@@ -9,7 +9,7 @@ copyright: true
 date: 2017-06-08 21:18:32
 updated: 2017-06-10 20:17:29
 abbrlink: 7e325dad
-thumbnail: https://s1.ax1x.com/2017/12/24/vGz9J.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859146/blog/manjaro_great/cover.png
 ---
 
 ### 前言
@@ -51,4 +51,4 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vGz9J.png
 
 ### 效果图
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fg9ifqaop9j21hc0u07wi.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861702/blog/manjaro_great/result.png)

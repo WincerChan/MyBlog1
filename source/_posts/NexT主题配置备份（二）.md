@@ -9,7 +9,7 @@ copyright: true
 date: '2017/06/30 10:55:34'
 updated: 2017/12/24 19:39:29
 abbrlink: 654861fb
-thumbnail: https://s1.ax1x.com/2017/12/24/vGU0K.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859222/blog/next_config1/cover.png
 ---
 
 这篇博客是承接上一篇 [Next 主题配置备份](../a40f8cd0/)，按照个人喜好做了一些修改。
@@ -207,8 +207,6 @@ gulp.task('default', ['build'])
 ```
 
 在执行 `gulp build` 时，会自动执行 `hexo clean`、`hexo g`，这时直接 `hexo d` 就行了。
-
-这是网站优化后的结果：![](https://ws1.sinaimg.cn/large/ba22af52gy1fh33l1gzdxj20no08uaaj.jpg)
 
 ### 博文置顶
 

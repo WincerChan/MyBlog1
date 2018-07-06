@@ -9,7 +9,7 @@ copyright: true
 abbrlink: a8e25856
 date: 2017/06/23 20:48:58
 updated: '2017/12/24 20:02:59'
-thumbnail: https://s1.ax1x.com/2017/12/24/vG4hQ.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530860074/blog/tcp_connection/cover.png
 ---
 
 最近计算机网络考试，无奈本学期没听多少，对三次握手和四次挥手的概念是模模糊糊，在看了哈工的网课后，了解了一些，就写篇博客记录和分享一下。
@@ -19,13 +19,13 @@ thumbnail: https://s1.ax1x.com/2017/12/24/vG4hQ.png
 
 **传输控制协议**（英语：Transmission Control Protocol，缩写为 TCP）是一种面向连接的、可靠的、基于字节流的传输层通信协议，由 IETF 的 RFC 793 定义。
 
+<!-- more -->
+
 ### TCP 建立链接
 
 TCP 用三次握手过程来创建一个连接。
 
-![图片来自网络](https://ws1.sinaimg.cn/large/ba22af52gy1fgvfgpki2sj20qo0dcjst.jpg)
-
-<!-- more -->
+![图片来自网络](https://res.cloudinary.com/wincer/image/upload/v1530862686/blog/tcp_connection/tcp_hand.png)
 
 但是为什么是三次握手来保证一个稳定的连接呢，两次行不行？四次不行吗？
 
@@ -67,7 +67,7 @@ TCP 用三次握手过程来创建一个连接。
 
 ### TCP 头部
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fgvgh160evj20pj0b740l.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530862713/blog/tcp_connection/header.png)
 
 上图就是 TCP 协议头部的格式，下面详细说明一下需要了解的信息：
 
@@ -80,7 +80,7 @@ TCP 用三次握手过程来创建一个连接。
 
 ### 具体过程
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fgvh6dfgxej20ob0r40ut.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530862750/blog/tcp_connection/procedure.jpg)
 
 #### 三次握手
 

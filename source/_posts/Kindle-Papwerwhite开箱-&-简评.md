@@ -11,7 +11,7 @@ date: '2017/10/05 12:33:46'
 updated: 2017/12/23 11:39:47
 copyright: true
 abbrlink: 6619f85a
-thumbnail: https://i.loli.net/2017/12/22/5a3c7487caf56.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530843586/blog/kindle_unpacking/cover.png
 ---
 
 > If you don't let go old things, new ones wouldn't come.                   —— Nicolas Wincer
@@ -30,7 +30,7 @@ thumbnail: https://i.loli.net/2017/12/22/5a3c7487caf56.png
 
 这就是全部的配件（裸机 + 数据线）了：右边是卖家附赠的
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk79ezf45nj243k2aokjl.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861449/blog/kindle_unpacking/pic1.jpg)
 
 | 参数   | 描述                 |
 | ---- | :----------------- |
@@ -50,27 +50,27 @@ thumbnail: https://i.loli.net/2017/12/22/5a3c7487caf56.png
 
 开完箱经过简单的设置之后，迫不及待的从电脑传了几本书（谁都阻止不了我想读书的心情！）。
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9im0k3boj20ts148wkb.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861472/blog/kindle_unpacking/pic2.png)
 
 吐槽一下，这里是无法像多看一样做成文件浏览的形式，也就是说，即使你把一些书放进新建的文件夹里（便于归类管理），它也是直接在首页显示。
 
 这就是阅读界面的选项了，选项少的可怜，而且页边距太大！我这已经设置页边距最小了。
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9iomwwanj20ts148myo.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861491/blog/kindle_unpacking/pic3.png)
 
 得益于 Kindle 这块 4:3 的屏幕，看漫画可以说是比手机更具优势。清晰度是够了，要是屏幕再大一些就好了：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9ini80jaj20ts148abd.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861506/blog/kindle_unpacking/pic4.png)
 
 如果想要购买正版书，就在上方的搜索按钮输入书名：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9inv9codj20ts148jue.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861524/blog/kindle_unpacking/pic5.png)
 
 设置界面确实寒酸，不过想想要的只是纯粹的阅读体验，也就释然了：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9iod1ccgj20ts148aan.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861537/blog/kindle_unpacking/pic6.png)
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fk9imyqm95j20ts148q3j.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861554/blog/kindle_unpacking/pic7.png)
 
 使用了~~半个多小时~~两天多了，简单总结一下感受：
 

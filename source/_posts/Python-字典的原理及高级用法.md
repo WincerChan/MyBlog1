@@ -9,7 +9,7 @@ tags:
 description: >-
   对于字典这一基础的数据结构来说，其对 Python 程序的重要性是无可替代的，在《代码之美》一书中，作者是这么描述的：字典这个数据结构活跃在所有
   Python 程序的背后，即便你的源码里并没有直接用到它。——A.M.Kuchling
-thumbnail: 'https://upload-images.jianshu.io/upload_images/2133488-6554894593d92b16.png'
+thumbnail: 'https://res.cloudinary.com/wincer/image/upload/v1530860947/blog/python_dict/cover.png'
 abbrlink: 4f2b4bfb
 ---
 

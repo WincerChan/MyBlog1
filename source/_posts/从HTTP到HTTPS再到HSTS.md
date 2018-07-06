@@ -9,7 +9,7 @@ date: '2017/09/13 10:05:33'
 updated: '2017/12/24 19:29:49'
 copyright: true
 abbrlink: dfc84766
-thumbnail: https://s1.ax1x.com/2017/12/24/v3ENQ.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859571/blog/http_https_hsts/cover.png
 ---
 
 ## 前言
@@ -45,13 +45,13 @@ thumbnail: https://s1.ax1x.com/2017/12/24/v3ENQ.png
 
 在 `Crypto -> HTTP Strict Transport Security (HSTS) `开启如下配置：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fjiuosceepj20r10903yy.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861893/blog/http_https_hsts/cf_crypto.png)
 
 ### 安全系数检测
 
 开启之后，进入 https://www.ssllabs.com/ssltest/ 这个网站，输入域名后，该网站会对你的网站进行一次测试：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fjiuub5d6sj20rd0du3zd.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861939/blog/http_https_hsts/ssllab_summary.png)
 
 在开启后，我的网站安全等级变成了 A+，开启之前是 A。
 

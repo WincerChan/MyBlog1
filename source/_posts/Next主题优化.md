@@ -9,7 +9,7 @@ copyright: true
 abbrlink: a40f8cd0
 date: 2017/05/31 18:04:00
 updated: 2017/11/24 19:38:38
-thumbnail: https://s1.ax1x.com/2017/12/24/vGU0K.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859222/blog/next_config1/cover.png
 ---
 
 ### 基本设置

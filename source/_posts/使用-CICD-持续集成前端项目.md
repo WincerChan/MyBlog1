@@ -7,7 +7,7 @@ tags:
   - CI
   - 持续集成
 copyright: true
-thumbnail: 'https://upload-images.jianshu.io/upload_images/2133488-c2b6653730129e75.png'
+thumbnail: 'https://res.cloudinary.com/wincer/image/upload/v1530861194/blog/ci_project/cover.png'
 abbrlink: f011ea9c
 ---
 
@@ -139,7 +139,7 @@ steps:
 
 每次构建完成后，commits 列表的画风就变成这样了：
 
-![CircleCI 构建](https://i.loli.net/2018/06/15/5b2323b17eff8.png)
+![CircleCI 构建](https://res.cloudinary.com/wincer/image/upload/v1530858045/blog/ci_project/circleci_construction.png)
 
 点击 Details 就会显示每次构建的详细过程。
 

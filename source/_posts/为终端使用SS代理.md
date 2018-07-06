@@ -8,7 +8,7 @@ copyright: true
 date: 2017/06/04 20:31:10
 updated: 2017/06/12 16:32:18
 abbrlink: 39613bbd
-thumbnail: https://s1.ax1x.com/2017/12/24/vJpcR.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859499/blog/terminal_proxy/cover.png
 ---
 
 Shadowsocks 是我们最常用的代理工具，它使用 socks 协议，而我们目前使用的终端只支持 http、https 协议，所以我们需要用软件来将 socks 协议转化为 http 等协议，我采用的是 Proxychains 软件（SS 的安装和配置自行谷歌）
@@ -50,7 +50,7 @@ socks5 127.0.0.1 1080
 
 
 
-![未使用](https://ws1.sinaimg.cn/large/ba22af52gy1fg9gcb3kr3j20qh0igmz6.jpg)
+![未使用](https://res.cloudinary.com/wincer/image/upload/v1530861827/blog/terminal_proxy/before.png)
 
 
-![已使用](https://ws1.sinaimg.cn/large/ba22af52gy1fg9gdbm5tfj20qh0igwgo.jpg)
+![已使用](https://res.cloudinary.com/wincer/image/upload/v1530861842/blog/terminal_proxy/after.png)

@@ -9,7 +9,7 @@ abbrlink: '3e793072'
 visible: hide
 date: 2017/05/25 21:00:38
 updated: 2017/12/24 19:38:29
-thumbnail: https://s1.ax1x.com/2017/12/24/vJ3E8.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859185/blog/markdown_tutorial/cover.png
 ---
 
 
@@ -209,7 +209,7 @@ Markdown 原生并无下划线语法，可以通过 HTML 来实现：
 - [x] 唱歌
 ```
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1ffy07lxnyhj20fn02ct8i.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861733/blog/markdown_tutorial/todo.png)
 
 ### 流程图
 以 flow 为关键字
@@ -224,7 +224,7 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
-![](https://ws1.sinaimg.cn/large/ba22af52gy1ffy055sa4mj20710bgt8p.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861760/blog/markdown_tutorial/flow.png)
 
 ### 时序图
 
@@ -236,7 +236,7 @@ Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1ffy05m64ttj20e607i3yk.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530861777/blog/markdown_tutorial/sequence.png)
 
 ### Latex 公式
 

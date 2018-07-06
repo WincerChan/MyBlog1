@@ -7,7 +7,7 @@ tags:
   - 表情包
   - JavaScript
 abbrlink: '8575e868'
-thumbnail: https://upload-images.jianshu.io/upload_images/2133488-5e5d5089fbc720d5.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530861054/blog/meme_generator/cover.png
 description: 前一段时间「这个仇我先记下了」的表情包突然火了，我也萌生了自己写一个表情包生成工具的想法，而网上目前有的生成器大都是后端版，我就决定用 JavaScript 写一个。
 ---
 

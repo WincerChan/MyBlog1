@@ -10,7 +10,7 @@ date: '2017/08/31 15:08:10'
 updated: '2017/12/24 20:05:28'
 copyright: true
 abbrlink: d68153f1
-thumbnail: https://s1.ax1x.com/2017/12/24/v88qf.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859986/blog/imatate_general_solution/cover.png
 ---
 
 ## 前言
@@ -35,7 +35,7 @@ thumbnail: https://s1.ax1x.com/2017/12/24/v88qf.png
 
 打开 Chrome 的开发工具的 Network 一栏，输入完用户名和密码及验证码后，点击登录。以简书为例（因为简书是需要滑动验证的，比豆瓣的验证码更麻烦）：
 
-![](https://ws1.sinaimg.cn/large/ba22af52gy1fj2y1160frj20n306vach.jpg)
+![](https://res.cloudinary.com/wincer/image/upload/v1530862655/blog/imatate_general_solution/cookie.png)
 
 你会发现有一个 `Type` 为 `document`、名为 `www.jianshu.com` 的文档，点开他并滑动到最下面你就会看到在 `Requests Header` 中有一项名为 `Cookie` 的很长很长的字符串，这里面就保存了你的登录信息，这些信息通常是经过加密的，所以不可读。Cookie 的格式一般是：`name1=value1;name2=value2`。
 
