@@ -4,7 +4,7 @@ comments: true
 type: "life"
 date: 2017-06-15 10:56:58
 hide_license: true
-thumbnail: https://i.loli.net/2017/12/21/5a3b5e3f0708c.png
+thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/cover.png
 ---
 
 > 「人的差异在于业余时间。」
