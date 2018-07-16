@@ -93,7 +93,7 @@ curl 'https://api.itswincer.com/hitokoto/v2/?encode=json&length=10'
 {"hitokoto":"(눈_눈)","source":"进击的巨人"}
 ```
 
-如果想在自己的网页使用的话，可以采取以下两个方法：
+如果想在自己的网页使用的话，可以采取以下两种方法：
 
 ### JS 方法
 
