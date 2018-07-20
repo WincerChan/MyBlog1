@@ -8,7 +8,7 @@ tags:
 copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
-updated: 2018/06/22 20:46:10
+updated: 2018/07/20 20:46:10
 thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baiduyun_accelerate/cover.png
 ---
 
@@ -53,6 +53,8 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baidu
 ```
 
 以下为实例。
+
+> 友情提示：如果获取的链接仍无法多线程下载，可尝试把链接的协议从 HTTPS 改为 HTTP
 
 ## 下载助手修改版
 
