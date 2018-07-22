@@ -23,6 +23,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2515650989.webp '水形物语' https://movie.douban.com/subject/26752852/ %}
 {% figure
 https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1284001991.jpg '厉鬼将映' https://movie.douban.com/subject/3529375/ %}
 {% figure
