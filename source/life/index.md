@@ -23,6 +23,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/
 ---
 <center><font size=5>我看过的书籍和电影</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2168567316.jpg '瑞克和莫蒂' 'https://movie.douban.com/subject/11537954/' %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p655393674.jpg '如月疑云' https://movie.douban.com/subject/2361826/ %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2497252402.jpg '鬼魅浮生' https://movie.douban.com/subject/26920017/ %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2515650989.jpg '水形物语' https://movie.douban.com/subject/26752852/ %}
