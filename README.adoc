@@ -1,0 +1,10 @@
+= Wincer's Blog
+Wincer Chan
+
+image:https://img.shields.io/badge/author-Wincer-0097a7.svg?style=flat-square[Author, link=https://diem.im]
+image:https://img.shields.io/badge/hexo-3.5.0-0e83cd.svg?style=flat-square[Hexo, link=https://hexo.io]
+image:https://img.shields.io/badge/node.js-9.3.0-43853d.svg?style=flat-square[NodeJS, link=https://nodejs.org]
+image:https://img.shields.io/circleci/project/github/WincerChan/MyBlog/hexo.svg?style=flat-square[CircleCI Status, link=https://circleci.com]
+image:https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg?style=flat-square[License, link=https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh]
+
+配置文件在 hexo 分支，生成的静态网页在 master 分支，这是我 https://blog.itswincer.com[博客的地址]。
