@@ -7,4 +7,6 @@ image:https://img.shields.io/badge/node.js-9.3.0-43853d.svg?style=flat-square[No
 image:https://img.shields.io/circleci/project/github/WincerChan/MyBlog/hexo.svg?style=flat-square[CircleCI Status, link=https://circleci.com]
 image:https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg?style=flat-square[License, link=https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh]
 
+* https://blog.itswincer.com/atom.xml[RSS 地址]
+
 配置文件在 hexo 分支，生成的静态网页在 master 分支，这是我 https://blog.itswincer.com[博客的地址]。
