@@ -30,7 +30,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about
 - 即时通讯：QQ：（只加朋友） Telegram：[@Tivsae](https://t.me/Tivsae)
 - 网站评论：如果是和文章有关的问题，建议直接评论，同时Disqus 会自动将评论推送至 Inbox
 
-如果对我感兴趣，可在 Telegram 上找我；如果是咨询问题，请提前一定阅读[这篇说明](../ask-a-question/)。
+如果对我感兴趣，可在 Telegram 上找我；如果是咨询问题，请提前一定阅读[这篇说明](../about-the-question/)。
 
 本人比较注重在网上的个人隐私，如有需要请通过以上几种方式同我联系。
 
