@@ -1,19 +1,23 @@
 ---
 title: Python 知多少（一）——不常见的数据结构
-date: 2018/08/08 11:30:32
-updated: 2018/08/08 11:33:32
+date: '2018/08/08 11:30:32'
+updated: '2018/08/08 11:33:32'
 categories: 分享境
 tags:
   - Python
   - 数据结构
   - 高级
   - 知多少
-thumbnail: https://res.cloudinary.com/wincer/image/upload/v1533699590/blog/python_rarely_data_structure/cover.png
+thumbnail: >-
+  https://res.cloudinary.com/wincer/image/upload/v1533699590/blog/python_rarely_data_structure/cover.png
+abbrlink: dbcdebb
 ---
 
-近来准备写几篇关于 Python 的进阶文章，归为一个系列，介绍一些我所知道的关于 Python 偏高级一点的特性。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。
+近来准备写几篇文章用于介绍 Python 较高级一些的特性，归为一个系列。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。
 
 对 Pythoner 而言，元组（tuple）、列表（list）、字典（dict）这三个应该最熟悉的数据结构了，恰当使用这三个数据结构的话的确可以应对大部分的使用场合了，但有时因为其它方面的问题（内存占用、插入效率、删除效率），我们仍有必要学习其它不那么常见的数据结构。
+
+<!-- more -->
 
 ## 数组
 
