@@ -127,3 +127,22 @@ image_stream:
   jquery_lazyload: false
   img_placeholder: false
 
+
+pwa:
+  serviceWorker:
+    path: /sw.js
+    preload:
+      urls:
+        - /
+    opts:
+      networkTimeoutSeconds: 2
+    routes:
+      - pattern: !!js/regexp /note\.itswincer\.com/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /cdn\.jsdelivr\.net/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /gitee\.com/
+        strategy: networkFirst
+      - pattern: !!js/regexp /res\.cloudinary\.com/
+        strategy: cacheFirst
+  priority: 10
