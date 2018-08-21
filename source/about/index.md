@@ -6,7 +6,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about
 ---
 > 佛曰：万发缘生，皆系缘分
 
-<div id="aplayer1" class="aplayer" title="if (piano arrange)" author="折倉俊則" url="0000Mzli2dE2ps" pic="https://p1.music.126.net/vysbI6D4DhLa5LE8tNX34A==/6630055115875539.jpg?param=130y130" lrc="lrc/pure.lrc"></div>
+<iframe id="music" frameborder="no" width="100%" height="0" src="https://note.itswincer.com/music/v1/?id=29308009"></iframe>
 
 在众多博客中与你相遇，想必是一种缘分。
 

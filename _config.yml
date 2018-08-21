@@ -6,21 +6,23 @@
 title: Wincer's Blog
 subtitle: 言念君子，温其如玉。
 description: 这里是 @Wincer，喜欢折腾新技术，却没多大耐心。个人博客会写得比较杂，包括日常吐槽、技术踩坑，偶尔会写正经一点的。欢迎订阅 RSS(•̀ᴗ•́)。
-author: WincerChan
-language: zh-CN
+author: Wincer
+language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.itswincer.com
+url: https://note.itswincer.com
 root: /
-#permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink/
+permalink: posts/:title/
+# permalink: posts/:abbrlink/
 #permalink_defaults:
 abbrlink:
   alg: crc32
   rep: hex
 
+sitemap:
+  path: sitemap.xml
 
 # Directory
 source_dir: source
@@ -45,11 +47,11 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
-  line_number: false
+  enable: true
+  line_number: true
   auto_detect: false
-  tab_replace: false
-  
+  tab_replace:
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -70,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: material
+theme: inside
 stylus:
   compress: true
 
@@ -78,12 +80,6 @@ search:
   path: search.xml
   field: post
   
-# add post views
-leancloud_visitors:
-  enable: false
-  app_id: 'lzilVt3lOOHq96uz0t3Mw0UP-gzGzoHsz'
-  app_key: 'JcJ8GfmOF9VH8Xgv9w74yTzh'
-
 index_generator:
   per_page: 6
 
@@ -131,7 +127,22 @@ image_stream:
   jquery_lazyload: false
   img_placeholder: false
 
-lazyload:
-  enable: true
-  onlypost: true
-  loadingImg: data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=
+
+pwa:
+  serviceWorker:
+    path: /sw.js
+    preload:
+      urls:
+        - /
+    opts:
+      networkTimeoutSeconds: 2
+    routes:
+      - pattern: !!js/regexp /note\.itswincer\.com/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /cdn\.jsdelivr\.net/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /gitee\.com/
+        strategy: networkFirst
+      - pattern: !!js/regexp /res\.cloudinary\.com/
+        strategy: cacheFirst
+  priority: 10
