@@ -130,14 +130,14 @@ image_stream:
 
 pwa:
   serviceWorker:
-    path: /sw.js
+    path: /serviceWorker.js
     preload:
       urls:
         - /
     opts:
       networkTimeoutSeconds: 2
     routes:
-      - pattern: !!js/regexp /note\.itswincer\.com/
+      - pattern: !!js/regexp /blog\.itswincer\.com/
         strategy: cacheFirst
       - pattern: !!js/regexp /cdn\.jsdelivr\.net/
         strategy: cacheFirst
