@@ -57,22 +57,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about
 欢迎诸君订阅 RSS。
 
 ## 打钱，请～
-{% raw %}
-<ul id="donateBox" class="list pos-f tr3">
-	<li id="BTC" data-footnote="Bitcoin adress">
-		<button id="BTCBn">Bitcoin</button>
-	</li>
-	<li id="LTC" data-footnote="Litecoin address">
-		<button id="LTCLn">Litecoin</button>
-	</li>
-	<li id="PayPal" data-footnote="Paypal address">
-		<a href="https://paypal.me/tivsae" target="_blank">PayPal</a>
-	</li>
-</ul>
-<div id="model-background"></div>
-<div id="QRBox" class="pos-f left-100">
-		<img id="MainBox"/>
-	<p id="title"></p>
-</div>
-{% endraw %}
-	
+
+- [PayPal](https://paypal.me/tivsae)
+
+​	
