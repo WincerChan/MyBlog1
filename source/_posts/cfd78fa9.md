@@ -118,7 +118,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baidu
 
 ## BaiduExporter
 
-> ~~自本文最近一次更新起， 该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载。~~可以使用我 Fork 后修改的[版本](https://github.com/WincerChan/BaiduExporter)作为代替。
+> ~~自本文最近一次更新起，该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载。~~可以使用我 Fork 后修改的[版本](https://github.com/WincerChan/BaiduExporter)作为代替。
 
 [该项目](https://github.com/acgotaku/BaiduExporter)同样开源在 GitHub，算是目前比较完美的解决方案了，以下是使用 Axel 开启 256 个线程后的速度（不要在意中间的乱码）：
 

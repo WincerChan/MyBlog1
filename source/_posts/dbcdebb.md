@@ -92,7 +92,7 @@ Queue<[1, 2, 3, 4, 5]>
 
 ### 双向队列
 
-`collections.deque` 类提供了一个双向队列，也就是说 `deque` 也完全可以栈来使用。它的 `append()`、``appendleft()`` 和 `pop()`、``popleft()`` 都是原子操作，这也意味这 `deque` 是线程安全的。`deque` 同样实现了所有和可变序列相关的操作。`deque` 可以接受一个可选参数（`maxlen`）表示队列可容纳元素的数量，：
+`collections.deque` 类提供了一个双向队列，也就是说 `deque` 也完全可以栈来使用。它的 `append()`、``appendleft()`` 和 `pop()`、``popleft()`` 都是原子操作，这也意味这 `deque` 是线程安全的。`deque` 同样实现了所有和可变序列相关的操作。`deque` 可以接受一个可选参数（`maxlen`）表示队列可容纳元素的数量：
 
 ```python
 from collections import deque
