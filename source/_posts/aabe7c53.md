@@ -6,11 +6,12 @@ type: categories
 categories: 文字阁
 tags:
   - SICP
-	- 递归
-	- 迭代
+  - 递归
+  - 迭代
 copyright: true
 abbrlink: aabe7c53
 mathjax: true
+hide: true
 thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530860277/blog/recursion_and_iteration/cover.png
 ---
 
