@@ -1,7 +1,6 @@
 ---
-title: 生活
+title: Life
 comments: true
-type: "life"
 date: 2017-06-15 10:56:58
 hide_license: true
 thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/cover.png

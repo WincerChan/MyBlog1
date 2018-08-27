@@ -1,5 +1,5 @@
 ---
-title: 关于
+title: About
 date: 2017-05-10 22:46:00
 hide_license: true
 thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about/cover.png
@@ -60,4 +60,4 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about
 
 - [PayPal](https://paypal.me/tivsae)
 
-​	
+	​	
