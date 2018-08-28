@@ -8,9 +8,8 @@ tags:
   - 数据结构
   - 高级
   - 知多少
-thumbnail: >-
-  https://res.cloudinary.com/wincer/image/upload/v1533699590/blog/python_rarely_data_structure/cover.png
 abbrlink: dbcdebb
+thumbnail: https://ae01.alicdn.com/kf/HTB10bmeKXmWBuNjSspd762ugXXa7.png
 ---
 
 近来准备写几篇文章用于介绍 Python 较高级一些的特性，归为一个系列。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。
