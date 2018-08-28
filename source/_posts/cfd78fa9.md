@@ -11,7 +11,7 @@ copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
 updated: 2018/08/24 10:46:10
-thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baiduyun_accelerate/cover.png
+thumbnail: https://ae01.alicdn.com/kf/HTB1psBmKASWBuNjSszd762eSpXaK.png
 ---
 
 目前关于破解百度云限速的方法网上提供了许多种，实则是殊途同归，即：高速链接 + 多线程下载工具。而目前获取的链接的方法并非完美且存在一些限制，但聊胜于无。我将目前网上能搜集到的方法一一列举，同时也会针对每个方法的适用性与方便性做出评价。
@@ -32,11 +32,11 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baidu
 
 4. 上方会出现「下载助手」的按钮，依次点击：*压缩按钮 -> 获取压缩按钮*：
 
-   ![下载助手](https://res.cloudinary.com/wincer/image/upload/v1530844040/blog/baiduyun_accelerate/assistant.png)
+   ![下载助手](https://ae01.alicdn.com/kf/HTB1XhIyKkOWBuNjSspp760PgpXaD.png)
 
 此方法适用性应当比较高。以下是 Axel 开启 128 线程的示例：
 
-![下载实例](https://res.cloudinary.com/wincer/image/upload/v1530843976/blog/baiduyun_accelerate/thread_sample.png)
+![下载实例](https://ae01.alicdn.com/kf/HTB1vlqNKgaTBuNjSszf760gfpXaF.png)
 
 缺点就是有些麻烦：需复制 Header 信息才可掉调用下载工具（如 Axel 等）下载，获得 Header 的方法就是打开调试窗口，粘贴该链接在 Chrome 地址栏，在 Network 选项卡中查看该链接的 Request Headers，至少需要将 Cookie、User-Agent 两项传入给下载工具。
 
@@ -62,7 +62,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baidu
 
 3. 进入想要下载文件的界面
 
-4. 勾选，点击 *导出下载 -> 文本导出 -> 拷贝下载链接*：![导出下载](https://res.cloudinary.com/wincer/image/upload/v1530844131/blog/baiduyun_accelerate/export.png)
+4. 勾选，点击 *导出下载 -> 文本导出 -> 拷贝下载链接*：![导出下载](https://ae01.alicdn.com/kf/HTB11O.dttcnBKNjSZR0763FqFXam.png)
 
 5. 复制链接后，是一串格式类似以下内容的命令：
 
@@ -74,7 +74,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baidu
 
 [该项目](https://github.com/acgotaku/BaiduExporter)算是目前比较完美的解决方案了，以下是使用 Axel 开启 256 个线程后的速度（不要在意中间的乱码）：
 
-![截图](https://res.cloudinary.com/wincer/image/upload/v1530844096/blog/baiduyun_accelerate/axel.png)
+![截图](https://ae01.alicdn.com/kf/HTB1YuS7B5OYBuNjSsD4762SkFXai.png)
 
 原项目是将链接导出至 ariac2 下载，但是 ariac2 却只能最多开启 16 个线程，这对一般下载任务也够了，但是对于百度这种老流氓来说（每个连接限速至 10Kb/s ），还是不够用的，所以我 Fork 后采用 Axel 代替 ariac2，Axel 可以设置任意连接数）。
 
@@ -92,7 +92,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baidu
 
 同样该方法并非完美，用「ES 文件浏览器」获取的百度云链接只能在该手机端使用，因为该链接是通过本地端口远程链接所生成的，故还是有一些限制，速度不稳定（会有一些不稳定的波动）：
 
-![ADM 下载](https://res.cloudinary.com/wincer/image/upload/v1530844066/blog/baiduyun_accelerate/adm.png)
+![ADM 下载](https://ae01.alicdn.com/kf/HTB1hMjxB2uSBuNkHFqD760fhVXaI.png)
 
 ## 第三方客户端
 
@@ -102,13 +102,13 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530858942/blog/baidu
 
 [该软件](https://www.speedpan.com/)同样是由爱吾一位大神创作，只有 Windows 版。
 
-![SpeedPan 1](https://res.cloudinary.com/wincer/image/upload/v1535076314/blog/baiduyun_accelerate/speedpan_1.png)
+![SpeedPan 1](https://ae01.alicdn.com/kf/HTB1wVyNKqmWBuNjy1Xa760CbXXah.png)
 
 与其它软件的不同之处在于它还支持网盘资源搜索的功能。
 
 据说是支持直接通过分享链接下载的，但我试了一下通过分享链接下载总是报错。但登录后下载还是可以的。
 
-![SpeedPan 2](https://res.cloudinary.com/wincer/image/upload/v1535076318/blog/baiduyun_accelerate/speedpan_2.png)
+![SpeedPan 2](https://ae01.alicdn.com/kf/HTB18HzCKeuSBuNjy1Xc763YjFXaP.png)
 
 这速度，emmmm，只能说一般吧。推荐给 Windows 用户使用。
 
