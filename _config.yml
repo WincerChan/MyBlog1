@@ -130,7 +130,7 @@ image_stream:
 
 pwa:
   serviceWorker:
-    path: /sw-78497f97.js
+    path: /sw-efaa543b.js
     preload:
       urls:
         - /
@@ -144,5 +144,7 @@ pwa:
       - pattern: !!js/regexp /gitee\.com/
         strategy: networkFirst
       - pattern: !!js/regexp /res\.cloudinary\.com/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /ae01\.alicdn\.com/
         strategy: cacheFirst
   priority: 10
