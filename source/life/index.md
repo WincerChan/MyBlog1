@@ -21,6 +21,9 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/
 ---
 <center><font size=5>我看过的书籍和电影（2018）</font></center>
 {% stream %}
+{% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p510876377.jpg '阿甘正传' https://movie.douban.com/subject/1292720/ '2018-08-27 看过' %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518865763.webp '遗传厄运' https://movie.douban.com/subject/27621727/ '2018-08-23 看过' %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2530496815.jpg '天盛长歌' https://movie.douban.com/subject/26761328/ '2018-08-15 看过' %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2516914607.jpg '湮灭' https://movie.douban.com/subject/26384741/ '2018-08-14 看过' %}
 {% figure https://img3.doubanio.com/lpic/s29434304.jpg '流畅的Python' https://book.douban.com/subject/27028517/ '2018-08-04 读过' %}
 {% figure https://img3.doubanio.com/lpic/s28073424.jpg '哲学家们都干了些什么' https://book.douban.com/subject/26390842/ '2018-08-04 读过' %}
