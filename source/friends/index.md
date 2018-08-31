@@ -14,7 +14,7 @@ title: Friends
 
 ## 交换申请
 
-想和我交换友情链接的，希望你的博客满足以下两个要求：
+如果想和我交换友情链接的话，希望你的博客满足以下的要求：
 
 - 支持 HTTPS 访问；
 - 有足够的原创内容，且不要太水；
@@ -23,4 +23,5 @@ title: Friends
 
 ## 友情链接
 
-- TODO
+- [Blessing Studio](https://blessing.studio)
+- [Stray Episode](https://farer.org/)
