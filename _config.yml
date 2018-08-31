@@ -130,7 +130,7 @@ image_stream:
 
 pwa:
   serviceWorker:
-    path: /sw-a9dc62.js
+    path: /sw-b86522.js
     preload:
       urls:
         - /
