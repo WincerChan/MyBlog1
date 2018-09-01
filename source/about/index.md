@@ -21,7 +21,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about
 - 对生活质量有一定的追求，宁缺毋滥
 - 半吊子前端，钟爱 Python，折腾 Golang
 - 轻（zhòng）微（dù）强迫症，喜欢简约、美好的事物
-- 没有 [Typora](https://typora.io/) 就不会写博客，没有 ~~[Emacs](https://www.gnu.org/software/emacs/)~~（现已叛变成 neovim + VS Code） 就不会写代码~~
+- 没有 [Typora](https://typora.io/) 就不会写博客，没有 ~~[Emacs](https://www.gnu.org/software/emacs/)~~（现已叛变成 Neovim + VS Code）就不会写代码
 
 ## 联系我
 
