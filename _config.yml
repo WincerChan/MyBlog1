@@ -148,3 +148,6 @@ pwa:
       - pattern: !!js/regexp /ae01\.alicdn\.com/
         strategy: cacheFirst
   priority: 10
+
+image_caption:
+    enable: true
