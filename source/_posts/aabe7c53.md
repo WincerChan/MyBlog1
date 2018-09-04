@@ -11,7 +11,7 @@ tags:
 copyright: true
 abbrlink: aabe7c53
 mathjax: true
-hide: true
+published: false
 thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530860277/blog/recursion_and_iteration/cover.png
 ---
 

@@ -9,7 +9,7 @@ tags:
 copyright: true
 type: categories
 abbrlink: cd8ce2d7
-hide: true
+published: false
 thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530859757/blog/new_domain/cover.png
 ---
 
