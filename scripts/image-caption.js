@@ -21,15 +21,12 @@ hexo.extend.filter.register('after_post_render', function(data){
     if (data.layout == 'post') {
       var all = extractAllText(data.content);
       all.forEach(element => {
-        data.content = data.content.replace(element, data.path+element)
+        if (element.length < 26){
+          data.content = data.content.replace(element, data.path+element)
+        }
       });
       console.log(all)
     }
   }
 })
 
-hexo.extend.filter.register('before_post_render', function(data) {
-  // console.log(data.permalink)
-  // console.log(data.path)
-  // console.log(data.slug)
-})
