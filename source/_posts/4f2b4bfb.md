@@ -109,7 +109,7 @@ class StrKeyDict(UserDict):
     def __setitem__(self, key, item):
         self.data[str(key)] = item
 
-d = StrKetDict([('name', 'wincer'), ('age', '20')])
+d = StrKetDict([('1', 'one'), ('2', 'two')])
 >>> d[2]
 'two'
 ```
