@@ -26,4 +26,5 @@ title: Friends
 - [Blessing Studio](https://blessing.studio)
 - [Stray Episode](https://farer.org/)
 - [fukua's blog](https://blog.cooooler.com/)
+- [BLOG @ GIUEM](https://www.giuem.com)
 
