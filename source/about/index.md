@@ -41,16 +41,17 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about
 
 博客大事年表（啊喂，博客才不满一年，叫「月表」或者「日表」更合适吧）：
 
-|        时间        |                    事件                    |
-| :--------------: | :--------------------------------------: |
-| 2017 年 05 月 05 日 | [GitHub Pages 建站，使用 NexT 主题](../posts/4a17b156/) |
-| 2017 年 05 月 07 日 | [万网购买域名 wincer.top](../posts/daaac5bb/)  |
+|        时间         |                           事件                           |
+| :-----------------: | :------------------------------------------------------: |
+| 2017 年 05 月 05 日 | [GitHub Pages 建站，使用 NexT 主题](../posts/4a17b156/)  |
+| 2017 年 05 月 07 日 |      [万网购买域名 wincer.top](../posts/daaac5bb/)       |
 | 2017 年 06 月 16 日 | [利用 Cloudflare 反代实现全站 HTTPS](../posts/444a2b9d/) |
-| 2017 年 06 月 29 日 | [NameCheap 购买域名 itswincer.com](../posts/cd8ce2d7/) |
-| 2017 年 07 月 25 日 | [使用 ServiceWorker 技术](../posts/a0df572f/) |
-| 2017 年 09 月 13 日 |     [全站启用 HSTS](../posts/dfc84766/)      |
-| 2017 年 11 月 27 日 | [启用 localStorage 技术](../posts/a9d193c6/) |
-| 2018 年 01 月 22 日 |    [网站迁移至自购的 VPS](../posts/b3085a7/)     |
+| 2017 年 06 月 29 日 |  [NameCheap 购买域名 itswincer.com](../posts/cd8ce2d7/)  |
+| 2017 年 07 月 25 日 |      [使用 ServiceWorker 技术](../posts/a0df572f/)       |
+| 2017 年 09 月 13 日 |           [全站启用 HSTS](../posts/dfc84766/)            |
+| 2017 年 11 月 27 日 |       [启用 localStorage 技术](../posts/a9d193c6/)       |
+| 2018 年 01 月 22 日 |        [网站迁移至自购的 VPS](../posts/b3085a7/)         |
+| 2018 年 08 月 22 日 |  [博客架构做了一些改进，换成了 SPA](../posts/50658b02/)  |
 
 博客的部分文章加密，博客设计的内容会比较广泛：技术、感想、日常吐槽等等，由于域名和服务器都在国外**并且永不打算备案**，也不会担心会出什么事。
 
@@ -60,4 +61,3 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842709/blog/about
 
 - [PayPal](https://paypal.me/tivsae)
 
-	​	
