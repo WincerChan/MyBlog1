@@ -13,7 +13,8 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/
 ---
 <center><font size=5>我看过的书籍和电影（2018）</font></center>
 {% stream %}
-{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519988760.jpg '奈克瑟斯奥特曼' https://movie.douban.com/subject/2264570/ '2018-10-04' %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519814313.jpg '名侦探柯南：零的执行人' https://movie.douban.com/subject/27110363/ '2018-10-12 看过' %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519988760.jpg '奈克瑟斯奥特曼' https://movie.douban.com/subject/2264570/ '2018-10-04 看过' %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2526405034.jpg '狄仁杰之四大天王' https://movie.douban.com/subject/25882296/ '2018-09-30 看过' %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2395074307.jpg '请叫我英雄' https://movie.douban.com/subject/25899379/ '2018-09-27 看过' %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2527060460.jpg '圆桌讲究派' https://movie.douban.com/subject/30264953/ '2018-09-23 看过' %}
