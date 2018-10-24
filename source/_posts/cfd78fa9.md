@@ -55,6 +55,8 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1psBmKASWBuNjSszd762eSpXaK.png
 ### BaiduExporter
 
 > ~~自本文最近一次更新起，该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载。~~可以使用我 [Fork 后修改](https://github.com/WincerChan/BaiduExporter)的版本作为代替。
+>
+> 2018 年 10 月 24 日起此法好像不能用了，原作者已经知道这个问题，等待修复中。
 
 1. clone 该仓库
 
