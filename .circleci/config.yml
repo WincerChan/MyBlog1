@@ -54,6 +54,15 @@ jobs:
                     git add .
                     git commit -m "Circle CI Auto Built: `date +"%Y-%m-%d %H:%M:%S"`"
                     git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master:master
+            - run:
+                name: Push to Gitee
+                command: |
+                    cd ./public/api
+                    git init
+                    git add .
+                    ssh-keyscan gitee.com,120.55.226.24 >> ~/.ssh/known_hosts
+                    git commit -m "Circle CI Auto Push: `date + "%Y-%m-%d %H:%M:%S"`"
+                    git push --force --quiet "git@gitee.com:whisk/blog_api.git" master:master
 
 
 
