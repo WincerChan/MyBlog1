@@ -25,7 +25,6 @@ hexo.extend.filter.register('after_post_render', function(data){
           data.content = data.content.replace(element, data.path+element)
         }
       });
-      console.log(all)
     }
   }
 })
