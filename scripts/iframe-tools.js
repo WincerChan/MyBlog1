@@ -19,3 +19,11 @@ hexo.extend.tag.register('gist', args => {
   iframe += `<button onclick="let frame = document.querySelector('#displayGist');frame.src=''+frame.getAttribute('data-src')">Click me to load GIST</button>`;
   return iframe;
 })
+
+hexo.extend.filter.register('after_post_render', (data) => {
+  if (data.mathrender) {
+      data.content = data.content.replace(/\$\$(.+?)\$\$/g, '<div class="mathrender">' + '$1' + '</div>');
+      data.content = data.content.replace(/\$(.+?)\$/g, '<span class="mathrender">' + '$1' + '</span>');
+      data.content = '<iframe src="/katex/" frameborder="0" height="0"></iframe>' + data.content;
+  }
+})
