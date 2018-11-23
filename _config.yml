@@ -7,15 +7,15 @@ title: Wincer's Blog
 subtitle: 言念君子，温其如玉。
 description: 这里是 @Wincer，喜欢折腾新技术，却没多大耐心。个人博客会写得比较杂，包括日常吐槽、技术踩坑，偶尔会写正经一点的。欢迎订阅 RSS(•̀ᴗ•́)。
 author: Wincer
-language: en
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://blog.itswincer.com
 root: /
-permalink: posts/:title/
-# permalink: posts/:abbrlink/
+# permalink: posts/:title/
+permalink: posts/:abbrlink/
 #permalink_defaults:
 abbrlink:
   alg: crc32
@@ -47,10 +47,10 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
-  tab_replace:
+  tab_replace: false
 
 # Category & Tag
 default_category: uncategorized
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: inside
+theme: material
 stylus:
   compress: true
 
