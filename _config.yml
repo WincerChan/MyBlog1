@@ -143,3 +143,9 @@ pwa:
 
 image_caption:
     enable: true
+
+# lazyload image
+lazyload:
+  enable: true
+  onlypost: true
+  loadingImg: data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=
