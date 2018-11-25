@@ -23,7 +23,8 @@ hexo.extend.tag.register('stream', function(args, content) {
     }
     result += '<div class="hexo-img-stream">';
     result += '<style type="text/css">';
-    result += '.article img {margin: 0} figcaption{height: 15px; text-align: center; line-height: 1.5; font-size: .7em; color: #999; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;} article figure{ background: #fefefe; box-shadow: 0 1px 2px rgba(34, 25, 25, 0.2); margin: 0 0 2.6% 0; padding: 0%; padding-bottom: 3px; display: inline-block; width: 23.9%;} .lazyload{ padding:0.7em 6px 0;}';
+    //result += '.article img {margin: 0} figcaption{height: 15px; text-align: center; line-height: 1.5; font-size: .7em; color: #999; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;} article figure{ background: #fefefe; box-shadow: 0 1px 2px rgba(34, 25, 25, 0.2); margin: 0 0 2.6% 0; padding: 0%; padding-bottom: 3px; display: inline-block; width: 23.9%;} .lazyload{ padding:0.7em 6px 0;}';
+    result += '.post-gallery {border-bottom: 0; padding-bottom: 3px;} figcaption{height: 15px; text-align: center; line-height: 1.5; font-size: .6rem; color: #999; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;} #post-content figure{ background: #fefefe; box-shadow: 0 1px 2px rgba(34, 25, 25, 0.2); margin: 0 0.5% 2.6%; padding: 0%; padding-bottom: 3px; display: inline-block; width: 24%;} .lazyload{ padding:0.7em 6px 0;}';
     result += '</style>';
     result += content;
     result += '</div>';
@@ -42,7 +43,8 @@ hexo.extend.tag.register('figure', function(args) {
     var result = '<figure>';
 
     result += '<a href="' + wordUrl + '" target="_blank" rel="external">';
-    result += '<img title="' + date + '" class="lazyload" src="' + imgUrl + '"/>';
+    //result += '<img title="' + date + '" class="lazyload" src="' + imgUrl + '"/>';
+    result += '<img title="' + date + '" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-original="' + imgUrl + '"/>';
     result += '</a>';
     result += '<figcaption>' + title + '</figcaption>';
     result += '</figure>';
