@@ -13,6 +13,7 @@ thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/
 ---
 <center><font size=5>我看过的书籍和电影（2018）</font></center>
 {% stream %}
+{% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2526297221.jpg '邪不压正' 'https://movie.douban.com/subject/26366496/' '2018-11-26 看过' %}
 {% figure https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2538863432.jpg '将夜' 'https://movie.douban.com/subject/26848645/' '2018-11-09 在看' %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.jpg '西虹市首富' https://movie.douban.com/subject/27605698/ '2018-11-07 看过' %}
 {% figure https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg '蚁人2：黄蜂女现身' https://movie.douban.com/subject/26636712/ '2018-10-13 看过' %}
