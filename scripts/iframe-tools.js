@@ -20,10 +20,3 @@ hexo.extend.tag.register('gist', args => {
   return iframe;
 })
 
-hexo.extend.filter.register('after_post_render', (data) => {
-  if (data.mathrender) {
-      data.content = data.content.replace(/\$\$(.+?)\$\$/g, '</p><div class="mathrender" style="overflow-x: scroll;padding: .75rem 1rem .2rem 1rem;border: 1px solid #eaecee;border-radius: 3px;">' + '$1' + '</div><p>');
-      data.content = data.content.replace(/\$(.+?)\$/g, '<span class="mathrender">' + '$1' + '</span>');
-      data.content = '<iframe src="/katex/" frameborder="0" height="0"></iframe>' + data.content;
-  }
-})
