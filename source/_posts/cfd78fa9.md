@@ -11,7 +11,7 @@ copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
 updated: 2018/12/13 10:46:10
-thumbnail: https://ae01.alicdn.com/kf/HTB1psBmKASWBuNjSszd762eSpXaK.png
+thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 ---
 
 目前关于破解百度云限速的方法网上提供了许多种，实则是殊途同归，即：高速链接 + 多线程下载工具。而目前获取的链接的方法并非完美且存在一些限制，但聊胜于无。我将目前网上能搜集到的方法一一列举，同时也会针对每个方法的适用性与方便性做出评价。
