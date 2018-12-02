@@ -1,5 +1,6 @@
 ---
 title: 关于提问
+sitemap: false
 date: 2018/08/05 13:31:09
 updated: 2018/09/01 10:18:09
 thumbnail: https://res.cloudinary.com/wincer/image/upload/v1533449164/blog/ask-a-question/cover.png

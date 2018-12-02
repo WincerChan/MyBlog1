@@ -1,4 +1,5 @@
 ---
 title: Archives
+sitemap: false
 ---
 
