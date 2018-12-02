@@ -1,5 +1,8 @@
 ---
-title: Friends
+title: 友链
+date: 2018-08-30 13:23:23
+hide_license: true
+thumbnail: https://ae01.alicdn.com/kf/HTB1HAAwX.zrK1RjSspm763OdFXaL.png
 ---
 
 终于我还是为博客新增了一个友情链接的页面。
