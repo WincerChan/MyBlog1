@@ -9,7 +9,7 @@ tags:
   - 高级
   - 知多少
 abbrlink: dbcdebb
-thumbnail: https://ae01.alicdn.com/kf/HTB10bmeKXmWBuNjSspd762ugXXa7.png
+thumbnail: https://ae01.alicdn.com/kf/HTB1r.rXaffsK1RjSszg761XzpXa8.png
 ---
 
 近来准备写几篇文章用于介绍 Python 较高级一些的特性，归为一个系列。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。
