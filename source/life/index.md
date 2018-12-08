@@ -3,7 +3,7 @@ title: 生活
 comments: true
 date: 2017-06-15 10:56:58
 hide_license: true
-thumbnail: https://res.cloudinary.com/wincer/image/upload/v1530842688/blog/life/cover.png
+thumbnail: https://ae01.alicdn.com/kf/HTB1sJ_aacnrK1RjSspk761uvXXaB.png
 ---
 
 有人说：「人的差异在于业余生活」。对我来说，书籍、博客、编程、电影、游戏，就构成了我的业余生活。
