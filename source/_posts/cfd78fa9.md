@@ -10,13 +10,19 @@ tags:
 copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
-updated: 2018/08/24 10:46:10
+updated: 2018/12/13 10:46:10
 thumbnail: https://ae01.alicdn.com/kf/HTB1psBmKASWBuNjSszd762eSpXaK.png
 ---
 
 目前关于破解百度云限速的方法网上提供了许多种，实则是殊途同归，即：高速链接 + 多线程下载工具。而目前获取的链接的方法并非完美且存在一些限制，但聊胜于无。我将目前网上能搜集到的方法一一列举，同时也会针对每个方法的适用性与方便性做出评价。
 
 <!-- more -->
+
+## TL; DR
+
+Windows 客户端用[这种方法](../../#速盘（Windows）)。
+
+浏览器用[这种方法](../../#BaiduExporter)。
 
 ## 获取下载直链
 
@@ -44,19 +50,21 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1psBmKASWBuNjSszd762eSpXaK.png
 
 ### baidudl
 
+该方法已失效。
+
 这是爱吾破解的一位大佬开发的插件，已在 GitHub 上[开源](https://github.com/Kyle-Kyle/baidudl)，同时也已上架 [Chrome 应用商店](https://chrome.google.com/webstore/detail/baidudl/lflnkcmjnhfedgibjackiibmcdnnoadb)
 
 1. 在百度云盘的界面点击「baidudl 图标」：会列出当前文件夹的所有文件
 2. 点击 `Generate` 按钮
 3. 复制生成的 `Glinks`，即为「高速链接」
 
- 此方法适用性较低，许多敏感的资源无法使用此方法下载。
+此方法适用性较低，许多敏感的资源无法使用此方法下载。
 
 ### BaiduExporter
 
 > ~~自本文最近一次更新起，该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载。~~可以使用我 [Fork 后修改](https://github.com/WincerChan/BaiduExporter)的版本作为代替。
 >
-> 我的小号在使用这个方法的时候被封了，直接 403，更换帐号后可正常下载。
+> 我的小号在使用这个方法的时候被封了，直接 403，更换帐号后可正常下载。被封之后大概两天内会解封。建议线程数不要开太多，被封之后可以更换速盘下载。
 
 1. clone 该仓库
 
@@ -111,8 +119,6 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1psBmKASWBuNjSszd762eSpXaK.png
 据说是支持直接通过分享链接下载的，但我试了一下通过分享链接下载总是报错。但登录后下载还是可以的。
 
 ![SpeedPan 2](https://ae01.alicdn.com/kf/HTB18HzCKeuSBuNjy1Xc763YjFXaP.png)
-
-这速度，emmmm，只能说一般吧。推荐给 Windows 用户使用。
 
 ### BaiduPCS-Go（全平台）
 
