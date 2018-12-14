@@ -3,7 +3,7 @@ title: 关于提问
 sitemap: false
 date: 2018/08/05 13:31:09
 updated: 2018/09/01 10:18:09
-thumbnail: https://res.cloudinary.com/wincer/image/upload/v1533449164/blog/ask-a-question/cover.png
+thumbnail: https://ae01.alicdn.com/kf/HTB1SdbcaizxK1Rjy1zk761HrVXaO.png
 ---
 
 如果你有技术方面的问题向我咨询（或提问），并且该问题在我的文章内没有得到解答，在文章下面评论又有些不方便，可以考虑用邮件与我联系，但请遵循以下步骤：
