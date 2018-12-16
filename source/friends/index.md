@@ -2,6 +2,7 @@
 title: 友链
 date: 2018-08-30 13:23:23
 hide_license: true
+layout: links
 thumbnail: https://ae01.alicdn.com/kf/HTB1YE99afLsK1Rjy0Fb760SEXXaM.png
 ---
 
@@ -25,9 +26,4 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1YE99afLsK1Rjy0Fb760SEXXaM.png
 在底部的评论区提供标题和链接即可。
 
 ## 友情链接
-
-- [Blessing Studio](https://blessing.studio)
-- [Stray Episode](https://farer.org/)
-- [fukua's blog](https://blog.cooooler.com/)
-- [BLOG @ GIUEM](https://www.giuem.com)
 
