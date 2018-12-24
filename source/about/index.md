@@ -6,7 +6,7 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 ---
 > 佛曰：万发缘生，皆系缘分
 
-<iframe id="music" frameborder="no" width="100%" height="0" src="https://blog.itswincer.com/music/v1/?id=29308009"></iframe>
+{% netease musicid=29308009 %}
 
 在众多博客中与你相遇，想必是一种缘分。
 
