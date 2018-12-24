@@ -3,10 +3,10 @@
 hexo.extend.tag.register('netease', (args) => {
   let musicId = args.shift();
   const musicStr = 'musicid=',
-    APIPrefix="https://blog.itswincer.com/music/v1/?id=";
+    APIPrefix="https://blog.itswincer.com/music/v1/";
   if (musicId.startsWith(musicStr)) {
     musicId = musicId.slice(musicStr.length);
-    return `<iframe id="music" frameborder="no" width="100%" height="0" src="${APIPrefix}${musicId}"></iframe>`;
+    return `<div id="aplayer" musicid="${musicId}"></div><script src="${APIPrefix}"></script>`;
   }
   return null;
 })
