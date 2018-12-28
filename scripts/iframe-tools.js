@@ -6,7 +6,7 @@ hexo.extend.tag.register('netease', (args) => {
     APIPrefix="https://api.itswincer.com/music/v1/";
   if (musicId.startsWith(musicStr)) {
     musicId = musicId.slice(musicStr.length);
-    return `<div id="aplayer" musicid="${musicId}"></div><script src="${APIPrefix}"></script>`;
+    return `<div id="aplayer" musicid="${musicId}"></div><script src="${APIPrefix}" async></script>`;
   }
   return null;
 })
