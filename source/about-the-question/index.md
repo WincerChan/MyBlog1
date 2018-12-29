@@ -10,8 +10,7 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1SdbcaizxK1Rjy1zk761HrVXaO.png
 
 1. 请确保你真的完整的读过我的有关文章，没有跳过、漏过任何一个段落、一句话
 2. 将你的问题完整的描述清楚后，发邮件给我（👉[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)）
-3. 如果你觉得以邮件方式还是不能方便地解决你的问题，可以采用即时通讯方式与我联系，在邮件附上你的联系方式
-4. 但你需要为此支付一定量的金额，用以购买我的时间来帮你解决问题（**注意：是购买我的时间，而不是解决你的问题**）
+3. 如果你觉得以邮件方式还是不能方便地解决你的问题，可以在 Telegram 上找我，大部分情况下都会得到满意的答复 :)
 
 迫不得已写这篇说明是有原因的，就在今天（2018/08/05），有一个人在简书上给我连续发了七八条私信，有关于[这篇文章](../posts/ad42f575/ )的，以下是他提问的节选：
 
@@ -51,6 +50,6 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1SdbcaizxK1Rjy1zk761HrVXaO.png
 
 以下是上述情景的正确提问方式：
 
-> 您好，我用 GRUB 引导的 Linux Mint 和 Windows 10 双系统出现问题了，现在开机就直接进入了 Linux，进入 EFI 分区查看发现 Microsoft 文件夹不在了，但看您这篇教程似乎并没有指出当 Microsoft 文件夹被错误的删除后应该怎么解决？您可以帮助我解决无法进入 Windows 的问题吗，我愿意为此支付一定的报酬。
+> 您好，我用 GRUB 引导的 Linux Mint 和 Windows 10 双系统出现问题了，现在开机就直接进入了 Linux，进入 EFI 分区查看发现 Microsoft 文件夹不在了，但看您这篇教程似乎并没有指出当 Microsoft 文件夹被错误的删除后应该怎么解决？您可以帮助我解决这个问题吗
 
 该提问指明了环境（Linux Mint），也表示读了我写的文章，并指出他的问题出现在我文章中没有涉及到的方面，这样才算是合理的提问。也应该得到解答。
