@@ -16,7 +16,7 @@ hexo.extend.tag.register('gist', args => {
     GistId = args.shift(),
     APIPrefix='https://blog.itswincer.com/gist/v1/?user=';
   let iframe = `<iframe style="height: 0;" frameborder="0" name=${User} id="displayGist" width="100%" data-src="${APIPrefix}${User}&gist=${GistId}"></iframe>`;
-  iframe += `<button onclick="let frame = document.querySelector('#displayGist');frame.src=''+frame.getAttribute('data-src')">Click me to load GIST</button>`;
+  iframe += `<button class="load_gist" onclick="let frame = document.querySelector('#displayGist');frame.src=''+frame.getAttribute('data-src')">Click me to load GIST</button>`;
   return iframe;
 })
 
