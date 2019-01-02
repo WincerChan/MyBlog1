@@ -14,3 +14,4 @@ id_rsa
 encrypt/
 secrets.tar
 d67271d8.md
+source/life/*.py
