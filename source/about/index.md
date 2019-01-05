@@ -14,10 +14,10 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 ## 关于我
 - 热爱自由、讨厌被约束
 - 互联网上**多数情况**下言辞温和
-- 喜欢看王小波，有一部 Kindle
-- 喜欢玩 FPS 游戏，可惜枪法一般
+- 喜欢看书和电影，有一部 Kindle Paperwhite 3
 - 喜欢研究新技术，可惜没多少耐心
-- 兴趣爱好广泛，技能点点得比较分散
+- 无聊时会玩 FPS 游戏，可惜枪法一般
+- 兴趣爱好比较广泛，技能点点得比较分散
 - 对生活质量有一定的追求，宁缺毋滥
 
 ## 联系我
@@ -25,16 +25,16 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 - **电子邮件**：WincerChan<span style="display:none">fuck</span>@gmail.com（每天定时检查邮箱，~~并不~~）
 - 社交网络：~~微博~~（已弃用） Twitter（偶尔发推）：[@wincer_chan](https://twitter.com/wincer_chan) 
 - 即时通讯：QQ：（只加朋友） Telegram：[@Tivsae](https://t.me/Tivsae)
-- 网站评论：如果是和文章有关的问题，建议直接评论，Disqus 会自动将评论推送至 Gmail
+- 网站评论：如果是和文章有关的问题，建议直接评论，Disqus 会自动将评论推送至 Gmail，同时也可以为其他有需要的读者带来帮助
 
-如果对我感兴趣，可在 Telegram 上找我；如果是咨询问题，请提前一定阅读[这篇说明](../about-the-question/)。
+如果对我感兴趣，可在 Telegram 上找我。
 
 本人比较注重在网上的个人隐私，如有需要请通过以上几种方式同我联系。
 
 
 ## 关于博客
 
-本博客名称为 `Wincer's Blog`，建站于公元 2017 年 5 月 5 日。~~托管于 GitHub~~ 目前托管于自购的 VPS 中，基于 Hexo 构建。
+本博客建站于公元 2017 年 5 月 5 日。目前托管于自购的 VPS 中，由 Cloudflare 提供全球 CDN 加速~~减速~~，基于 Hexo 构建。
 
 博客大事年表：
 
@@ -51,11 +51,16 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 | 2018 年 08 月 22 日 |    [博客架构做了一些改进，换成了 SPA](../posts/50658b02/)    |
 | 2018 年 12 月 20 日 | [SPA 架构 Bug 太多，弃用](https://github.com/WincerChan/MyBlog/commit/1fd7f75e984a220b7042c5c38bd4c4b1f32db3cc) |
 
-博客的部分文章加密，博客设计的内容会比较广泛：技术、感想、日常吐槽等等，由于域名和服务器都在国外**并且永不打算备案**，也不会担心会出什么事。
+博客的部分文章加密，博客设计的内容会比较广泛：技术、感想、日常吐槽等等，由于域名和服务器都在国外**并且永不打算备案**，自然也不用担心内容审查的问题（虽然可能被内容审查的文章只占很少很少一部分）。
 
 欢迎诸君订阅 RSS。
 
-## 打钱，请～
+## 关于时效性
+
+我认为文章是具有时效性的，比如技术型的文章可能因某种（工具）更新便不再有效；随笔类的文章也可能因为我经历了某些事便产生了与之前不同的想法，也因此我将三个月内没有更新的文章都加了时效性标识。
+
+我能保证的是在发布文章的那段时间，文章的内容是有效的，但如果你发现了某些文章的内容失效了，而我又没有及时更新，欢迎你在评论区（或者其它方式）告诉我，我会及时更新文章。
+
+## Buy me a coffee～
 
 <center><img src="https://ae01.alicdn.com/kf/HTB1o49SQ9zqK1RjSZPx7634tVXaZ.png" alt="微信赞赏" title="微信赞赏" width="50%"/></center>
-
