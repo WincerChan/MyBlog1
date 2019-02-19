@@ -10,7 +10,7 @@ tags:
 copyright: true
 abbrlink: cfd78fa9
 date: 2017/05/22 14:32:00
-updated: 2018/12/13 10:46:10
+updated: 2019/02/19 10:46:10
 thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 ---
 
@@ -20,9 +20,9 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 
 ## TL; DR
 
-Windows 客户端用[这种方法](../../#速盘（Windows）)。
+Windows 客户端用 [PanDownload](#速盘（Windows）)。
 
-浏览器用[这种方法](../../#BaiduExporter)。
+~~浏览器用[这种方法](#BaiduExporter)。~~Linux 平台建议切换成 Windows 再使用 PanDownload，我通过浏览器插件获取的地址似乎无论如何都会被限速或者 403。
 
 ## 获取下载直链
 
@@ -61,6 +61,8 @@ Windows 客户端用[这种方法](../../#速盘（Windows）)。
 此方法适用性较低，许多敏感的资源无法使用此方法下载。
 
 ### BaiduExporter
+
+该方法已失效。
 
 > ~~自本文最近一次更新起，该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载。~~可以使用我 [Fork 后修改](https://github.com/WincerChan/BaiduExporter)的版本作为代替。
 >
@@ -107,6 +109,12 @@ Windows 客户端用[这种方法](../../#速盘（Windows）)。
 ## 第三方客户端
 
 这一类方法使用的是别人已经封装好了的第三方客户端，其实就相当于把 获取链接的插件 + 多线程下载工具 打包好成为一个客户端。比上一类方法方便性会强一些，但适用性会弱一些。
+
+### PanDownload（Windows）
+
+[该软件](https://pandownload.com/document/download.html)不仅支持加速下载，并支持在线解压缩，并且文档很详细。
+
+并且个人认为比速盘好，我有时候使用速盘下载提示限速，但此软件却能达到满速，推荐使用。
 
 ### 速盘（Windows）
 
