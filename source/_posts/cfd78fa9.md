@@ -20,7 +20,7 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 
 ## TL; DR
 
-Windows 客户端用 [PanDownload](#速盘（Windows）)。
+Windows 客户端用 [PanDownload](/#PanDownload（Windows）)。
 
 ~~浏览器用[这种方法](#BaiduExporter)。~~Linux 平台建议切换成 Windows 再使用 PanDownload，我通过浏览器插件获取的地址似乎无论如何都会被限速或者 403。
 
