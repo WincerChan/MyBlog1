@@ -13,6 +13,22 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1sJ_aacnrK1RjSspk761uvXXaB.png
 ---
 <center><font size=5>我看过的书籍和电影（2019）</font></center>
 {% stream %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2545583652.jpg' '怒晴湘西' 'https://movie.douban.com/subject/27202985/' '2019-03-17 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2537106539.jpg' '佐贺偶像是传奇' 'https://movie.douban.com/subject/30267274/' '2019-03-15 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1932438619.jpg' '异次元骇客' 'https://movie.douban.com/subject/1300282/' '2019-03-13 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2548870813.jpg' '惊奇队长' 'https://movie.douban.com/subject/26213252/' '2019-03-09 看过' %}
+{% figure 'https://img1.doubanio.com/lpic/s3830158.jpg' '万火归一' 'https://book.douban.com/subject/3769738/' '2019-03-09 读过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2522069454.jpg' '侏罗纪世界2' 'https://movie.douban.com/subject/26416062/' '2019-03-06 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1285336383.jpg' '移魂都市' 'https://movie.douban.com/subject/1292332/' '2019-03-04 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2517089666.jpg' '镇魂' 'https://movie.douban.com/subject/26979097/' '2019-03-02 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541824676.jpg' '摄影机不要停！' 'https://movie.douban.com/subject/30234315/' '2019-02-16 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2534588882.jpg' '鬼入侵 第一季' 'https://movie.douban.com/subject/27016554/' '2019-02-14 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2272273288.jpg' '世界奇妙物语 98秋之特别篇' 'https://movie.douban.com/subject/2281661/' '2019-02-13 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2546095223.jpg' '天真派：武林外传' 'https://movie.douban.com/subject/27185586/' '2019-02-12 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2522880251.jpg' '超人总动员2' 'https://movie.douban.com/subject/25849049/' '2019-02-12 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2542973862.jpg' '飞驰人生' 'https://movie.douban.com/subject/30163509/' '2019-02-10 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2541901817.jpg' '疯狂的外星人' 'https://movie.douban.com/subject/25986662/' '2019-02-09 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2545472803.jpg' '流浪地球' 'https://movie.douban.com/subject/26266893/' '2019-02-09 看过' %}
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2541280047.jpg' '海王' 'https://movie.douban.com/subject/3878007/' '2019-02-08 看过' %}
 {% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p449608716.jpg' '怪形' 'https://movie.douban.com/subject/1296794/' '2019-02-07 看过' %}
 {% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1231134565.jpg' '惊声尖笑' 'https://movie.douban.com/subject/1299981/' '2019-02-06 看过' %}
