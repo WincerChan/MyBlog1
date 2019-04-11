@@ -30,6 +30,11 @@ jobs:
         steps:
             - checkout
             - run:
+                name: Remove jessie bug
+                command: |
+                    sudo sed -i '/jessie-backports/d' /etc/apt/sources.list
+                    sudo sed -i '/jessie-updates/d' /etc/apt/sources.list
+            - run:
                 name: Update System
                 command: |
                     sudo apt-get update && sudo apt-get install rsync
