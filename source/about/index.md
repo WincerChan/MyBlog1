@@ -59,5 +59,6 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 
 ## 打钱，请～
 
-- [PayPal](https://paypal.me/tivsae)
+<center><img src="https://ae01.alicdn.com/kf/HTB1o49SQ9zqK1RjSZPx7634tVXaZ.png" alt="微信赞赏" title="微信赞赏" width="50%"/></center>
+
 
