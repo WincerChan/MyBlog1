@@ -13,6 +13,17 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1sJ_aacnrK1RjSspk761uvXXaB.png
 ---
 <center><font size=5>我看过的书籍和电影（2019）</font></center>
 {% stream %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2555445285.jpg' '切尔诺贝利' 'https://movie.douban.com/subject/27098632/' '2019-05-18 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2534074859.jpg' '我的英雄学院 第3季' 'https://movie.douban.com/subject/27160633/' '2019-05-07 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2441371977.jpg' '我的英雄学院 第2季' 'https://movie.douban.com/subject/26827706/' '2019-05-06 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2327887133.jpg' '我的英雄学院 第1季' 'https://movie.douban.com/subject/26653375/' '2019-05-05 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2497756471.jpg' '蜘蛛侠：英雄归来' 'https://movie.douban.com/subject/24753477/' '2019-04-29 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2552058346.jpg' '复仇者联盟4：终局之战' 'https://movie.douban.com/subject/26100958/' '2019-04-24 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2552522615.jpg' '风中有朵雨做的云' 'https://movie.douban.com/subject/26728669/' '2019-04-11 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2551172384.jpg' '海市蜃楼' 'https://movie.douban.com/subject/30164448/' '2019-03-29 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2548248276.jpg' '爱，死亡和机器人' 'https://movie.douban.com/subject/30424374/' '2019-03-25 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2549148229.jpg' '都挺好' 'https://movie.douban.com/subject/27088993/' '2019-03-22 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537453473.jpg' '忌日快乐2' 'https://movie.douban.com/subject/30209818/' '2019-03-21 看过' %}
 {% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2545583652.jpg' '怒晴湘西' 'https://movie.douban.com/subject/27202985/' '2019-03-17 看过' %}
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2537106539.jpg' '佐贺偶像是传奇' 'https://movie.douban.com/subject/30267274/' '2019-03-15 看过' %}
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1932438619.jpg' '异次元骇客' 'https://movie.douban.com/subject/1300282/' '2019-03-13 看过' %}
