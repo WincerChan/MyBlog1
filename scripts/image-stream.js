@@ -44,7 +44,7 @@ hexo.extend.tag.register('figure', function(args) {
 
     result += '<a href="' + wordUrl + '" target="_blank" rel="external">';
     //result += '<img title="' + date + '" class="lazyload" src="' + imgUrl + '"/>';
-    result += '<img title="' + date + '" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-original="' + imgUrl + '"/>';
+    result += '<img title="' + date + '" class="lazyload" referrerpolicy="no-referrer" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-original="' + imgUrl + '"/>';
     result += '</a>';
     result += '<figcaption>' + title + '</figcaption>';
     result += '</figure>';
