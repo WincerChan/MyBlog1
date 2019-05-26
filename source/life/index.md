@@ -3,6 +3,7 @@ title: 生活
 comments: true
 date: 2017-06-15 10:56:58
 hide_license: true
+noreferrer: true
 thumbnail: https://ae01.alicdn.com/kf/HTB1sJ_aacnrK1RjSspk761uvXXaB.png
 ---
 
