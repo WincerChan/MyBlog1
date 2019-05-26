@@ -52,7 +52,7 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1sJ_aacnrK1RjSspk761uvXXaB.png
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2544158271.jpg' '调琴师' 'https://movie.douban.com/subject/30334073/' '2019-01-20 看过' %}
 {% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2165497217.jpg' '纸牌屋 第二季' 'https://movie.douban.com/subject/22523356/' '2019-01-18 看过' %}
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2088343031.jpg' '魔法少女小圆' 'https://movie.douban.com/subject/5349275/' '2019-01-13 看过' %}
-{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2535096871.jpg' '无双' 'https://movie.douban.com/subject/26425063/' '2019-01-12 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2535096871.jpg' '无双' 'https://movie.douban.com/subject/26425063/' '2019-01-12 看过' %}
 {% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2525020357.jpg' '解除好友2：暗网' 'https://movie.douban.com/subject/26725678/' '2019-01-08 看过' %}
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2501181494.jpg' '少女终末旅行' 'https://movie.douban.com/subject/27081136/' '2019-01-07 看过' %}
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2539661066.jpg' '无名之辈' 'https://movie.douban.com/subject/27110296/' '2019-01-06 看过' %}
