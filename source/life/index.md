@@ -14,6 +14,10 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1sJ_aacnrK1RjSspk761uvXXaB.png
 ---
 <center><font size=5>我看过的书籍和电影（2019）</font></center>
 {% stream %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2532759044.jpg' '阴风阵阵' 'https://movie.douban.com/subject/3095514/' '2019-05-29 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2527779770.jpg' '灵能百分百 II' 'https://movie.douban.com/subject/27011763/' '2019-05-28 看过' %}
+{% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2551094671.jpg' '我们' 'https://movie.douban.com/subject/27053945/' '2019-05-26 看过' %}
+{% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2541609859.jpg' '齐木楠雄的灾难 完结篇' 'https://movie.douban.com/subject/30258226/' '2019-05-25 看过' %}
 {% figure 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2555445285.jpg' '切尔诺贝利' 'https://movie.douban.com/subject/27098632/' '2019-05-18 看过' %}
 {% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2534074859.jpg' '我的英雄学院 第3季' 'https://movie.douban.com/subject/27160633/' '2019-05-07 看过' %}
 {% figure 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2441371977.jpg' '我的英雄学院 第2季' 'https://movie.douban.com/subject/26827706/' '2019-05-06 看过' %}
