@@ -48,7 +48,7 @@ jobs:
                     mkdir -p ~/.ssh
                     touch ~/.ssh/known_hosts
                     { ssh-keyscan $SSH_IP 2> /dev/null; } >> ~/.ssh/known_hosts
-                    rsync -az -v --delete -e ssh public/* $SSH_USER@$SSH_IP:/data/www/hexo/
+                    rsync -az -v --delete -e 'ssh -p $SSH_PORT' public/* $SSH_USER@$SSH_IP:/data/www/hexo/
             - run:
                 name: Push to GITHUB
                 command: |
