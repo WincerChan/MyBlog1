@@ -20,9 +20,9 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 
 ## TL; DR
 
-Windows 用 [PanDownload](/#PanDownload（Windows）)。
+Windows 用 [PanDownload](/#PanDownload)。
 
-其它平台用 [PanDownload 网页版](#PanDownload)。
+其它平台用 [PanDownload 网页版](/#Pandownload)。
 
 ## 获取下载直链
 
@@ -48,7 +48,7 @@ Windows 用 [PanDownload](/#PanDownload（Windows）)。
 
 > **注意：这里的 Cookie 并不是当前域名（pan.baidu.com）的 Cookie，是 `pcs.baidu.com` 的 Cookie，其实所需要的仅仅是 Cookie 的 `BDUSS` 和 `pcsett` 值**
 
-### PanDownload
+### Pandownload
 
 在提供 Windows 客户端的同时，PanDownload 还于最近提供了网页版，可直接将分享的文件提取出直链 ：
 
@@ -116,15 +116,17 @@ Windows 用 [PanDownload](/#PanDownload（Windows）)。
 
 这一类方法使用的是别人已经封装好了的第三方客户端，其实就相当于把 获取链接的插件 + 多线程下载工具 打包好成为一个客户端。比上一类方法方便性会强一些，但适用性会弱一些。
 
-### PanDownload（Windows）
+### PanDownload
+
+该软件只有 Windows 版。
 
 [该软件](https://pandownload.com/document/download.html)不仅支持加速下载，并支持在线解压缩，并且文档很详细。
 
 并且个人认为比速盘好，我有时候使用速盘下载提示限速，但此软件却能达到满速，推荐使用。
 
-### 速盘（Windows）
+### 速盘
 
-[该软件](https://www.speedpan.com/)同样是由爱吾一位大神创作，只有 Windows 版。
+[该软件](https://www.speedpan.com/)同样是由爱吾一位大神创作，同样只有 Windows 版。
 
 ![SpeedPan 1](https://ae01.alicdn.com/kf/HTB1wVyNKqmWBuNjy1Xa760CbXXah.png)
 
