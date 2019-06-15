@@ -9,7 +9,7 @@ tags:
   - 限速
 copyright: true
 abbrlink: cfd78fa9
-date: 2017/05/22 14:32:00
+date: 2017/06/15 14:32:00
 updated: 2019/02/19 10:46:10
 thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 ---
@@ -20,9 +20,9 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 
 ## TL; DR
 
-Windows 客户端用 [PanDownload](/#PanDownload（Windows）)。
+Windows 用 [PanDownload](/#PanDownload（Windows）)。
 
-~~浏览器用[这种方法](#BaiduExporter)。~~Linux 平台建议切换成 Windows 再使用 PanDownload，我通过浏览器插件获取的地址似乎无论如何都会被限速或者 403。
+其它平台用[这种方法](/#PanDownload)。
 
 ## 获取下载直链
 
@@ -48,21 +48,27 @@ Windows 客户端用 [PanDownload](/#PanDownload（Windows）)。
 
 > **注意：这里的 Cookie 并不是当前域名（pan.baidu.com）的 Cookie，是 `pcs.baidu.com` 的 Cookie，其实所需要的仅仅是 Cookie 的 `BDUSS` 和 `pcsett` 值**
 
-### baidudl
+### PanDownload
 
-该方法已失效。
+在提供 Windows 客户端的同时，PanDownload 还于最近提供了网页版，可直接将分享的文件提取出直链 ：
 
-这是爱吾破解的一位大佬开发的插件，已在 GitHub 上[开源](https://github.com/Kyle-Kyle/baidudl)，同时也已上架 [Chrome 应用商店](https://chrome.google.com/webstore/detail/baidudl/lflnkcmjnhfedgibjackiibmcdnnoadb)
+1. 打开[PanDownload 网页版](https://www.baiduwp.com/)，输入分享链接和提取码
 
-1. 在百度云盘的界面点击「baidudl 图标」：会列出当前文件夹的所有文件
-2. 点击 `Generate` 按钮
-3. 复制生成的 `Glinks`，即为「高速链接」
+2. 会生成一个包含你想要下载文件的页面，点击
 
-此方法适用性较低，许多敏感的资源无法使用此方法下载。
+3. 会进入这样的界面：
+
+   ![Pandownload 网页版界面](https://ae01.alicdn.com/kf/HTB1.xsVcUuF3KVjSZK9762VtXXau.png)
+
+直接点击即可通过浏览器下载（如果你想用其它的工具下载，记得传递 Cookie），当然你也可以使用 Aria2 RPC 下载。
+
+这是我使用 Aria2 下载的速度，配置文件见[这里](https://gist.github.com/WincerChan/40a63819b0fdd629e57e202ad82dbbee)：
+
+![配合 Aria2 的速度](https://ae01.alicdn.com/kf/HTB1Ql7VcUGF3KVjSZFv762_nXXa3.png)
+
+此方法的优点在于不用安装额外的浏览器插件，也不用下载客户端，比较方便手机和 Linux 用户。缺点在于 Aari2 的线程仍然有限，所以速度不会特别快，但也算比较理想了。
 
 ### BaiduExporter
-
-该方法已失效。
 
 > ~~自本文最近一次更新起，该方法获取的链接已无法在 Axel 中使用，原因是 URL 参数中的 app_id 失效，但这失效的 app_id 的 URL 却仍然可以用 aria2c 下载。~~可以使用我 [Fork 后修改](https://github.com/WincerChan/BaiduExporter)的版本作为代替。
 >
