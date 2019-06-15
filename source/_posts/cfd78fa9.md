@@ -22,7 +22,7 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1aFu_aiLrK1Rjy1zdq6ynnpXaU.jpg
 
 Windows 用 [PanDownload](/#PanDownload（Windows）)。
 
-其它平台用[这种方法](/#PanDownload)。
+其它平台用 [PanDownload 网页版](#PanDownload)。
 
 ## 获取下载直链
 
