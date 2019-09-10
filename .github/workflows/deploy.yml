@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actins/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
       - name: Configuration Environment
@@ -41,4 +41,3 @@ jobs:
           { ssh-keyscan -p $SSH_PORT $SSH_IP 2> /dev/null; } >> ~/.ssh/known_hosts
           rsync -az -v --delete -e "ssh -p $SSH_PORT" public/* $SSH_USER@$SSH_IP:/data/www/hexo/
           
-            
