@@ -35,8 +35,7 @@ jobs:
           mv encrypt/* source/_posts/
       - name: Install dependencies
         run: |
-          curl -o- -L https://yarnpkg.com/install.sh | bash  
-          brew install node
+          npm -i yarn -g
           yarn global add gulp
           yarn install && gulp
       - name: Deploy to VPS
