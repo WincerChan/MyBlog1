@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="zh"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><script>window.materialVersion="1.5.9",window.oldVersion=["codestartv1","1.3.4","1.4.0","1.4.0b1","1.5.0"]</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>Python 字典的原理及高级用法 · Wincer&#39;s Blog</title><link rel="icon shortcut" type="image/ico" href="https://blog.itswincer.com/img/favicon.png"><link rel="icon" href="/img/favicon.png"><meta name="format-detection" content="telephone=no"><meta name="description" itemprop="description" content="对于字典这一基础的数据结构来说，其对 Python 程序的重要性是无可替代的，在《代码之美》一书中，作者是这么描述的：字典这个数据结构活跃在所有 Python 程序的背后，即便你的源码里并没有直接用到它。——A.M.Kuchling"><meta name="keywords" content="Blog,Python,字典"><meta name="theme-color" content="#0097A7"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Wincer&#39;s Blog"><meta name="msapplication-starturl" content="https://blog.itswincer.com/posts/4f2b4bfb/"><meta name="msapplication-navbutton-color" content="#0097A7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Wincer&#39;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/img/favicon.png"><meta property="og:url" content="https://blog.itswincer.com/posts/4f2b4bfb/"><meta property="og:type" content="blog"><meta property="og:title" content="Python 字典的原理及高级用法 · Wincer&#39;s Blog"><meta property="og:image" content="/img/favicon.png"><meta property="og:description" content="对于字典这一基础的数据结构来说，其对 Python 程序的重要性是无可替代的，在《代码之美》一书中，作者是这么描述的：字典这个数据结构活跃在所有 Python 程序的背后，即便你的源码里并没有直接用到它。——A.M.Kuchling"><meta property="og:article:tag" content="Python"><meta property="og:article:tag" content="字典"><meta property="article:published_time" content="2018-05-12T09:05:02.000+00:00"><meta property="article:modified_time" content="2018-05-12T12:05:13.000+00:00"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://blog.itswincer.com/posts/4f2b4bfb/"><script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Wincer&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "https://blog.itswincer.com/img/favicon.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Wincer",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://ae01.alicdn.com/kf/HTB1DdGHXizxK1RjSspj763S.pXax.png"
+        },
+        "description": "昔日玫瑰以其名流芳，今人所持唯玫瑰之名"
+    },
+    "url": "https://blog.itswincer.com/posts/4f2b4bfb/",
+    "headline": "Python 字典的原理及高级用法",
+    "name": "Python 字典的原理及高级用法",
+    "inLanguage": {
+        "@type": "Language",
+        "alternateName": "zh-CN"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://ae01.alicdn.com/kf/HTB1b.u_ajvuK1Rjy0Fa7602aVXaM.png"
+    },
+    "datePublished": "Sat May 12 2018 09:23:02 GMT+0000",
+    "dateModified": "Sat May 12 2018 12:36:13 GMT+0000",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.itswincer.com/posts/4f2b4bfb/"
+    },
+
+    "keywords": ",Python,字典Blog",
+    "description": "对于字典这一基础的数据结构来说，其对 Python 程序的重要性是无可替代的，在《代码之美》一书中，作者是这么描述的：字典这个数据结构活跃在所有 Python 程序的背后，即便你的源码里并没有直接用到它。——A.M.Kuchling"
+}</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/css/material.min.css"><!--[if lte IE 9]><link rel="stylesheet" href="/css/ie-blocker.css"><script src="/js/ie-blocker.zhCN.js"></script><![endif]--><script>window.lsloader={jsRunSequence:[],jsnamemap:{}},lsloader.removeLS=function(e){try{localStorage.removeItem(e)}catch(e){}},lsloader.setLS=function(e,t){try{localStorage.setItem(e,t)}catch(e){}},lsloader.getLS=function(e){var t="";try{t=localStorage.getItem(e)}catch(e){t=""}return t},versionString="/*"+(window.materialVersion||"unknownVersion")+"*/",lsloader.clean=function(){try{for(var e=[],t=0;t<localStorage.length;t++)e.push(localStorage.key(t));e.forEach(function(e){-1===lsloader.getLS(e).indexOf(versionString)&&lsloader.removeLS(e)})}catch(e){}},lsloader.clean(),lsloader.load=function(e,t,n,s){var o;"boolean"==typeof n&&(s=n,n=void 0),s=s||!1,n=n||function(){},(o=this.getLS(e))&&-1===o.indexOf(versionString)?(this.removeLS(e),this.requestResource(e,t,n,s)):o?o.split(versionString)[0]!=t?(console.log("reload:"+t),this.removeLS(e),this.requestResource(e,t,n,s)):(o=o.split(versionString)[1],s?(this.jsRunSequence.push({name:e,code:o}),this.runjs(t,e,o)):(document.getElementById(e).appendChild(document.createTextNode(o)),n())):this.requestResource(e,t,n,s)},lsloader.requestResource=function(t,n,e,s){var o=this;s?this.iojs(n,t,function(e,t,n){o.setLS(t,e+versionString+n),o.runjs(e,t,n)}):this.iocss(n,t,function(e){document.getElementById(t).appendChild(document.createTextNode(e)),o.setLS(t,n+versionString+e)},e)},lsloader.iojs=function(t,n,e){var s=this;s.jsRunSequence.push({name:n,code:""});try{var o=new XMLHttpRequest;o.open("get",t,!0),o.onreadystatechange=function(){4==o.readyState&&((200<=o.status&&o.status<300||304==o.status)&&""!=o.response?e(t,n,o.response):s.jsfallback(t,n))},o.send(null)}catch(e){s.jsfallback(t,n)}},lsloader.runjs=function(e,t,n){if(t&&n)for(var s in this.jsRunSequence)this.jsRunSequence[s].name==t&&(this.jsRunSequence[s].code=n);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)(e=document.createElement("script")).appendChild(document.createTextNode(this.jsRunSequence[0].code)),e.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(e),this.jsRunSequence.shift(),0<this.jsRunSequence.length&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var o=this;(e=document.createElement("script")).src=this.jsRunSequence[0].path,e.type="text/javascript",this.jsRunSequence[0].status="loading",e.onload=function(){o.jsRunSequence.shift(),0<o.jsRunSequence.length&&o.runjs()},document.body.appendChild(e)}},lsloader.jsfallback=function(e,t){if(!this.jsnamemap[t]){for(var n in this.jsnamemap[t]=t,this.jsRunSequence)this.jsRunSequence[n].name==t&&(this.jsRunSequence[n].code="",this.jsRunSequence[n].status="failed",this.jsRunSequence[n].path=e);this.runjs()}},lsloader.cssfallback=function(e,t,n){this.cssnamemap[t]||(this.cssnamemap[t]=1,(t=document.createElement("link")).type="text/css",t.href=e,t.rel="stylesheet",t.onload=t.onerror=n,(e=document.getElementsByTagName("script")[0]).parentNode.insertBefore(t,e))},lsloader.runInlineScript=function(e,t){t=document.getElementById(t).innerText,this.jsRunSequence.push({name:e,code:t}),this.runjs()}</script><script>function Queue(){this.dataStore=[],this.offer=function(e){this.debug&&console.log("Offered a Queued Function.");"function"==typeof e?this.dataStore.push(e):console.log("You must offer a function.")},this.poll=function(){this.debug&&console.log("Polled a Queued Function.");return this.dataStore.shift()},this.execNext=function(){var e=this.poll();void 0!==e&&(this.debug&&console.log("Run a Queued Function."),e())},this.debug=!1,this.startDebug=function(){this.debug=!0}}var queue=new Queue</script><style>#post-content hr{height:20px;margin:15px auto;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZBAMAAAD6cmD+AAAAJFBMVEX////+/v7u7u79/f38/Pz19fX5+fnm5ubr6+vg4ODz8/PX19fmfbrEAAABVklEQVQYGb3AsWoUQRjA8f/HN06R6ht33cJKDhSNzR4rCKlmCdEz1QkHkm4lgeSsoics6VRyQiwDJ3I2erHIvYJP5xPMRRjIjxvUUZ1V7JLLSegqXhu5YomeXXkhWz18+WEpZJPC9+36d0GuyPGpbC07cjk96yp7ckiuOP3or9/eWfIfhJQGc73sP5yzPiqcsVFgg8DzmR91q8O7C4uOBAkGIEZCAb7v9h6J/2wXEzESDASsMBK0iCezajUuOIn3vxNI0VqB/ceDhO0oT52fq3U7p+7C3g0Svgz+AKZGQiv1m/O4Kutno6MXi8aTUrYOCIQEtK4um53z0s/14IEnJOyCsFHAXn3Sax2N9y6JLUlq3MT/kHvbX/VggpFnOisHE/+3FRNyBN9T2PoKMSGH1sfv3dYykqvwZd+tf4VAptJs+m3h1BCyyFCbn2MactUMZeLUuDX/AFJQRNLkIJPDAAAAAElFTkSuQmCC) center center no-repeat}#post-content,#post-content p,.sidebar-colored .sidebar-nav li>a{color:#2f2f2f!important;font-size:16px}#post-content ol,#post-content ul{font-size:16px}#post-content h2,h3,h4{color:#4c4c4c!important}body,html{text-shadow:0 0 1px rgba(0,0,0,.22)}table{display:table!important}body,html{font-family:Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif}code{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}a{color:#00838f}#scheme-Paradox .hot_tags-count,#scheme-Paradox .sidebar-colored .sidebar-badge,#scheme-Paradox .sidebar-colored .sidebar-header,#scheme-Paradox .sidebar_archives-count,#search-form-label:after,#search-label,.mdl-card__media{background-color:#0097a7!important}#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus,#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover{color:#0097a7!important}#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a,#post_entry-right-info,.sidebar-colored .sidebar-nav li:hover>a,.sidebar-colored .sidebar-nav li:hover>a i,.sidebar-colored .sidebar-nav li>a:focus i,.sidebar-colored .sidebar-nav li>a:hover,.sidebar-colored .sidebar-nav li>a:hover i,.sidebar-colored .sidebar-nav>.open>a,.sidebar-colored .sidebar-nav>.open>a:focus,.sidebar-colored .sidebar-nav>.open>a:hover{color:#0097a7!important}.toTop{background:#757575!important}.material-layout .material-index>.material-nav,.material-layout .material-post>.material-nav,.material-nav a{color:#757575}#scheme-Paradox .MD-burger-layer{background-color:#757575}#scheme-Paradox #post-toc-trigger-btn{color:#757575}.post-toc a:hover{color:#00838f;text-decoration:underline}</style><style>body{background-color:#f5f5f5}#scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{background-color:#fff}</style><style></style><style>@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/material-design-icons-iconfont@3.0.3/dist/fonts/MaterialIcons-Regular.woff) format('woff')}</style><script>lsloader.load("jq_js","https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js",!0)</script><script>"blog.itswincer.com"===location.hostname&&function(e,t,n,i,a){var o=n.screen,g=encodeURIComponent,r=["ga=UA-101362832-1","dt="+g(i.title),"dr="+g(i.referrer),"ul="+(a.language||a.browserLanguage||a.userLanguage),"sd="+o.colorDepth+"-bit","sr="+o.width+"x"+o.height,"vp="+Math.max(i.documentElement.clientWidth,n.innerWidth||0)+"x"+Math.max(i.documentElement.clientHeight,n.innerHeight||0),"z="+ +new Date];n.__ga_img=new Image,n.__ga_img.src="https://ga.giuem.com?"+r.join("&")}(0,0,window,document,navigator,location)</script><link rel="manifest" href="/manifest.json"></head><div></div><body id="scheme-Paradox" class="lazy"><div class="material-layout mdl-js-layout has-drawer is-upgraded"><main class="material-layout__content" id="main"><div id="top"></div><button class="MD-burger-icon sidebar-toggle"><span class="MD-burger-layer"></span></button> <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">format_list_numbered</i></button><ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh;overflow-y:scroll"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字典的原理"><span class="post-toc-number">1.</span> <span class="post-toc-text">字典的原理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建字典"><span class="post-toc-number">2.</span> <span class="post-toc-text">创建字典</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字典推导"><span class="post-toc-number">3.</span> <span class="post-toc-text">字典推导</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#键查询"><span class="post-toc-number">4.</span> <span class="post-toc-text">键查询</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用-get-来获取"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">用 get 来获取</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用-defaultdict-预先设置缺省（推荐）"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">用 defaultdict 预先设置缺省（推荐）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用-missing-方法"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">使用 __missing__ 方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用-getattr-方法（不推荐）"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">使用 __getattr__ 方法（不推荐）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#实现-switch-…-case-结构"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">实现 switch … case 结构</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#dict-和它的小伙伴们"><span class="post-toc-number">5.</span> <span class="post-toc-text">dict 和它的小伙伴们</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#OrderedDict"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">OrderedDict</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Counter"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">Counter</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#UserDict"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">UserDict</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#不可变映射"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">不可变映射</span></a></li></ol></li></ol></ul><div class="material-post_container"><div class="material-post mdl-grid"><div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col"><div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://ae01.alicdn.com/kf/HTB1b.u_ajvuK1Rjy0Fa7602aVXaM.png)"><p class="article-headline-p">Python 字典的原理及高级用法</p></div><div class="mdl-color-text--grey-700 mdl-card__supporting-text meta"><div id="author-avatar"><img src="https://ae01.alicdn.com/kf/HTB1DdGHXizxK1RjSspj763S.pXax.png" width="44px" height="44px" alt="Author Avatar"></div><div><strong>Wincer</strong> <span>5月 12, 2018</span></div><div class="section-spacer"></div><button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">devices other</i> <span class="visuallyhidden">devices other</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button"><li class="mdl-menu__item">在其它设备中阅读本文章</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB4klEQVR42u3ay3HDMAwFQPXfdNJAJD+Ash0Ry5PGTmgtDxh8ePxssQ4MDAwMDAwMjH/DOOL1x0Ynnyf7r78DBgbGNEbyKsm3yfPKcWBgYGCcBbjq3yTBd+UdMDAwMBJGkvYl6SAGBgbGJwNukurdG9AxMDBmMvIyNQ+11598rRbHwMB4ICNvyr/v+aPzDQwMjEcxylcc4gFnkiZ+7c4IBgbGoxjVtG89TOdH8+K/MDAwxjBOS8S4KdYL0FVwlBpiYGBszUia8r1h5PUxVQ8FAwNjJiNv7ievfh2yV8YMGBgYGNULXr0Wf6+p1wy4GBgYGzF6W5R/sriWilgMDIztGCuXKm5o7rcSUwwMjJmMfNCYjA2qI4fetQwMDIw5jHyj6pXTJLC+pYjFwMDYjlG9wlU9grxhl6enGBgYMxkrz/mQoJoI3lDEYmBgbMeobtQbJFR/q1yLY2BgbM3IG/TVcNwrgF+EbAwMjDGMXogslJrVMJq38DAwMMYwbr6q1RoP5EEWAwNjMmOl1Kw2+leOBgMDA6MaEKtJXjUFvKEWx8DAwGgli1Ha1ytiMTAwMIqDhGS36qgAAwMDIyli87QvD6bNSxgYGBjDGCsXIO4KuDkAAwNjGuO5CwMDAwMDAwPjq+sXayYR7kywRiIAAAAASUVORK5CYII="></ul><button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">bookmark</i> <span class="visuallyhidden">bookmark</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button"><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Python/">Python</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/字典/">字典</a></li></ul><button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">share</i> <span class="visuallyhidden">share</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button"><a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Python 字典的原理及高级用法&url=https://blog.itswincer.com/posts/4f2b4bfb/index.html&pic=https://blog.itswincer.comhttps://blog.itswincer.com/img/favicon.png&searchPic=false&style=simple" target="_blank"><li class="mdl-menu__item">分享到微博</li></a><a class="post_share-link" href="https://twitter.com/intent/tweet?text=Python 字典的原理及高级用法&url=https://blog.itswincer.com/posts/4f2b4bfb/index.html&via=Wincer" target="_blank"><li class="mdl-menu__item">分享到 Twitter</li></a><a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.itswincer.com/posts/4f2b4bfb/index.html" target="_blank"><li class="mdl-menu__item">分享到 Facebook</li></a><a class="post_share-link" href="https://plus.google.com/share?url=https://blog.itswincer.com/posts/4f2b4bfb/index.html" target="_blank"><li class="mdl-menu__item">分享到 Google+</li></a><a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Wincer&#39;s Blog&title=Python 字典的原理及高级用法&summary=这里是 @Wincer，喜欢折腾新技术，却没多大耐心。个人博客会写得比较杂，包括日常吐槽、技术踩坑，偶尔会写正经一点的。欢迎订阅 RSS(•̀ᴗ•́)。&pics=https://blog.itswincer.comhttps://blog.itswincer.com/img/favicon.png&url=https://blog.itswincer.com/posts/4f2b4bfb/index.html" target="_blank"><li class="mdl-menu__item">分享到 QQ</li></a></ul></div><div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out"><p>算算时间有段时间没写技术类的文章了，部分原因是最近过得确实比较忙。当然，也并没有忙到完全抽不出时间写博客，根本原因还是没有找到啥好的写作素材，随随便便糊弄一篇我又有点不好意思发上来，于是乎，就一直搁置到现在。</p><a id="more"></a><p>对于字典这一基础的数据结构来说，其对 Python 的程序重要性是无可替代的，在《代码之美》一书中，作者是这么描述的：</p><blockquote><p>字典这个数据结构活跃在所有 Python 程序的背后，即便你的源码里并没有直接用到它。——A.M.Kuchling</p></blockquote><p>在 Python 程序里，无论是模块、函数、还是对象，均有自己的「命名空间」，而这命名空间即为一个字典（dict），key 就是变量名，value 就是变量值，除去「命名空间外」，对象的函数（方法）关键字也是存放在字典中，此时的 key 就是函数（方法）名，value 就是该函数（方法）的引用。可以采用 __builtins__.__dict__ 来查看这些函数（方法）。</p><h2 id="字典的原理"><a href="posts/4f2b4bfb/#字典的原理" class="headerlink" title="字典的原理"></a>字典的原理</h2><p>Python 的字典是依据<a href="https://zh.wikipedia.org/wiki/%E5%93%88%E5%B8%8C%E8%A1%A8" target="_blank" rel="noopener">散列表</a>（也叫哈希表）来实现的，首先简单介绍一下散列表的原理。</p><p>散列表中的每一个单元称为表元。在 dict 的实现里，每个 key-value 均占用一个表元，其中 key 为<strong>键的引用</strong>（这里是键的引用，而不是键本身，因为 key 可以为任意可散列对象），value 为值的引用。因为是引用：表元大小均一致，所以可通过偏移量来读取某个表元。</p><p>在 Python 中，散列函数由 hash() 方法出任，当我们查询 my_dict[search_key] 时，Python 会调用 hash(search_key) 来计算 search_key 的散列值，并将这个值的低几位数字当作偏移量，在散列表中查找表元，具体是几位，需要根据散列表的大小来决定。若表元为空，则说明 search_key 不存在，抛出 KeyError 异常。若非空，则表元会有一对 found_key:found_value，这时若 search_key == found_key 为真，那么就返回 found_value。</p><p>如果 search_key 和 found_key 不相等，这种情况成为散列冲突，发生这种情况是因为散列表只把该元素映射到了只有几位数字上。为了解决散列冲突，算法会在散列值中另外取几位，用新得到的数字做偏移量再次寻找。</p><h2 id="创建字典"><a href="posts/4f2b4bfb/#创建字典" class="headerlink" title="创建字典"></a>创建字典</h2><p>创建一个字典有许多方式：</p><pre><code class="python">a = dict(one=1, two=2, three=3)
+b = {&#39;one&#39;: 1, &#39;two&#39;: 2, &#39;three&#39;: 3}
+c = dict(zip([&#39;one&#39;, &#39;two&#39;, &#39;three&#39;], [1, 2, 3]))
+d = dict([(&#39;two&#39;, 2), (&#39;one&#39;, 1), (&#39;three&#39;, 3)])
+e = dict({&#39;three&#39;: 3, &#39;one&#39;: 1, &#39;two&#39;: 2})
+&gt;&gt;&gt; a == b == c == d == e
+True
+</code></pre><p>在刚刚的原理中说到，由于字典的索引是根据 hash() 函数来获得的，所以 dict 其实是无序的，这也解释了为什么上面代码中的等式会成立。</p><h2 id="字典推导"><a href="posts/4f2b4bfb/#字典推导" class="headerlink" title="字典推导"></a>字典推导</h2><p>没错，在 Python3+ 里，推导式不再是列表的特性了。</p><pre><code class="python">numbers = range(5)
+numbers_square = {number: number ** 2 for number in numbers}
+</code></pre><h2 id="键查询"><a href="posts/4f2b4bfb/#键查询" class="headerlink" title="键查询"></a>键查询</h2><p>最简单的方法是采用下标方式来查询。即：my_dict[key]，这也是推荐的方法，但这是 key 存在的情况，而现实中，一定会遇到 key 不存在的时候，这时就会 raise 一个 KeyError。以下有几种解决办法：</p><h3 id="用-get-来获取"><a href="posts/4f2b4bfb/#用-get-来获取" class="headerlink" title="用 get 来获取"></a>用 get 来获取</h3><pre><code class="python">my_id = {&#39;name&#39;: &#39;wincer&#39;}
+&gt;&gt;&gt; my_id.get(&#39;name&#39;)
+&#39;wincer&#39;
+&gt;&gt;&gt; my_id.get(&#39;age&#39;, &#39;default&#39;)
+&#39;default&#39;
+</code></pre><p>若 key 存在，则返回对应的 value，若 key 不存在，且传入第二个参数，那么返回该参数，若无第二个参数，则返回 None。</p><h3 id="用-defaultdict-预先设置缺省（推荐）"><a href="posts/4f2b4bfb/#用-defaultdict-预先设置缺省（推荐）" class="headerlink" title="用 defaultdict 预先设置缺省（推荐）"></a>用 defaultdict 预先设置缺省（推荐）</h3><pre><code class="python">from collections import defaultdict
+
+my_id = defaultdict(list)
+my_id.update({&#39;name&#39;: &#39;wincer&#39;})
+&gt;&gt;&gt; mydict[&#39;name&#39;]
+&#39;wincer&#39;
+&gt;&gt;&gt; mydict[&#39;age&#39;]
+[]
+</code></pre><p>defaultdict 需要指定一个 factory，当查询 key 不存在时，会创建一个空的 factory 返回。推荐使用这种方式来处理 key 不存在的情况，因为该方法不仅可用于读取 value 值，还可随时用 append 来更新 value。同时需注意：<strong>defaultdict 中的参数只会在 __getitem__ 中被调用。如 dd 是一个 defaultdict，k 是一个不存在的键，dd[k] 用 factory 来创造一个默认值，但 dd.get(k) 却仍会返回 None。</strong></p><h3 id="使用-missing-方法"><a href="posts/4f2b4bfb/#使用-missing-方法" class="headerlink" title="使用 __missing__ 方法"></a>使用 __missing__ 方法</h3><p>当我们调用 my_dict[key] 时，<strong>如果 key 是一个字符串</strong>，我们会需要用 my_dict[‘name’] 来获取，如果你觉得比较麻烦，想直接用 my_dict[name] 的话，可以采用如下方法：</p><pre><code class="python">from collections import UserDict
+
+
+class StrKeyDict(UserDict):
+    def __missing__(self, key):
+        if isinstance(key, str):
+            raise KeyError(key)
+        return self[str(key)]
+
+    def __contains__(self, key):
+        return str(key) in self.data
+
+    def __setitem__(self, key, item):
+        self.data[str(key)] = item
+
+d = StrKetDict([(&#39;1&#39;, &#39;one&#39;), (&#39;2&#39;, &#39;two&#39;)])
+&gt;&gt;&gt; d[2]
+&#39;two&#39;
+</code></pre><h3 id="使用-getattr-方法（不推荐）"><a href="posts/4f2b4bfb/#使用-getattr-方法（不推荐）" class="headerlink" title="使用 __getattr__ 方法（不推荐）"></a>使用 __getattr__ 方法（不推荐）</h3><p>有时我们可能更懒，想要用类属性类似的 my_dict.name 方法来获取 value，这时，可以使用 __getattr__ 方法：</p><pre><code class="python">from collections import UserDict
+
+
+class AttrDict(UserDict):
+    def __getattr__(self, attr):
+        return self[attr]
+
+d = AttrDict([(&#39;name&#39;, &#39;wincer&#39;), (&#39;age&#39;, &#39;20&#39;)])
+
+&gt;&gt;&gt; d.name
+&#39;wincer&#39;
+</code></pre><p>并不推荐这样做，因为在 dict 实现中，并没有要求 key 一定为合法标识符，只需要是可散列对象即可，而上面的写法一旦 key 不为合法标识符，会 raise 一个 SyntaxError：</p><pre><code class="python">d.update({(0): &#39;zero&#39;})
+&gt;&gt;&gt; d[(0)]
+&#39;zero&#39;
+&gt;&gt;&gt; d.0
+SyntaxError: invalid syntax
+</code></pre><p>如果非常想使用 . 来获取 value 的话，建议使用 namedtuple</p><p>当然这也就意味着必须使用合法标识符了：</p><pre><code class="python">from collections import namedtuple
+ID = namedtuple(&#39;ID&#39;, &#39;name age&#39;)
+me = ID(&#39;wincer&#39;, 20)
+&gt;&gt;&gt; me.name
+&#39;wincer&#39;
+
+ID = namedtuple(&#39;ID&#39;, &#39;(1, 0) age&#39;)
+ValueError: Type names and field names must be valid identifiers: &#39;(1&#39;
+</code></pre><h3 id="实现-switch-…-case-结构"><a href="posts/4f2b4bfb/#实现-switch-…-case-结构" class="headerlink" title="实现 switch … case 结构"></a>实现 switch … case 结构</h3><p>同样借助键查询，可以实现 Python 中没有的 switch … case 结构：</p><pre><code class="python">def foo(x):
+    data = {
+        0: &#39;zero&#39;,
+        1: &#39;one&#39;,
+        2: &#39;two&#39;,
+    }
+    return data.get(x, None)
+</code></pre><p>所以说 Python 不设计 switch … case 语句是有原因的，看上面的实现，比 switch … case 不知道高到哪里去了。</p><h2 id="dict-和它的小伙伴们"><a href="posts/4f2b4bfb/#dict-和它的小伙伴们" class="headerlink" title="dict 和它的小伙伴们"></a>dict 和它的小伙伴们</h2><h3 id="OrderedDict"><a href="posts/4f2b4bfb/#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h3><p>在添加键的时候会按顺序添加，同时 .popitem 是会删除并返回字典的最后一个元素而不是像 dict 里面一样可能会删除任意元素。</p><h3 id="Counter"><a href="posts/4f2b4bfb/#Counter" class="headerlink" title="Counter"></a>Counter</h3><p>这个映射会给键一个计数器，每次更新键时都会增加这个计时器，所以这个类型可以用以给可迭代类型计数：</p><pre><code class="python">from collections import Counter
+
+ct = Counter(&#39;hfkjahfkakhf&#39;)
+&gt;&gt;&gt; ct
+
+Counter({&#39;a&#39;: 2, &#39;f&#39;: 3, &#39;h&#39;: 3, &#39;j&#39;: 1, &#39;k&#39;: 3})
+ct.update(&#39;fdjlahkla&#39;)
+&gt;&gt;&gt; ct
+Counter({&#39;a&#39;: 4, &#39;d&#39;: 1, &#39;f&#39;: 4, &#39;h&#39;: 4, &#39;j&#39;: 2, &#39;k&#39;: 4, &#39;l&#39;: 2})
+
+&gt;&gt;&gt; ct.most_common(2)
+[(&#39;h&#39;, 4), (&#39;f&#39;, 4)]
+</code></pre><h3 id="UserDict"><a href="posts/4f2b4bfb/#UserDict" class="headerlink" title="UserDict"></a>UserDict</h3><p>用法见键查询。</p><h3 id="不可变映射"><a href="posts/4f2b4bfb/#不可变映射" class="headerlink" title="不可变映射"></a>不可变映射</h3><p>在 Python 3.3 后的版本，types 模块引入一个名为 MappingProxyType 的类。如果给这个类一个映射，它会返回一个只读的映射视图。但它是动态的，如果原映射改动，那么它也会相应改动。</p><pre><code class="python">&gt;&gt;&gt; int.__dict__
+mappingproxy({&#39;__abs__&#39;: &lt;slot wrapper &#39;__abs__&#39; of &#39;int&#39; objects&gt;,
+              &#39;__add__&#39;: &lt;slot wrapper &#39;__add__&#39; of &#39;int&#39; objects&gt;,
+              ...})
+
+from types import MappingProxyType
+d = {1: &#39;A&#39;}
+d_proxy = MappingProxyType(d)
+
+&gt;&gt;&gt; d_proxy[2] = &#39;x&#39;
+TypeError: &#39;mappingproxy&#39; object does not support item assignment
+
+d[2] = &#39;B&#39;
+&gt;&gt;&gt; d_proxy[2]
+&#39;B&#39;
+</code></pre><blockquote style="margin:2em 0 0;padding:.5em 1em;border-left:3px solid #f44336;background-color:#f5f5f5;list-style:none"><p><b>本文标题：</b> Python 字典的原理及高级用法<br><b>最后更新：</b>2018 年 05 月 12 日 - 12:05<br><b>本文链接：</b><a href="https://blog.itswincer.com/posts/4f2b4bfb/">https://blog.itswincer.com/posts/4f2b4bfb/</a><br><b>本文采用：署名-非商业性使用-禁止演绎 4.0 国际</b> 协议进行许可，阅读 <a rel="nofollow noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">相关说明</a></p></blockquote></div><div id="disqus-comment"><div id="disqus_thread"></div><style>.disqus_click_btn,.load_gist{line-height:30px;margin:0;min-width:50px;padding:0 14px;display:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:0;cursor:pointer;text-decoration:none;text-align:center;vertical-align:middle;border:0;background:#b3d4fc;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);color:#fff;background-color:#757575;text-shadow:0;display:none}</style><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config=function(){this.page.url="https://blog.itswincer.com/posts/4f2b4bfb/",this.page.identifier="https://blog.itswincer.com/posts/4f2b4bfb/"}</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({url:"https://disqus.com/next/config.json",timeout:400,type:"GET",success:function(){var s=document,t=s.createElement("script");t.src="//wincer.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(s.head||s.body).appendChild(t),$(".disqus_click_btn").css("display","none")},error:function(){$(".disqus_click_btn").css("display","block")}})</script><script type="text/javascript" id="disqus-click-load">$(".btn_click_load").click(function(){var e,t;e=document,(t=e.createElement("script")).src="//wincer.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t),$(".disqus_click_btn").css("display","none")})</script></div><style>#disqus-comment{background-color:#eee;padding:2pc}</style></div><nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col"><a href="/posts/8575e868/" id="post_nav-newer" class="prev-content"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"><i class="material-icons">arrow_back</i></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新篇</a><div class="section-spacer"></div><a href="/posts/65e48179/" id="post_nav-older" class="next-content">旧篇 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"><i class="material-icons">arrow_forward</i></button></a></nav></div></div><div class="sidebar-overlay"></div><aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation"><div id="sidebar-main"><div class="sidebar-header header-cover" style="background-image:url(https://ae01.alicdn.com/kf/HTB1by2eah_rK1RkHFqD761JAFXaS.png)"><div class="top-bar"></div><button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display:initial" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">clear_all</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button><div class="sidebar-image"><img src="https://ae01.alicdn.com/kf/HTB1DdGHXizxK1RjSspj763S.pXax.png" alt="Wincer's avatar"></div><a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">WincerChan<span style="display:none">fuck</span>@gmail.com<b class="caret"></b></a></div><ul class="nav sidebar-nav"><li class="dropdown"><ul id="settings-dropdown" class="dropdown-menu"><li><a class="obfus" href target="_blank" title="Email Me"><i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i> Email Me</a></li></ul></li><li id="sidebar-first-li"><a href="/"><i class="material-icons sidebar-material-icons">home</i> 主页</a></li><li class="dropdown"><a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown"><i class="material-icons sidebar-material-icons">chrome_reader_mode</i> 分类<b class="caret"></b></a><ul class="dropdown-menu"><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">14</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">11</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/碎碎念/">碎碎念<span class="sidebar_archives-count">14</span></a></li></ul></li><li class="divider"></li><li><a href="/timeline/" title="归档"><i class="material-icons sidebar-material-icons">inbox</i> 归档</a></li><li><a href="/tags/" title="标签"><i class="material-icons sidebar-material-icons">label</i> 标签</a></li><li><a href="/life/" title="生活"><i class="material-icons sidebar-material-icons">book</i> 生活</a></li><li><a href="/friends/" title="友链"><i class="material-icons sidebar-material-icons">people</i> 友链</a></li><li><a href="/about/" title="关于"><i class="material-icons sidebar-material-icons">person</i> 关于</a></li><li><a href="/atom.xml" title="订阅"><i class="material-icons sidebar-material-icons">rss_feed</i> 订阅</a></li><li class="divider"></li><li><a href="/archives">文章总数 <span class="sidebar-badge">46</span></a></li></ul><script>let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});</script></div></aside><div id="back-to-top" class="toTop-wrap"><a href="#top" class="toTop"><i class="material-icons footer_top-i">expand_less</i></a></div><footer class="mdl-mini-footer" id="bottom"><div class="mdl-mini-footer--left-section sns-list"><a href="https://github.com/WincerChan" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-github"><span class="visuallyhidden">Github</span></button></a> <a href="https://t.me/Tivsae" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram"><span class="visuallyhidden">Telegram</span></button></a></div><div id="copyright">Copyright&nbsp;©&nbsp;2017&nbsp;-Wincer's Blog</div><script type="text/javascript">document.querySelector('#copyright').innerText = `Copyright © 2017 - ${(new Date()).getFullYear()} Wincer's Blog`;</script><div class="mdl-mini-footer--right-section"><div><div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div><div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div></div></div></footer><script>window.addEventListener('DOMContentLoaded', () => {
+    let wait_renders = document.querySelectorAll('.mathrender');
+    wait_renders.forEach(ele => {
+                katex.render(ele.innerText, ele, {
+                    throwOnError: true
+                })
+            })
+})</script><script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/lazyload.min.js",!0)</script><script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/js.min.js",!0)</script><script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/nprogress.js",!0)</script><script type="text/ls-javascript" id="NProgress-script">NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 300);</script><style>.load_gist{text-align:center;display:block;height:30px}.gist-data table{margin:inherit!important}.gist-data table td{padding:inherit!important;border:inherit!important}div{box-sizing:border-box}</style><script>var agent=navigator.userAgent.toLowerCase();0<agent.indexOf("ucbrowser")&&(document.write('<link rel="stylesheet" href="/css/uc.css">'),alert("由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。"))</script><script>lsloader.load("hanabi","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/hanabi-browser-bundle.js",!0)</script><script type="text/ls-javascript" id="window-load">$(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);</script><script type="text/ls-javascript" id="lazy-load">// Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });</script><script>(function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+    console.clear();
+console.log(` %c © Wincer's Blog | Date: ${new Date().toLocaleDateString()} %c https://github.com/WincerChan/MyBlog `,"color: #fff; background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(0, 151, 167) 100%); padding:5px 1px;","background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(194, 194, 194) 0%); padding:5px 0;")</script></main></div><script>!function(n){var o=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(t,e){var n=new Image,o=t.getAttribute("data-original");n.onload=function(){t.src=o,e&&e()},n.src=o}function c(){for(var t=0;t<o.length;t++)0<=(e=o[t].getBoundingClientRect()).top&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&i(o[t],function(){o.splice(t,t)});var e;console.log("trigger")}c(),n.addEventListener("scroll",function(){var t,e;t=c,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this)</script><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw-c028c8.js?t=1568134342272").then(function(){console.log("ServiceWorker Register Successfully.")}).catch(function(e){console.error(e)})</script></body></html>

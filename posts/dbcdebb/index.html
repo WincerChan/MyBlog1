@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="zh"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><script>window.materialVersion="1.5.9",window.oldVersion=["codestartv1","1.3.4","1.4.0","1.4.0b1","1.5.0"]</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>Python 知多少（一）——不常见的数据结构 · Wincer&#39;s Blog</title><link rel="icon shortcut" type="image/ico" href="https://blog.itswincer.com/img/favicon.png"><link rel="icon" href="/img/favicon.png"><meta name="format-detection" content="telephone=no"><meta name="description" itemprop="description" content="近来准备写几篇文章用于介绍 Python 较高级一些的特性，归为一个系列。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。
+对 Pythoner 而言，元组（tuple）、列表（list）、字典（dict）这三个应该最熟悉的数据结构了，恰当使用这三个数据结构的话的确可以应对大部分的使用场合了，但有时因为其它方面的问题（内存占用、插入效率、删除效率等），我们仍有必要学习其它不那么常见的数据结构。"><meta name="keywords" content="Blog,Python,知多少,数据结构,高级"><meta name="theme-color" content="#0097A7"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Wincer&#39;s Blog"><meta name="msapplication-starturl" content="https://blog.itswincer.com/posts/dbcdebb/"><meta name="msapplication-navbutton-color" content="#0097A7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Wincer&#39;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/img/favicon.png"><meta property="og:url" content="https://blog.itswincer.com/posts/dbcdebb/"><meta property="og:type" content="blog"><meta property="og:title" content="Python 知多少（一）——不常见的数据结构 · Wincer&#39;s Blog"><meta property="og:image" content="/img/favicon.png"><meta property="og:description" content="近来准备写几篇文章用于介绍 Python 较高级一些的特性，归为一个系列。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。
+对 Pythoner 而言，元组（tuple）、列表（list）、字典（dict）这三个应该最熟悉的数据结构了，恰当使用这三个数据结构的话的确可以应对大部分的使用场合了，但有时因为其它方面的问题（内存占用、插入效率、删除效率等），我们仍有必要学习其它不那么常见的数据结构。"><meta property="og:article:tag" content="Python"><meta property="og:article:tag" content="知多少"><meta property="og:article:tag" content="数据结构"><meta property="og:article:tag" content="高级"><meta property="article:published_time" content="2018-08-08T11:08:32.000+00:00"><meta property="article:modified_time" content="2018-08-08T11:08:32.000+00:00"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://blog.itswincer.com/posts/dbcdebb/"><script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Wincer&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "https://blog.itswincer.com/img/favicon.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Wincer",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://ae01.alicdn.com/kf/HTB1DdGHXizxK1RjSspj763S.pXax.png"
+        },
+        "description": "昔日玫瑰以其名流芳，今人所持唯玫瑰之名"
+    },
+    "url": "https://blog.itswincer.com/posts/dbcdebb/",
+    "headline": "Python 知多少（一）——不常见的数据结构",
+    "name": "Python 知多少（一）——不常见的数据结构",
+    "inLanguage": {
+        "@type": "Language",
+        "alternateName": "zh-CN"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://ae01.alicdn.com/kf/HTB1r.rXaffsK1RjSszg761XzpXa8.png"
+    },
+    "datePublished": "Wed Aug 08 2018 11:30:32 GMT+0000",
+    "dateModified": "Wed Aug 08 2018 11:33:32 GMT+0000",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.itswincer.com/posts/dbcdebb/"
+    },
+
+    "keywords": ",Python,知多少,数据结构,高级Blog",
+    "description": "近来准备写几篇文章用于介绍 Python 较高级一些的特性，归为一个系列。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。
+对 Pythoner 而言，元组（tuple）、列表（list）、字典（dict）这三个应该最熟悉的数据结构了，恰当使用这三个数据结构的话的确可以应对大部分的使用场合了，但有时因为其它方面的问题（内存占用、插入效率、删除效率等），我们仍有必要学习其它不那么常见的数据结构。"
+}</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/css/material.min.css"><!--[if lte IE 9]><link rel="stylesheet" href="/css/ie-blocker.css"><script src="/js/ie-blocker.zhCN.js"></script><![endif]--><script>window.lsloader={jsRunSequence:[],jsnamemap:{}},lsloader.removeLS=function(e){try{localStorage.removeItem(e)}catch(e){}},lsloader.setLS=function(e,t){try{localStorage.setItem(e,t)}catch(e){}},lsloader.getLS=function(e){var t="";try{t=localStorage.getItem(e)}catch(e){t=""}return t},versionString="/*"+(window.materialVersion||"unknownVersion")+"*/",lsloader.clean=function(){try{for(var e=[],t=0;t<localStorage.length;t++)e.push(localStorage.key(t));e.forEach(function(e){-1===lsloader.getLS(e).indexOf(versionString)&&lsloader.removeLS(e)})}catch(e){}},lsloader.clean(),lsloader.load=function(e,t,n,s){var o;"boolean"==typeof n&&(s=n,n=void 0),s=s||!1,n=n||function(){},(o=this.getLS(e))&&-1===o.indexOf(versionString)?(this.removeLS(e),this.requestResource(e,t,n,s)):o?o.split(versionString)[0]!=t?(console.log("reload:"+t),this.removeLS(e),this.requestResource(e,t,n,s)):(o=o.split(versionString)[1],s?(this.jsRunSequence.push({name:e,code:o}),this.runjs(t,e,o)):(document.getElementById(e).appendChild(document.createTextNode(o)),n())):this.requestResource(e,t,n,s)},lsloader.requestResource=function(t,n,e,s){var o=this;s?this.iojs(n,t,function(e,t,n){o.setLS(t,e+versionString+n),o.runjs(e,t,n)}):this.iocss(n,t,function(e){document.getElementById(t).appendChild(document.createTextNode(e)),o.setLS(t,n+versionString+e)},e)},lsloader.iojs=function(t,n,e){var s=this;s.jsRunSequence.push({name:n,code:""});try{var o=new XMLHttpRequest;o.open("get",t,!0),o.onreadystatechange=function(){4==o.readyState&&((200<=o.status&&o.status<300||304==o.status)&&""!=o.response?e(t,n,o.response):s.jsfallback(t,n))},o.send(null)}catch(e){s.jsfallback(t,n)}},lsloader.runjs=function(e,t,n){if(t&&n)for(var s in this.jsRunSequence)this.jsRunSequence[s].name==t&&(this.jsRunSequence[s].code=n);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status)(e=document.createElement("script")).appendChild(document.createTextNode(this.jsRunSequence[0].code)),e.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(e),this.jsRunSequence.shift(),0<this.jsRunSequence.length&&this.runjs();else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var o=this;(e=document.createElement("script")).src=this.jsRunSequence[0].path,e.type="text/javascript",this.jsRunSequence[0].status="loading",e.onload=function(){o.jsRunSequence.shift(),0<o.jsRunSequence.length&&o.runjs()},document.body.appendChild(e)}},lsloader.jsfallback=function(e,t){if(!this.jsnamemap[t]){for(var n in this.jsnamemap[t]=t,this.jsRunSequence)this.jsRunSequence[n].name==t&&(this.jsRunSequence[n].code="",this.jsRunSequence[n].status="failed",this.jsRunSequence[n].path=e);this.runjs()}},lsloader.cssfallback=function(e,t,n){this.cssnamemap[t]||(this.cssnamemap[t]=1,(t=document.createElement("link")).type="text/css",t.href=e,t.rel="stylesheet",t.onload=t.onerror=n,(e=document.getElementsByTagName("script")[0]).parentNode.insertBefore(t,e))},lsloader.runInlineScript=function(e,t){t=document.getElementById(t).innerText,this.jsRunSequence.push({name:e,code:t}),this.runjs()}</script><script>function Queue(){this.dataStore=[],this.offer=function(e){this.debug&&console.log("Offered a Queued Function.");"function"==typeof e?this.dataStore.push(e):console.log("You must offer a function.")},this.poll=function(){this.debug&&console.log("Polled a Queued Function.");return this.dataStore.shift()},this.execNext=function(){var e=this.poll();void 0!==e&&(this.debug&&console.log("Run a Queued Function."),e())},this.debug=!1,this.startDebug=function(){this.debug=!0}}var queue=new Queue</script><style>#post-content hr{height:20px;margin:15px auto;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAZBAMAAAD6cmD+AAAAJFBMVEX////+/v7u7u79/f38/Pz19fX5+fnm5ubr6+vg4ODz8/PX19fmfbrEAAABVklEQVQYGb3AsWoUQRjA8f/HN06R6ht33cJKDhSNzR4rCKlmCdEz1QkHkm4lgeSsoics6VRyQiwDJ3I2erHIvYJP5xPMRRjIjxvUUZ1V7JLLSegqXhu5YomeXXkhWz18+WEpZJPC9+36d0GuyPGpbC07cjk96yp7ckiuOP3or9/eWfIfhJQGc73sP5yzPiqcsVFgg8DzmR91q8O7C4uOBAkGIEZCAb7v9h6J/2wXEzESDASsMBK0iCezajUuOIn3vxNI0VqB/ceDhO0oT52fq3U7p+7C3g0Svgz+AKZGQiv1m/O4Kutno6MXi8aTUrYOCIQEtK4um53z0s/14IEnJOyCsFHAXn3Sax2N9y6JLUlq3MT/kHvbX/VggpFnOisHE/+3FRNyBN9T2PoKMSGH1sfv3dYykqvwZd+tf4VAptJs+m3h1BCyyFCbn2MactUMZeLUuDX/AFJQRNLkIJPDAAAAAElFTkSuQmCC) center center no-repeat}#post-content,#post-content p,.sidebar-colored .sidebar-nav li>a{color:#2f2f2f!important;font-size:16px}#post-content ol,#post-content ul{font-size:16px}#post-content h2,h3,h4{color:#4c4c4c!important}body,html{text-shadow:0 0 1px rgba(0,0,0,.22)}table{display:table!important}body,html{font-family:Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif}code{font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace}a{color:#00838f}#scheme-Paradox .hot_tags-count,#scheme-Paradox .sidebar-colored .sidebar-badge,#scheme-Paradox .sidebar-colored .sidebar-header,#scheme-Paradox .sidebar_archives-count,#search-form-label:after,#search-label,.mdl-card__media{background-color:#0097a7!important}#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus,#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover{color:#0097a7!important}#ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a,#post_entry-right-info,.sidebar-colored .sidebar-nav li:hover>a,.sidebar-colored .sidebar-nav li:hover>a i,.sidebar-colored .sidebar-nav li>a:focus i,.sidebar-colored .sidebar-nav li>a:hover,.sidebar-colored .sidebar-nav li>a:hover i,.sidebar-colored .sidebar-nav>.open>a,.sidebar-colored .sidebar-nav>.open>a:focus,.sidebar-colored .sidebar-nav>.open>a:hover{color:#0097a7!important}.toTop{background:#757575!important}.material-layout .material-index>.material-nav,.material-layout .material-post>.material-nav,.material-nav a{color:#757575}#scheme-Paradox .MD-burger-layer{background-color:#757575}#scheme-Paradox #post-toc-trigger-btn{color:#757575}.post-toc a:hover{color:#00838f;text-decoration:underline}</style><style>body{background-color:#f5f5f5}#scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{background-color:#fff}</style><style></style><style>@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/material-design-icons-iconfont@3.0.3/dist/fonts/MaterialIcons-Regular.woff) format('woff')}</style><script>lsloader.load("jq_js","https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js",!0)</script><script>"blog.itswincer.com"===location.hostname&&function(e,t,n,i,a){var o=n.screen,g=encodeURIComponent,r=["ga=UA-101362832-1","dt="+g(i.title),"dr="+g(i.referrer),"ul="+(a.language||a.browserLanguage||a.userLanguage),"sd="+o.colorDepth+"-bit","sr="+o.width+"x"+o.height,"vp="+Math.max(i.documentElement.clientWidth,n.innerWidth||0)+"x"+Math.max(i.documentElement.clientHeight,n.innerHeight||0),"z="+ +new Date];n.__ga_img=new Image,n.__ga_img.src="https://ga.giuem.com?"+r.join("&")}(0,0,window,document,navigator,location)</script><link rel="manifest" href="/manifest.json"></head><div></div><body id="scheme-Paradox" class="lazy"><div class="material-layout mdl-js-layout has-drawer is-upgraded"><main class="material-layout__content" id="main"><div id="top"></div><button class="MD-burger-icon sidebar-toggle"><span class="MD-burger-layer"></span></button> <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">format_list_numbered</i></button><ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh;overflow-y:scroll"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数组"><span class="post-toc-number">1.</span> <span class="post-toc-text">数组</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#队列"><span class="post-toc-number">2.</span> <span class="post-toc-text">队列</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#双向队列"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">双向队列</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#单向队列"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">单向队列</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#堆"><span class="post-toc-number">3.</span> <span class="post-toc-text">堆</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#内存视图"><span class="post-toc-number">4.</span> <span class="post-toc-text">内存视图</span></a></li></ol></ul><div class="material-post_container"><div class="material-post mdl-grid"><div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col"><div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://ae01.alicdn.com/kf/HTB1r.rXaffsK1RjSszg761XzpXa8.png)"><p class="article-headline-p">Python 知多少（一）——不常见的数据结构</p></div><div class="mdl-color-text--grey-700 mdl-card__supporting-text meta"><div id="author-avatar"><img src="https://ae01.alicdn.com/kf/HTB1DdGHXizxK1RjSspj763S.pXax.png" width="44px" height="44px" alt="Author Avatar"></div><div><strong>Wincer</strong> <span>8月 08, 2018</span></div><div class="section-spacer"></div><button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">devices other</i> <span class="visuallyhidden">devices other</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button"><li class="mdl-menu__item">在其它设备中阅读本文章</li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB6ElEQVR42u3ay1aEQAwFwPn/n9atC2lzE5gRulh5FKGLRU5er69HXC8MDAwMDAwMjH/DeJWvo//6+ZtfXhY+LTgDBgbGZow/QtvBi9f3rw9xwhkwMDC2ZBy9+OieOJlbBtz6GTAwMDBSRvMQ8ydgYGBgtBjrlC59PgYGBkavgKwH0zRMv7UWx8DAuCGj3pS/7ue3zjcwMDBuxZi3zNJksX7PhTsjGBgYt2LUA1+KTAvdePCJgYGxDaM+XOyNMyepZ1DEYmBgPJrRe82k3D1rgQMDA2MfRlqs9kLtJBk9DMEYGBibMdKm/CT49j4iBgYGxqQcTRtwk0+GgYGxJ6MyjJysXKSfphlwMTAwNmBckd6tG22VIURQxGJgYGzGqLT10+RyklA2Ay4GBsbjGOtksfLXXmNu8ikxMDD2ZEyaYr3714ngCbU4BgbGQxn1ZYt64Vq584QiFgMDYzNGLwimTf9eyoiBgbEbY9LorwwP4jBaTy4xMDC2YUxK1nQAUG+rXbJsgYGBcXPGJMim4ThdVMXAwMCYjxLrA4Y0BRzV4hgYGBhhEVuB1ZczMDAwMOpFZq9ZNl/UwMDA2JlRX56oHC4dbcaDVQwMjM0YkwWI+iJFZcw5WmDFwMB4KOO+FwYGBgYGBgbGR69vCXVZpogm6JgAAAAASUVORK5CYII="></ul><button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">bookmark</i> <span class="visuallyhidden">bookmark</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button"><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Python/">Python</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/数据结构/">数据结构</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/知多少/">知多少</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/高级/">高级</a></li></ul><button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">share</i> <span class="visuallyhidden">share</span></button><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button"><a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Python 知多少（一）——不常见的数据结构&url=https://blog.itswincer.com/posts/dbcdebb/index.html&pic=https://blog.itswincer.comhttps://blog.itswincer.com/img/favicon.png&searchPic=false&style=simple" target="_blank"><li class="mdl-menu__item">分享到微博</li></a><a class="post_share-link" href="https://twitter.com/intent/tweet?text=Python 知多少（一）——不常见的数据结构&url=https://blog.itswincer.com/posts/dbcdebb/index.html&via=Wincer" target="_blank"><li class="mdl-menu__item">分享到 Twitter</li></a><a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.itswincer.com/posts/dbcdebb/index.html" target="_blank"><li class="mdl-menu__item">分享到 Facebook</li></a><a class="post_share-link" href="https://plus.google.com/share?url=https://blog.itswincer.com/posts/dbcdebb/index.html" target="_blank"><li class="mdl-menu__item">分享到 Google+</li></a><a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Wincer&#39;s Blog&title=Python 知多少（一）——不常见的数据结构&summary=这里是 @Wincer，喜欢折腾新技术，却没多大耐心。个人博客会写得比较杂，包括日常吐槽、技术踩坑，偶尔会写正经一点的。欢迎订阅 RSS(•̀ᴗ•́)。&pics=https://blog.itswincer.comhttps://blog.itswincer.com/img/favicon.png&url=https://blog.itswincer.com/posts/dbcdebb/index.html" target="_blank"><li class="mdl-menu__item">分享到 QQ</li></a></ul></div><div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out"><p>近来准备写几篇文章用于介绍 Python 较高级一些的特性，归为一个系列。本文是这个系列的第一篇文章，主要介绍一下内置的一些数据结构。</p><p>对 Pythoner 而言，元组（tuple）、列表（list）、字典（dict）这三个应该最熟悉的数据结构了，恰当使用这三个数据结构的话的确可以应对大部分的使用场合了，但有时因为其它方面的问题（内存占用、插入效率、删除效率等），我们仍有必要学习其它不那么常见的数据结构。</p><a id="more"></a><h2 id="数组"><a href="posts/dbcdebb/#数组" class="headerlink" title="数组"></a>数组</h2><p>初学者可能会认为在 Python 里，列表（list） 就是数组（array），其实不然。数组应当是一系列类型相同的变量的集合，而 Python 中的列表却可以存放任何不同类型的数据。Python 里也是有数组这个概念的，与列表有所不同的是数组里数据的存放方式（类型）并不是 Python 的基础类型（int、float、char）等，而是数字的机器标识（说白了就是和在 C 语言中存储方式一样），也因此，在将数据存入和读取文件时效率会更高一些。</p><p><code>array.array</code> 支持的数据类型包括整数、浮点数、字符三种，其中创建每个数组需要一个类型码（Type code），用以标识在 C 语言中存放怎样的数据类型，比如 <code>array(&#39;l&#39;)</code> 这样创建的就是存放四个字节大小的整数，范围从 - 2^31 到 2^31 - 1（更多的类型码使用 help(array) 查看）。</p><pre><code class="python">from array import array
+from reprlib import repr
+ints = array(&#39;l&#39;, (i for i in range(10**7)))
+&gt;&gt;&gt; repr(ints)
+&quot;array(&#39;l&#39;, [0, 1, 2, 3, 4, ...])&quot;
+# write to file
+with open(&#39;ints.bin&#39;, &#39;wb&#39;) as fp:
+    ints.tofile(fp)
+
+ints2 = array(&#39;l&#39;)
+# read from file
+with open(&#39;ints.bin&#39;, &#39;wb&#39;) as fp:
+    ints2.fromfile(fp, 10**7)
+</code></pre><p>数组支持列表的大部分操作（准确地说是支持所有和可变序列的有关的操作），包括 <code>pop()</code>、<code>insert()</code>、<code>extend()</code> 等。</p><pre><code class="python">&gt;&gt;&gt; len(ints)
+10000000
+&gt;&gt;&gt; ints[-1]
+9999999
+&gt;&gt;&gt; ints.pop()
+9999999
+</code></pre><p>在排序这里与列表有一点小区别，列表支持 <code>list.sort()</code> 这种就地排序的方法，但数组不支持，所以想对数组进行排序的话，得用 <code>sorted</code> 新建一个数组：</p><pre><code class="python">tmp = array(ints.typecode, sorted(ints))
+</code></pre><h2 id="队列"><a href="posts/dbcdebb/#队列" class="headerlink" title="队列"></a>队列</h2><p>队列的特性是先进先出，虽然我们可以把列表当作队列来使用：<code>append()</code> 来模拟进队列，<code>pop(0)</code> 来模拟出队列：</p><pre><code class="python">class Queue:
+    def __init__(self, queue):
+        self.queue = list(queue)
+
+    def pop(self):
+        return self.queue.pop(0)
+
+    def push(self, num):
+        self.queue.append(num)
+
+    def __repr__(self):
+        return &#39;Queue&lt;%s&gt;&#39; % self.queue
+
+q = Queue(range(5))
+&gt;&gt;&gt; q
+Queue&lt;[0, 1, 2, 3, 4]&gt;
+&gt;&gt;&gt; q.push(5)
+&gt;&gt;&gt; q
+Queue&lt;[1, 2, 3, 4, 5]&gt;
+&gt;&gt;&gt; q.pop()
+1
+</code></pre><p>似乎看上去很完美，但是这种方法的弹出操作是很耗时的，因为删除列表的第一个元素会牵扯到移动列表里的所有元素。</p><p>这里介绍标准库中两种不同的队列：</p><h3 id="双向队列"><a href="posts/dbcdebb/#双向队列" class="headerlink" title="双向队列"></a>双向队列</h3><p><code>collections.deque</code> 类提供了一个双向队列，也就是说 <code>deque</code> 也完全可以栈来使用。它的 <code>append()</code>、<code>appendleft()</code> 和 <code>pop()</code>、<code>popleft()</code> 都是原子操作，这也意味这 <code>deque</code> 是线程安全的。<code>deque</code> 同样实现了所有和可变序列相关的操作。<code>deque</code> 可以接受一个可选参数（<code>maxlen</code>）表示队列可容纳元素的数量：</p><pre><code class="python">from collections import deque
+dq = deque(range(5), maxlen=5)
+&gt;&gt;&gt; dq
+deque([0, 1, 2, 3, 4])
+&gt;&gt;&gt; dq.append(5)
+&gt;&gt;&gt; dq
+deque([1, 2, 3, 4, 5])
+&gt;&gt;&gt; dq.popleft()
+1
+&gt;&gt;&gt; dq
+deque([2, 3, 4, 5])
+&gt;&gt;&gt; dq.appendleft(1)
+deque([1, 2, 3, 4, 5])
+</code></pre><p>需注意，一旦添加了 <code>maxlen</code> 属性，这个属性就无法修改了。当对一个已满的队列进行添加操作时（第 5 行），另一头的元素会被挤掉。</p><h3 id="单向队列"><a href="posts/dbcdebb/#单向队列" class="headerlink" title="单向队列"></a>单向队列</h3><p>（原谅我想不出一个好名字了，只能用单向队列来和刚刚介绍的双向队列做区分了）。</p><p><code>queue.Queue</code> 类提供的是一个单向的队列，它与上面双向队列最大不同除了它是单向的之外，还有对于队列已经满了或空了的情况下，还要对队列进行添加或删除操作的结果不同：在满员（为空）时，如果还向 <code>Queue</code> 中插入（取出）元素的话，它不会扔掉旧的元素来腾出位置，反而是会锁住——直到另外的线程移除了某个位置，这一特性很适合用做生产者——消费者的模型，尤其是当生产者的生产时间与消费者的消费时间不匹配的情况，比如：生产者的生产时间快于消费者的消费时间，如果采用 <code>deque</code> 的话，就会丢失生产者最早时候生产的数据（反之就会造成消费者从空队列中取出数据的情况）。</p><pre><code class="python">from queue import Queue
+from threading import Thread
+import logging
+import time
+
+logging.basicConfig(level=logging.INFO,
+                    format=(&#39;%(asctime)s %(message)s&#39;))
+
+queue = Queue(1)
+
+
+def consumer():
+    time.sleep(.1)
+    queue.get()
+    logging.info(&#39;Consumer got 1&#39;)
+    queue.get()
+    logging.info(&#39;Consumer got 2&#39;)
+
+
+def producer():
+    queue.put(1)
+    logging.info(&#39;Producer put 1&#39;)
+    queue.put(2)
+    logging.info(&#39;Producer put 2&#39;)
+    thread.join()
+    logging.info(&#39;Producer done&#39;)
+
+
+thread = Thread(target=consumer)
+thread.start()
+producer()
+&gt;&gt;&gt;
+2018-08-07 19:56:42,234 Producer put 1
+2018-08-07 19:56:42,335 Consumer got 1
+2018-08-07 19:56:42,335 Producer put 2
+2018-08-07 19:56:42,335 Consumer got 2
+2018-08-07 19:56:42,335 Producer done
+</code></pre><p>消费者线程先等待了片刻是为了给生产线程留部分时间，使其在消费者从队列获取之前先将两个对象放入队列。然而，这里的缓冲区容量为 1，这就意味着生产线程在放入第一个数据后，会卡在第二个 <code>put</code> 方法那里，必须等待消费线程通过 <code>get</code> 方法把第一个数据消费之后，才能放入第二个对象。</p><h2 id="堆"><a href="posts/dbcdebb/#堆" class="headerlink" title="堆"></a>堆</h2><p>堆的性质是父节点（下标为 k）的值，总是小于（大于）等于其左（下标为 2k + 1）右（下标为 2k + 2）两个子节点的值。堆这种数据结构实际中多用于实现<strong>优先级队列</strong>（在 <code>queue</code> 模块中也有优先级队列的实现：<code>PriorityQueue</code> ）：在队列中，优先级较高的元素<strong>总</strong>排在前面。</p><p><code>heapq</code> 模块可以在标准的列表之中创建堆结构：</p><pre><code class="python">from heapq import heappush, heapify, heappop
+
+heap = []
+heappush(heap, 5)
+heappush(heap, 3)
+heappush(heap, 7)
+heappush(heap, 4)
+
+&gt;&gt;&gt; assert heap[0] == min(heap)
+&gt;&gt;&gt; heappush(heap, 2)
+&gt;&gt;&gt; heap
+[2, 3, 7, 5, 4]
+&gt;&gt;&gt; heappop(heap), heappop(heap), heappop(heap)
+(2, 3, 4)
+
+heap2 = [9, 8, 7, 6, 5, 4]
+heapify(heap2)
+&gt;&gt;&gt; heap2
+[4, 5, 7, 6, 8, 9]
+</code></pre><p><code>heappush</code> 和 <code>heappop</code> 方法总会保持堆的性质，将数据插入或弹出，<code>heappop</code> 总会将堆中优先级最高的元素弹出。其中 <code>heapify</code> 可在线性时间内将列表转化为堆。</p><h2 id="内存视图"><a href="posts/dbcdebb/#内存视图" class="headerlink" title="内存视图"></a>内存视图</h2><p>内存视图（memoryview）可以在不需要复制内容的前提下，在不同的数据结构之间共享内存。当你需要在内存中处理大量二进制数据时，或者需要反复修改内存中某块数据的内容，内存视图可能会对你有很大帮助：因为在 Python 中，对字符串（str）和字节数组（bytesarray）进行切片都是会造成内存的复制，尤其是当需要对较大的数据进行切片的时候，所耗费的代价将会非常昂贵。</p><pre><code class="python">from time import time
+
+
+def mv_vs_bytes(factory, name):
+    for n in (100000, 200000, 300000, 400000):
+        data = b&#39;x&#39; * n
+        t0 = time()
+        b = factory(data)
+        while b:
+            b = b[1:]
+        print(name, n, time() - t0)
+
+
+mv_vs_bytes(lambda x: x, &#39;bytes&#39;)
+mv_vs_bytes(lambda x: memoryview(x), &#39;memoryview&#39;)
+
+&quot;&quot;&quot;
+output:
+bytes 100000 0.15474176406860352
+bytes 200000 0.6353733539581299
+bytes 300000 1.5503427982330322
+bytes 400000 2.8593809604644775
+memoryview 100000 0.008246183395385742
+memoryview 200000 0.017104148864746094
+memoryview 300000 0.025980710983276367
+memoryview 400000 0.03431963920593262
+&quot;&quot;&quot;
+</code></pre><p>可以看出，对 <code>bytes</code> 切片的时间复杂度是 O(n^2)，而对 <code>memoryview</code> 切片总能在线性时间内完成。</p><p>当然，由于 <code>bytes</code> 本身是不可变（immutable）的字节序列，如果想对 <code>memoriview</code> 中的数据进行修改的话，就需要用 <code>bytearray</code> 的方式构造 <code>memoryview</code> 对象：</p><pre><code class="python"># readonly
+b = b&#39;Hello&#39;
+mv_b = memoryview(b)
+assert mv_b.readonly == True
+&gt;&gt;&gt; mv_b[0] = 73
+TypeError: cannot modify read-only memory
+
+# can write
+ba = bytearray(b)
+mv_ba = memoryview(ba)
+assert mv_ba.readonly == False
+&gt;&gt;&gt; mv_ba[0] = 73
+&gt;&gt;&gt; mv_ba.tobytes()
+b&#39;Iello&#39;
+</code></pre><p>由于 <code>memoryview</code> 使用了缓冲区协议（协议提供的是 C 语言级别的 API），导致 <code>memoryview</code> 只有在 CPython 中才能发挥它最大的作用。</p><p>本系列全部文章可访问「<a href="../../tags/知多少/">知多少</a>」标签查看。</p><p>参考：</p><ul><li><a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank" rel="noopener">Fluent Python</a></li><li><a href="https://effectivepython.com/" target="_blank" rel="noopener">Effective Python</a></li><li><a href="https://eli.thegreenplace.net/2011/11/28/less-copies-in-python-with-the-buffer-protocol-and-memoryviews" target="_blank" rel="noopener">Less copies in Python with the buffer protocol and memoryviews</a></li></ul><blockquote style="margin:2em 0 0;padding:.5em 1em;border-left:3px solid #f44336;background-color:#f5f5f5;list-style:none"><p><b>本文标题：</b> Python 知多少（一）——不常见的数据结构<br><b>最后更新：</b>2018 年 08 月 08 日 - 11:08<br><b>本文链接：</b><a href="https://blog.itswincer.com/posts/dbcdebb/">https://blog.itswincer.com/posts/dbcdebb/</a><br><b>本文采用：署名-非商业性使用-禁止演绎 4.0 国际</b> 协议进行许可，阅读 <a rel="nofollow noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">相关说明</a></p></blockquote></div><div id="disqus-comment"><div id="disqus_thread"></div><style>.disqus_click_btn,.load_gist{line-height:30px;margin:0;min-width:50px;padding:0 14px;display:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:0;cursor:pointer;text-decoration:none;text-align:center;vertical-align:middle;border:0;background:#b3d4fc;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);color:#fff;background-color:#757575;text-shadow:0;display:none}</style><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config=function(){this.page.url="https://blog.itswincer.com/posts/dbcdebb/",this.page.identifier="https://blog.itswincer.com/posts/dbcdebb/"}</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({url:"https://disqus.com/next/config.json",timeout:400,type:"GET",success:function(){var s=document,t=s.createElement("script");t.src="//wincer.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(s.head||s.body).appendChild(t),$(".disqus_click_btn").css("display","none")},error:function(){$(".disqus_click_btn").css("display","block")}})</script><script type="text/javascript" id="disqus-click-load">$(".btn_click_load").click(function(){var e,t;e=document,(t=e.createElement("script")).src="//wincer.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t),$(".disqus_click_btn").css("display","none")})</script></div><style>#disqus-comment{background-color:#eee;padding:2pc}</style></div><nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col"><a href="/posts/50658b02/" id="post_nav-newer" class="prev-content"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"><i class="material-icons">arrow_back</i></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新篇</a><div class="section-spacer"></div><a href="/posts/89381f22/" id="post_nav-older" class="next-content">旧篇 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation"><i class="material-icons">arrow_forward</i></button></a></nav></div></div><div class="sidebar-overlay"></div><aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation"><div id="sidebar-main"><div class="sidebar-header header-cover" style="background-image:url(https://ae01.alicdn.com/kf/HTB1by2eah_rK1RkHFqD761JAFXaS.png)"><div class="top-bar"></div><button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display:initial" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">clear_all</i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button><div class="sidebar-image"><img src="https://ae01.alicdn.com/kf/HTB1DdGHXizxK1RjSspj763S.pXax.png" alt="Wincer's avatar"></div><a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">WincerChan<span style="display:none">fuck</span>@gmail.com<b class="caret"></b></a></div><ul class="nav sidebar-nav"><li class="dropdown"><ul id="settings-dropdown" class="dropdown-menu"><li><a class="obfus" href target="_blank" title="Email Me"><i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i> Email Me</a></li></ul></li><li id="sidebar-first-li"><a href="/"><i class="material-icons sidebar-material-icons">home</i> 主页</a></li><li class="dropdown"><a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown"><i class="material-icons sidebar-material-icons">chrome_reader_mode</i> 分类<b class="caret"></b></a><ul class="dropdown-menu"><li><a class="sidebar_archives-link" href="/categories/分享境/">分享境<span class="sidebar_archives-count">14</span></a></li><li><a class="sidebar_archives-link" href="/categories/博客栈/">博客栈<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/实验室/">实验室<span class="sidebar_archives-count">11</span></a></li><li><a class="sidebar_archives-link" href="/categories/文字阁/">文字阁<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/碎碎念/">碎碎念<span class="sidebar_archives-count">14</span></a></li></ul></li><li class="divider"></li><li><a href="/timeline/" title="归档"><i class="material-icons sidebar-material-icons">inbox</i> 归档</a></li><li><a href="/tags/" title="标签"><i class="material-icons sidebar-material-icons">label</i> 标签</a></li><li><a href="/life/" title="生活"><i class="material-icons sidebar-material-icons">book</i> 生活</a></li><li><a href="/friends/" title="友链"><i class="material-icons sidebar-material-icons">people</i> 友链</a></li><li><a href="/about/" title="关于"><i class="material-icons sidebar-material-icons">person</i> 关于</a></li><li><a href="/atom.xml" title="订阅"><i class="material-icons sidebar-material-icons">rss_feed</i> 订阅</a></li><li class="divider"></li><li><a href="/archives">文章总数 <span class="sidebar-badge">46</span></a></li></ul><script>let e = document.querySelectorAll('.obfus');
+	console.log(e);
+	e.forEach(element => {
+		element.href = atob("bWFpbHRvOldpbmNlckNoYW5AZ21haWwuY29t");
+	});</script></div></aside><div id="back-to-top" class="toTop-wrap"><a href="#top" class="toTop"><i class="material-icons footer_top-i">expand_less</i></a></div><footer class="mdl-mini-footer" id="bottom"><div class="mdl-mini-footer--left-section sns-list"><a href="https://github.com/WincerChan" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-github"><span class="visuallyhidden">Github</span></button></a> <a href="https://t.me/Tivsae" target="_blank"><button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram"><span class="visuallyhidden">Telegram</span></button></a></div><div id="copyright">Copyright&nbsp;©&nbsp;2017&nbsp;-Wincer's Blog</div><script type="text/javascript">document.querySelector('#copyright').innerText = `Copyright © 2017 - ${(new Date()).getFullYear()} Wincer's Blog`;</script><div class="mdl-mini-footer--right-section"><div><div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div><div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div></div></div></footer><script>window.addEventListener('DOMContentLoaded', () => {
+    let wait_renders = document.querySelectorAll('.mathrender');
+    wait_renders.forEach(ele => {
+                katex.render(ele.innerText, ele, {
+                    throwOnError: true
+                })
+            })
+})</script><script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/lazyload.min.js",!0)</script><script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/js.min.js",!0)</script><script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/nprogress.js",!0)</script><script type="text/ls-javascript" id="NProgress-script">NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 300);</script><style>.load_gist{text-align:center;display:block;height:30px}.gist-data table{margin:inherit!important}.gist-data table td{padding:inherit!important;border:inherit!important}div{box-sizing:border-box}</style><script>var agent=navigator.userAgent.toLowerCase();0<agent.indexOf("ucbrowser")&&(document.write('<link rel="stylesheet" href="/css/uc.css">'),alert("由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。"))</script><script>lsloader.load("hanabi","https://cdn.jsdelivr.net/gh/wincerchan/hexo-theme-material@1.6.1/source/js/hanabi-browser-bundle.js",!0)</script><script type="text/ls-javascript" id="window-load">$(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);</script><script type="text/ls-javascript" id="lazy-load">// Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });</script><script>(function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+    console.clear();
+console.log(` %c © Wincer's Blog | Date: ${new Date().toLocaleDateString()} %c https://github.com/WincerChan/MyBlog `,"color: #fff; background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(0, 151, 167) 100%); padding:5px 1px;","background-image: linear-gradient(90deg, rgb(18, 103, 144) 0%, rgb(194, 194, 194) 0%); padding:5px 0;")</script></main></div><script>!function(n){var o=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(t,e){var n=new Image,o=t.getAttribute("data-original");n.onload=function(){t.src=o,e&&e()},n.src=o}function c(){for(var t=0;t<o.length;t++)0<=(e=o[t].getBoundingClientRect()).top&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&i(o[t],function(){o.splice(t,t)});var e;console.log("trigger")}c(),n.addEventListener("scroll",function(){var t,e;t=c,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this)</script><script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw-c028c8.js?t=1568134342272").then(function(){console.log("ServiceWorker Register Successfully.")}).catch(function(e){console.error(e)})</script></body></html>
