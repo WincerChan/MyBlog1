@@ -25,6 +25,8 @@ jobs:
           echo "$ID_ED25519" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan github.com >> ~/.ssh/know_hosts
+          git submodule sync
+          git submodule update --init
           git config --global user.name 'WincerChan'
           git config --global user.email 'WincerChan@gmail.com'
       - name: Decrypt File
