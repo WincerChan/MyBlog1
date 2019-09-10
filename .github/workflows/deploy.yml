@@ -1,6 +1,9 @@
 name: Blog Workflow
 
-on: [push]
+on:
+  push:
+    branches:
+      - hexo
 
 jobs:
   build:
@@ -30,7 +33,7 @@ jobs:
           git config --global user.email 'WincerChan@gmail.com'
       - name: Decrypt File
         run: |
-          dd if=encrypt.des3 | openssl des3 -d -k $PASS | tar zxf -
+          dd if=encrypt.des3 | openssl des3 -d -k $PASSWD | tar zxf -
           mv encrypt/* source/_posts/
       - name: Install dependencies
         run: |
