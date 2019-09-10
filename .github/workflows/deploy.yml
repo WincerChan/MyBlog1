@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
     strategy:
       matrix:
         node-version: [10.x]
@@ -20,10 +20,6 @@ jobs:
       - name: Configuration Environment
         env:
           ID_ED25519: ${{secrets.ed25519}}
-          SSH_USER: ${{secrets.SSH_USER}}
-          SSH_IP: ${{secrets.SSH_IP}}
-          PASSWD: ${{secrets.PASSWD}}
-          SSH_PORT: ${{secrets.SSH_PORT}}
         run: |
           mkdir -p ~/.ssh
           echo "$ID_ED25519" > ~/.ssh/id_ed25519
@@ -32,14 +28,22 @@ jobs:
           git config --global user.name 'WincerChan'
           git config --global user.email 'WincerChan@gmail.com'
       - name: Decrypt File
+        env:
+          PASSWD: ${{secrets.PASSWD}}
         run: |
-          dd if=encrypt.des3 | openssl des3 -d -k $PASSWD | tar zxf -
+          dd if=encrypt.des3 | openssl des3 -d -pass pass:$PASSWD | tar zxf -
           mv encrypt/* source/_posts/
       - name: Install dependencies
         run: |
+          curl -o- -L https://yarnpkg.com/install.sh | bash  
+          brew install node
           yarn global add gulp
           yarn install && gulp
       - name: Deploy to VPS
+        env:
+          SSH_USER: ${{secrets.SSH_USER}}
+          SSH_IP: ${{secrets.SSH_IP}}
+          SSH_PORT: ${{secrets.SSH_PORT}}
         run: |
           { ssh-keyscan -p $SSH_PORT $SSH_IP 2> /dev/null; } >> ~/.ssh/known_hosts
           rsync -az -v --delete -e "ssh -p $SSH_PORT" public/* $SSH_USER@$SSH_IP:/data/www/hexo/
