@@ -44,5 +44,4 @@ jobs:
           npm i yarn -g
           yarn global add gulp
           yarn install && gulp
-          rsync -az -v --delete public/* blog:/data/www/hexo/
-          
+          rsync -az -v --delete public/* blog:/usr/share/www/hexo
