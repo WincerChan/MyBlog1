@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decrypt</title>
+</head>
+
+<body>
+    <script>
+        function EnterPress(event) {
+            var keyCode = event.which || event.keyCode;
+            if (keyCode !== 13) return
+            const passwd = window.parent.document.getElementsByTagName('input')[0].value
+            window.parent.doDecrypt(passwd, () => {
+                window.parent.document.getElementById("enc_error").textContent = "🙅密码错误！"
+            })
+        }
+    </script>
+</body>
+
+</html>
