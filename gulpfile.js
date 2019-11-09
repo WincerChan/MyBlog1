@@ -41,6 +41,5 @@ gulp.task('minify-html', async () => {
         .pipe(gulp.dest('./public'));
 });
 gulp.task('default', gulp.series('clean', 'generate', 'minify-html', async (cb) => {
-    await console.log(cb)
     await gulp.series(cb)
 }));
