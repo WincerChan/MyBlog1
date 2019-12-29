@@ -2,6 +2,7 @@
 title: 关于
 date: 2017-05-10 22:46:00
 hide_license: true
+hide_outdated: true
 thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 ---
 > 佛曰：万发缘生，皆系缘分
@@ -57,5 +58,4 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 ## 打钱，请～
 
 <center><img src="https://ae01.alicdn.com/kf/HTB1o49SQ9zqK1RjSZPx7634tVXaZ.png" alt="微信赞赏" title="微信赞赏" width="50%"/></center>
-
 

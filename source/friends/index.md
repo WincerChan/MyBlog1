@@ -3,6 +3,7 @@ title: 友链
 date: 2018-08-30 13:23:23
 hide_license: true
 layout: links
+hind_outdated: true
 thumbnail: https://ae01.alicdn.com/kf/HTB1YE99afLsK1Rjy0Fb760SEXXaM.png
 ---
 
