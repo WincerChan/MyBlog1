@@ -34,14 +34,13 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 
 ## 关于博客
 
-本博客建站于公元 2017 年 5 月 5 日。目前托管于自购的 VPS 中，由 Cloudflare 提供全球 CDN 加速~~减速~~，基于 Hexo 构建。
+本博客建站于公元 2017 年 5 月 5 日。目前托管于自购的 VPS 中，由 Cloudflare 提供全球 CDN 加速~~减速~~。
 
 博客大事年表：
 
 |        时间         |                             事件                             |
 | :-----------------: | :----------------------------------------------------------: |
 | 2017 年 05 月 05 日 |   [GitHub Pages 建站，使用 NexT 主题](../posts/4a17b156/)    |
-| 2017 年 05 月 07 日 |        [万网购买域名 wincer.top](../posts/daaac5bb/)         |
 | 2017 年 06 月 16 日 |   [利用 Cloudflare 反代实现全站 HTTPS](../posts/444a2b9d/)   |
 | 2017 年 06 月 29 日 |    [NameCheap 购买域名 itswincer.com](../posts/cd8ce2d7/)    |
 | 2017 年 07 月 25 日 |        [使用 ServiceWorker 技术](../posts/a0df572f/)         |
@@ -51,7 +50,7 @@ thumbnail: https://ae01.alicdn.com/kf/HTB1GZnbaiDxK1RjSsph762HrpXam.png
 | 2018 年 08 月 22 日 |    [博客架构做了一些改进，换成了 SPA](../posts/50658b02/)    |
 | 2018 年 12 月 20 日 | [SPA 架构 Bug 太多，弃用](https://github.com/WincerChan/MyBlog/commit/1fd7f75e984a220b7042c5c38bd4c4b1f32db3cc) |
 
-博客的部分文章加密，博客设计的内容会比较广泛：技术、感想、日常吐槽等等，由于域名和服务器都在国外**并且永不打算备案**，自然也不用担心内容审查的问题（虽然可能被内容审查的文章只占很少很少一部分）。
+博客涉及的内容会比较广泛：技术、感想、日常吐槽等等，由于域名和服务器都在国外**并且永不打算备案**，自然也不用担心内容审查的问题（虽然可能被内容审查的文章只占很少很少一部分）。
 
 欢迎诸君订阅 RSS。
 
