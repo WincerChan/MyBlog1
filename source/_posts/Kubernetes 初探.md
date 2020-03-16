@@ -1,12 +1,12 @@
 ---
 title: Kubernetes 初探
-date: '2020/03/11 12:27:32'
+date: '2020/03/16 12:27:32'
 categories: 实验室
 tags:
   - Kubernetes
   - PostgreSQL
   - Erlang
-updated: '2020/03/11 12:27:32'
+updated: '2020/03/16 18:47:32'
 copyright: true
 thumbnail: 'https://p.pstatp.com/origin/ffe50000b0577bb209fe'
 abbrlink: e0246a27
