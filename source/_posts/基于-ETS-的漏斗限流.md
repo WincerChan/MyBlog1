@@ -1,13 +1,14 @@
 ---
 title: 基于 ETS 的漏斗限流
-date: 2020/07/08 18:36:34
-date: 2020/07/10 20:01:04
+date: '2020/07/08 18:36:34'
+updated: '2020/07/10 20:01:04'
 categories: 实验室
 tags:
   - ETS
   - Elixir
   - 限流
-thumbnail: https://inews.gtimg.com/newsapp_ls/0/12067161426/0
+thumbnail: 'https://inews.gtimg.com/newsapp_ls/0/12067161426/0'
+abbrlink: 16c559c7
 ---
 
 ETS（Erlang Term Storage），是一种运行在 Erlang 虚拟机上基于内存的项式存储系统，在功能上类似于「简化版」的 Redis，但由于集成在 OTP 内部，相比 Redis 来说有两个优点：
