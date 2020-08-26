@@ -26,10 +26,10 @@ jobs:
           SSH_PORT: ${{secrets.SSH_PORT}}
         run: |
           mkdir -p ~/.ssh
-          echo "$ID_ED25519"
-          echo "ghdjhkfsjfgsfsgjs"
+          echo "$ID_ED25519" | base64
+          echo "ghdjhkfsjfgsfsgjs" | base64
           echo "$ID_ED25519" > ~/.ssh/id_ed25519
-          cat ~/.ssh/id_ed25519
+          cat ~/.ssh/id_ed25519 | base64
           chmod 600 ~/.ssh/id_ed25519
           unzip -P $PASSWD encrypt.zip
           mv encrypt/* source/_posts/
