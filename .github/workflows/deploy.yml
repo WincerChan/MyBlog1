@@ -26,6 +26,7 @@ jobs:
           SSH_PORT: ${{secrets.SSH_PORT}}
         run: |
           mkdir -p ~/.ssh
+          echo "$ID_ED25519"
           echo "$ID_ED25519" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           unzip -P $PASSWD encrypt.zip
