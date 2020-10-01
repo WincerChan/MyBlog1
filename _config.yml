@@ -121,8 +121,21 @@ image_stream:
 
 
 pwa:
+  manifest:
+    path: /manifest.json
+    body:
+      name: Wincer's Blog
+      short_name: Wincer
+      icons:
+        - src: https://ae01.alicdn.com/kf/H3581d2df939f4c3182b1d4b9c2a47bdaO.png
+          sizes: 888x888
+          type: image/png
+      start_url: /index.html
+      theme_color: "#0097A7"
+      background_color: "#0097A7"
+      display: standalone
   serviceWorker:
-    path: /sw-c028c8.js
+    path: /sw-e34ad5.js
     preload:
       urls:
         - /
