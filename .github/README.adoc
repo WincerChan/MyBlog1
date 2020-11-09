@@ -1,3 +1,7 @@
+
+> 由于博客换成了 Hugo，此 Repo 已废弃，不再更新，新博客 https://github.com/WincerChan/Cirrus[Repo]。
+
+
 = Wincer's Blog
 Wincer Chan
 
