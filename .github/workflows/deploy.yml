@@ -1,0 +1,62 @@
+name: Blog Workflow
+
+on:
+  push:
+    branches:
+      - hexo
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+        otp: ['22.2']
+        elixir: ['1.9.4']
+    steps:
+      - uses: actions/checkout@v1
+      - name: Initial Environment
+        env:
+          ID_ED25519: ${{secrets.ed25519}}
+          PASSWD: ${{secrets.PASSWD}}
+          SSH_USER: ${{secrets.SSH_USER}}
+          SSH_IP: ${{secrets.SSH_IP}}
+          SSH_PORT: ${{secrets.SSH_PORT}}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$ID_ED25519" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          unzip -P $PASSWD encrypt.zip
+          mv encrypt/* source/_posts/
+          printf "Host blog\n    HostName $SSH_IP\n    User $SSH_USER\n    Port $SSH_PORT" > ~/.ssh/config
+          { ssh-keyscan -p $SSH_PORT $SSH_IP 2> /dev/null; } >> ~/.ssh/known_hosts
+      - uses: actions/setup-elixir@v1
+        with:
+          otp-version: ${{matrix.otp}}
+          elixir-version: ${{matrix.elixir}}
+      - name: Use Elixir
+        run: |
+          git clone git@github.com:WincerChan/Douban-Export.git
+          cd Douban-Export
+          mix deps.get
+          mix run --no-halt
+          mv index.md ../source/life/index.md
+          cd -
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Configuration Environment
+        run: |
+          git submodule sync
+          git submodule update --init
+          git config --global user.name 'WincerChan'
+          git config --global user.email 'WincerChan@gmail.com'
+      - name: Install dependencies
+        run: |
+          npm i yarn -g
+          yarn global add gulp
+          yarn install && gulp
+          
