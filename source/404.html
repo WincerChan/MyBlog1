@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 - Not Found | Wincer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/milligram@1.3.0/dist/milligram.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">	
+    <style>
+    	hr {    
+    		border-top: 1px solid rgba(0,0,0,.12); 
+    		margin: 1.3rem 0;
+    	}
+    	.container {
+    		max-width: 50em;
+    	}
+    	body{
+    		background: #f8f9fa
+    	}
+    	span{
+    		display:inline-block;
+    		padding:.2rem .2rem
+    	}
+    	h1, h4 {
+    		text-align: center;
+    	}
+    	h4 {
+    		margin: 0;
+    	}
+    	.subtitle {
+    		text-align: center
+    	}
+    	a {
+    		position: relative;
+    		color: #2e6f92;
+    		font-weight: bolder;
+    	}
+    	a:hover:before {
+        		visibility: visible;
+        		-webkit-transform: scaleX(1);
+        		transform: scaleX(1);
+    	}
+    	a:before {
+    		content: "";
+    		position: absolute;
+    		width: 100%;
+    		height: 1px;
+    		bottom: 0;
+    		left: 0;
+    		background-color: #2e6f92;
+    		visibility: hidden;
+    		-webkit-transform: scaleX(0);
+    		transform: scaleX(0);
+    		-webkit-transition: all 0.2s ease-in-out 0s;
+    		transition: all 0.2s ease-in-out 0s;
+    		top: 1.2em;
+    	}
+    	a:hover {
+    		color: #2e6f92;
+    	}
+	.section {
+		text-align: center;
+	}
+	.container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.action {
+		text-align: center
+	}
+	.section-footer {
+		text-align: center;
+		padding: 2rem .5rem 0 .5rem;
+		color: #acb3c2;
+	}
+	#heart {
+		color: #e85600;
+	}
+    </style>
+  </head>
+  <body>
+  <div class="section">
+    <div class="container">
+      <h1 class="title">
+        404 Not  Found
+      </h1>
+      <p class="subtitle">
+        We were unable to retrieve the requested page from the server
+      </p>
+      <h4>
+      	您访问的页面不存在
+      </h4>
+      <hr>
+    <div class="action">
+     <a href="https://www.itswincer.com">Home</a> |
+     <a href="https://blog.itswincer.com">Wincer's Blog</a>
+     </div>
+  <footer class="section section-footer">
+  	©<span year></span>
+                    <span id="heart" class="text-error">♥</span>
+                    <a href="https://www.itswincer.com" target="_blank">Wincer</a>
+  </footer>
+    </div>
+ </div>
+  <script>var copyrightNow = (new Date).getFullYear(), textContent = document.querySelector("span[year]"); copyrightSince = 2017, textContent.textContent = copyrightSince === copyrightNow ? copyrightNow : copyrightSince + " - " + copyrightNow;</script>
+  </body>
+</html> 
