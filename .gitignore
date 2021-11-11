@@ -11,4 +11,7 @@ themes/next2/
 netlify.toml
 deploy
 id_rsa
+encrypt/
+secrets.tar
 d67271d8.md
+source/life/*.py
